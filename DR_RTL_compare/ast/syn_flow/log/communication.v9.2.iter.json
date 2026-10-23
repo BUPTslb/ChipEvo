@@ -1,0 +1,157 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "communication",
+  "base_version": "v9",
+  "target_version": "v9.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.43,
+  "tns_before": -109.75,
+  "area_baseline": 2091.55805,
+  "critical_subtrees": [
+    {
+      "id": "st_0002",
+      "score": 0.2007,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.34,
+      "path_coverage": 0.0769,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/done"
+      },
+      "read_set": [
+        "uut_tx_block/data",
+        "uut_tx_block/done"
+      ],
+      "write_set": [
+        "uut_tx_block/data",
+        "uut_tx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/data",
+        "uut_tx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.1701,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.26,
+      "path_coverage": 0.0769,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/done"
+      },
+      "read_set": [
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "write_set": [
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.0859,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.0769,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/reg_count"
+      },
+      "read_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "write_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/communication.v9.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0003"
+    ],
+    "refined_level": 5,
+    "target_signal": "uut_rx_block/done",
+    "pattern_id": "tree_balancing",
+    "lines_touched": 8,
+    "span_refined": {
+      "start_line": 91,
+      "end_line": 102
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0003",
+      "pattern": "uut_rx_block/done",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "pattern_id": "tree_balancing"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.44,
+    "tns_after": -111.0,
+    "area": 2072.406038
+  },
+  "scoring": {
+    "wns_norm": -0.09999999999999995,
+    "tns_norm": -0.5188834154351396,
+    "area_norm": -0.009156815896168893,
+    "area_penalty": 0.0,
+    "score": -0.2329827177867242
+  },
+  "relative_advantage": -0.8967789402227511
+}

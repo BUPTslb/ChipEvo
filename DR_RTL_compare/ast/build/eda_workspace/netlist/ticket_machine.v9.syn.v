@@ -1,0 +1,81 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : T-2022.03-SP2
+// Date      : Sun Jun 14 12:58:30 2026
+/////////////////////////////////////////////////////////////
+
+
+module ticket_machine ( clk, clear, ten, twenty, ready, dispense, return_sig, 
+        bill );
+  input clk, clear, ten, twenty;
+  output ready, dispense, return_sig, bill;
+  wire   N9, n28, n29, n30, n31, n32, n33, n34, n35, n36, n37, n38, n39, n40,
+         n41, n42, n43, n44, n45, n46, n47, n48, n49, n50, n51, n52, n53, n54,
+         n55, n56, n57, n58, n59, n60, n61, n62, n63, n64, n65, n66, n67, n68,
+         n69, n70, n71;
+  wire   [5:0] State;
+  wire   [2:0] clear_or_next_low;
+  wire   [2:0] clear_or_next_high;
+  assign bill = N9;
+
+  DFF_X1 \State_reg[5]  ( .D(clear_or_next_high[2]), .CK(clk), .Q(n37), .QN(
+        n43) );
+  DFF_X1 \State_reg[2]  ( .D(clear_or_next_low[2]), .CK(clk), .Q(State[2]), 
+        .QN(n42) );
+  DFF_X1 \State_reg[4]  ( .D(clear_or_next_high[1]), .CK(clk), .Q(State[4]), 
+        .QN(n67) );
+  DFF_X1 \State_reg[3]  ( .D(clear_or_next_high[0]), .CK(clk), .Q(State[3]), 
+        .QN(n66) );
+  DFF_X1 \State_reg[1]  ( .D(clear_or_next_low[1]), .CK(clk), .Q(n69), .QN(n49) );
+  DFF_X1 \State_reg[0]  ( .D(n71), .CK(clk), .Q(State[0]), .QN(n47) );
+  AND2_X1 U33 ( .A1(n61), .A2(n44), .ZN(n28) );
+  BUF_X1 U34 ( .A(n66), .Z(n34) );
+  INV_X1 U35 ( .A(n36), .ZN(n29) );
+  BUF_X1 U36 ( .A(n43), .Z(n30) );
+  OR2_X2 U37 ( .A1(n33), .A2(n57), .ZN(n54) );
+  CLKBUF_X1 U38 ( .A(n41), .Z(n31) );
+  CLKBUF_X1 U39 ( .A(n67), .Z(n32) );
+  BUF_X1 U40 ( .A(n49), .Z(n36) );
+  CLKBUF_X1 U41 ( .A(n56), .Z(n33) );
+  CLKBUF_X1 U42 ( .A(State[0]), .Z(n35) );
+  AND2_X1 U43 ( .A1(n67), .A2(n37), .ZN(n45) );
+  OR2_X1 U44 ( .A1(n58), .A2(n59), .ZN(n38) );
+  OR2_X1 U45 ( .A1(n56), .A2(n57), .ZN(n39) );
+  NAND3_X1 U46 ( .A1(n38), .A2(n39), .A3(n55), .ZN(N9) );
+  AND3_X1 U47 ( .A1(State[0]), .A2(n67), .A3(n66), .ZN(n48) );
+  OR2_X1 U48 ( .A1(n58), .A2(n59), .ZN(n51) );
+  NAND2_X1 U49 ( .A1(n61), .A2(n60), .ZN(n64) );
+  NOR2_X1 U50 ( .A1(n41), .A2(clear), .ZN(n65) );
+  NOR2_X1 U51 ( .A1(State[0]), .A2(n69), .ZN(n46) );
+  INV_X1 U52 ( .A(twenty), .ZN(n60) );
+  INV_X1 U53 ( .A(ten), .ZN(n61) );
+  NAND4_X1 U54 ( .A1(n46), .A2(n45), .A3(n42), .A4(n34), .ZN(n40) );
+  NAND4_X1 U55 ( .A1(n46), .A2(n45), .A3(n42), .A4(n34), .ZN(n55) );
+  NAND4_X1 U56 ( .A1(n48), .A2(n36), .A3(n68), .A4(n30), .ZN(n41) );
+  AND3_X1 U57 ( .A1(N9), .A2(n62), .A3(n44), .ZN(n63) );
+  AOI21_X1 U58 ( .B1(n65), .B2(n64), .A(n63), .ZN(n71) );
+  INV_X1 U59 ( .A(clear), .ZN(n44) );
+  NAND2_X1 U60 ( .A1(twenty), .A2(n28), .ZN(n50) );
+  NAND4_X1 U61 ( .A1(State[4]), .A2(n66), .A3(n49), .A4(n47), .ZN(n58) );
+  INV_X1 U62 ( .A(State[2]), .ZN(n68) );
+  NAND2_X1 U63 ( .A1(n43), .A2(n42), .ZN(n59) );
+  NAND2_X1 U64 ( .A1(ten), .A2(n44), .ZN(n52) );
+  OAI22_X1 U65 ( .A1(n50), .A2(n51), .B1(n40), .B2(n52), .ZN(
+        clear_or_next_low[1]) );
+  NAND4_X1 U66 ( .A1(State[3]), .A2(n67), .A3(n49), .A4(n47), .ZN(n56) );
+  NAND2_X1 U67 ( .A1(n43), .A2(n42), .ZN(n57) );
+  NAND2_X1 U68 ( .A1(n28), .A2(n60), .ZN(n53) );
+  OAI222_X1 U69 ( .A1(n52), .A2(n51), .B1(n54), .B2(n50), .C1(n53), .C2(n40), 
+        .ZN(clear_or_next_high[2]) );
+  NOR2_X1 U70 ( .A1(n40), .A2(n50), .ZN(clear_or_next_low[2]) );
+  NAND4_X1 U71 ( .A1(n48), .A2(n36), .A3(n68), .A4(n43), .ZN(n62) );
+  OAI222_X1 U72 ( .A1(n54), .A2(n52), .B1(n53), .B2(n51), .C1(n62), .C2(n50), 
+        .ZN(clear_or_next_high[1]) );
+  OAI22_X1 U73 ( .A1(n54), .A2(n53), .B1(n41), .B2(n52), .ZN(
+        clear_or_next_high[0]) );
+  INV_X1 U74 ( .A(n31), .ZN(ready) );
+  NAND3_X1 U75 ( .A1(n32), .A2(n30), .A3(n34), .ZN(n70) );
+  NOR4_X1 U76 ( .A1(n70), .A2(n29), .A3(n35), .A4(n68), .ZN(return_sig) );
+  NOR4_X1 U77 ( .A1(n35), .A2(n36), .A3(State[2]), .A4(n70), .ZN(dispense) );
+endmodule
+

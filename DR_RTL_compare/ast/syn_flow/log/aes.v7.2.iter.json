@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/aes.v7.2.sv:1:16: error: expected ';'\nmodule contains the critical timing path through its composite field GF((2^4)^2) implementation.\n               ^\nsyn_flow/rtl/aes.v7.2.sv:1:17: error: use of undeclared identifier 'the'\nmodule contains the critical timing path through its composite field GF((2^4)^2) implementation.\n                ^~~\nsyn_flow/rtl/aes.v7.2.sv:1:29: error: expected ';'\nmodule contains the critical timing path through its composite field GF((2^4)^2) implementatio",
+  "target_version": "v7.2",
+  "relative_advantage": null
+}

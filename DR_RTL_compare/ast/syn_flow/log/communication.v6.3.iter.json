@@ -1,0 +1,240 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "communication",
+  "base_version": "v6",
+  "target_version": "v6.3",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "mixed",
+    "coverage_first": true,
+    "minor_index": 3
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.42,
+  "tns_before": -110.17,
+  "area_baseline": 2091.55805,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.341,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.42,
+      "path_coverage": 0.3571,
+      "fanout_proxy": 5,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/bit_count"
+      },
+      "read_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/count",
+        "uut_rx_block/data",
+        "uut_rx_block/data_out",
+        "uut_rx_block/done"
+      ],
+      "write_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/count",
+        "uut_rx_block/data",
+        "uut_rx_block/data_out",
+        "uut_rx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/count",
+        "uut_rx_block/data",
+        "uut_rx_block/data_out",
+        "uut_rx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0002",
+      "score": 0.3218,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.37,
+      "path_coverage": 0.3571,
+      "fanout_proxy": 5,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/bit_count"
+      },
+      "read_set": [
+        "uut_tx_block/bit_count",
+        "uut_tx_block/data",
+        "uut_tx_block/done",
+        "uut_tx_block/reg_count",
+        "uut_tx_block/serial_out"
+      ],
+      "write_set": [
+        "uut_tx_block/bit_count",
+        "uut_tx_block/data",
+        "uut_tx_block/done",
+        "uut_tx_block/reg_count",
+        "uut_tx_block/serial_out"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/bit_count",
+        "uut_tx_block/data",
+        "uut_tx_block/done",
+        "uut_tx_block/reg_count",
+        "uut_tx_block/serial_out"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.2299,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.42,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/count"
+      },
+      "read_set": [
+        "uut_rx_block/count",
+        "uut_rx_block/data_out"
+      ],
+      "write_set": [
+        "uut_rx_block/count",
+        "uut_rx_block/data_out"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/count",
+        "uut_rx_block/data_out"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.1958,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.25,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/done"
+      },
+      "read_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "write_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.0845,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/reg_count"
+      },
+      "read_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "write_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/communication.v6.3.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0002"
+    ],
+    "refined_level": 5,
+    "target_signal": "data_reg",
+    "pattern_id": "late_mux_select",
+    "lines_touched": 25,
+    "span_refined": {
+      "start_line": 58,
+      "end_line": 82
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0002",
+      "pattern": "data_reg",
+      "strategy": "late_mux_select",
+      "skill_source": "proposed",
+      "pattern_id": "late_mux_select"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.41,
+    "tns_after": -76.68,
+    "area": 2073.204042
+  },
+  "scoring": {
+    "wns_norm": -0.024999999999999883,
+    "tns_norm": -0.049261083743842485,
+    "area_norm": -0.008775280227101633,
+    "area_penalty": 0.0,
+    "score": -0.031057671344410055
+  },
+  "relative_advantage": 0.6729941874658644
+}

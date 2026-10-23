@@ -1,0 +1,63 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "ticket_machine",
+  "base_version": "v5",
+  "target_version": "v5.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.21,
+  "tns_before": -1.19,
+  "area_baseline": 78.203999,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/ticket_machine.v5.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "NextState",
+    "pattern_id": "mux_tree_restructure_condition_precompute",
+    "lines_touched": 7,
+    "span_refined": {
+      "start_line": 62,
+      "end_line": 71
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "mux_tree_restructure_condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.2,
+    "tns_after": -1.08,
+    "area": 87.513999
+  },
+  "scoring": {
+    "wns_norm": 0.13043478260869565,
+    "tns_norm": 0.12903225806451607,
+    "area_norm": 0.11904762056988931,
+    "area_penalty": 0.5,
+    "score": 0.6282358247124118
+  },
+  "relative_advantage": 1.5224133427015392
+}

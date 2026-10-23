@@ -1,0 +1,58 @@
+{
+  "design": "aes",
+  "major_version": "v5",
+  "extracted_at": "2026-06-07T22:10:03",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "pass",
+      "score": -0.3154212921474366,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v5.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.3",
+      "sec": "pass",
+      "score": -0.3154212921474366,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v5.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "steps_ff",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.1",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": "step_key",
+      "strategy": "common_subexpression",
+      "skill_source": "proposed",
+      "version": "v5.3",
+      "relative_advantage": 0.0
+    }
+  ]
+}

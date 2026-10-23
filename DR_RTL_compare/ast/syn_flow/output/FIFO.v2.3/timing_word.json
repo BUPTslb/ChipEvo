@@ -1,0 +1,13 @@
+{
+    "write_uut/wbin -> write_uut/wbin": -0.61,
+    "write_uut/wbin -> write_uut/wrptr": -0.61,
+    "write_uut/wbin -> write_uut/full": -0.59,
+    "write_uut/wren -> mem_uut/FIFO": -0.5,
+    "write_uut/wbin -> mem_uut/FIFO": -0.47,
+    "write_uut/full -> write_uut/wren": -0.24,
+    "write_uut/full -> write_uut/current_state": -0.24,
+    "write_uut/current_state -> write_uut/current_state": -0.14,
+    "w2r_uut/w0 -> w2r_uut/sync_wrptr": -0.08,
+    "write_uut/wrptr -> w2r_uut/w0": -0.08,
+    "flush_uut/f0 -> flush_uut/sync_flush": -0.04
+}

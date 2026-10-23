@@ -1,0 +1,72 @@
+{
+  "design": "FIFO",
+  "major_version": "v4",
+  "extracted_at": "2026-06-13T22:46:59",
+  "minors": [
+    {
+      "version": "v4.1",
+      "sec": "pass",
+      "score": -0.06976332900628175,
+      "promoted": false,
+      "relative_advantage": 0.5773502691896255
+    },
+    {
+      "version": "v4.2",
+      "sec": "pass",
+      "score": -0.10322336647762251,
+      "promoted": false,
+      "relative_advantage": -1.7320508075688776
+    },
+    {
+      "version": "v4.3",
+      "sec": "pass",
+      "score": -0.06976332900628175,
+      "promoted": false,
+      "relative_advantage": 0.5773502691896255
+    },
+    {
+      "version": "v4.4",
+      "sec": "pass",
+      "score": -0.06976332900628175,
+      "promoted": false,
+      "relative_advantage": 0.5773502691896255
+    },
+    {
+      "version": "v4.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "write_uut/wren",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v4.1",
+      "relative_advantage": 0.5773502691896255
+    },
+    {
+      "pattern": "wbincmp",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v4.2",
+      "relative_advantage": -1.7320508075688776
+    },
+    {
+      "pattern": "wbin",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v4.3",
+      "relative_advantage": 0.5773502691896255
+    },
+    {
+      "pattern": "w0",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v4.4",
+      "relative_advantage": 0.5773502691896255
+    }
+  ]
+}

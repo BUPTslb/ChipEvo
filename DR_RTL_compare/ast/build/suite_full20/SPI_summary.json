@@ -1,0 +1,7 @@
+{
+  "design": "SPI",
+  "status": "done",
+  "best_version": "v9",
+  "best_score": -0.31336610096209455,
+  "end_reason": "max_major_reached"
+}

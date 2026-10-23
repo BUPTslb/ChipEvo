@@ -1,0 +1,95 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "FIFO",
+  "base_version": "v6",
+  "target_version": "v6.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.64,
+  "tns_before": -2065.62,
+  "area_baseline": 36060.82277,
+  "critical_subtrees": [
+    {
+      "id": "st_0004",
+      "score": 0.0982,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.125,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "w2r_uut/w0"
+      },
+      "read_set": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "write_set": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/FIFO.v6.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0004"
+    ],
+    "refined_level": 6,
+    "target_signal": "w2r_uut/w0",
+    "pattern_id": "logic_tree_balance",
+    "lines_touched": 12,
+    "span_refined": {
+      "start_line": 58,
+      "end_line": 70
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0004",
+      "pattern": "w2r_uut/w0",
+      "strategy": "logic_tree_balance",
+      "skill_source": "proposed",
+      "pattern_id": "logic_tree_balance"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": null,
+    "tns_after": null,
+    "area": null
+  },
+  "scoring": {
+    "wns_norm": null,
+    "tns_norm": null,
+    "area_norm": null,
+    "area_penalty": 0.0,
+    "score": null
+  },
+  "relative_advantage": null
+}

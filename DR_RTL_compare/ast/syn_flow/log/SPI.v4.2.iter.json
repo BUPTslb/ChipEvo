@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/SPI.v4.2.v:180:13: error: expected statement\n            wire load_condition = ~state_is_data;\n            ^~~~\nsyn_flow/rtl/SPI.v4.2.v:180:18: error: use of undeclared identifier 'load_condition'\n            wire load_condition = ~state_is_data;\n                 ^~~~~~~~~~~~~~\nsyn_flow/rtl/SPI.v4.2.v:181:13: error: expected statement\n            wire shift_condition = state_is_data & sck_high;\n            ^~~~\nsyn_flow/rtl/SPI.v4.2.v:181:18: error: use of undeclared identifier 'shi",
+  "target_version": "v4.2",
+  "relative_advantage": null
+}

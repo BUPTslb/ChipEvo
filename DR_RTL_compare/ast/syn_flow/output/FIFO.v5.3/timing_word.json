@@ -1,0 +1,9 @@
+{
+    "write_uut/wbin -> write_uut/wrptr": -0.62,
+    "write_uut/wbin -> write_uut/wbin": -0.62,
+    "write_uut/wbin -> write_uut/full": -0.6,
+    "write_uut/wren -> mem_uut/FIFO": -0.52,
+    "write_uut/full -> write_uut/wren": -0.21,
+    "write_uut/wrptr -> w2r_uut/w0": -0.08,
+    "w2r_uut/w0 -> w2r_uut/sync_wrptr": -0.04
+}

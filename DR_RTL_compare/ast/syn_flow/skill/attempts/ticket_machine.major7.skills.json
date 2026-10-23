@@ -1,0 +1,79 @@
+{
+  "design": "ticket_machine",
+  "major_version": "v7",
+  "extracted_at": "2026-06-14T12:43:38",
+  "minors": [
+    {
+      "version": "v7.1",
+      "sec": "pass",
+      "score": 0.05759116409537171,
+      "promoted": false,
+      "relative_advantage": -0.6905294884796919
+    },
+    {
+      "version": "v7.2",
+      "sec": "pass",
+      "score": 0.2247051832443546,
+      "promoted": false,
+      "relative_advantage": 0.05400963919472404
+    },
+    {
+      "version": "v7.3",
+      "sec": "pass",
+      "score": -0.005069124560967447,
+      "promoted": false,
+      "relative_advantage": -0.9696983870173213
+    },
+    {
+      "version": "v7.4",
+      "sec": "pass",
+      "score": 0.5731030143032513,
+      "promoted": false,
+      "relative_advantage": 1.606218236302289
+    },
+    {
+      "version": "v7.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.1",
+      "relative_advantage": -0.6905294884796919
+    },
+    {
+      "pattern": "State bits",
+      "strategy": "direct_indexing_for_one_hot",
+      "skill_source": "proposed",
+      "version": "v7.2",
+      "relative_advantage": 0.05400963919472404
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.3",
+      "relative_advantage": -0.9696983870173213
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.4",
+      "relative_advantage": 1.606218236302289
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.5",
+      "relative_advantage": null
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "design": "cpu_fsm",
+  "major_version": "v1",
+  "extracted_at": "2026-06-13T01:00:47",
+  "minors": [
+    {
+      "version": "v1.1",
+      "sec": "pass",
+      "score": 0.030943807540859243,
+      "promoted": false,
+      "relative_advantage": -0.6094148771128391
+    },
+    {
+      "version": "v1.2",
+      "sec": "pass",
+      "score": 0.023447081989917448,
+      "promoted": false,
+      "relative_advantage": -0.8004894356090647
+    },
+    {
+      "version": "v1.3",
+      "sec": "pass",
+      "score": 0.11017090027932151,
+      "promoted": false,
+      "relative_advantage": 1.409904312721904
+    },
+    {
+      "version": "v1.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v1.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v1.1",
+      "relative_advantage": -0.6094148771128391
+    },
+    {
+      "pattern": "state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v1.2",
+      "relative_advantage": -0.8004894356090647
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v1.3",
+      "relative_advantage": 1.409904312721904
+    },
+    {
+      "pattern": "alu_op",
+      "strategy": "one_hot_pre_decode",
+      "skill_source": "proposed",
+      "version": "v1.4",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "opcode",
+      "strategy": "one_hot_pre_decode",
+      "skill_source": "proposed",
+      "version": "v1.5",
+      "relative_advantage": null
+    }
+  ]
+}

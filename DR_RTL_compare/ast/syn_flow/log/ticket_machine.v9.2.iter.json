@@ -1,0 +1,81 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "ticket_machine",
+  "base_version": "v9",
+  "target_version": "v9.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.23,
+  "tns_before": -1.24,
+  "area_baseline": 78.203999,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/ticket_machine.v9.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "state_conditions",
+      "output_logic",
+      "next_state_logic"
+    ],
+    "refined_level": 5,
+    "target_signal": [
+      "state_is_rdy",
+      "state_is_disp",
+      "state_is_rtn",
+      "state_is_bill10",
+      "state_is_bill20",
+      "state_is_bill30",
+      "bill"
+    ],
+    "pattern_id": "direct_indexing_for_one_hot",
+    "lines_touched": 15,
+    "span_refined": {
+      "start_line": 22,
+      "end_line": 30
+    },
+    "optimization_details": {
+      "strategy": "direct_indexing_for_one_hot",
+      "confidence": "medium",
+      "expected_wns_improvement": "0.05-0.10ns",
+      "expected_tns_improvement": "0.20-0.40ns",
+      "risk": "low",
+      "description": "Replaced equality comparisons with direct bit indexing for one-hot state encoding. For bill output, replaced OR of three equality checks with OR of three state bits. This reduces comparator logic and improves timing for state decode paths."
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "state_conditions",
+      "pattern": "state_is_rdy+state_is_disp+state_is_rtn+state_is_bill10+state_is_bill20+state_is_bill30+bill",
+      "strategy": "direct_indexing_for_one_hot",
+      "skill_source": "proposed",
+      "pattern_id": "direct_indexing_for_one_hot"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.14,
+    "tns_after": -0.82,
+    "area": 62.243999
+  },
+  "scoring": {
+    "wns_norm": 0.3913043478260869,
+    "tns_norm": 0.33870967741935487,
+    "area_norm": -0.20408163526266726,
+    "area_penalty": 0.0,
+    "score": 0.28358831572041754
+  },
+  "relative_advantage": -0.07171059572153585
+}

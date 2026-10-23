@@ -1,0 +1,54 @@
+{
+  "design": "DSP",
+  "major_version": "v6",
+  "extracted_at": "2026-06-13T17:51:30",
+  "minors": [
+    {
+      "version": "v6.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v6.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v6.3",
+      "sec": "pass",
+      "score": 0.5151148375759587,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v6.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v6.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "pRegIn",
+      "strategy": "carry_select_split",
+      "skill_source": "proposed",
+      "version": "v6.3",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": "cReg/data",
+      "strategy": "register_duplication",
+      "skill_source": "proposed",
+      "version": "v6.4",
+      "relative_advantage": null
+    }
+  ]
+}

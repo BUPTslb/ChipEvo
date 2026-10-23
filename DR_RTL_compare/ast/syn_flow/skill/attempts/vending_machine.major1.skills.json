@@ -1,0 +1,38 @@
+{
+  "design": "vending_machine",
+  "major_version": "v1",
+  "extracted_at": "2026-06-14T14:40:03",
+  "minors": [
+    {
+      "version": "v1.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v1.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v1.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v1.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v1.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    }
+  ],
+  "patterns": []
+}

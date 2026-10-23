@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/DSP.v2.5.v:1:10: error: expected ';'\nmodule by precomputing both add and sub results and selecting.\n         ^\nsyn_flow/rtl/DSP.v2.5.v:1:11: error: use of undeclared identifier 'precomputing'\nmodule by precomputing both add and sub results and selecting.\n          ^~~~~~~~~~~~\nsyn_flow/rtl/DSP.v2.5.v:1:28: error: expected ';'\nmodule by precomputing both add and sub results and selecting.\n                           ^\nsyn_flow/rtl/DSP.v2.5.v:1:33: error: expected a declaration name\nmo",
+  "target_version": "v2.5",
+  "relative_advantage": null
+}

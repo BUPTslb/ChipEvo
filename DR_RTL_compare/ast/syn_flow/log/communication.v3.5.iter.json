@@ -1,0 +1,65 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "communication",
+  "base_version": "v3",
+  "target_version": "v3.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.44,
+  "tns_before": -109.7,
+  "area_baseline": 2091.55805,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/communication.v3.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "tx_block",
+      "rx_block",
+      "sync_serial_communication_tx_rx"
+    ],
+    "refined_level": 5,
+    "target_signal": "sel, done, count>=bit_count",
+    "pattern_id": "input_registration_mux_restructure_register_duplication",
+    "lines_touched": 25,
+    "span_refined": {
+      "start_line": 1,
+      "end_line": 218
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "tx_block",
+      "pattern": "sel, done, count>=bit_count",
+      "strategy": "input_registration_mux_restructure_register_duplication",
+      "skill_source": "proposed",
+      "pattern_id": "input_registration_mux_restructure_register_duplication"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.41,
+    "tns_after": -76.33,
+    "area": 2152.206045
+  },
+  "scoring": {
+    "wns_norm": -0.024999999999999883,
+    "tns_norm": -0.04447181171319103,
+    "area_norm": 0.028996563112364874,
+    "area_penalty": 0.0,
+    "score": -0.02371564963276207
+  },
+  "relative_advantage": 1.4404456413270692
+}

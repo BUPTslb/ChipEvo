@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/i2c.v5.5.v:545:32: error: identifier 'c_state' used before its declaration\n        wire state_is_start  = c_state[0]; // ST_START == 5'b0_0001\n                               ^~~~~~~\nsyn_flow/rtl/i2c.v5.5.v:585:19: note: declared here\n        reg [4:0] c_state; // synopsis enum_state\n                  ^\nsyn_flow/rtl/i2c.v5.5.v:546:32: error: identifier 'c_state' used before its declaration\n        wire state_is_read   = c_state[1]; // ST_READ  == 5'b0_0010\n                           ",
+  "target_version": "v5.5",
+  "relative_advantage": null
+}

@@ -1,0 +1,79 @@
+{
+  "design": "controller",
+  "major_version": "v5",
+  "extracted_at": "2026-06-08T07:47:36",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": -0.5000000000000001
+    },
+    {
+      "version": "v5.2",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": -0.5000000000000001
+    },
+    {
+      "version": "v5.3",
+      "sec": "pass",
+      "score": 0.537382741745787,
+      "promoted": false,
+      "relative_advantage": 2.0
+    },
+    {
+      "version": "v5.4",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": -0.5000000000000001
+    },
+    {
+      "version": "v5.5",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": -0.5000000000000001
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "key_en",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.1",
+      "relative_advantage": -0.5000000000000001
+    },
+    {
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.2",
+      "relative_advantage": -0.5000000000000001
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "skill_source": "proposed",
+      "version": "v5.3",
+      "relative_advantage": 2.0
+    },
+    {
+      "pattern": "rd_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.4",
+      "relative_advantage": -0.5000000000000001
+    },
+    {
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.5",
+      "relative_advantage": -0.5000000000000001
+    }
+  ]
+}

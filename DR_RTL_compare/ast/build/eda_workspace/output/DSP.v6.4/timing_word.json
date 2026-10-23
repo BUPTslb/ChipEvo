@@ -1,0 +1,14 @@
+{
+    "b1Reg/data -> mulReg/data": -2.62,
+    "dReg/data -> b1Reg/data": -1.86,
+    "a1Reg/data -> mulReg/data": -1.78,
+    "opReg/data -> pReg/data": -1.28,
+    "opReg/data -> carryOutReg/data": -1.16,
+    "opReg/data -> b1Reg/data": -0.4,
+    "opReg/data -> opReg/data": -0.23,
+    "carryInReg/data -> carryInReg/data": -0.17,
+    "a1Reg/data -> a1Reg/data": -0.14,
+    "dReg/data -> dReg/data": -0.13,
+    "cReg_low/data -> cReg_low/data": -0.11,
+    "cReg_high/data -> cReg_high/data": -0.11
+}

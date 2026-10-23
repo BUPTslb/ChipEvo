@@ -1,0 +1,63 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "aes",
+  "base_version": "v0",
+  "target_version": "v0.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.7,
+  "tns_before": -913.49,
+  "area_baseline": 33755.134217,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/aes.v0.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "sbox"
+    ],
+    "refined_level": 5,
+    "target_signal": "o_data",
+    "pattern_id": "logic_tree_balance_gf",
+    "lines_touched": 260,
+    "span_refined": {
+      "start_line": 176,
+      "end_line": 436
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "sbox",
+      "pattern": "o_data",
+      "strategy": "logic_tree_balance_gf",
+      "skill_source": "proposed",
+      "pattern_id": "logic_tree_balance_gf"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.9,
+    "tns_after": -1149.53,
+    "area": 21849.771974
+  },
+  "scoring": {
+    "wns_norm": -0.2857142857142858,
+    "tns_norm": -0.2583936332089021,
+    "area_norm": -0.3526978197291284,
+    "area_penalty": 0.0,
+    "score": -0.28619958743962787
+  },
+  "relative_advantage": -1.414213562373095
+}

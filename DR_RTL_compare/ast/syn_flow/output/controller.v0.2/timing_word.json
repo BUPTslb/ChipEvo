@@ -1,0 +1,15 @@
+{
+    "state -> state": -0.36,
+    "state -> rd_count": -0.36,
+    "aes_mode -> col_sel": -0.17,
+    "aes_mode -> col_en": -0.16,
+    "aes_mode -> key_en": -0.14,
+    "aes_mode -> key_sel": -0.14,
+    "aes_mode -> key_derivation_en": -0.06,
+    "aes_mode -> iv_cnt_en": -0.05,
+    "aes_mode -> iv_cnt_sel": -0.05,
+    "aes_mode -> encrypt_decrypt": -0.04,
+    "aes_mode -> mode_cbc": -0.02,
+    "aes_mode -> mode_ctr": -0.01,
+    "start -> key_init": 0.1
+}

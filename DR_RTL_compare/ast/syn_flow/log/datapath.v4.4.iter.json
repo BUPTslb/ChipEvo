@@ -1,0 +1,255 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "datapath",
+  "base_version": "v4",
+  "target_version": "v4.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.91,
+  "tns_before": -521.48,
+  "area_baseline": 12136.782068,
+  "critical_subtrees": [
+    {
+      "id": "st_0004",
+      "score": 0.308,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.58,
+      "path_coverage": 0.0213,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00236",
+        "start_line": 236,
+        "end_line": 278,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "iv"
+      ],
+      "write_set": [
+        "iv"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "iv"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.2472,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": -0.34,
+      "path_coverage": 0.0426,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00976",
+        "start_line": 976,
+        "end_line": 976,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "col_bus",
+        "enc_dec",
+        "key_bus"
+      ],
+      "write_set": [
+        "col_bus",
+        "enc_dec",
+        "key_bus"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "col_bus",
+        "enc_dec",
+        "key_bus"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0007",
+      "score": 0.2472,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.34,
+      "path_coverage": 0.0426,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00327",
+        "start_line": 327,
+        "end_line": 344,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "col_bus",
+        "col_sel_host",
+        "sbox_sel"
+      ],
+      "write_set": [
+        "col_bus",
+        "col_sel_host",
+        "sbox_sel"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "col_bus",
+        "col_sel_host",
+        "sbox_sel"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0006",
+      "score": 0.229,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": -0.34,
+      "path_coverage": 0.0213,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00398",
+        "start_line": 398,
+        "end_line": 410,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "col_bus",
+        "key_gen"
+      ],
+      "write_set": [
+        "col_bus",
+        "key_gen"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "col_bus",
+        "key_gen"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0008",
+      "score": 0.229,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": -0.34,
+      "path_coverage": 0.0213,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00456",
+        "start_line": 456,
+        "end_line": 457,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "bypass_rk",
+        "iv_bus"
+      ],
+      "write_set": [
+        "bypass_rk",
+        "iv_bus"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "bypass_rk",
+        "iv_bus"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/datapath.v4.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0004"
+    ],
+    "refined_level": 5,
+    "target_signal": "iv[3]",
+    "pattern_id": "late_mux_select",
+    "lines_touched": 8,
+    "span_refined": {
+      "start_line": 236,
+      "end_line": 278
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0004",
+      "pattern": "iv[3]",
+      "strategy": "late_mux_select",
+      "skill_source": "proposed",
+      "pattern_id": "late_mux_select"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.89,
+    "tns_after": -509.06,
+    "area": 11954.838071
+  },
+  "scoring": {
+    "wns_norm": -0.011363636363636374,
+    "tns_norm": 0.00849207276693537,
+    "area_norm": -0.014991123345595556,
+    "area_penalty": 0.0,
+    "score": -0.004958261215230141
+  },
+  "relative_advantage": 1.7320508075688774
+}

@@ -1,0 +1,65 @@
+{
+  "design": "controller",
+  "major_version": "v0",
+  "extracted_at": "2026-06-08T05:31:43",
+  "minors": [
+    {
+      "version": "v0.1",
+      "sec": "pass",
+      "score": 0.5393662726538453,
+      "promoted": false,
+      "relative_advantage": 1.4138876129141806
+    },
+    {
+      "version": "v0.2",
+      "sec": "pass",
+      "score": 0.04545470820341848,
+      "promoted": false,
+      "relative_advantage": -0.6806500137318103
+    },
+    {
+      "version": "v0.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v0.4",
+      "sec": "pass",
+      "score": 0.03305406365536691,
+      "promoted": false,
+      "relative_advantage": -0.7332375991823702
+    },
+    {
+      "version": "v0.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.1",
+      "relative_advantage": 1.4138876129141806
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.2",
+      "relative_advantage": -0.6806500137318103
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "skill_source": "proposed",
+      "version": "v0.4",
+      "relative_advantage": -0.7332375991823702
+    }
+  ]
+}

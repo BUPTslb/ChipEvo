@@ -1,0 +1,79 @@
+{
+  "design": "ticket_machine",
+  "major_version": "v3",
+  "extracted_at": "2026-06-14T11:39:48",
+  "minors": [
+    {
+      "version": "v3.1",
+      "sec": "pass",
+      "score": 0.5369075055898603,
+      "promoted": false,
+      "relative_advantage": 0.4000224385145167
+    },
+    {
+      "version": "v3.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v3.3",
+      "sec": "pass",
+      "score": 0.05759116409537171,
+      "promoted": false,
+      "relative_advantage": -1.7180638027868655
+    },
+    {
+      "version": "v3.4",
+      "sec": "pass",
+      "score": 0.5731030143032513,
+      "promoted": false,
+      "relative_advantage": 0.5599694346125398
+    },
+    {
+      "version": "v3.5",
+      "sec": "pass",
+      "score": 0.6179329939874808,
+      "promoted": false,
+      "relative_advantage": 0.7580719296598089
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "State",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v3.1",
+      "relative_advantage": 0.4000224385145167
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "direct_bit_assignment_with_precomputed_conditions",
+      "skill_source": "proposed",
+      "version": "v3.2",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v3.3",
+      "relative_advantage": -1.7180638027868655
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "parallel_evaluation_with_balanced_mux",
+      "skill_source": "proposed",
+      "version": "v3.4",
+      "relative_advantage": 0.5599694346125398
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v3.5",
+      "relative_advantage": 0.7580719296598089
+    }
+  ]
+}

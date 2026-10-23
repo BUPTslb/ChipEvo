@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/i2c.v8.4.v:548:29: error: identifier 'c_state' used before its declaration\n        wire shift_in_wr = (c_state == ST_WRITE) & core_ack_and_not_done;\n                            ^~~~~~~\nsyn_flow/rtl/i2c.v8.4.v:580:19: note: declared here\n        reg [4:0] c_state; // synopsis enum_state\n                  ^\nsyn_flow/rtl/i2c.v8.4.v:549:29: error: identifier 'c_state' used before its declaration\n        wire shift_in_rd = (c_state == ST_READ) & core_ack;\n                            ^~~~",
+  "target_version": "v8.4",
+  "relative_advantage": null
+}

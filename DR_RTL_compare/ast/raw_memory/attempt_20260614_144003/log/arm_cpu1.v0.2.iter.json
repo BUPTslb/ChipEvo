@@ -1,0 +1,5 @@
+{
+  "error": "LLM did not return extractable Verilog after retries",
+  "target_version": "v0.2",
+  "relative_advantage": null
+}

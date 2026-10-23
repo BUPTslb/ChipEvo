@@ -1,0 +1,145 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "SPI",
+  "base_version": "v4",
+  "target_version": "v4.1",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 1
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.32,
+  "tns_before": -35.54,
+  "area_baseline": 1748.41798,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.4922,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.32,
+      "path_coverage": 0.9,
+      "fanout_proxy": 9,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/current_state"
+      },
+      "read_set": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/current_state",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "write_set": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/current_state",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/current_state",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.1823,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.31,
+      "path_coverage": 0.1,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/data_count"
+      },
+      "read_set": [
+        "uut_master/data_count"
+      ],
+      "write_set": [
+        "uut_master/data_count"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/data_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/SPI.v4.1.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "sck",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 4,
+    "span_refined": {
+      "start_line": 155,
+      "end_line": 196
+    },
+    "description": "Replaced registered data_end dependency in sck output mux (DATA state) with direct combinational condition sck_ending = state_is_data_fsm & sck_high & count_is_max, computed from L6 pre-decoded wires. Eliminates data_end register (Tcq + setup) from the critical path to sck output. data_end remains registered for data-path use (data_save, data_count). Note: learned skill confirms condition_precompute on sck has mean A_i=1.689 with SEC rate 1/1."
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "sck",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": -0.46,
+    "tns_after": -50.21,
+    "area": 1692.29198
+  },
+  "scoring": {
+    "wns_norm": -0.7692307692307693,
+    "tns_norm": -0.7811280595956013,
+    "area_norm": -0.03210101968866734,
+    "area_penalty": 0.0,
+    "score": -0.6628253584271452
+  },
+  "relative_advantage": null
+}

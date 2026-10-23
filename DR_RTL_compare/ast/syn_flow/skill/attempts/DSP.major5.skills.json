@@ -1,0 +1,79 @@
+{
+  "design": "DSP",
+  "major_version": "v5",
+  "extracted_at": "2026-06-13T17:30:15",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.3",
+      "sec": "pass",
+      "score": -0.0036042506992150147,
+      "promoted": false,
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "version": "v5.4",
+      "sec": "pass",
+      "score": -0.0036042506992150147,
+      "promoted": false,
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "version": "v5.5",
+      "sec": "pass",
+      "score": 0.010187173510855666,
+      "promoted": false,
+      "relative_advantage": 1.4142135623730951
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "pRegIn",
+      "strategy": "carry_select_style_add_sub",
+      "skill_source": "proposed",
+      "version": "v5.1",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "mulOut",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "version": "v5.2",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "pRegIn",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "version": "v5.3",
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "pattern": "carryInRegIn",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.4",
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "pattern": "Z, X",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v5.5",
+      "relative_advantage": 1.4142135623730951
+    }
+  ]
+}

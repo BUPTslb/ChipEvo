@@ -1,0 +1,15 @@
+{
+    "c0/opc -> x0/regO": -0.38,
+    "c0/opc -> x0/regR": -0.38,
+    "c0/pha -> c0/_rwe": -0.37,
+    "c0/pha -> c0/ireg": -0.37,
+    "c0/pha -> c0/_bra": -0.34,
+    "c0/opc -> x0/CC": -0.34,
+    "c0/pha -> c0/opc": -0.33,
+    "c0/pha -> c0/rwe": -0.31,
+    "c0/pha -> c0/_rwa": -0.28,
+    "c0/pha -> c0/bra": -0.26,
+    "c0/pha -> c0/rwa": -0.25,
+    "c0/pha -> c0/rra": -0.2,
+    "c0/pha -> c0/pha": -0.18
+}

@@ -1,0 +1,183 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "SPI",
+  "base_version": "v4",
+  "target_version": "v4.3",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "mixed",
+    "coverage_first": true,
+    "minor_index": 3
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.32,
+  "tns_before": -35.54,
+  "area_baseline": 1748.41798,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.4922,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.32,
+      "path_coverage": 0.9,
+      "fanout_proxy": 9,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/current_state"
+      },
+      "read_set": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/current_state",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "write_set": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/current_state",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/current_state",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.1823,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.31,
+      "path_coverage": 0.1,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/data_count"
+      },
+      "read_set": [
+        "uut_master/data_count"
+      ],
+      "write_set": [
+        "uut_master/data_count"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/data_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/SPI.v4.3.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "spi_slave/next_state",
+    "pattern_id": "condition_precompute_and_mux_tree_restructure",
+    "lines_touched": 52,
+    "span_refined": {
+      "start_line": 290,
+      "end_line": 460
+    },
+    "changes": [
+      {
+        "signal": "spi_slave/next_state",
+        "description": "Added precomputed state conditions (state_is_idle, state_is_data, state_is_disable) and restructured next_state from raw case(current_state) with full equality comparisons to case(1'b1) with precomputed one-hot selects. Also precomputed next_data_end from combinational data_count to avoid registered data_end on FSM critical path.",
+        "level": 5,
+        "pattern": "condition_precompute",
+        "sec_risk": "low",
+        "learned_confidence": "high (6/6 SEC for next_state)"
+      },
+      {
+        "signal": "spi_slave/data_count",
+        "description": "Restructured data_count update to use precomputed state_is_data condition with simplified mux tree: single ternary (state_is_data & sck) ? (count_is_63 ? 0 : count+1) : 0 instead of nested if-else with three comparison levels.",
+        "level": 5,
+        "pattern": "mux_tree_restructure",
+        "sec_risk": "low",
+        "learned_confidence": "medium"
+      },
+      {
+        "signal": "spi_slave/data_end",
+        "description": "Precomputed next_data_end = state_is_data & sck & count_is_63 as combinational wire, used directly in data_end register update and FSM next_state logic.",
+        "level": 6,
+        "pattern": "condition_precompute",
+        "sec_risk": "low"
+      },
+      {
+        "signal": "spi_slave/miso",
+        "description": "Replaced case(current_state) output logic with default-then-override: miso = state_is_data & data_count_in_data & cmd_is_ff & data_out[31], eliminating mux tree overhead for default case.",
+        "level": 5,
+        "pattern": "mux_tree_restructure",
+        "sec_risk": "low"
+      },
+      {
+        "signal": "spi_master/sck",
+        "description": "Restructured master output logic from default-inside-case to default-then-override pattern with precomputed sck_val wire. Reduces redundant default assignments and enables synthesis mux optimization.",
+        "level": 5,
+        "pattern": "mux_tree_restructure",
+        "sec_risk": "low"
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "spi_slave/next_state",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute_and_mux_tree_restructure"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.28,
+    "tns_after": -31.19,
+    "area": 1685.375987
+  },
+  "scoring": {
+    "wns_norm": -0.07692307692307698,
+    "tns_norm": -0.1064207165661582,
+    "area_norm": -0.03605659157085541,
+    "area_penalty": 0.0,
+    "score": -0.08111727799532217
+  },
+  "relative_advantage": 1.4087390398444528
+}

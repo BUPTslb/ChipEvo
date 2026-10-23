@@ -1,0 +1,188 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "UART",
+  "base_version": "v0",
+  "target_version": "v0.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.38,
+  "tns_before": -23.17,
+  "area_baseline": 1271.745991,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.2328,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.38,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_baud_rate/baud_count"
+      },
+      "read_set": [
+        "uut_baud_rate/baud_count",
+        "uut_baud_rate/baud_tick"
+      ],
+      "write_set": [
+        "uut_baud_rate/baud_count",
+        "uut_baud_rate/baud_tick"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_baud_rate/baud_count",
+        "uut_baud_rate/baud_tick"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.1801,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.29,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_baud_rate/baud_tick"
+      },
+      "read_set": [
+        "uut_baud_rate/baud_tick",
+        "uut_rx/data_save"
+      ],
+      "write_set": [
+        "uut_baud_rate/baud_tick",
+        "uut_rx/data_save"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_baud_rate/baud_tick",
+        "uut_rx/data_save"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.1151,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.12,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx/data_save"
+      },
+      "read_set": [
+        "uut_rx/data_save",
+        "uut_rx/ext_data_out"
+      ],
+      "write_set": [
+        "uut_rx/data_save",
+        "uut_rx/ext_data_out"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx/data_save",
+        "uut_rx/ext_data_out"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.0922,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.06,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_baud_rate/temp_en"
+      },
+      "read_set": [
+        "uut_baud_rate/delayed_en",
+        "uut_baud_rate/temp_en"
+      ],
+      "write_set": [
+        "uut_baud_rate/delayed_en",
+        "uut_baud_rate/temp_en"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_baud_rate/delayed_en",
+        "uut_baud_rate/temp_en"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/UART.v0.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "baud_count",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 8,
+    "span_refined": {
+      "start_line": 73,
+      "end_line": 97
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "baud_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.38,
+    "tns_after": -23.02,
+    "area": 1263.49999
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": 0.006473888649115327,
+    "area_norm": -0.0064839999955619895,
+    "area_penalty": 0.0,
+    "score": 0.001293261027856066
+  },
+  "relative_advantage": 1.0
+}

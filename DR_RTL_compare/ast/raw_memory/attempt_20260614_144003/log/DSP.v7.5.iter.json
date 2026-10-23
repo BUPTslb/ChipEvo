@@ -1,0 +1,71 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "DSP",
+  "base_version": "v7",
+  "target_version": "v7.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -2.58,
+  "tns_before": -157.53,
+  "area_baseline": 4755.281969,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/DSP.v7.5.json",
+  "rewrite": {
+    "subtree_ids": [],
+    "refined_level": 5,
+    "target_signal": [
+      "Z",
+      "X",
+      "sel_Z_low",
+      "sel_X_low",
+      "z_mux_low",
+      "z_mux_high",
+      "x_mux_low",
+      "x_mux_high"
+    ],
+    "pattern_id": "condition_precompute_mux_tree_restructure",
+    "lines_touched": 24,
+    "span_refined": {
+      "start_line": 85,
+      "end_line": 108
+    },
+    "optimization_notes": "Removed 4-bit one-hot decoded intermediate signals (opMode_3_2_dec, opMode_1_0_dec, opMode_3_2_dec_Z, opMode_1_0_dec_X) and replaced with direct 2-bit field comparisons. Simplified Z and X mux trees from 3-level (decode->pair mux->final OR select) to 2-level (direct condition->pair mux->final select). This reduces combinational depth and removes the OR logic from the critical path."
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "?",
+      "pattern": "Z+X+sel_Z_low+sel_X_low+z_mux_low+z_mux_high+x_mux_low+x_mux_high",
+      "strategy": "condition_precompute_mux_tree_restructure",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute_mux_tree_restructure"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": -2.61,
+    "tns_after": -149.32,
+    "area": 5241.529967
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": 0.034402483186756296,
+    "area_norm": 0.10225429347195053,
+    "area_penalty": 0.5,
+    "score": 0.5273790131361573
+  },
+  "relative_advantage": null
+}

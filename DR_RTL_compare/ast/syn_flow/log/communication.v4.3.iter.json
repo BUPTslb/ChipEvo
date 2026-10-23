@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/communication.v4.3.v:215:13: error: expected statement\n            wire [63:0] data_out_sel0 = 64'h0;\n            ^~~~\nsyn_flow/rtl/communication.v4.3.v:215:25: error: use of undeclared identifier 'data_out_sel0'\n            wire [63:0] data_out_sel0 = 64'h0;\n                        ^~~~~~~~~~~~~\nsyn_flow/rtl/communication.v4.3.v:216:13: error: expected statement\n            wire [63:0] data_out_sel1 = {56'h0, data_reg[7:0]};\n            ^~~~\nsyn_flow/rtl/communication.v4.3.v:216:25",
+  "target_version": "v4.3",
+  "relative_advantage": null
+}

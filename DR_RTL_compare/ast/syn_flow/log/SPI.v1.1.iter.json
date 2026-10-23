@@ -1,0 +1,228 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "SPI",
+  "base_version": "v1",
+  "target_version": "v1.1",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 1
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.32,
+  "tns_before": -34.72,
+  "area_baseline": 1748.41798,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.4766,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.32,
+      "path_coverage": 0.8889,
+      "fanout_proxy": 8,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/current_state"
+      },
+      "read_set": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "write_set": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/clock_count",
+        "uut_master/current_state",
+        "uut_master/data_count",
+        "uut_master/data_end",
+        "uut_master/data_in",
+        "uut_master/data_save",
+        "uut_slave/data_count",
+        "uut_slave/data_end"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.1852,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.31,
+      "path_coverage": 0.1111,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/data_count"
+      },
+      "read_set": [
+        "uut_master/data_count"
+      ],
+      "write_set": [
+        "uut_master/data_count"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/data_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/SPI.v1.1.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000",
+      "st_0001"
+    ],
+    "refined_level": 5,
+    "target_signal": [
+      "uut_master/current_state",
+      "uut_master/data_count",
+      "uut_slave/data_count",
+      "uut_slave/next_state"
+    ],
+    "pattern_id": [
+      "condition_precompute",
+      "one_hot_pre_decode",
+      "one_hot_pre_decode",
+      "condition_precompute"
+    ],
+    "lines_touched": 45,
+    "span_refined": [
+      {
+        "start_line": 95,
+        "end_line": 115
+      },
+      {
+        "start_line": 130,
+        "end_line": 155
+      },
+      {
+        "start_line": 200,
+        "end_line": 225
+      },
+      {
+        "start_line": 280,
+        "end_line": 330
+      }
+    ],
+    "changes": [
+      {
+        "subtree_id": "st_0000",
+        "refined_level": 5,
+        "target_signal": "uut_master/current_state",
+        "pattern_id": "condition_precompute",
+        "lines_touched": 12,
+        "span_refined": {
+          "start_line": 95,
+          "end_line": 115
+        },
+        "optimization": "Precomputed state_is_active condition for clock_count update"
+      },
+      {
+        "subtree_id": "st_0000",
+        "refined_level": 5,
+        "target_signal": "uut_master/data_count",
+        "pattern_id": "one_hot_pre_decode",
+        "lines_touched": 15,
+        "span_refined": {
+          "start_line": 130,
+          "end_line": 155
+        },
+        "optimization": "Replaced data_count == 63 with &data_count (one-hot comparison)"
+      },
+      {
+        "subtree_id": "st_0001",
+        "refined_level": 5,
+        "target_signal": "uut_slave/data_count",
+        "pattern_id": "one_hot_pre_decode",
+        "lines_touched": 10,
+        "span_refined": {
+          "start_line": 200,
+          "end_line": 225
+        },
+        "optimization": "Replaced data_count == 63 with &data_count (one-hot comparison)"
+      },
+      {
+        "subtree_id": "st_0000",
+        "refined_level": 5,
+        "target_signal": "uut_slave/next_state",
+        "pattern_id": "condition_precompute",
+        "lines_touched": 18,
+        "span_refined": {
+          "start_line": 280,
+          "end_line": 330
+        },
+        "optimization": "Precomputed data_count range conditions and restructured next_state logic"
+      }
+    ],
+    "expected_improvement": "WNS +5-15% (condition precompute), WNS +3-8% (one-hot comparison)",
+    "risk_assessment": "Low - all changes preserve interface and timing semantics"
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "uut_master/current_state+uut_master/data_count+uut_slave/data_count+uut_slave/next_state",
+      "strategy": [
+        "condition_precompute",
+        "one_hot_pre_decode",
+        "one_hot_pre_decode",
+        "condition_precompute"
+      ],
+      "skill_source": "proposed",
+      "pattern_id": [
+        "condition_precompute",
+        "one_hot_pre_decode",
+        "one_hot_pre_decode",
+        "condition_precompute"
+      ]
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.32,
+    "tns_after": -35.15,
+    "area": 1714.103985
+  },
+  "scoring": {
+    "wns_norm": -0.23076923076923075,
+    "tns_norm": -0.24689606243348694,
+    "area_norm": -0.019625739035239148,
+    "area_penalty": 0.0,
+    "score": -0.20474209809162167
+  },
+  "relative_advantage": -0.6297341852352302
+}

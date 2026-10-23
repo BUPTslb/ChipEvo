@@ -1,0 +1,65 @@
+2026-06-14 14:36:41.523341 (24522) main____ INFO    ----------------------------------------
+2026-06-14 14:36:41.523437 (24522) main____ INFO    Jasper version info
+2026-06-14 14:36:41.523453 (24522) main____ INFO      tool      : Jasper 2023.09
+2026-06-14 14:36:41.523466 (24522) main____ INFO      version   : 2023.09p002 64 bits
+2026-06-14 14:36:41.523475 (24522) main____ INFO      build date: 2023.11.21 13:10:30 UTC
+2026-06-14 14:36:41.523484 (24522) main____ INFO    ----------------------------------------
+2026-06-14 14:36:41.523491 (24522) main____ INFO    Runtime info:
+2026-06-14 14:36:41.523500 (24522) main____ INFO      platform  : Linux 4.15.0-213-generic x86_64
+2026-06-14 14:36:41.523512 (24522) main____ INFO      hostname  : linux2.cse.cuhk.edu.hk
+2026-06-14 14:36:41.523523 (24522) main____ INFO      pid       : 24522
+2026-06-14 14:36:41.523531 (24522) main____ INFO      arguments : '-style' 'windows' '-allow_unsupported_OS' '-sec' '-batch' '-tcl' '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/sec_vending_machine.v1.tcl'
+2026-06-14 14:36:41.523546 (24522) main____ INFO      locale    : UTF-8
+2026-06-14 14:36:41.523554 (24522) main____ INFO    ----------------------------------------
+2026-06-14 14:36:41.523562 (24522) main____ INFO    System resource limits info:
+2026-06-14 14:36:41.523571 (24522) main____ INFO      virtual memory: unlimited
+2026-06-14 14:36:41.523579 (24522) main____ INFO      cpu time      : unlimited
+2026-06-14 14:36:41.523593 (24522) main____ INFO      processes     : 1024
+2026-06-14 14:36:41.523608 (24522) main____ INFO      stack size    : 8388608 B
+2026-06-14 14:36:41.523619 (24522) main____ INFO      core file size: 0 B
+2026-06-14 14:36:41.523628 (24522) main____ INFO      open files    : 1048576
+2026-06-14 14:36:41.523637 (24522) main____ INFO      file size     : unlimited
+2026-06-14 14:36:41.523645 (24522) main____ INFO    ----------------------------------------
+2026-06-14 14:36:41.523653 (24522) main____ INFO    Memory statistics:
+2026-06-14 14:36:41.523677 (24522) main____ INFO      total physical memory  : 131913172 kB
+2026-06-14 14:36:41.523686 (24522) main____ INFO      free physical memory   : 113428484 kB
+2026-06-14 14:36:41.523693 (24522) main____ INFO      committed address space: 966396 kB
+2026-06-14 14:36:41.523701 (24522) main____ INFO    ----------------------------------------
+2026-06-14 14:36:41.525482 (24522) main____ INFO    Important environment variables:
+2026-06-14 14:36:41.525509 (24522) main____ INFO      CDS_LIC_FILE       : '5280@w11.ee.cuhk.edu.hk:5280@w21.ee.cuhk.edu.hk:5280@w01.ee.cuhk.edu.hk'
+2026-06-14 14:36:41.525523 (24522) main____ INFO      JASPER_HOME        : '/opt2/cadence/jasper_2023.09p002'
+2026-06-14 14:36:41.525533 (24522) main____ INFO      JASPER_INSTALL_DIR : '/opt2/cadence/jasper_2023.09p002'
+2026-06-14 14:36:41.525542 (24522) main____ INFO      JASPER_KERNEL_CHECK: '1'
+2026-06-14 14:36:41.525552 (24522) main____ INFO      JASPER_OS_CHECK    : '0'
+2026-06-14 14:36:41.525562 (24522) main____ INFO      LANG               : 'en_US.utf8'
+2026-06-14 14:36:41.525572 (24522) main____ INFO      LM_LICENSE_FILE    : '27020@w11.ee.cuhk.edu.hk:27020@w21.ee.cuhk.edu.hk:27020@w01.ee.cuhk.edu.hk'
+2026-06-14 14:36:41.525580 (24522) main____ INFO    ----------------------------------------
+2026-06-14 14:36:41.527105 (24522) lic_core INFO    Initializing license system ...
+2026-06-14 14:36:41.533598 (24522) lic_core INFO    ... license system initialized.
+2026-06-14 14:36:41.567483 (24522) lic__man INFO    Claim 'sec' for <ui>.
+2026-06-14 14:36:41.567538 (24522) lic_core INFO    (1) checking out 'jasper_sec' ...
+2026-06-14 14:37:41.651417 (24522) lic_core INFO    ... (1) checkout failed (error: -16) ("FLEXnet ERROR(-16, 0, 0): Cannot read data from license server system.")
+2026-06-14 14:37:41.651464 (24522) lic_core WARNING (1) slow license checkout attempt: 60.084 s
+2026-06-14 14:37:41.651484 (24522) lic_core INFO    (2) checking out 'jasper_fao' ...
+2026-06-14 14:37:41.670526 (24522) lic_core INFO    ... (2) checkout succeeded
+2026-06-14 14:37:41.717424 (24522) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2026-06-14 14:37:41.718978 (24522) session_ INFO    Analysis session with session id 'session_0' started (pid: 24557)
+2026-06-14 14:37:42.490426 (24522) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:35072)
+2026-06-14 14:37:42.818506 (24522) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2026-06-14 14:37:42.818696 (24522) lic__man INFO    Unclaim everything for 'session_0'.
+2026-06-14 14:37:42.824335 (24522) lic__man INFO    Claim 'sec' for 'session_0'.
+2026-06-14 14:37:44.362275 (24522) lic__man INFO    Unclaim everything for 'session_0'.
+2026-06-14 14:37:44.408957 (24522) lic__man INFO    Claim 'sec' for 'session_0'.
+2026-06-14 14:37:44.830278 (24522) lic__man INFO    Claim 'sec' for 'session_0'.
+2026-06-14 14:37:44.830318 (24522) lic__man INFO    Claim 'sec' for 'session_0/prove-1'.
+2026-06-14 14:37:47.298815 (24522) lic__man INFO    Unclaim everything for 'session_0/prove-2'.
+2026-06-14 14:37:48.511482 (24522) lic__man INFO    Unclaim everything for 'session_0/prove-4'.
+2026-06-14 14:37:48.572419 (24522) lic__man INFO    Unclaim everything for 'session_0/prove-3'.
+2026-06-14 14:37:48.826471 (24522) lic__man INFO    Unclaim everything for 'session_0/prove-1'.
+2026-06-14 14:37:49.825972 (24522) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2026-06-14 14:37:49.831789 (24522) main____ INFO    About to exit: request to exit with status 0 received from analysis session 'session_0'
+2026-06-14 14:37:49.925159 (24522) session_ INFO    Analysis session 'session_0' disconnected.
+2026-06-14 14:37:49.925313 (24522) lic__man INFO    Unclaim everything for 'session_0'.
+2026-06-14 14:37:49.949252 (24522) session_ INFO    Process for analysis session 'session_0' has exited with exit status '0'.
+2026-06-14 14:37:51.862847 (24522) lic_core INFO    (2) checkin jasper_fao
+2026-06-14 14:37:51.864794 (24522) main____ INFO    Exiting with status 0.

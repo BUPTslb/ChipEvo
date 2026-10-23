@@ -1,0 +1,164 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "communication",
+  "base_version": "v4",
+  "target_version": "v4.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.42,
+  "tns_before": -108.91,
+  "area_baseline": 2091.55805,
+  "critical_subtrees": [
+    {
+      "id": "st_0004",
+      "score": 0.1913,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.25,
+      "path_coverage": 0.125,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/done"
+      },
+      "read_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "write_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.0822,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.0625,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/reg_count"
+      },
+      "read_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "write_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/communication.v4.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0004",
+      "st_0005"
+    ],
+    "refined_level": 5,
+    "target_signals": [
+      "done",
+      "serial_clk"
+    ],
+    "pattern_ids": [
+      "condition_precompute",
+      "wire_extraction"
+    ],
+    "lines_touched": 12,
+    "span_refined": [
+      {
+        "start_line": 120,
+        "end_line": 135,
+        "subtree_id": "st_0004",
+        "target_signal": "done"
+      },
+      {
+        "start_line": 85,
+        "end_line": 88,
+        "subtree_id": "st_0005",
+        "target_signal": "serial_clk"
+      }
+    ],
+    "changes": [
+      {
+        "subtree_id": "st_0004",
+        "refined_level": 5,
+        "target_signal": "done",
+        "pattern_id": "condition_precompute",
+        "description": "Simplified done signal next-state computation by using done_condition directly instead of complex if-else branching",
+        "lines_touched": 8
+      },
+      {
+        "subtree_id": "st_0005",
+        "refined_level": 6,
+        "target_signal": "serial_clk",
+        "pattern_id": "wire_extraction",
+        "description": "Extracted condition (temp_reg_count != 0) into named wire for serial_clk generation",
+        "lines_touched": 4
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0004",
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "skill_source": "proposed",
+      "pattern_id": "unknown"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.42,
+    "tns_after": -110.17,
+    "area": 2025.590038
+  },
+  "scoring": {
+    "wns_norm": -0.049999999999999906,
+    "tns_norm": -0.5075259989053094,
+    "area_norm": -0.03154012961772686,
+    "area_penalty": 0.0,
+    "score": -0.20736511905951727
+  },
+  "relative_advantage": -0.751142505980449
+}

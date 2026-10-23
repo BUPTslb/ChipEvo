@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/../suite_orchestrator.py", line 15, in <module>
+    import suite_lib as sl
+ModuleNotFoundError: No module named 'suite_lib'

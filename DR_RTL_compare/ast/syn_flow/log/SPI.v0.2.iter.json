@@ -1,0 +1,136 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "SPI",
+  "base_version": "v0",
+  "target_version": "v0.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.26,
+  "tns_before": -28.19,
+  "area_baseline": 1748.41798,
+  "critical_subtrees": [
+    {
+      "id": "st_0002",
+      "score": 0.2104,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.25,
+      "path_coverage": 0.25,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_master/data_count"
+      },
+      "read_set": [
+        "uut_master/data_count",
+        "uut_master/data_end"
+      ],
+      "write_set": [
+        "uut_master/data_count",
+        "uut_master/data_end"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_master/data_count",
+        "uut_master/data_end"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/SPI.v0.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0002"
+    ],
+    "refined_level": 5,
+    "target_signal": "uut_master/data_count",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 14,
+    "span_refined": {
+      "start_line": 97,
+      "end_line": 132
+    },
+    "rewrites": [
+      {
+        "slice": "S1",
+        "description": "L5 assignment-slice: data_count update with pre-computed data_count_is_max wire replacing (data_count == 6'd63)",
+        "level": 5,
+        "transform": "condition_precompute"
+      },
+      {
+        "slice": "S2",
+        "description": "L5 assignment-slice: data_end update using direct pre-computed wire (data_count_is_max) instead of inline equality comparison",
+        "level": 5,
+        "transform": "condition_precompute"
+      },
+      {
+        "slice": "S3",
+        "description": "L5 assignment-slice: data_in MISO capture using pre-computed data_count_in_upper_half wire (data_count[5]) replacing (data_count >= 32) && (data_count <= 63)",
+        "level": 6,
+        "transform": "condition_precompute"
+      }
+    ],
+    "wires_added": [
+      {
+        "name": "data_count_is_max",
+        "definition": "(data_count == 6'd63)",
+        "consumers": [
+          "data_count next-value",
+          "data_end next-value"
+        ]
+      },
+      {
+        "name": "data_count_in_upper_half",
+        "definition": "data_count[5]",
+        "consumers": [
+          "data_in MISO capture guard"
+        ],
+        "note": "Replaces (data_count >= 32) && (data_count <= 63). For 6-bit unsigned, data_count[5]==1 implies count >= 32, and 6-bit max is 63, so <=63 is always true."
+      }
+    ],
+    "equivalence_preserved": true,
+    "interface_changed": false,
+    "latency_changed": false
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0002",
+      "pattern": "uut_master/data_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.26,
+    "tns_after": -28.19,
+    "area": 1748.41798
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": 0.0,
+    "area_norm": 0.0,
+    "area_penalty": 0.0,
+    "score": 0.0
+  },
+  "relative_advantage": 1.0314929108507853
+}

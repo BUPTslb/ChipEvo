@@ -1,0 +1,68 @@
+{
+  "design": "cpu_fsm",
+  "major_version": "v2",
+  "extracted_at": "2026-06-13T01:43:44",
+  "minors": [
+    {
+      "version": "v2.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v2.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v2.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v2.4",
+      "sec": "pass",
+      "score": 0.030698512857626,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v2.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "alu_result+PC",
+      "strategy": "late_mux_select",
+      "skill_source": "proposed",
+      "version": "v2.1",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "opcode",
+      "strategy": "one_hot_pre_decode",
+      "skill_source": "proposed",
+      "version": "v2.3",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "alu_result",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "version": "v2.4",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": "alu_op, reg_write, zero_en, alu_src_imm, branch_en",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.5",
+      "relative_advantage": null
+    }
+  ]
+}

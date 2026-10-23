@@ -1,0 +1,79 @@
+{
+  "design": "ticket_machine",
+  "major_version": "v8",
+  "extracted_at": "2026-06-14T12:58:17",
+  "minors": [
+    {
+      "version": "v8.1",
+      "sec": "pass",
+      "score": -0.009693877674976701,
+      "promoted": false,
+      "relative_advantage": -1.1397684332754012
+    },
+    {
+      "version": "v8.2",
+      "sec": "pass",
+      "score": 0.4919437151089356,
+      "promoted": false,
+      "relative_advantage": 0.95864776124919
+    },
+    {
+      "version": "v8.3",
+      "sec": "pass",
+      "score": -0.005069124560967447,
+      "promoted": false,
+      "relative_advantage": -1.1204224811982102
+    },
+    {
+      "version": "v8.4",
+      "sec": "pass",
+      "score": 0.5576920604895281,
+      "promoted": false,
+      "relative_advantage": 1.2336817592878158
+    },
+    {
+      "version": "v8.5",
+      "sec": "pass",
+      "score": 0.2789964789270075,
+      "promoted": false,
+      "relative_advantage": 0.06786139393660545
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "State",
+      "strategy": "tree_balance",
+      "skill_source": "proposed",
+      "version": "v8.1",
+      "relative_advantage": -1.1397684332754012
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "one_hot_fsm_parallel_and_or",
+      "skill_source": "proposed",
+      "version": "v8.2",
+      "relative_advantage": 0.95864776124919
+    },
+    {
+      "pattern": "State",
+      "strategy": "register_duplication",
+      "skill_source": "proposed",
+      "version": "v8.3",
+      "relative_advantage": -1.1204224811982102
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v8.4",
+      "relative_advantage": 1.2336817592878158
+    },
+    {
+      "pattern": "state_is_rdy+state_is_disp+state_is_rtn+state_is_bill10+state_is_bill20+state_is_bill30",
+      "strategy": "direct_indexing_for_one_hot",
+      "skill_source": "proposed",
+      "version": "v8.5",
+      "relative_advantage": 0.06786139393660545
+    }
+  ]
+}

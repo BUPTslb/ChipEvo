@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : router_top
+Version: T-2022.03-SP2
+Date   : Sun Jun 14 07:00:21 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                           43
+Number of nets:                          3616
+Number of cells:                         3019
+Number of combinational cells:           2380
+Number of sequential cells:               639
+Number of macros/black boxes:               0
+Number of buf/inv:                        810
+Number of references:                      46
+
+Combinational area:               2646.168006
+Buf/Inv area:                      466.032003
+Noncombinational area:            2832.633900
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  5478.801906
+Total area:                 undefined
+1

@@ -1,0 +1,58 @@
+{
+  "design": "aes",
+  "major_version": "v7",
+  "extracted_at": "2026-06-07T23:02:55",
+  "minors": [
+    {
+      "version": "v7.1",
+      "sec": "pass",
+      "score": -0.31575153221569435,
+      "promoted": false,
+      "relative_advantage": -1.0
+    },
+    {
+      "version": "v7.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v7.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v7.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v7.5",
+      "sec": "pass",
+      "score": -0.3154212921474366,
+      "promoted": false,
+      "relative_advantage": 1.0
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "steps_ff",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "version": "v7.1",
+      "relative_advantage": -1.0
+    },
+    {
+      "pattern": "gf16_mul[3:0]",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "version": "v7.5",
+      "relative_advantage": 1.0
+    }
+  ]
+}

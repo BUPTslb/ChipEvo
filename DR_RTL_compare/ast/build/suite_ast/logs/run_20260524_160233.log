@@ -1,0 +1,3377 @@
+[2026-05-24 16:02:35] === DESIGN START: cpu_fsm (AST) ===
+[2026-05-24 16:02:35] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v0
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v0 ===
+Design: cpu_fsm, Area: 32267.661379, WNS: -0.82, TNS: -429.73, Power: 239.7365
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v0/ ===
+=== AST local evaluate: cpu_fsm.v0 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:04:37] cpu_fsm: major=0 minor=1 (v0.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v0.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v0.1 ===
+Design: cpu_fsm, Area: 32173.231381, WNS: -0.83, TNS: -428.55, Power: 240.0857
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v0.1/ ===
+=== AST local evaluate: cpu_fsm.v0.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:07:55]   sec=pass score=-0.005575461293912105
+[2026-05-24 16:07:55] cpu_fsm: major=0 minor=2 (v0.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v0.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v0.2 ===
+Design: cpu_fsm, Area: 32287.877381, WNS: -0.81, TNS: -430.11, Power: 240.3972
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v0.2/ ===
+=== AST local evaluate: cpu_fsm.v0.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:11:37]   sec=pass score=0.005882040765963233
+[2026-05-24 16:11:37] cpu_fsm: major=0 minor=3 (v0.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v0.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v0.3 ===
+Design: cpu_fsm, Area: 32138.917383, WNS: -0.77, TNS: -429.38, Power: 239.5352
+Timing report parsed: 4163 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v0.3/ ===
+=== AST local evaluate: cpu_fsm.v0.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:14:42]   sec=fail score=None
+[2026-05-24 16:14:42] cpu_fsm: major=0 minor=4 (v0.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v0.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v0.4 ===
+Design: cpu_fsm, Area: 32147.695383, WNS: -0.78, TNS: -431.25, Power: 240.0534
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v0.4/ ===
+=== AST local evaluate: cpu_fsm.v0.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:17:47]   sec=pass score=0.02259458128839779
+[2026-05-24 16:17:47] cpu_fsm: major=0 minor=5 (v0.5) rank_offset=6
+[2026-05-24 16:19:17]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v0.5.v:49:30: error: identifier 'OP_BEQ' used before its declaration
+wire op_is_beq  = (opcode == OP_BEQ);
+                             ^~~~~~
+syn_flow/rtl/cpu_fsm.v0.5.v:99:18: note: declared here
+localparam [3:0] OP_BEQ  = 4'H8;
+                 ^
+syn_flow/rtl/cpu_fsm.v0.5.v:5
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v1 ===
+Design: cpu_fsm, Area: 32173.231381, WNS: -0.83, TNS: -428.55, Power: 240.0857
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v1/ ===
+=== AST local evaluate: cpu_fsm.v1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:20:57] cpu_fsm: promoted v0.1 → v1 score=-0.005575461293912105
+[2026-05-24 16:20:57] cpu_fsm: major=1 minor=1 (v1.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v1.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v1.1 ===
+Design: cpu_fsm, Area: 32120.563383, WNS: -0.78, TNS: -429.01, Power: 240.1914
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v1.1/ ===
+=== AST local evaluate: cpu_fsm.v1.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:24:13]   sec=pass score=0.02429285637961299
+[2026-05-24 16:24:13] cpu_fsm: major=1 minor=2 (v1.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v1.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v1.2 ===
+Design: cpu_fsm, Area: 32120.563383, WNS: -0.78, TNS: -429.01, Power: 240.1914
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v1.2/ ===
+=== AST local evaluate: cpu_fsm.v1.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:27:36]   sec=pass score=0.02429285637961299
+[2026-05-24 16:27:36] cpu_fsm: major=1 minor=3 (v1.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v1.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v1.3 ===
+Design: cpu_fsm, Area: 32141.311384, WNS: -0.78, TNS: -428.7, Power: 240.2349
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v1.3/ ===
+=== AST local evaluate: cpu_fsm.v1.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:31:40]   sec=pass score=0.02464179000820295
+[2026-05-24 16:31:40] cpu_fsm: major=1 minor=4 (v1.4) rank_offset=4
+[2026-05-24 16:34:39]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v1.4.v:155:70: error: identifier 'zero_check' used before its declaration
+                                                        zero_flag <= zero_check;
+                                                                     ^~~~~~~~~~
+syn_flow/rtl/cpu_fsm.v1.4.v:248:6: note: dec
+[2026-05-24 16:34:39] cpu_fsm: major=1 minor=5 (v1.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v1.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v1.5 ===
+Design: cpu_fsm, Area: 32092.899383, WNS: -0.82, TNS: -428.6, Power: 239.469
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v1.5/ ===
+=== AST local evaluate: cpu_fsm.v1.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:38:06]   sec=pass score=0.00010794374342235958
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v2 ===
+Design: cpu_fsm, Area: 32092.899383, WNS: -0.82, TNS: -428.6, Power: 239.469
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v2/ ===
+=== AST local evaluate: cpu_fsm.v2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:39:51] cpu_fsm: promoted v1.5 → v2 score=0.00010794374342235958
+[2026-05-24 16:39:51] cpu_fsm: major=2 minor=1 (v2.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v2.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v2.1 ===
+Design: cpu_fsm, Area: 32125.351384, WNS: -0.76, TNS: -430.51, Power: 240.2813
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v2.1/ ===
+=== AST local evaluate: cpu_fsm.v2.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:48:18]   sec=pass score=0.03528853856894597
+[2026-05-24 16:48:18] cpu_fsm: major=2 minor=2 (v2.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v2.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v2.2 ===
+Design: cpu_fsm, Area: 32125.351384, WNS: -0.76, TNS: -430.51, Power: 240.2813
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v2.2/ ===
+=== AST local evaluate: cpu_fsm.v2.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 16:55:53]   sec=pass score=0.03528853856894597
+[2026-05-24 16:55:53] cpu_fsm: major=2 minor=3 (v2.3) rank_offset=0
+[2026-05-24 16:57:43]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v2.3.v:1:1: error: expected member
+---
+^~
+syn_flow/rtl/cpu_fsm.v2.3.v:3:5: error: use of undeclared identifier 'Rewrite'
+### Rewrite log
+    ^~~~~~~
+syn_flow/rtl/cpu_fsm.v2.3.v:3:16: error: expected ';'
+### Rewrite log
+               ^
+warning: no top-level modules found in desi
+[2026-05-24 16:57:43] cpu_fsm: major=2 minor=4 (v2.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v2.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v2.4 ===
+Design: cpu_fsm, Area: 32203.02338, WNS: -0.78, TNS: -428.79, Power: 241.0456
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v2.4/ ===
+=== AST local evaluate: cpu_fsm.v2.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:01:58]   sec=pass score=0.02485536360268166
+[2026-05-24 17:01:58] cpu_fsm: major=2 minor=5 (v2.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v2.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v2.5 ===
+Design: cpu_fsm, Area: 32125.351384, WNS: -0.76, TNS: -430.51, Power: 240.2813
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v2.5/ ===
+=== AST local evaluate: cpu_fsm.v2.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:09:22]   sec=pass score=0.03528853856894597
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v3 ===
+Design: cpu_fsm, Area: 32203.02338, WNS: -0.78, TNS: -428.79, Power: 241.0456
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v3/ ===
+=== AST local evaluate: cpu_fsm.v3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:11:00] cpu_fsm: promoted v2.4 → v3 score=0.02485536360268166
+[2026-05-24 17:11:00] cpu_fsm: major=3 minor=1 (v3.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v3.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v3.1 ===
+Design: cpu_fsm, Area: 32138.917382, WNS: -0.85, TNS: -432.13, Power: 239.0658
+Timing report parsed: 4155 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v3.1/ ===
+=== AST local evaluate: cpu_fsm.v3.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:16:00]   sec=fail score=None
+[2026-05-24 17:16:00] cpu_fsm: major=3 minor=2 (v3.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v3.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v3.2 ===
+Design: cpu_fsm, Area: 32099.815387, WNS: -0.61, TNS: -425.18, Power: 240.9746
+Timing report parsed: 4164 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v3.2/ ===
+=== AST local evaluate: cpu_fsm.v3.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:22:46]   sec=fail score=None
+[2026-05-24 17:22:46] cpu_fsm: major=3 minor=3 (v3.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v3.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v3.3 ===
+Design: cpu_fsm, Area: 32146.365384, WNS: -0.83, TNS: -429.39, Power: 240.4193
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v3.3/ ===
+=== AST local evaluate: cpu_fsm.v3.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:29:30]   sec=pass score=-0.006384501538036675
+[2026-05-24 17:29:30] cpu_fsm: major=3 minor=4 (v3.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v3.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v3.4 ===
+Design: cpu_fsm, Area: 32211.535383, WNS: -0.79, TNS: -429.29, Power: 238.9557
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v3.4/ ===
+=== AST local evaluate: cpu_fsm.v3.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:32:24]   sec=pass score=0.018390139220841633
+[2026-05-24 17:32:24] cpu_fsm: major=3 minor=5 (v3.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v3.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v3.5 ===
+Design: cpu_fsm, Area: 32272.715381, WNS: -0.78, TNS: -430.67, Power: 240.6162
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v3.5/ ===
+=== AST local evaluate: cpu_fsm.v3.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:35:23]   sec=pass score=0.0236481410194046
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v4 ===
+Design: cpu_fsm, Area: 32146.365384, WNS: -0.83, TNS: -429.39, Power: 240.4193
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v4/ ===
+=== AST local evaluate: cpu_fsm.v4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:37:07] cpu_fsm: promoted v3.3 → v4 score=-0.006384501538036675
+[2026-05-24 17:37:07] cpu_fsm: major=4 minor=1 (v4.1) rank_offset=0
+[2026-05-24 17:42:51]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v4.1.v:113:28: error: use of undeclared identifier 'alu_result'; did you mean 'alu_result_w'?
+wire alu_result_is_zero = (alu_result == 8'h00);
+                           ^~~~~~~~~~
+syn_flow/rtl/cpu_fsm.v4.1.v:143:12: note: declared here
+wire [7:0] alu_result_w = (op_is_add | op_
+[2026-05-24 17:42:51] cpu_fsm: major=4 minor=2 (v4.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v4.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v4.2 ===
+Design: cpu_fsm, Area: 32319.531382, WNS: -0.74, TNS: -428.0, Power: 246.0446
+Timing report parsed: 4163 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v4.2/ ===
+=== AST local evaluate: cpu_fsm.v4.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 17:55:58]   sec=fail score=None
+[2026-05-24 17:55:58] cpu_fsm: major=4 minor=3 (v4.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v4.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v4.3 ===
+Design: cpu_fsm, Area: 32119.765385, WNS: -0.79, TNS: -429.43, Power: 239.9926
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v4.3/ ===
+=== AST local evaluate: cpu_fsm.v4.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:02:30]   sec=pass score=0.01784951056035912
+[2026-05-24 18:02:30] cpu_fsm: major=4 minor=4 (v4.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v4.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v4.4 ===
+Design: cpu_fsm, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v4.4/ ===
+=== AST local evaluate: cpu_fsm.v4.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:04:15]   sec=fail score=None
+[2026-05-24 18:04:15] cpu_fsm: major=4 minor=5 (v4.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v4.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v4.5 ===
+Design: cpu_fsm, Area: 32190.787384, WNS: -0.78, TNS: -428.85, Power: 240.4324
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v4.5/ ===
+=== AST local evaluate: cpu_fsm.v4.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:07:18]   sec=pass score=0.024749615249580893
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v5 ===
+Design: cpu_fsm, Area: 32119.765385, WNS: -0.79, TNS: -429.43, Power: 239.9926
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v5/ ===
+=== AST local evaluate: cpu_fsm.v5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:09:08] cpu_fsm: promoted v4.3 → v5 score=0.01784951056035912
+[2026-05-24 18:09:08] cpu_fsm: major=5 minor=1 (v5.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v5.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v5.1 ===
+Design: cpu_fsm, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v5.1/ ===
+=== AST local evaluate: cpu_fsm.v5.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:11:06]   sec=fail score=None
+[2026-05-24 18:11:06] cpu_fsm: major=5 minor=2 (v5.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v5.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v5.2 ===
+Design: cpu_fsm, Area: 32137.587388, WNS: -0.58, TNS: -423.55, Power: 239.8884
+Timing report parsed: 4163 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v5.2/ ===
+=== AST local evaluate: cpu_fsm.v5.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:25:55]   sec=fail score=None
+[2026-05-24 18:25:55] cpu_fsm: major=5 minor=3 (v5.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v5.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v5.3 ===
+Design: cpu_fsm, Area: 32237.869381, WNS: -0.76, TNS: -428.99, Power: 240.5294
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v5.3/ ===
+=== AST local evaluate: cpu_fsm.v5.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:31:44]   sec=pass score=0.03704957828804356
+[2026-05-24 18:31:44] cpu_fsm: major=5 minor=4 (v5.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v5.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v5.4 ===
+Design: cpu_fsm, Area: 32084.387388, WNS: -0.6, TNS: -1885.03, Power: 261.8373
+Timing report parsed: 4163 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v5.4/ ===
+=== AST local evaluate: cpu_fsm.v5.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:42:43]   sec=fail score=None
+[2026-05-24 18:42:43] cpu_fsm: major=5 minor=5 (v5.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v5.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v5.5 ===
+Design: cpu_fsm, Area: 32114.977386, WNS: -0.62, TNS: -426.74, Power: 240.0635
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v5.5/ ===
+=== AST local evaluate: cpu_fsm.v5.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:50:41]   sec=pass score=0.12367670014381872
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v6
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v6 ===
+Design: cpu_fsm, Area: 32237.869381, WNS: -0.76, TNS: -428.99, Power: 240.5294
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v6/ ===
+=== AST local evaluate: cpu_fsm.v6 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 18:52:23] cpu_fsm: promoted v5.3 → v6 score=0.03704957828804356
+[2026-05-24 18:52:23] cpu_fsm: major=6 minor=1 (v6.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v6.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v6.1 ===
+Design: cpu_fsm, Area: 32129.873385, WNS: -0.61, TNS: -425.97, Power: 240.982
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v6.1/ ===
+=== AST local evaluate: cpu_fsm.v6.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:04:31]   sec=pass score=0.1304706448843177
+[2026-05-24 19:04:31] cpu_fsm: major=6 minor=2 (v6.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v6.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v6.2 ===
+Design: cpu_fsm, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v6.2/ ===
+=== AST local evaluate: cpu_fsm.v6.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:12:27]   sec=pass synth=fail
+[2026-05-24 19:12:27]   sec=fail score=None
+[2026-05-24 19:12:27] cpu_fsm: major=6 minor=3 (v6.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v6.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v6.3 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v6.3/ ===
+=== AST local evaluate: cpu_fsm.v6.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:15:52]   sec=pass score=0.018098300445768014
+[2026-05-24 19:15:52] cpu_fsm: major=6 minor=4 (v6.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v6.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v6.4 ===
+Design: cpu_fsm, Area: 32237.869381, WNS: -0.76, TNS: -428.99, Power: 240.5294
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v6.4/ ===
+=== AST local evaluate: cpu_fsm.v6.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:21:24]   sec=pass score=0.03704957828804356
+[2026-05-24 19:21:24] cpu_fsm: major=6 minor=5 (v6.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v6.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v6.5 ===
+Design: cpu_fsm, Area: 32153.547376, WNS: -1.03, TNS: -437.16, Power: 240.0257
+Timing report parsed: 4163 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v6.5/ ===
+=== AST local evaluate: cpu_fsm.v6.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:23:57]   sec=fail score=None
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v7
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v7 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v7/ ===
+=== AST local evaluate: cpu_fsm.v7 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:25:43] cpu_fsm: promoted v6.3 → v7 score=0.018098300445768014
+[2026-05-24 19:25:43] cpu_fsm: major=7 minor=1 (v7.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v7.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v7.1 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v7.1/ ===
+=== AST local evaluate: cpu_fsm.v7.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:35:54]   sec=pass score=0.018098300445768014
+[2026-05-24 19:35:54] cpu_fsm: major=7 minor=2 (v7.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v7.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v7.2 ===
+Design: cpu_fsm, Area: 32154.345385, WNS: -0.64, TNS: -426.83, Power: 241.0062
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v7.2/ ===
+=== AST local evaluate: cpu_fsm.v7.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:39:32]   sec=pass score=0.11159128310224724
+[2026-05-24 19:39:32] cpu_fsm: major=7 minor=3 (v7.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v7.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v7.3 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v7.3/ ===
+=== AST local evaluate: cpu_fsm.v7.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:42:48]   sec=pass score=0.018098300445768014
+[2026-05-24 19:42:48] cpu_fsm: major=7 minor=4 (v7.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v7.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v7.4 ===
+Design: cpu_fsm, Area: 32168.975382, WNS: -0.77, TNS: -430.61, Power: 240.9052
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v7.4/ ===
+=== AST local evaluate: cpu_fsm.v7.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:45:48]   sec=pass score=0.029312322363422634
+[2026-05-24 19:45:48] cpu_fsm: major=7 minor=5 (v7.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v7.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v7.5 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v7.5/ ===
+=== AST local evaluate: cpu_fsm.v7.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:48:52]   sec=pass score=0.018098300445768014
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v8
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v8 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v8/ ===
+=== AST local evaluate: cpu_fsm.v8 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 19:50:36] cpu_fsm: promoted v7.1 → v8 score=0.018098300445768014
+[2026-05-24 19:50:36] cpu_fsm: major=8 minor=1 (v8.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v8.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v8.1 ===
+Design: cpu_fsm, Area: 32152.217387, WNS: -0.61, TNS: -426.29, Power: 240.9371
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v8.1/ ===
+=== AST local evaluate: cpu_fsm.v8.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:02:39]   sec=pass score=0.1303138848254914
+[2026-05-24 20:02:39] cpu_fsm: major=8 minor=2 (v8.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v8.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v8.2 ===
+Design: cpu_fsm, Area: 32202.225385, WNS: -0.78, TNS: -428.84, Power: 240.4898
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v8.2/ ===
+=== AST local evaluate: cpu_fsm.v8.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:07:11]   sec=pass score=0.024810930784711773
+[2026-05-24 20:07:11] cpu_fsm: major=8 minor=3 (v8.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v8.3
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v8.3 ===
+Design: cpu_fsm, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v8.3/ ===
+=== AST local evaluate: cpu_fsm.v8.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:14:38]   sec=fail score=None
+[2026-05-24 20:14:38] cpu_fsm: major=8 minor=4 (v8.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v8.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v8.4 ===
+Design: cpu_fsm, Area: 32168.975382, WNS: -0.77, TNS: -430.61, Power: 240.9052
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v8.4/ ===
+=== AST local evaluate: cpu_fsm.v8.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:23:40]   sec=pass score=0.029312322363422634
+[2026-05-24 20:23:40] cpu_fsm: major=8 minor=5 (v8.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v8.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v8.5 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v8.5/ ===
+=== AST local evaluate: cpu_fsm.v8.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:32:37]   sec=pass score=0.018098300445768014
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v9
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v9 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v9/ ===
+=== AST local evaluate: cpu_fsm.v9 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:34:18] cpu_fsm: promoted v8.5 → v9 score=0.018098300445768014
+[2026-05-24 20:34:18] cpu_fsm: major=9 minor=1 (v9.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v9.1
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v9.1 ===
+Design: cpu_fsm, Area: 32150.089384, WNS: -0.8, TNS: -429.16, Power: 241.02
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v9.1/ ===
+=== AST local evaluate: cpu_fsm.v9.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:48:54]   sec=pass score=0.01211281976479808
+[2026-05-24 20:48:54] cpu_fsm: major=9 minor=2 (v9.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v9.2
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for cpu_fsm.v9.2 ===
+Design: cpu_fsm, Area: 32190.255383, WNS: -0.76, TNS: -428.54, Power: 241.0943
+Timing report parsed: 4163 paths
+SEC result: FAILED
+=== Reports saved to ./output/cpu_fsm.v9.2/ ===
+=== AST local evaluate: cpu_fsm.v9.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 20:58:01]   sec=fail score=None
+[2026-05-24 20:58:01] cpu_fsm: major=9 minor=3 (v9.3) rank_offset=0
+[2026-05-24 21:01:48]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v9.3.v:127:36: error: identifier 'branch_taken' used before its declaration
+wire sel_pc_exec = state_is_exec & branch_taken;
+                                   ^~~~~~~~~~~~
+syn_flow/rtl/cpu_fsm.v9.3.v:245:6: note: declared here
+wire branch_taken    = branch_take_beq | branch_tak
+[2026-05-24 21:01:48] cpu_fsm: major=9 minor=4 (v9.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v9.4
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v9.4 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v9.4/ ===
+=== AST local evaluate: cpu_fsm.v9.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:05:18]   sec=pass score=0.018098300445768014
+[2026-05-24 21:05:18] cpu_fsm: major=9 minor=5 (v9.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v9.5
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v9.5 ===
+Design: cpu_fsm, Area: 32199.565381, WNS: -0.79, TNS: -429.58, Power: 241.056
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v9.5/ ===
+=== AST local evaluate: cpu_fsm.v9.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:08:45]   sec=pass score=0.018098300445768014
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v10
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for cpu_fsm.v10 ===
+Design: cpu_fsm, Area: 32150.089384, WNS: -0.8, TNS: -429.16, Power: 241.02
+Timing report parsed: 4163 paths
+SEC result: PASSED
+=== Reports saved to ./output/cpu_fsm.v10/ ===
+=== AST local evaluate: cpu_fsm.v10 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:10:22] cpu_fsm: promoted v9.1 → v10 score=0.01211281976479808
+[2026-05-24 21:10:22] === DESIGN DONE: cpu_fsm best=v4 ===
+[2026-05-24 21:10:22] === DESIGN START: tv80 (AST) ===
+[2026-05-24 21:10:22] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: tv80.v0
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for tv80.v0 ===
+Design: tv80, Area: 6044.317947, WNS: -1.31, TNS: -381.18, Power: 27.5869
+Timing report parsed: 359 paths
+SEC result: PASSED
+=== Reports saved to ./output/tv80.v0/ ===
+=== AST local evaluate: tv80.v0 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:12:07] tv80: major=0 minor=1 (v0.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: tv80.v0.1
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for tv80.v0.1 ===
+Design: tv80, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/tv80.v0.1/ ===
+=== AST local evaluate: tv80.v0.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:18:05]   sec=fail score=None
+[2026-05-24 21:18:05] tv80: major=0 minor=2 (v0.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: tv80.v0.2
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for tv80.v0.2 ===
+Design: tv80, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/tv80.v0.2/ ===
+=== AST local evaluate: tv80.v0.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:22:33]   sec=fail score=None
+[2026-05-24 21:22:33] tv80: major=0 minor=3 (v0.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: tv80.v0.3
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for tv80.v0.3 ===
+Design: tv80, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/tv80.v0.3/ ===
+=== AST local evaluate: tv80.v0.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:31:48]   sec=fail score=None
+[2026-05-24 21:31:48] tv80: major=0 minor=4 (v0.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: tv80.v0.4
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for tv80.v0.4 ===
+Design: tv80, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/tv80.v0.4/ ===
+=== AST local evaluate: tv80.v0.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:37:54]   sec=fail score=None
+[2026-05-24 21:37:54] tv80: major=0 minor=5 (v0.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: tv80.v0.5
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for tv80.v0.5 ===
+Design: tv80, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/tv80.v0.5/ ===
+=== AST local evaluate: tv80.v0.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:41:58]   sec=fail score=None
+[2026-05-24 21:41:58] tv80: no SEC-pass scored minor in major 0, stopping
+[2026-05-24 21:41:58] === DESIGN DONE: tv80 best=v0 ===
+[2026-05-24 21:41:58] === DESIGN START: DSP (AST) ===
+[2026-05-24 21:41:58] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v0
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v0 ===
+Design: DSP, Area: 4755.281969, WNS: -2.61, TNS: -154.64, Power: 15.5581
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v0/ ===
+=== AST local evaluate: DSP.v0 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:42:40] DSP: major=0 minor=1 (v0.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v0.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v0.1 ===
+Design: DSP, Area: 4751.29197, WNS: -2.59, TNS: -147.42, Power: 15.5581
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v0.1/ ===
+=== AST local evaluate: DSP.v0.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:46:59]   sec=pass score=0.020046737125322255
+[2026-05-24 21:46:59] DSP: major=0 minor=2 (v0.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v0.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v0.2 ===
+Design: DSP, Area: 4443.529978, WNS: -2.59, TNS: -151.75, Power: 14.762
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v0.2/ ===
+=== AST local evaluate: DSP.v0.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:49:17]   sec=fail score=None
+[2026-05-24 21:49:17] DSP: major=0 minor=3 (v0.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v0.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v0.3 ===
+Design: DSP, Area: 4755.281969, WNS: -2.61, TNS: -154.64, Power: 15.5581
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v0.3/ ===
+=== AST local evaluate: DSP.v0.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:51:38]   sec=pass score=0.0
+[2026-05-24 21:51:38] DSP: major=0 minor=4 (v0.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v0.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v0.4 ===
+Design: DSP, Area: 4743.04597, WNS: -2.62, TNS: -148.38, Power: 15.5319
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v0.4/ ===
+=== AST local evaluate: DSP.v0.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:54:06]   sec=pass score=0.01186671151821136
+[2026-05-24 21:54:06] DSP: major=0 minor=5 (v0.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v0.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v0.5 ===
+Design: DSP, Area: 4743.04597, WNS: -2.62, TNS: -148.38, Power: 15.5319
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v0.5/ ===
+=== AST local evaluate: DSP.v0.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:56:38]   sec=pass score=0.01186671151821136
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v1 ===
+Design: DSP, Area: 4755.281969, WNS: -2.61, TNS: -154.64, Power: 15.5581
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v1/ ===
+=== AST local evaluate: DSP.v1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 21:57:20] DSP: promoted v0.3 → v1 score=0.0
+[2026-05-24 21:57:20] DSP: major=1 minor=1 (v1.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v1.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v1.1 ===
+Design: DSP, Area: 4683.46199, WNS: -2.6, TNS: -169.72, Power: 15.9097
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v1.1/ ===
+=== AST local evaluate: DSP.v1.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:06:49]   sec=fail score=None
+[2026-05-24 22:06:49] DSP: major=1 minor=2 (v1.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v1.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v1.2 ===
+Design: DSP, Area: 4751.29197, WNS: -2.59, TNS: -147.42, Power: 15.5581
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v1.2/ ===
+=== AST local evaluate: DSP.v1.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:09:32]   sec=pass score=0.020046737125322255
+[2026-05-24 22:09:32] DSP: major=1 minor=3 (v1.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v1.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v1.3 ===
+Design: DSP, Area: 4661.649993, WNS: -2.6, TNS: -188.06, Power: 15.3132
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v1.3/ ===
+=== AST local evaluate: DSP.v1.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:12:14]   sec=pass score=-0.07667800272611111
+[2026-05-24 22:12:14] DSP: major=1 minor=4 (v1.4) rank_offset=4
+[2026-05-24 22:22:03]   RTL syntax check failed: syn_flow/rtl/DSP.v1.4.v:146:13: error: expected statement
+            wire [24:0] sum_lo = {1'b0, in0_lo} + {1'b0, in1_lo} + {24'b0, cin};
+            ^~~~
+syn_flow/rtl/DSP.v1.4.v:146:25: error: use of undeclared identifier 'sum_lo'
+            wire [24:0] sum_lo = {1'b0, in0_lo} + {1'b0, in1_lo} + 
+[2026-05-24 22:22:03] DSP: major=1 minor=5 (v1.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v1.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v1.5 ===
+Design: DSP, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v1.5/ ===
+=== AST local evaluate: DSP.v1.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:23:59]   sec=pass synth=fail
+[2026-05-24 22:23:59]   sec=fail score=None
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v2 ===
+Design: DSP, Area: 4661.649993, WNS: -2.6, TNS: -188.06, Power: 15.3132
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v2/ ===
+=== AST local evaluate: DSP.v2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:24:45] DSP: promoted v1.3 → v2 score=-0.07667800272611111
+[2026-05-24 22:24:45] DSP: major=2 minor=1 (v2.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v2.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v2.1 ===
+Design: DSP, Area: 4192.425982, WNS: -2.6, TNS: -186.54, Power: 14.9565
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v2.1/ ===
+=== AST local evaluate: DSP.v2.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:41:48]   sec=pass score=-0.08803889598196993
+[2026-05-24 22:41:48] DSP: major=2 minor=2 (v2.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v2.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v2.2 ===
+Design: DSP, Area: 4661.649993, WNS: -2.6, TNS: -188.06, Power: 15.3132
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v2.2/ ===
+=== AST local evaluate: DSP.v2.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:45:17]   sec=pass score=-0.07667800272611111
+[2026-05-24 22:45:17] DSP: major=2 minor=3 (v2.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v2.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v2.3 ===
+Design: DSP, Area: 4225.409982, WNS: -2.62, TNS: -185.94, Power: 14.944
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v2.3/ ===
+=== AST local evaluate: DSP.v2.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:49:23]   sec=fail score=None
+[2026-05-24 22:49:23] DSP: major=2 minor=4 (v2.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v2.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v2.4 ===
+Design: DSP, Area: 4661.649993, WNS: -2.6, TNS: -188.06, Power: 15.3132
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v2.4/ ===
+=== AST local evaluate: DSP.v2.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:52:22]   sec=pass score=-0.07667800272611111
+[2026-05-24 22:52:22] DSP: major=2 minor=5 (v2.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v2.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v2.5 ===
+Design: DSP, Area: 4661.649993, WNS: -2.6, TNS: -188.06, Power: 15.3132
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v2.5/ ===
+=== AST local evaluate: DSP.v2.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:54:52]   sec=pass score=-0.07667800272611111
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v3 ===
+Design: DSP, Area: 4192.425982, WNS: -2.6, TNS: -186.54, Power: 14.9565
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v3/ ===
+=== AST local evaluate: DSP.v3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 22:55:35] DSP: promoted v2.1 → v3 score=-0.08803889598196993
+[2026-05-24 22:55:35] DSP: major=3 minor=1 (v3.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v3.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v3.1 ===
+Design: DSP, Area: 4213.439981, WNS: -2.63, TNS: -189.2, Power: 14.6023
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v3.1/ ===
+=== AST local evaluate: DSP.v3.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 23:05:32]   sec=fail score=None
+[2026-05-24 23:05:32] DSP: major=3 minor=2 (v3.2) rank_offset=2
+[2026-05-24 23:18:28]   RTL syntax check failed: syn_flow/rtl/DSP.v3.2.v:40:5: error: unknown module 'RegMux'
+    RegMux #(8, RSTTYPE, OPMODEREG) opReg (clk, CEOpMode, rstOpMode, opMode, opModeRegOut);
+    ^~~~~~
+syn_flow/rtl/DSP.v3.2.v:41:5: error: unknown module 'RegMux'
+    RegMux #(18, RSTTYPE, DREG) dReg (clk, CED, rstD, D, dRegOut);
+    ^~~~
+[2026-05-24 23:18:28] DSP: major=3 minor=3 (v3.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v3.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v3.3 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v3.3/ ===
+=== AST local evaluate: DSP.v3.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 23:21:58]   sec=pass score=-0.09007736765228445
+[2026-05-24 23:21:58] DSP: major=3 minor=4 (v3.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v3.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v3.4 ===
+Design: DSP, Area: 4217.429983, WNS: -2.59, TNS: -186.47, Power: 15.0155
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v3.4/ ===
+=== AST local evaluate: DSP.v3.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 23:35:58]   sec=pass score=-0.08517603170457307
+[2026-05-24 23:35:58] DSP: major=3 minor=5 (v3.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v3.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v3.5 ===
+Design: DSP, Area: 4188.169982, WNS: -2.64, TNS: -172.94, Power: 14.9372
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v3.5/ ===
+=== AST local evaluate: DSP.v3.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 23:39:41]   sec=pass score=-0.0650548127779964
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v4 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v4/ ===
+=== AST local evaluate: DSP.v4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 23:40:25] DSP: promoted v3.3 → v4 score=-0.09007736765228445
+[2026-05-24 23:40:25] DSP: major=4 minor=1 (v4.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v4.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v4.1 ===
+Design: DSP, Area: 4664.841996, WNS: -2.64, TNS: -188.04, Power: 15.242
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v4.1/ ===
+=== AST local evaluate: DSP.v4.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-24 23:58:28]   sec=fail score=None
+[2026-05-24 23:58:28] DSP: major=4 minor=2 (v4.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v4.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v4.2 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v4.2/ ===
+=== AST local evaluate: DSP.v4.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 00:01:08]   sec=pass score=-0.09007736765228445
+[2026-05-25 00:01:08] DSP: major=4 minor=3 (v4.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v4.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v4.3 ===
+Design: DSP, Area: 4177.263984, WNS: -2.64, TNS: -182.13, Power: 14.849
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v4.3/ ===
+=== AST local evaluate: DSP.v4.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 00:19:08]   sec=pass score=-0.08619875257015791
+[2026-05-25 00:19:08] DSP: major=4 minor=4 (v4.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v4.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v4.4 ===
+Design: DSP, Area: 4186.839983, WNS: -2.61, TNS: -186.57, Power: 14.9059
+Timing report parsed: 197 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v4.4/ ===
+=== AST local evaluate: DSP.v4.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 00:30:58]   sec=fail score=None
+[2026-05-25 00:30:58] DSP: major=4 minor=5 (v4.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v4.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v4.5 ===
+Design: DSP, Area: 4206.789983, WNS: -2.6, TNS: -185.78, Power: 14.9019
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v4.5/ ===
+=== AST local evaluate: DSP.v4.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 00:34:19]   sec=pass score=-0.08586567563106116
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v5 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v5/ ===
+=== AST local evaluate: DSP.v5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 00:35:02] DSP: promoted v4.2 → v5 score=-0.09007736765228445
+[2026-05-25 00:35:02] DSP: major=5 minor=1 (v5.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v5.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v5.1 ===
+Design: DSP, Area: 4843.061992, WNS: -2.58, TNS: -182.48, Power: 16.0046
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v5.1/ ===
+=== AST local evaluate: DSP.v5.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 00:44:36]   sec=fail score=None
+[2026-05-25 00:44:36] DSP: major=5 minor=2 (v5.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v5.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v5.2 ===
+Design: DSP, Area: 4956.111968, WNS: -2.14, TNS: -144.21, Power: 16.8062
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v5.2/ ===
+=== AST local evaluate: DSP.v5.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 02:52:58]   sec=fail score=None
+[2026-05-25 02:52:58] DSP: major=5 minor=3 (v5.3) rank_offset=0
+[2026-05-25 02:57:48]   RTL syntax check failed: syn_flow/rtl/DSP.v5.3.v:40:5: error: unknown module 'RegMux'
+    RegMux #(8, RSTTYPE, OPMODEREG) opReg (clk, CEOpMode, rstOpMode, opMode, opModeRegOut);
+    ^~~~~~
+syn_flow/rtl/DSP.v5.3.v:41:5: error: unknown module 'RegMux'
+    RegMux #(18, RSTTYPE, DREG) dReg (clk, CED, rstD, D, dRegOut);
+    ^~~~
+[2026-05-25 02:57:48] DSP: major=5 minor=4 (v5.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v5.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v5.4 ===
+Design: DSP, Area: 4177.795984, WNS: -2.64, TNS: -182.07, Power: 14.8332
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v5.4/ ===
+=== AST local evaluate: DSP.v5.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 03:13:32]   sec=pass score=-0.08604617195516044
+[2026-05-25 03:13:32] DSP: major=5 minor=5 (v5.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v5.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v5.5 ===
+Design: DSP, Area: 4311.593972, WNS: -2.61, TNS: -141.65, Power: 17.9292
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v5.5/ ===
+=== AST local evaluate: DSP.v5.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 03:16:56]   sec=fail score=None
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v6
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v6 ===
+Design: DSP, Area: 4177.795984, WNS: -2.64, TNS: -182.07, Power: 14.8332
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v6/ ===
+=== AST local evaluate: DSP.v6 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 03:17:40] DSP: promoted v5.4 → v6 score=-0.08604617195516044
+[2026-05-25 03:17:40] DSP: major=6 minor=1 (v6.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v6.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v6.1 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v6.1/ ===
+=== AST local evaluate: DSP.v6.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 03:27:24]   sec=pass score=-0.09007736765228445
+[2026-05-25 03:27:24] DSP: major=6 minor=2 (v6.2) rank_offset=2
+[2026-05-25 03:29:22]   RTL syntax check failed: syn_flow/rtl/DSP.v6.2.v:1:1: error: expected member
+**After**:
+^~
+syn_flow/rtl/DSP.v6.2.v:1:8: error: expected a declaration name
+**After**:
+       ^
+warning: no top-level modules found in design [-Wmissing-top]
+[2026-05-25 03:29:22] DSP: major=6 minor=3 (v6.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v6.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v6.3 ===
+Design: DSP, Area: 4177.795984, WNS: -2.64, TNS: -182.07, Power: 14.8332
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v6.3/ ===
+=== AST local evaluate: DSP.v6.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 03:46:54]   sec=pass score=-0.08604617195516044
+[2026-05-25 03:46:54] DSP: major=6 minor=4 (v6.4) rank_offset=4
+[2026-05-25 04:03:50]   failed: Failed to extract Verilog after 3 attempts: Agent response did not contain Verilog (expected ```verilog block or module...endmodule)
+[2026-05-25 04:03:50] DSP: major=6 minor=5 (v6.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v6.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v6.5 ===
+Design: DSP, Area: 4176.465984, WNS: -2.64, TNS: -172.43, Power: 14.8421
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v6.5/ ===
+=== AST local evaluate: DSP.v6.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:06:16]   sec=pass score=-0.0642697083348683
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v7
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v7 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v7/ ===
+=== AST local evaluate: DSP.v7 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:06:59] DSP: promoted v6.1 → v7 score=-0.09007736765228445
+[2026-05-25 04:06:59] DSP: major=7 minor=1 (v7.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v7.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v7.1 ===
+Design: DSP, Area: 4097.197986, WNS: -2.64, TNS: -179.28, Power: 14.2048
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v7.1/ ===
+=== AST local evaluate: DSP.v7.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:17:43]   sec=fail score=None
+[2026-05-25 04:17:43] DSP: major=7 minor=2 (v7.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v7.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v7.2 ===
+Design: DSP, Area: 4177.795984, WNS: -2.64, TNS: -182.07, Power: 14.8332
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v7.2/ ===
+=== AST local evaluate: DSP.v7.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:22:20]   sec=pass score=-0.08604617195516044
+[2026-05-25 04:22:20] DSP: major=7 minor=3 (v7.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v7.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v7.3 ===
+Design: DSP, Area: 4176.997984, WNS: -2.64, TNS: -172.43, Power: 14.8445
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v7.3/ ===
+=== AST local evaluate: DSP.v7.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:30:37]   sec=pass score=-0.06425292699560806
+[2026-05-25 04:30:37] DSP: major=7 minor=4 (v7.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v7.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v7.4 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v7.4/ ===
+=== AST local evaluate: DSP.v7.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:37:26]   sec=pass score=-0.09007736765228445
+[2026-05-25 04:37:26] DSP: major=7 minor=5 (v7.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v7.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v7.5 ===
+Design: DSP, Area: 4322.233983, WNS: -2.62, TNS: -184.78, Power: 15.387
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v7.5/ ===
+=== AST local evaluate: DSP.v7.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:40:47]   sec=pass score=-0.08379222137381857
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v8
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v8 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v8/ ===
+=== AST local evaluate: DSP.v8 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:41:30] DSP: promoted v7.4 → v8 score=-0.09007736765228445
+[2026-05-25 04:41:30] DSP: major=8 minor=1 (v8.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v8.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v8.1 ===
+Design: DSP, Area: 4222.483984, WNS: -2.59, TNS: -184.63, Power: 14.9084
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v8.1/ ===
+=== AST local evaluate: DSP.v8.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:44:23]   sec=pass score=-0.08085209782744934
+[2026-05-25 04:44:23] DSP: major=8 minor=2 (v8.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v8.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v8.2 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v8.2/ ===
+=== AST local evaluate: DSP.v8.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 04:53:05]   sec=pass score=-0.09007736765228445
+[2026-05-25 04:53:05] DSP: major=8 minor=3 (v8.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v8.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v8.3 ===
+Design: DSP, Area: 4811.67397, WNS: -2.62, TNS: -149.5, Power: 17.0937
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v8.3/ ===
+=== AST local evaluate: DSP.v8.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:06:25]   sec=fail score=None
+[2026-05-25 05:06:25] DSP: major=8 minor=4 (v8.4) rank_offset=4
+[2026-05-25 05:08:09]   RTL syntax check failed: syn_flow/rtl/DSP.v8.4.v:88:13: error: reference to non-constant variable 'carry_sel_is_opmode5' is not allowed in a constant expression
+        if (carry_sel_is_opmode5) begin : gen_opmode5_carry
+            ^~~~~~~~~~~~~~~~~~~~
+syn_flow/rtl/DSP.v8.4.v:82:10: note: declared here
+    wire carry_sel_i
+[2026-05-25 05:08:09] DSP: major=8 minor=5 (v8.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v8.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v8.5 ===
+Design: DSP, Area: 4269.299984, WNS: -2.64, TNS: -165.88, Power: 15.1663
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v8.5/ ===
+=== AST local evaluate: DSP.v8.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:21:31]   sec=fail score=None
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v9
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v9 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v9/ ===
+=== AST local evaluate: DSP.v9 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:22:15] DSP: promoted v8.2 → v9 score=-0.09007736765228445
+[2026-05-25 05:22:15] DSP: major=9 minor=1 (v9.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v9.1
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v9.1 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.25, Power: 14.8394
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v9.1/ ===
+=== AST local evaluate: DSP.v9.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:34:14]   sec=pass score=-0.08969260303769576
+[2026-05-25 05:34:14] DSP: major=9 minor=2 (v9.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v9.2
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v9.2 ===
+Design: DSP, Area: 4274.353984, WNS: -2.6, TNS: -182.79, Power: 15.1813
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v9.2/ ===
+=== AST local evaluate: DSP.v9.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:41:41]   sec=pass score=-0.07696711493922692
+[2026-05-25 05:41:41] DSP: major=9 minor=3 (v9.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v9.3
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v9.3 ===
+Design: DSP, Area: 4663.511993, WNS: -2.59, TNS: -186.47, Power: 15.6912
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v9.3/ ===
+=== AST local evaluate: DSP.v9.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:44:03]   sec=fail score=None
+[2026-05-25 05:44:03] DSP: major=9 minor=4 (v9.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v9.4
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v9.4 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v9.4/ ===
+=== AST local evaluate: DSP.v9.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:46:07]   sec=pass score=-0.09007736765228445
+[2026-05-25 05:46:07] DSP: major=9 minor=5 (v9.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v9.5
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for DSP.v9.5 ===
+Design: DSP, Area: 4206.789976, WNS: -2.59, TNS: -144.77, Power: 15.2967
+Timing report parsed: 196 paths
+SEC result: FAILED
+=== Reports saved to ./output/DSP.v9.5/ ===
+=== AST local evaluate: DSP.v9.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:53:35]   sec=fail score=None
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: DSP.v10
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for DSP.v10 ===
+Design: DSP, Area: 4179.923984, WNS: -2.61, TNS: -186.42, Power: 14.8391
+Timing report parsed: 196 paths
+SEC result: PASSED
+=== Reports saved to ./output/DSP.v10/ ===
+=== AST local evaluate: DSP.v10 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:54:18] DSP: promoted v9.4 → v10 score=-0.09007736765228445
+[2026-05-25 05:54:18] === DESIGN DONE: DSP best=v4 ===
+[2026-05-25 05:54:18] === DESIGN START: LSTM (AST) ===
+[2026-05-25 05:54:18] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+sh: 1: vcs: not found
+sh: 1: ./simv: not found
+=== Running Synthesis ===
+Design: LSTM.v0
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+=== Generating Reports for LSTM.v0 ===
+Design: LSTM, Area: 14828.435987, WNS: -6.51, TNS: -166.76, Power: 7.4406
+Timing report parsed: 32 paths
+SEC result: FAILED
+=== Reports saved to ./output/LSTM.v0/ ===
+=== AST local evaluate: LSTM.v0 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 05:55:28] LSTM: major=0 minor=1 (v0.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+sh: 1: vcs: not found
+sh: 1: ./simv: not found
+=== Running Synthesis ===
+Design: LSTM.v0.1
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+=== Generating Reports for LSTM.v0.1 ===
+Design: LSTM, Area: 13260.365985, WNS: -5.71, TNS: -153.73, Power: 5.5598
+Timing report parsed: 32 paths
+SEC result: FAILED
+=== Reports saved to ./output/LSTM.v0.1/ ===
+=== AST local evaluate: LSTM.v0.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:01:23]   sec=fail score=None
+[2026-05-25 06:01:23] LSTM: major=0 minor=2 (v0.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+sh: 1: vcs: not found
+sh: 1: ./simv: not found
+=== Running Synthesis ===
+Design: LSTM.v0.2
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+=== Generating Reports for LSTM.v0.2 ===
+Design: LSTM, Area: 4519.871999, WNS: -5.87, TNS: -156.83, Power: 3.5579
+Timing report parsed: 32 paths
+SEC result: FAILED
+=== Reports saved to ./output/LSTM.v0.2/ ===
+=== AST local evaluate: LSTM.v0.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:04:55]   sec=fail score=None
+[2026-05-25 06:04:55] LSTM: major=0 minor=3 (v0.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+sh: 1: vcs: not found
+sh: 1: ./simv: not found
+=== Running Synthesis ===
+Design: LSTM.v0.3
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+=== Generating Reports for LSTM.v0.3 ===
+Design: LSTM, Area: 15219.189992, WNS: -7.2, TNS: -192.1, Power: 8.2938
+Timing report parsed: 32 paths
+SEC result: FAILED
+=== Reports saved to ./output/LSTM.v0.3/ ===
+=== AST local evaluate: LSTM.v0.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:08:09]   sec=fail score=None
+[2026-05-25 06:08:09] LSTM: major=0 minor=4 (v0.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+sh: 1: vcs: not found
+sh: 1: ./simv: not found
+=== Running Synthesis ===
+Design: LSTM.v0.4
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+=== Generating Reports for LSTM.v0.4 ===
+Design: LSTM, Area: 5014.365982, WNS: -5.14, TNS: -122.09, Power: 4.7381
+Timing report parsed: 32 paths
+SEC result: FAILED
+=== Reports saved to ./output/LSTM.v0.4/ ===
+=== AST local evaluate: LSTM.v0.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:11:24]   sec=fail score=None
+[2026-05-25 06:11:24] LSTM: major=0 minor=5 (v0.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+sh: 1: vcs: not found
+sh: 1: ./simv: not found
+=== Running Synthesis ===
+Design: LSTM.v0.5
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+=== Generating Reports for LSTM.v0.5 ===
+Design: LSTM, Area: 6137.683995, WNS: -6.41, TNS: -164.82, Power: 5.5245
+Timing report parsed: 32 paths
+SEC result: FAILED
+=== Reports saved to ./output/LSTM.v0.5/ ===
+=== AST local evaluate: LSTM.v0.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:13:54]   sec=fail score=None
+[2026-05-25 06:13:54] LSTM: no SEC-pass scored minor in major 0, stopping
+[2026-05-25 06:13:54] === DESIGN DONE: LSTM best=v0 ===
+[2026-05-25 06:13:54] === DESIGN START: arm_cpu1 (AST) ===
+[2026-05-25 06:13:54] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: arm_cpu1.v0
+Top module: arm9_compatiable_code
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for arm_cpu1.v0 ===
+Design: arm_cpu1, Area: 22172.696238, WNS: -5.24, TNS: -3148.68, Power: 103.9316
+Timing report parsed: 1224 paths
+SEC result: PASSED
+=== Reports saved to ./output/arm_cpu1.v0/ ===
+=== AST local evaluate: arm_cpu1.v0 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:16:27] arm_cpu1: major=0 minor=1 (v0.1) rank_offset=0
+[2026-05-25 06:27:34]   failed: Failed to extract Verilog after 3 attempts: Agent response did not contain Verilog (expected ```verilog block or module...endmodule)
+[2026-05-25 06:27:34] arm_cpu1: major=0 minor=2 (v0.2) rank_offset=2
+[2026-05-25 06:39:53]   failed: Failed to extract Verilog after 3 attempts: Agent response did not contain Verilog (expected ```verilog block or module...endmodule)
+[2026-05-25 06:39:53] arm_cpu1: major=0 minor=3 (v0.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: arm_cpu1.v0.3
+Top module: arm9_compatiable_code
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for arm_cpu1.v0.3 ===
+Design: arm_cpu1, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/arm_cpu1.v0.3/ ===
+=== AST local evaluate: arm_cpu1.v0.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 06:44:37]   sec=fail score=None
+[2026-05-25 06:44:37] arm_cpu1: major=0 minor=4 (v0.4) rank_offset=4
+[2026-05-25 06:54:14]   failed: Failed to extract Verilog after 3 attempts: Agent response did not contain Verilog (expected ```verilog block or module...endmodule)
+[2026-05-25 06:54:14] arm_cpu1: major=0 minor=5 (v0.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: arm_cpu1.v0.5
+Top module: arm9_compatiable_code
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for arm_cpu1.v0.5 ===
+Design: arm_cpu1, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/arm_cpu1.v0.5/ ===
+=== AST local evaluate: arm_cpu1.v0.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:04:55]   sec=fail score=None
+[2026-05-25 07:04:55] arm_cpu1: no SEC-pass scored minor in major 0, stopping
+[2026-05-25 07:04:55] === DESIGN DONE: arm_cpu1 best=v0 ===
+[2026-05-25 07:04:55] === DESIGN START: FIFO (AST) ===
+[2026-05-25 07:04:55] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v0
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v0 ===
+Design: FIFO, Area: 36060.55677, WNS: -0.54, TNS: -2002.1, Power: 314.8957
+Timing report parsed: 4135 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v0/ ===
+=== AST local evaluate: FIFO.v0 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:07:38] FIFO: major=0 minor=1 (v0.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v0.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v0.1 ===
+Design: FIFO, Area: 36291.976769, WNS: -0.51, TNS: -1833.94, Power: 315.866
+Timing report parsed: 4135 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v0.1/ ===
+=== AST local evaluate: FIFO.v0.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:11:24]   sec=pass score=0.05813754151152489
+[2026-05-25 07:11:24] FIFO: major=0 minor=2 (v0.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v0.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v0.2 ===
+Design: FIFO, Area: 36154.454772, WNS: -0.51, TNS: -1908.05, Power: 314.8352
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v0.2/ ===
+=== AST local evaluate: FIFO.v0.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:15:59]   sec=pass score=0.04460984887686623
+[2026-05-25 07:15:59] FIFO: major=0 minor=3 (v0.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v0.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v0.3 ===
+Design: FIFO, Area: 36267.504761, WNS: -0.42, TNS: -1657.24, Power: 318.7465
+Timing report parsed: 4135 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v0.3/ ===
+=== AST local evaluate: FIFO.v0.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:22:17]   sec=pass score=0.172259144809618
+[2026-05-25 07:22:17] FIFO: major=0 minor=4 (v0.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v0.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v0.4 ===
+Design: FIFO, Area: 36150.464774, WNS: -0.49, TNS: -1826.89, Power: 314.9183
+Timing report parsed: 4136 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v0.4/ ===
+=== AST local evaluate: FIFO.v0.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:32:30]   sec=pass score=0.0772998728145773
+[2026-05-25 07:32:30] FIFO: major=0 minor=5 (v0.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v0.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v0.5 ===
+Design: FIFO, Area: 246.582007, WNS: -0.04, TNS: -0.4, Power: 1.9017
+Timing report parsed: 10 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v0.5/ ===
+=== AST local evaluate: FIFO.v0.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:39:14]   sec=pass score=0.6639187360522913
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v1 ===
+Design: FIFO, Area: 36154.454772, WNS: -0.51, TNS: -1908.05, Power: 314.8352
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v1/ ===
+=== AST local evaluate: FIFO.v1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:41:42] FIFO: promoted v0.2 → v1 score=0.04460984887686623
+[2026-05-25 07:41:42] FIFO: major=1 minor=1 (v1.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v1.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v1.1 ===
+Design: FIFO, Area: 36168.286776, WNS: -0.62, TNS: -2016.49, Power: 315.3876
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v1.1/ ===
+=== AST local evaluate: FIFO.v1.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:48:38]   sec=pass score=-0.07614156145931027
+[2026-05-25 07:48:38] FIFO: major=1 minor=2 (v1.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v1.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v1.2 ===
+Design: FIFO, Area: 36154.454772, WNS: -0.51, TNS: -1908.05, Power: 314.8352
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v1.2/ ===
+=== AST local evaluate: FIFO.v1.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 07:52:33]   sec=pass score=0.04460984887686623
+[2026-05-25 07:52:33] FIFO: major=1 minor=3 (v1.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v1.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v1.3 ===
+Design: FIFO, Area: 36005.760767, WNS: -0.51, TNS: -1849.66, Power: 6.6688
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v1.3/ ===
+=== AST local evaluate: FIFO.v1.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:06:46]   sec=pass score=0.05419886304310727
+[2026-05-25 08:06:46] FIFO: major=1 minor=4 (v1.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v1.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v1.4 ===
+Design: FIFO, Area: 36353.156762, WNS: -0.45, TNS: -1783.41, Power: 318.6266
+Timing report parsed: 4131 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v1.4/ ===
+=== AST local evaluate: FIFO.v1.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:17:16]   sec=pass score=0.12278106047251884
+[2026-05-25 08:17:16] FIFO: major=1 minor=5 (v1.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v1.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v1.5 ===
+Design: FIFO, Area: 36139.558771, WNS: -0.51, TNS: -1908.05, Power: 314.8138
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v1.5/ ===
+=== AST local evaluate: FIFO.v1.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:21:45]   sec=pass score=0.04454788643507005
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v2 ===
+Design: FIFO, Area: 36168.286776, WNS: -0.62, TNS: -2016.49, Power: 315.3876
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v2/ ===
+=== AST local evaluate: FIFO.v2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:23:37] FIFO: promoted v1.1 → v2 score=-0.07614156145931027
+[2026-05-25 08:23:37] FIFO: major=2 minor=1 (v2.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v2.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v2.1 ===
+Design: FIFO, Area: 36118.278776, WNS: -0.62, TNS: -1962.95, Power: 315.4705
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v2.1/ ===
+=== AST local evaluate: FIFO.v2.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:30:23]   sec=pass score=-0.0669899058701942
+[2026-05-25 08:30:23] FIFO: major=2 minor=2 (v2.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v2.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v2.2 ===
+Design: FIFO, Area: 34581.862982, WNS: -0.43, TNS: -1703.71, Power: 319.7917
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v2.2/ ===
+=== AST local evaluate: FIFO.v2.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:41:09]   sec=pass score=0.14786445267390952
+[2026-05-25 08:41:09] FIFO: major=2 minor=3 (v2.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v2.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v2.3 ===
+Design: FIFO, Area: 36168.286776, WNS: -0.62, TNS: -2016.49, Power: 315.3876
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v2.3/ ===
+=== AST local evaluate: FIFO.v2.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:44:49]   sec=pass score=-0.07614156145931027
+[2026-05-25 08:44:49] FIFO: major=2 minor=4 (v2.4) rank_offset=4
+[2026-05-25 08:54:25]   RTL syntax check failed: syn_flow/rtl/FIFO.v2.4.v:25:1: error: unknown module 'memory'
+memory #(datasize, addrbits, depth) mem_uut (.dataOut(dataOut), .dataIn(dataIn),
+^~~~~~
+syn_flow/rtl/FIFO.v2.4.v:277:8: error: cannot assign to a net within a procedural context
+       rdptr <= 0;
+       ^~~~~
+syn_flow/rtl/FIFO.v2.4.v:288
+[2026-05-25 08:54:25] FIFO: major=2 minor=5 (v2.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v2.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v2.5 ===
+Design: FIFO, Area: 36035.818769, WNS: -0.6, TNS: -1988.87, Power: 6.6668
+Timing report parsed: 4136 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v2.5/ ===
+=== AST local evaluate: FIFO.v2.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 08:58:11]   sec=pass score=-0.05334563592769012
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v3 ===
+Design: FIFO, Area: 36168.286776, WNS: -0.62, TNS: -2016.49, Power: 315.3876
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v3/ ===
+=== AST local evaluate: FIFO.v3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:00:02] FIFO: promoted v2.3 → v3 score=-0.07614156145931027
+[2026-05-25 09:00:02] FIFO: major=3 minor=1 (v3.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v3.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v3.1 ===
+Design: FIFO, Area: 34716.458989, WNS: -0.43, TNS: -1718.81, Power: 320.445
+Timing report parsed: 4149 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v3.1/ ===
+=== AST local evaluate: FIFO.v3.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:13:35]   sec=pass score=0.14578459930065696
+[2026-05-25 09:13:35] FIFO: major=3 minor=2 (v3.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v3.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v3.2 ===
+Design: FIFO, Area: 34865.951014, WNS: -0.43, TNS: -1725.77, Power: 319.4268
+Timing report parsed: 4137 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v3.2/ ===
+=== AST local evaluate: FIFO.v3.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:24:00]   sec=pass score=0.1451897142837789
+[2026-05-25 09:24:00] FIFO: major=3 minor=3 (v3.3) rank_offset=0
+[2026-05-25 09:26:19]   RTL syntax check failed: syn_flow/rtl/FIFO.v3.3.v:1:3: error: expected a declaration name
+to:
+  ^
+warning: no top-level modules found in design [-Wmissing-top]
+[2026-05-25 09:26:19] FIFO: major=3 minor=4 (v3.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v3.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v3.4 ===
+Design: FIFO, Area: 35865.312764, WNS: -0.61, TNS: -1947.13, Power: 6.6657
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v3.4/ ===
+=== AST local evaluate: FIFO.v3.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:36:22]   sec=pass score=-0.056017305504501756
+[2026-05-25 09:36:22] FIFO: major=3 minor=5 (v3.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v3.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for FIFO.v3.5 ===
+Design: FIFO, Area: 235.410007, WNS: -0.04, TNS: -0.37, Power: 1.7858
+Timing report parsed: 9 paths
+SEC result: FAILED
+=== Reports saved to ./output/FIFO.v3.5/ ===
+=== AST local evaluate: FIFO.v3.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:38:20]   sec=fail score=None
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v4 ===
+Design: FIFO, Area: 35865.312764, WNS: -0.61, TNS: -1947.13, Power: 6.6657
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v4/ ===
+=== AST local evaluate: FIFO.v4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:40:07] FIFO: promoted v3.4 → v4 score=-0.056017305504501756
+[2026-05-25 09:40:07] FIFO: major=4 minor=1 (v4.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v4.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v4.1 ===
+Design: FIFO, Area: 36024.646762, WNS: -0.51, TNS: -1852.95, Power: 6.6693
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v4.1/ ===
+=== AST local evaluate: FIFO.v4.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 09:49:08]   sec=pass score=0.05370227644485667
+[2026-05-25 09:49:08] FIFO: major=4 minor=2 (v4.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v4.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v4.2 ===
+Design: FIFO, Area: 36040.872765, WNS: -0.52, TNS: -1988.73, Power: 6.6697
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v4.2/ ===
+=== AST local evaluate: FIFO.v4.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:06:40]   sec=pass score=0.020773935401640537
+[2026-05-25 10:06:40] FIFO: major=4 minor=3 (v4.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v4.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v4.3 ===
+Design: FIFO, Area: 35831.796773, WNS: -0.58, TNS: -1977.58, Power: 6.6656
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v4.3/ ===
+=== AST local evaluate: FIFO.v4.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:12:50]   sec=pass score=-0.03370210385525376
+[2026-05-25 10:12:50] FIFO: major=4 minor=4 (v4.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v4.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v4.4 ===
+Design: FIFO, Area: 35773.276763, WNS: -0.65, TNS: -2009.43, Power: 6.7666
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v4.4/ ===
+=== AST local evaluate: FIFO.v4.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:19:04]   sec=pass score=-0.10432824627492272
+[2026-05-25 10:19:04] FIFO: major=4 minor=5 (v4.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v4.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v4.5 ===
+Design: FIFO, Area: 35871.696765, WNS: -0.61, TNS: -1947.13, Power: 6.6656
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v4.5/ ===
+=== AST local evaluate: FIFO.v4.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:23:08]   sec=pass score=-0.05599075016992643
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v5 ===
+Design: FIFO, Area: 35773.276763, WNS: -0.65, TNS: -2009.43, Power: 6.7666
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v5/ ===
+=== AST local evaluate: FIFO.v5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:24:41] FIFO: promoted v4.4 → v5 score=-0.10432824627492272
+[2026-05-25 10:24:41] FIFO: major=5 minor=1 (v5.1) rank_offset=0
+[2026-05-25 10:26:24]   RTL syntax check failed: syn_flow/rtl/FIFO.v5.1.v:1:5: error: expected a declaration name
+Here's the optimized WFSM section:
+    ^
+syn_flow/rtl/FIFO.v5.1.v:1:8: error: use of undeclared identifier 'the'
+Here's the optimized WFSM section:
+       ^~~
+syn_flow/rtl/FIFO.v5.1.v:1:21: error: expected ';'
+Here's the optimized WFSM
+[2026-05-25 10:26:24] FIFO: major=5 minor=2 (v5.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v5.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v5.2 ===
+Design: FIFO, Area: 35850.948764, WNS: -0.62, TNS: -2012.73, Power: 6.7664
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v5.2/ ===
+=== AST local evaluate: FIFO.v5.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:35:53]   sec=pass score=-0.07680427290062064
+[2026-05-25 10:35:53] FIFO: major=5 minor=3 (v5.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v5.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v5.3 ===
+Design: FIFO, Area: 36119.076751, WNS: -0.47, TNS: -1829.42, Power: 6.7708
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v5.3/ ===
+=== AST local evaluate: FIFO.v5.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:44:48]   sec=pass score=0.09524554192942658
+[2026-05-25 10:44:48] FIFO: major=5 minor=4 (v5.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v5.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v5.4 ===
+Design: FIFO, Area: 35762.636762, WNS: -0.65, TNS: -2009.39, Power: 8.8354
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v5.4/ ===
+=== AST local evaluate: FIFO.v5.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:47:54]   sec=pass score=-0.10436551250539909
+[2026-05-25 10:47:54] FIFO: major=5 minor=5 (v5.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v5.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v5.5 ===
+Design: FIFO, Area: 35763.966764, WNS: -0.65, TNS: -2009.43, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v5.5/ ===
+=== AST local evaluate: FIFO.v5.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:54:44]   sec=pass score=-0.1043669727942859
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v6
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v6 ===
+Design: FIFO, Area: 35763.966764, WNS: -0.65, TNS: -2009.43, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v6/ ===
+=== AST local evaluate: FIFO.v6 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 10:56:17] FIFO: promoted v5.5 → v6 score=-0.1043669727942859
+[2026-05-25 10:56:17] FIFO: major=6 minor=1 (v6.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v6.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v6.1 ===
+Design: FIFO, Area: 35701.722772, WNS: -0.6, TNS: -1951.54, Power: 6.7666
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v6.1/ ===
+=== AST local evaluate: FIFO.v6.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:00:06]   sec=pass score=-0.0482094670663283
+[2026-05-25 11:00:06] FIFO: major=6 minor=2 (v6.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v6.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v6.2 ===
+Design: FIFO, Area: 35763.966764, WNS: -0.65, TNS: -2009.43, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v6.2/ ===
+=== AST local evaluate: FIFO.v6.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:03:38]   sec=pass score=-0.1043669727942859
+[2026-05-25 11:03:38] FIFO: major=6 minor=3 (v6.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v6.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: FAILED
+=== SEC Complete: FAILED ===
+=== Generating Reports for FIFO.v6.3 ===
+Design: FIFO, Area: None, WNS: None, TNS: None, Power: None
+Timing report parsed: 0 paths
+SEC result: FAILED
+=== Reports saved to ./output/FIFO.v6.3/ ===
+=== AST local evaluate: FIFO.v6.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:06:58]   sec=fail score=None
+[2026-05-25 11:06:58] FIFO: major=6 minor=4 (v6.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v6.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v6.4 ===
+Design: FIFO, Area: 35770.882764, WNS: -0.65, TNS: -2009.49, Power: 6.7668
+Timing report parsed: 4120 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v6.4/ ===
+=== AST local evaluate: FIFO.v6.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:10:16]   sec=pass score=-0.10434869350623302
+[2026-05-25 11:10:16] FIFO: major=6 minor=5 (v6.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v6.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v6.5 ===
+Design: FIFO, Area: 35739.760763, WNS: -0.67, TNS: -2022.66, Power: 6.7668
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v6.5/ ===
+=== AST local evaluate: FIFO.v6.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:13:43]   sec=pass score=-0.12529900181550924
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v7
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v7 ===
+Design: FIFO, Area: 35739.760763, WNS: -0.67, TNS: -2022.66, Power: 6.7668
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v7/ ===
+=== AST local evaluate: FIFO.v7 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:15:13] FIFO: promoted v6.5 → v7 score=-0.12529900181550924
+[2026-05-25 11:15:13] FIFO: major=7 minor=1 (v7.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v7.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v7.1 ===
+Design: FIFO, Area: 35813.70876, WNS: -0.63, TNS: -2044.8, Power: 6.7665
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v7.1/ ===
+=== AST local evaluate: FIFO.v7.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:18:32]   sec=pass score=-0.09182480158912548
+[2026-05-25 11:18:32] FIFO: major=7 minor=2 (v7.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v7.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v7.2 ===
+Design: FIFO, Area: 35780.192769, WNS: -0.62, TNS: -1975.35, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v7.2/ ===
+=== AST local evaluate: FIFO.v7.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:22:18]   sec=pass score=-0.07056395582915674
+[2026-05-25 11:22:18] FIFO: major=7 minor=3 (v7.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v7.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v7.3 ===
+Design: FIFO, Area: 35783.384768, WNS: -0.62, TNS: -1976.43, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v7.3/ ===
+=== AST local evaluate: FIFO.v7.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:25:43]   sec=pass score=-0.07073947992626255
+[2026-05-25 11:25:43] FIFO: major=7 minor=4 (v7.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v7.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v7.4 ===
+Design: FIFO, Area: 35745.612761, WNS: -0.67, TNS: -2022.67, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v7.4/ ===
+=== AST local evaluate: FIFO.v7.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:33:30]   sec=pass score=-0.12527640760204156
+[2026-05-25 11:33:30] FIFO: major=7 minor=5 (v7.5) rank_offset=6
+[2026-05-25 11:45:10]   RTL syntax check failed: syn_flow/rtl/FIFO.v7.5.v:251:20: error: identifier 'do_remove' used before its declaration
+assign rbinnext  = do_remove ? rbin_inc : rbin;
+                   ^~~~~~~~~
+syn_flow/rtl/FIFO.v7.5.v:264:6: note: declared here
+wire do_remove = remove & ~next_empty;
+     ^
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v8
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v8 ===
+Design: FIFO, Area: 35745.612761, WNS: -0.67, TNS: -2022.67, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v8/ ===
+=== AST local evaluate: FIFO.v8 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 11:46:52] FIFO: promoted v7.4 → v8 score=-0.12527640760204156
+[2026-05-25 11:46:52] FIFO: major=8 minor=1 (v8.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v8.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v8.1 ===
+Design: FIFO, Area: 35945.91075, WNS: -0.48, TNS: -1833.53, Power: 6.7697
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v8.1/ ===
+=== AST local evaluate: FIFO.v8.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:01:11]   sec=pass score=0.08454747374884153
+[2026-05-25 12:01:11] FIFO: major=8 minor=2 (v8.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v8.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v8.2 ===
+Design: FIFO, Area: 35788.970767, WNS: -0.62, TNS: -1974.15, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v8.2/ ===
+=== AST local evaluate: FIFO.v8.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:05:20]   sec=pass score=-0.07031766252687244
+[2026-05-25 12:05:20] FIFO: major=8 minor=3 (v8.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v8.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v8.3 ===
+Design: FIFO, Area: 35799.610761, WNS: -0.61, TNS: -1929.05, Power: 6.7667
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v8.3/ ===
+=== AST local evaluate: FIFO.v8.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:12:03]   sec=pass score=-0.05312992284119077
+[2026-05-25 12:12:03] FIFO: major=8 minor=4 (v8.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v8.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v8.4 ===
+Design: FIFO, Area: 35734.972761, WNS: -0.67, TNS: -2022.62, Power: 8.8355
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v8.4/ ===
+=== AST local evaluate: FIFO.v8.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:17:23]   sec=pass score=-0.12531192566393087
+[2026-05-25 12:17:23] FIFO: major=8 minor=5 (v8.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v8.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v8.5 ===
+Design: FIFO, Area: 35789.502765, WNS: -0.64, TNS: -2018.96, Power: 6.7664
+Timing report parsed: 4119 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v8.5/ ===
+=== AST local evaluate: FIFO.v8.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:21:40]   sec=pass score=-0.0966674929084701
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v9
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v9 ===
+Design: FIFO, Area: 35734.972761, WNS: -0.67, TNS: -2022.62, Power: 8.8355
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v9/ ===
+=== AST local evaluate: FIFO.v9 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:23:10] FIFO: promoted v8.4 → v9 score=-0.12531192566393087
+[2026-05-25 12:23:10] FIFO: major=9 minor=1 (v9.1) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v9.1
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v9.1 ===
+Design: FIFO, Area: 35675.654762, WNS: -0.65, TNS: -2051.86, Power: 8.8354
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v9.1/ ===
+=== AST local evaluate: FIFO.v9.1 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:28:03]   sec=pass score=-0.11215178320527337
+[2026-05-25 12:28:03] FIFO: major=9 minor=2 (v9.2) rank_offset=2
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v9.2
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v9.2 ===
+Design: FIFO, Area: 35818.230758, WNS: -0.61, TNS: -1976.5, Power: 8.836
+Timing report parsed: 4116 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v9.2/ ===
+=== AST local evaluate: FIFO.v9.2 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:33:25]   sec=pass score=-0.06134751001440597
+[2026-05-25 12:33:25] FIFO: major=9 minor=3 (v9.3) rank_offset=0
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v9.3
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v9.3 ===
+Design: FIFO, Area: 35534.674767, WNS: -0.57, TNS: -1981.47, Power: 8.8344
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v9.3/ ===
+=== AST local evaluate: FIFO.v9.3 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:39:17]   sec=pass score=-0.026358809919621015
+[2026-05-25 12:39:17] FIFO: major=9 minor=4 (v9.4) rank_offset=4
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v9.4
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v9.4 ===
+Traceback (most recent call last):
+  File "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/run_design.py", line 446, in <module>
+    run_design(design_name, design_version)
+  File "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/run_design.py", line 428, in run_design
+    get_report_sec(design_name, design_version)
+  File "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/run_design.py", line 380, in get_report_sec
+    parse_PPA_report(design_name, design_version)
+  File "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/run_design.py", line 338, in parse_PPA_report
+    wns = float(line.split(":")[1].strip())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'uninit'
+=== AST local evaluate: FIFO.v9.4 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:45:35] FIFO: major=9 minor=5 (v9.5) rank_offset=6
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v9.5
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v9.5 ===
+Design: FIFO, Area: 35741.622766, WNS: -0.6, TNS: -1952.59, Power: 8.8359
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v9.5/ ===
+=== AST local evaluate: FIFO.v9.5 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:53:23]   sec=pass score=-0.04822705354106032
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+=== Running Synthesis ===
+Design: FIFO.v10
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+SEC result: PASSED
+=== SEC Complete: PASSED ===
+=== Generating Reports for FIFO.v10 ===
+Design: FIFO, Area: 35675.654762, WNS: -0.65, TNS: -2051.86, Power: 8.8354
+Timing report parsed: 4118 paths
+SEC result: PASSED
+=== Reports saved to ./output/FIFO.v10/ ===
+=== AST local evaluate: FIFO.v10 (EDA_ROOT=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace) ===
+[2026-05-25 12:54:53] FIFO: promoted v9.1 → v10 score=-0.11215178320527337
+[2026-05-25 12:54:53] === DESIGN DONE: FIFO best=v9 ===
+[2026-05-25 12:54:53] SUITE COMPLETE

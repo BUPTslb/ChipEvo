@@ -1,0 +1,63 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "ticket_machine",
+  "base_version": "v7",
+  "target_version": "v7.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.21,
+  "tns_before": -1.19,
+  "area_baseline": 78.203999,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/ticket_machine.v7.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "state_decode_logic"
+    ],
+    "refined_level": 6,
+    "target_signal": "State bits",
+    "pattern_id": "direct_indexing_for_one_hot",
+    "lines_touched": 8,
+    "span_refined": {
+      "start_line": 22,
+      "end_line": 29
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "state_decode_logic",
+      "pattern": "State bits",
+      "strategy": "direct_indexing_for_one_hot",
+      "skill_source": "proposed",
+      "pattern_id": "direct_indexing_for_one_hot"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.16,
+    "tns_after": -0.88,
+    "area": 63.041999
+  },
+  "scoring": {
+    "wns_norm": 0.30434782608695654,
+    "tns_norm": 0.29032258064516125,
+    "area_norm": -0.19387755349953395,
+    "area_penalty": 0.0,
+    "score": 0.2247051832443546
+  },
+  "relative_advantage": 0.05400963919472404
+}

@@ -1,0 +1,13 @@
+{
+    "SIPO/out -> DES/data_out": -0.79,
+    "SCR/dataout -> PISO/temp": -0.67,
+    "DES/lfsr -> DES/lfsr": -0.53,
+    "SCR/lfsr -> SCR/lfsr": -0.47,
+    "SIPO/out -> SIPO/out": -0.21,
+    "SCR/lfsr -> SCR/dataout": -0.16,
+    "SIPO/temp -> SIPO/temp": -0.1,
+    "SIPO/temp -> SIPO/out": -0.1,
+    "PISO/out -> PISO/out": -0.1,
+    "PISO/out -> SIPO/temp": -0.1,
+    "PISO/temp -> PISO/temp": -0.07
+}

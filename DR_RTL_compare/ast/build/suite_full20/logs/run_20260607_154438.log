@@ -1,0 +1,532 @@
+[2026-06-07 15:44:38] === DESIGN START: aes (AST) ===
+[2026-06-07 15:44:38] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: aes.v0
+Top module: key_expansion_128aes
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: aes, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/aes.v0.sv
+=== evaluate: aes.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 15:46:38] aes: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:46:38] === DESIGN DONE: aes best=v0 ===
+[2026-06-07 15:46:38] === DESIGN START: arm_cpu1 (AST) ===
+[2026-06-07 15:46:38] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: arm_cpu1.v0
+Top module: arm9_compatiable_code
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: arm_cpu1, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+=== evaluate: arm_cpu1.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:48:34] === DESIGN DONE: arm_cpu1 best=v0 ===
+[2026-06-07 15:48:34] === DESIGN START: arm_cpu2 (AST) ===
+[2026-06-07 15:48:34] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: arm_cpu2.v0
+Top module: risclite_mx
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: arm_cpu2, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/arm_cpu2.v0.v
+=== evaluate: arm_cpu2.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:50:30] === DESIGN DONE: arm_cpu2 best=v0 ===
+[2026-06-07 15:50:30] === DESIGN START: communication (AST) ===
+[2026-06-07 15:50:30] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: communication.v0
+Top module: sync_serial_communication_tx_rx
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: communication, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/communication.v0.v
+=== evaluate: communication.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 15:52:26] communication: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:27] communication: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:52:27] === DESIGN DONE: communication best=v0 ===
+[2026-06-07 15:52:27] === DESIGN START: controller (AST) ===
+[2026-06-07 15:52:27] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: controller.v0
+Top module: control_unit
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: controller, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/controller.v0.v
+=== evaluate: controller.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 15:54:21] controller: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:22] controller: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:54:22] === DESIGN DONE: controller best=v0 ===
+[2026-06-07 15:54:22] === DESIGN START: cpu_fsm (AST) ===
+[2026-06-07 15:54:22] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: cpu_fsm.v0
+Top module: mini_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: cpu_fsm, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+=== evaluate: cpu_fsm.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:56:30] === DESIGN DONE: cpu_fsm best=v0 ===
+[2026-06-07 15:56:30] === DESIGN START: cpu_pipe (AST) ===
+[2026-06-07 15:56:30] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: cpu_pipe.v0
+Top module: dcpu16_cpu
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: cpu_pipe, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/cpu_pipe.v0.v
+=== evaluate: cpu_pipe.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:18] cpu_pipe: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 17:57:18] === DESIGN DONE: cpu_pipe best=v0 ===
+[2026-06-07 17:57:18] === DESIGN START: datapath (AST) ===
+[2026-06-07 17:57:18] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: datapath.v0
+Top module: datapath
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: datapath, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/datapath.v0.v
+=== evaluate: datapath.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 17:59:13] datapath: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:14] datapath: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 17:59:14] === DESIGN DONE: datapath best=v0 ===
+[2026-06-07 17:59:14] === DESIGN START: DSP (AST) ===
+[2026-06-07 17:59:14] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: DSP.v0
+Top module: DSP
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: DSP, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+=== evaluate: DSP.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:01:08] DSP: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:09] DSP: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:01:09] === DESIGN DONE: DSP best=v0 ===
+[2026-06-07 18:01:09] === DESIGN START: FIFO (AST) ===
+[2026-06-07 18:01:09] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: FIFO.v0
+Top module: fifo
+Clock: clk_in
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: FIFO, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+=== evaluate: FIFO.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:03:08] FIFO: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:03:08] === DESIGN DONE: FIFO best=v0 ===
+[2026-06-07 18:03:08] === DESIGN START: i2c (AST) ===
+[2026-06-07 18:03:08] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: i2c.v0
+Top module: i2c_master_top
+Clock: wb_clk_i
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: i2c, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/i2c.v0.v
+=== evaluate: i2c.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:05:06] i2c: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:07] i2c: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:05:07] === DESIGN DONE: i2c best=v0 ===
+[2026-06-07 18:05:07] === DESIGN START: LSTM (AST) ===
+[2026-06-07 18:05:07] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: LSTM.v0
+Top module: lstm_cell
+Clock: clk
+=== Synthesis Complete ===
+Design: LSTM, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+=== evaluate: LSTM.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:05:54] LSTM: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:05:54] === DESIGN DONE: LSTM best=v0 ===
+[2026-06-07 18:05:54] === DESIGN START: pcie (AST) ===
+[2026-06-07 18:05:54] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: pcie.v0
+Top module: top
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: pcie, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/pcie.v0.v
+=== evaluate: pcie.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:07:50] pcie: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:07:50] === DESIGN DONE: pcie best=v0 ===
+[2026-06-07 18:07:50] === DESIGN START: router (AST) ===
+[2026-06-07 18:07:50] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: router.v0
+Top module: router_top
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: router, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/router.v0.v
+=== evaluate: router.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:09:49] router: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:09:49] === DESIGN DONE: router best=v0 ===
+[2026-06-07 18:09:49] === DESIGN START: simple_spi (AST) ===
+[2026-06-07 18:09:49] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: simple_spi.v0
+Top module: simple_spi_top
+Clock: clk_i
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: simple_spi, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/simple_spi.v0.v
+=== evaluate: simple_spi.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:11:45] simple_spi: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:11:45] === DESIGN DONE: simple_spi best=v0 ===
+[2026-06-07 18:11:45] === DESIGN START: SPI (AST) ===
+[2026-06-07 18:11:45] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: SPI.v0
+Top module: spi
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: SPI, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/SPI.v0.v
+=== evaluate: SPI.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:13:41] SPI: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:13:41] === DESIGN DONE: SPI best=v0 ===
+[2026-06-07 18:13:41] === DESIGN START: ticket_machine (AST) ===
+[2026-06-07 18:13:41] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: ticket_machine.v0
+Top module: ticket_machine
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: ticket_machine, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/ticket_machine.v0.v
+=== evaluate: ticket_machine.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:15:37] === DESIGN DONE: ticket_machine best=v0 ===
+[2026-06-07 18:15:37] === DESIGN START: tv80 (AST) ===
+[2026-06-07 18:15:37] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: tv80.v0
+Top module: tv80s
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: tv80, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+=== evaluate: tv80.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:17:32] tv80: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:17:32] === DESIGN DONE: tv80 best=v0 ===
+[2026-06-07 18:17:32] === DESIGN START: UART (AST) ===
+[2026-06-07 18:17:32] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: UART.v0
+Top module: uart_top_design
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: UART, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/UART.v0.v
+=== evaluate: UART.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:19:28] UART: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:19:28] === DESIGN DONE: UART best=v0 ===
+[2026-06-07 18:19:28] === DESIGN START: vending_machine (AST) ===
+[2026-06-07 18:19:28] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+/bin/bash: /opt2/synopsys/syn-X-2025.06-SP5/linux64/syn/shlib/libtinfo.so.5: no version information available (required by /bin/bash)
+=== Running Synthesis ===
+Design: vending_machine.v0
+Top module: vending_machine
+Clock: clk
+=== Synthesis Complete ===
+=== Running SEC ===
+=== SEC Complete ===
+Design: vending_machine, Area: None, WNS: None, TNS: None, Power: None (synthesis unavailable)
+Seeded RTL: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/rtl/vending_machine.v0.v
+=== evaluate: vending_machine.v0 EDA=/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace ===
+[2026-06-07 18:21:25] vending_machine: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:21:25] === DESIGN DONE: vending_machine best=v0 ===
+[2026-06-07 18:21:26] SUITE COMPLETE

@@ -1,0 +1,79 @@
+{
+  "design": "DSP",
+  "major_version": "v0",
+  "extracted_at": "2026-06-13T11:12:02",
+  "minors": [
+    {
+      "version": "v0.1",
+      "sec": "pass",
+      "score": 0.0,
+      "promoted": false,
+      "relative_advantage": -0.5773502691896257
+    },
+    {
+      "version": "v0.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v0.3",
+      "sec": "pass",
+      "score": 0.01186671151821136,
+      "promoted": false,
+      "relative_advantage": 1.7320508075688774
+    },
+    {
+      "version": "v0.4",
+      "sec": "pass",
+      "score": 0.0,
+      "promoted": false,
+      "relative_advantage": -0.5773502691896257
+    },
+    {
+      "version": "v0.5",
+      "sec": "pass",
+      "score": 0.0,
+      "promoted": false,
+      "relative_advantage": -0.5773502691896257
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "opReg/data",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.1",
+      "relative_advantage": -0.5773502691896257
+    },
+    {
+      "pattern": "b1RegIn",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.2",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "pRegIn",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.3",
+      "relative_advantage": 1.7320508075688774
+    },
+    {
+      "pattern": "carryInRegIn",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v0.4",
+      "relative_advantage": -0.5773502691896257
+    },
+    {
+      "pattern": "Z, X",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.5",
+      "relative_advantage": -0.5773502691896257
+    }
+  ]
+}

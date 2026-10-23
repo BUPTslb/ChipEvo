@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/communication.v3.3.v:27:1: error: unknown module 'rx_block'\nrx_block uut_rx_block (\n^~~~~~~~",
+  "target_version": "v3.3",
+  "relative_advantage": null
+}

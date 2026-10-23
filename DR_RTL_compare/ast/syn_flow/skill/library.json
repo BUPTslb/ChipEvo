@@ -1,0 +1,3061 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-14T14:40:03",
+  "skills": [
+    {
+      "id": "pc::condition_precompute",
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "confidence": "high",
+      "occurrences": 6,
+      "sec_pass_count": 6,
+      "mean_relative_advantage": 0.6343864759445165,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v0.3",
+          "A_i": 1.0,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v1.3",
+          "A_i": 1.409904312721904,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v3.1",
+          "A_i": 0.5930627927585089,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v5.1",
+          "A_i": 0.13170090772244109,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v7.3",
+          "A_i": 0.33242448549559755,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v9.3",
+          "A_i": 0.33922635696864695,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "expanded_key_ff::common_subexpression",
+      "pattern": "expanded_key_ff",
+      "strategy": "common_subexpression",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.7071067811865476,
+      "evidence": [
+        {
+          "design": "aes",
+          "version": "v0.3",
+          "A_i": 0.7071067811865476,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "rconxor::wire_decomposition",
+      "pattern": "RconXor",
+      "strategy": "wire_decomposition",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 1.3361275866961773,
+      "evidence": [
+        {
+          "design": "aes",
+          "version": "v0.4",
+          "A_i": 0.7071067811865476,
+          "sec": "pass"
+        },
+        {
+          "design": "aes",
+          "version": "v1.2",
+          "A_i": 1.9651483922058068,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "o_data (via gf16_mul p/q cse + isomorphic map cse)::common_subexpression_elimination",
+      "pattern": "o_data (via gf16_mul p/q CSE + isomorphic map CSE)",
+      "strategy": "common_subexpression_elimination",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.414213562373094,
+      "evidence": [
+        {
+          "design": "aes",
+          "version": "v4.4",
+          "A_i": 1.414213562373094,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "gf16_mul[3:0]::common_subexpression_elimination",
+      "pattern": "gf16_mul[3:0]",
+      "strategy": "common_subexpression_elimination",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0,
+      "evidence": [
+        {
+          "design": "aes",
+          "version": "v7.5",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "step_key::tree_balancing",
+      "pattern": "step_key",
+      "strategy": "tree_balancing",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.5783089688592824,
+      "evidence": [
+        {
+          "design": "aes",
+          "version": "v9.3",
+          "A_i": 1.5783089688592824,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "step_key::logic_tree_balance_gf",
+      "pattern": "step_key",
+      "strategy": "logic_tree_balance_gf",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.14649779923783868,
+      "evidence": [
+        {
+          "design": "aes",
+          "version": "v9.5",
+          "A_i": 0.14649779923783868,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "done::condition_precompute",
+      "pattern": "done",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 0.46572939262229257,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v0.1",
+          "A_i": 0.47026289783063363,
+          "sec": "pass"
+        },
+        {
+          "design": "communication",
+          "version": "v0.2",
+          "A_i": 0.4611958874139515,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "ast_subtree::condition_precompute",
+      "pattern": "ast_subtree",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 1.2704161848994806,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v0.3",
+          "A_i": 0.5957871694659003,
+          "sec": "pass"
+        },
+        {
+          "design": "FIFO",
+          "version": "v9.1",
+          "A_i": 1.9450452003330612,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "temp_reg_count::tree_balancing",
+      "pattern": "temp_reg_count",
+      "strategy": "tree_balancing",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.47026289783063363,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v0.4",
+          "A_i": 0.47026289783063363,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "ast_subtree::unknown",
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "confidence": "high",
+      "occurrences": 4,
+      "sec_pass_count": 4,
+      "mean_relative_advantage": 1.137116385739264,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v1.2",
+          "A_i": 1.712928936172462,
+          "sec": "pass"
+        },
+        {
+          "design": "communication",
+          "version": "v3.1",
+          "A_i": 0.41511106902821565,
+          "sec": "pass"
+        },
+        {
+          "design": "controller",
+          "version": "v5.3",
+          "A_i": 2.0,
+          "sec": "pass"
+        },
+        {
+          "design": "SPI",
+          "version": "v9.3",
+          "A_i": 0.42042553775637903,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "uut_rx_block/done::condition_precompute",
+      "pattern": "uut_rx_block/done",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5703306160454112,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v1.4",
+          "A_i": 0.5703306160454112,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_out::mux_tree_restructure",
+      "pattern": "data_out",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 1.464114741990072,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v2.5",
+          "A_i": 1.9118042113951126,
+          "sec": "pass"
+        },
+        {
+          "design": "SPI",
+          "version": "v9.4",
+          "A_i": 1.0164252725850313,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "sel, done, count>=bit_count::input_registration_mux_restructure_register_duplication",
+      "pattern": "sel, done, count>=bit_count",
+      "strategy": "input_registration_mux_restructure_register_duplication",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.4404456413270692,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v3.5",
+          "A_i": 1.4404456413270692,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "bit_count::condition_precompute",
+      "pattern": "bit_count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7142917022332995,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v4.1",
+          "A_i": 1.7142917022332995,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "reg_count::condition_precompute",
+      "pattern": "reg_count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.9878362298134601,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v5.4",
+          "A_i": 0.9878362298134601,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "update_condition::condition_precompute",
+      "pattern": "update_condition",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.9674679731672787,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v5.5",
+          "A_i": 0.9674679731672787,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "done_condition::tree_balancing",
+      "pattern": "done_condition",
+      "strategy": "tree_balancing",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0461047563013537,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v6.2",
+          "A_i": 1.0461047563013537,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_reg::late_mux_select",
+      "pattern": "data_reg",
+      "strategy": "late_mux_select",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.6729941874658644,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v6.3",
+          "A_i": 0.6729941874658644,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "uut_tx_block/reg_count::condition_precompute",
+      "pattern": "uut_tx_block/reg_count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.6934447240959732,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v6.4",
+          "A_i": 0.6934447240959732,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "bit_count::carry_select_style_decrement",
+      "pattern": "bit_count",
+      "strategy": "carry_select_style_decrement",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.11609396401619908,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v7.3",
+          "A_i": 0.11609396401619908,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "count::condition_precompute",
+      "pattern": "count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.5106030391555563,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v7.5",
+          "A_i": 1.5106030391555563,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "uut_rx_block/count::mux_tree_restructure",
+      "pattern": "uut_rx_block/count",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7159476635375204,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v8.2",
+          "A_i": 1.7159476635375204,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "done_condition::condition_precompute",
+      "pattern": "done_condition",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.68957525686548,
+      "evidence": [
+        {
+          "design": "communication",
+          "version": "v9.1",
+          "A_i": 1.68957525686548,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "col_sel::condition_precompute",
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "confidence": "high",
+      "occurrences": 4,
+      "sec_pass_count": 4,
+      "mean_relative_advantage": 1.447717366063505,
+      "evidence": [
+        {
+          "design": "controller",
+          "version": "v0.1",
+          "A_i": 1.4138876129141806,
+          "sec": "pass"
+        },
+        {
+          "design": "controller",
+          "version": "v3.1",
+          "A_i": 0.9350055204025635,
+          "sec": "pass"
+        },
+        {
+          "design": "controller",
+          "version": "v4.1",
+          "A_i": 1.7099255233683985,
+          "sec": "pass"
+        },
+        {
+          "design": "controller",
+          "version": "v8.1",
+          "A_i": 1.7320508075688774,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "encrypt_decrypt::condition_precompute",
+      "pattern": "encrypt_decrypt",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.9937711397211684,
+      "evidence": [
+        {
+          "design": "controller",
+          "version": "v1.1",
+          "A_i": 1.9937711397211684,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "next_state::condition_precompute",
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "confidence": "high",
+      "occurrences": 6,
+      "sec_pass_count": 6,
+      "mean_relative_advantage": 1.2179621697622354,
+      "evidence": [
+        {
+          "design": "controller",
+          "version": "v6.3",
+          "A_i": 2.0,
+          "sec": "pass"
+        },
+        {
+          "design": "controller",
+          "version": "v7.4",
+          "A_i": 1.2103268032877408,
+          "sec": "pass"
+        },
+        {
+          "design": "controller",
+          "version": "v7.5",
+          "A_i": 1.239061810147956,
+          "sec": "pass"
+        },
+        {
+          "design": "FIFO",
+          "version": "v0.2",
+          "A_i": 0.7938989289563135,
+          "sec": "pass"
+        },
+        {
+          "design": "FIFO",
+          "version": "v1.2",
+          "A_i": 0.5760247891346334,
+          "sec": "pass"
+        },
+        {
+          "design": "FIFO",
+          "version": "v1.4",
+          "A_i": 1.4884606870467685,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "rd_count_en, bypass_rk::condition_precompute",
+      "pattern": "rd_count_en, bypass_rk",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7320508075688772,
+      "evidence": [
+        {
+          "design": "controller",
+          "version": "v9.5",
+          "A_i": 1.7320508075688772,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "state::condition_precompute",
+      "pattern": "state",
+      "strategy": "condition_precompute",
+      "confidence": "high",
+      "occurrences": 3,
+      "sec_pass_count": 3,
+      "mean_relative_advantage": 0.9996775357752953,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v0.2",
+          "A_i": 1.0,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v0.2",
+          "A_i": 0.9990326073258856,
+          "sec": "pass"
+        },
+        {
+          "design": "ticket_machine",
+          "version": "v6.3",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "opcode::one_hot_pre_decode",
+      "pattern": "opcode",
+      "strategy": "one_hot_pre_decode",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.9990326073258856,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v0.5",
+          "A_i": 0.9990326073258856,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "pc::late_mux_select",
+      "pattern": "PC",
+      "strategy": "late_mux_select",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5930627927585089,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v3.3",
+          "A_i": 0.5930627927585089,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "alu_result::mux_tree_restructure",
+      "pattern": "alu_result",
+      "strategy": "mux_tree_restructure",
+      "confidence": "high",
+      "occurrences": 3,
+      "sec_pass_count": 3,
+      "mean_relative_advantage": 0.5515428346070882,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v3.4",
+          "A_i": 0.5456000404326672,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v7.5",
+          "A_i": 1.0212307183085612,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v8.4",
+          "A_i": 0.08779774508003595,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "ast_subtree::mux_tree_restructure_condition_precompute",
+      "pattern": "ast_subtree",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.976910970908343,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v4.4",
+          "A_i": 1.976910970908343,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "alu_result::condition_precompute",
+      "pattern": "alu_result",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.5817154585475341,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v5.5",
+          "A_i": 1.5817154585475341,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "alu_result::mux_tree_restructure_condition_precompute",
+      "pattern": "alu_result",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.016535361989153972,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v6.4",
+          "A_i": 0.016535361989153972,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "branch_cond::condition_precompute",
+      "pattern": "branch_cond",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 1.8028336655112827,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v6.5",
+          "A_i": 1.8559466617855205,
+          "sec": "pass"
+        },
+        {
+          "design": "cpu_fsm",
+          "version": "v8.5",
+          "A_i": 1.749720669237045,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "rs_data, rd_data::direct_indexing",
+      "pattern": "rs_data, rd_data",
+      "strategy": "direct_indexing",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0175197520452541,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v7.4",
+          "A_i": 1.0175197520452541,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "ir, alu_out, zero_flag, regis, pc::condition_precompute",
+      "pattern": "IR, ALU_OUT, zero_flag, regis, PC",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.11641256569649489,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v8.1",
+          "A_i": 0.11641256569649489,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "pc::mux_tree_restructure",
+      "pattern": "PC",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.3525712095136971,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v9.1",
+          "A_i": 0.3525712095136971,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "branch_cond,alu_result::mux_tree_restructure_condition_precompute",
+      "pattern": "branch_cond,alu_result",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.9810011912226875,
+      "evidence": [
+        {
+          "design": "cpu_fsm",
+          "version": "v9.5",
+          "A_i": 0.9810011912226875,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "iv::condition_precompute",
+      "pattern": "iv",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.4110918908852443,
+      "evidence": [
+        {
+          "design": "datapath",
+          "version": "v0.2",
+          "A_i": 1.4110918908852443,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "xor_input_bkp_iv::condition_precompute",
+      "pattern": "xor_input_bkp_iv",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.22449564761932453,
+      "evidence": [
+        {
+          "design": "datapath",
+          "version": "v3.2",
+          "A_i": 0.22449564761932453,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "iv::late_mux_select",
+      "pattern": "iv",
+      "strategy": "late_mux_select",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.868129605095328,
+      "evidence": [
+        {
+          "design": "datapath",
+          "version": "v3.4",
+          "A_i": 1.868129605095328,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "iv[3]::late_mux_select",
+      "pattern": "iv[3]",
+      "strategy": "late_mux_select",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7320508075688774,
+      "evidence": [
+        {
+          "design": "datapath",
+          "version": "v4.4",
+          "A_i": 1.7320508075688774,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "bypass_rk_n_pipe,bypass_key_en_n_pipe,col_in::register_duplication,tree_balancing",
+      "pattern": "bypass_rk_n_pipe,bypass_key_en_n_pipe,col_in",
+      "strategy": "register_duplication,tree_balancing",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0,
+      "evidence": [
+        {
+          "design": "datapath",
+          "version": "v5.5",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "pregin::mux_tree_restructure_condition_precompute",
+      "pattern": "pRegIn",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7320508075688774,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v0.3",
+          "A_i": 1.7320508075688774,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "pregin::logic_tree_balance",
+      "pattern": "pRegIn",
+      "strategy": "logic_tree_balance",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v2.2",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "z, x::mux_tree_restructure",
+      "pattern": "Z, X",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.4142135623730951,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v5.5",
+          "A_i": 1.4142135623730951,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "z+x::condition_precompute",
+      "pattern": "Z+X",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 0.6979910566970584,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v7.1",
+          "A_i": 0.5773502691896258,
+          "sec": "pass"
+        },
+        {
+          "design": "DSP",
+          "version": "v8.3",
+          "A_i": 0.8186318442044909,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "b1reg/data::mux_tree_restructure",
+      "pattern": "b1Reg/data",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5773502691896258,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v7.2",
+          "A_i": 0.5773502691896258,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "a1reg/data::condition_precompute",
+      "pattern": "a1Reg/data",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5773502691896258,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v7.4",
+          "A_i": 0.5773502691896258,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "carryinreg/data::wire_decomposition",
+      "pattern": "carryInReg/data",
+      "strategy": "wire_decomposition",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.8186318442044909,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v8.2",
+          "A_i": 0.8186318442044909,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "lower_sub_result::carry_select_style_decrement",
+      "pattern": "lower_sub_result",
+      "strategy": "carry_select_style_decrement",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.751740760469354,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v8.5",
+          "A_i": 0.751740760469354,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "lower_sub_result::carry_select_style_subtraction",
+      "pattern": "lower_sub_result",
+      "strategy": "carry_select_style_subtraction",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 0.9989691340347544,
+      "evidence": [
+        {
+          "design": "DSP",
+          "version": "v9.2",
+          "A_i": 0.9673619248214894,
+          "sec": "pass"
+        },
+        {
+          "design": "DSP",
+          "version": "v9.3",
+          "A_i": 1.0305763432480193,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "write_uut/next_state::condition_precompute",
+      "pattern": "write_uut/next_state",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.7887808833086705,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v0.3",
+          "A_i": 0.7887808833086705,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "flush_uut/f0::condition_precompute",
+      "pattern": "flush_uut/f0",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.8658987681049308,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v0.5",
+          "A_i": 0.8658987681049308,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wren+rden::condition_precompute+mux_tree_restructure",
+      "pattern": "wren+rden",
+      "strategy": [
+        "condition_precompute",
+        "mux_tree_restructure"
+      ],
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0017194743590299,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v2.3",
+          "A_i": 1.0017194743590299,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "f0::condition_precompute",
+      "pattern": "f0",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.9982705860029301,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v2.5",
+          "A_i": 0.9982705860029301,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "write_uut/wbin::register_gray_and_full_to_decouple_pointer_paths",
+      "pattern": "write_uut/wbin",
+      "strategy": "register_gray_and_full_to_decouple_pointer_paths",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7165688022552401,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v3.1",
+          "A_i": 1.7165688022552401,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "write_uut/wren::condition_precompute",
+      "pattern": "write_uut/wren",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5773502691896255,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v4.1",
+          "A_i": 0.5773502691896255,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wbin::condition_precompute",
+      "pattern": "wbin",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5773502691896255,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v4.3",
+          "A_i": 0.5773502691896255,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "w0::mux_tree_restructure",
+      "pattern": "w0",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5773502691896255,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v4.4",
+          "A_i": 0.5773502691896255,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "dataout::condition_precompute",
+      "pattern": "dataOut",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.4000796682034384,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v5.5",
+          "A_i": 1.4000796682034384,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wren::condition_precompute",
+      "pattern": "wren",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.3472940919300975,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v6.1",
+          "A_i": 0.3472940919300975,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "write_uut/full::condition_precompute",
+      "pattern": "write_uut/full",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.4840647546998562,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v6.2",
+          "A_i": 1.4840647546998562,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wbincmp::condition_precompute",
+      "pattern": "wbincmp",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.3484773225939398,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v7.1",
+          "A_i": 0.3484773225939398,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wgraycmp::tree_balance",
+      "pattern": "wgraycmp",
+      "strategy": "tree_balance",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7091825021946223,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v7.2",
+          "A_i": 1.7091825021946223,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "full_val+empty_val::condition_precompute+condition_precompute",
+      "pattern": "full_val+empty_val",
+      "strategy": [
+        "condition_precompute",
+        "condition_precompute"
+      ],
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.42681287259492057,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v8.2",
+          "A_i": 0.42681287259492057,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wbinnext::carry_select_adder",
+      "pattern": "wbinnext",
+      "strategy": "carry_select_adder",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.6669552220139454,
+      "evidence": [
+        {
+          "design": "FIFO",
+          "version": "v8.3",
+          "A_i": 1.6669552220139454,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "sr+dcnt::condition_precompute",
+      "pattern": "sr+dcnt",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0,
+      "evidence": [
+        {
+          "design": "i2c",
+          "version": "v1.4",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "cr::condition_precompute",
+      "pattern": "cr",
+      "strategy": "condition_precompute",
+      "confidence": "high",
+      "occurrences": 3,
+      "sec_pass_count": 3,
+      "mean_relative_advantage": 1.17851130197758,
+      "evidence": [
+        {
+          "design": "i2c",
+          "version": "v2.5",
+          "A_i": 1.4142135623730951,
+          "sec": "pass"
+        },
+        {
+          "design": "i2c",
+          "version": "v6.3",
+          "A_i": 0.7071067811865475,
+          "sec": "pass"
+        },
+        {
+          "design": "i2c",
+          "version": "v8.1",
+          "A_i": 1.4142135623730967,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "wb_dat_o::condition_precompute",
+      "pattern": "wb_dat_o",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0,
+      "evidence": [
+        {
+          "design": "i2c",
+          "version": "v3.5",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "clk_en::mux_tree_restructure",
+      "pattern": "clk_en",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.3872766893544497,
+      "evidence": [
+        {
+          "design": "i2c",
+          "version": "v5.4",
+          "A_i": 1.3872766893544497,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "irq_flag::condition_precompute",
+      "pattern": "irq_flag",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.7071067811865475,
+      "evidence": [
+        {
+          "design": "i2c",
+          "version": "v6.4",
+          "A_i": 0.7071067811865475,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "uut_master/data_count::condition_precompute",
+      "pattern": "uut_master/data_count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0314929108507853,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v0.2",
+          "A_i": 1.0314929108507853,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "sck::mux_before_adder_one_hot_pre_decode_condition_precompute",
+      "pattern": "sck",
+      "strategy": "mux_before_adder_one_hot_pre_decode_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.3221179614992259,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v0.4",
+          "A_i": 0.3221179614992259,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_in, miso::condition_precompute_and_mux_tree_restructure",
+      "pattern": "data_in, miso",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7278332790441804,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v1.2",
+          "A_i": 1.7278332790441804,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "sck::condition_precompute",
+      "pattern": "sck",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.6894803126670952,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v2.1",
+          "A_i": 1.6894803126670952,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "next_state::mux_tree_restructure_condition_precompute",
+      "pattern": "next_state",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7200466015802447,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v3.3",
+          "A_i": 1.7200466015802447,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "spi_slave/next_state::condition_precompute_and_mux_tree_restructure",
+      "pattern": "spi_slave/next_state",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.4087390398444528,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v4.3",
+          "A_i": 1.4087390398444528,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "miso::condition_precompute",
+      "pattern": "miso",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.7297130994950427,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v5.4",
+          "A_i": 1.7297130994950427,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "uut_slave/current_state::condition_precompute",
+      "pattern": "uut_slave/current_state",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.47820115798369106,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v6.1",
+          "A_i": 0.47820115798369106,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_out::condition_precompute_and_mux_tree_restructure",
+      "pattern": "data_out",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.4841289178871171,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v6.2",
+          "A_i": 0.4841289178871171,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_count_in_data_and_gt_32::condition_precompute",
+      "pattern": "data_count_in_data_and_gt_32",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.4841289178871171,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v6.4",
+          "A_i": 0.4841289178871171,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_count_plus1::carry_select_adder",
+      "pattern": "data_count_plus1",
+      "strategy": "carry_select_adder",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.5527877882552044,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v6.5",
+          "A_i": 0.5527877882552044,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "current_state+sck+data_save::condition_precompute_and_mux_tree_restructure",
+      "pattern": "current_state+sck+data_save",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.2617826627687838,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v7.1",
+          "A_i": 1.2617826627687838,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "data_save, next_state, miso, data_out, command_save, address_save::mux_tree_restructure_condition_precompute",
+      "pattern": "data_save, next_state, miso, data_out, command_save, address_save",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0117500909324875,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v7.4",
+          "A_i": 1.0117500909324875,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "uut_master/clock_count::condition_precompute",
+      "pattern": "uut_master/clock_count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.9993254178179147,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v8.3",
+          "A_i": 1.9993254178179147,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "next_state::one_hot_fsm_parallel_and_or",
+      "pattern": "next_state",
+      "strategy": "one_hot_fsm_parallel_and_or",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.9590905148262365,
+      "evidence": [
+        {
+          "design": "SPI",
+          "version": "v9.5",
+          "A_i": 0.9590905148262365,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate::condition_precompute_and_mux_tree_restructure",
+      "pattern": "NextState",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.6166043790808344,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v0.4",
+          "A_i": 1.6166043790808344,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate::parallel_evaluation_with_balanced_mux",
+      "pattern": "NextState",
+      "strategy": "parallel_evaluation_with_balanced_mux",
+      "confidence": "medium",
+      "occurrences": 2,
+      "sec_pass_count": 2,
+      "mean_relative_advantage": 0.9870914984928174,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v1.2",
+          "A_i": 1.414213562373095,
+          "sec": "pass"
+        },
+        {
+          "design": "ticket_machine",
+          "version": "v3.4",
+          "A_i": 0.5599694346125398,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate::late_mux_select",
+      "pattern": "NextState",
+      "strategy": "late_mux_select",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.990493335721278,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v2.2",
+          "A_i": 0.990493335721278,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate::mux_tree_restructure_condition_precompute",
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "high",
+      "occurrences": 4,
+      "sec_pass_count": 4,
+      "mean_relative_advantage": 1.224041299408386,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v2.5",
+          "A_i": 1.0094616889699068,
+          "sec": "pass"
+        },
+        {
+          "design": "ticket_machine",
+          "version": "v3.5",
+          "A_i": 0.7580719296598089,
+          "sec": "pass"
+        },
+        {
+          "design": "ticket_machine",
+          "version": "v5.4",
+          "A_i": 1.5224133427015392,
+          "sec": "pass"
+        },
+        {
+          "design": "ticket_machine",
+          "version": "v7.4",
+          "A_i": 1.606218236302289,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "state::mux_tree_restructure_condition_precompute",
+      "pattern": "State",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.4000224385145167,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v3.1",
+          "A_i": 0.4000224385145167,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate, ready, bill, dispense, return_sig::mux_tree_restructure",
+      "pattern": "NextState, ready, bill, dispense, return_sig",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.8351735447975958,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v5.5",
+          "A_i": 0.8351735447975958,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "state bits::direct_indexing_for_one_hot",
+      "pattern": "State bits",
+      "strategy": "direct_indexing_for_one_hot",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.05400963919472404,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v7.2",
+          "A_i": 0.05400963919472404,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate::one_hot_fsm_parallel_and_or",
+      "pattern": "NextState",
+      "strategy": "one_hot_fsm_parallel_and_or",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.95864776124919,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v8.2",
+          "A_i": 0.95864776124919,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "nextstate::mux_tree_restructure",
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.2336817592878158,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v8.4",
+          "A_i": 1.2336817592878158,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "state_is_rdy+state_is_disp+state_is_rtn+state_is_bill10+state_is_bill20+state_is_bill30::direct_indexing_for_one_hot",
+      "pattern": "state_is_rdy+state_is_disp+state_is_rtn+state_is_bill10+state_is_bill20+state_is_bill30",
+      "strategy": "direct_indexing_for_one_hot",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 0.06786139393660545,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v8.5",
+          "A_i": 0.06786139393660545,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "bill::condition_precompute",
+      "pattern": "bill",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.6652831962223222,
+      "evidence": [
+        {
+          "design": "ticket_machine",
+          "version": "v9.4",
+          "A_i": 1.6652831962223222,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    },
+    {
+      "id": "baud_count::condition_precompute",
+      "pattern": "baud_count",
+      "strategy": "condition_precompute",
+      "confidence": "medium",
+      "occurrences": 1,
+      "sec_pass_count": 1,
+      "mean_relative_advantage": 1.0,
+      "evidence": [
+        {
+          "design": "UART",
+          "version": "v0.2",
+          "A_i": 1.0,
+          "sec": "pass"
+        }
+      ],
+      "source": "runtime"
+    }
+  ],
+  "anti_patterns": [
+    {
+      "pattern": "opcode (pre-decode) / reg_write, alu_src_imm, alu_op, zero_en, branch_en, alu_result (L5 slices)",
+      "strategy": "one_hot_pre_decode",
+      "design": "cpu_fsm",
+      "version": "v0.4",
+      "A_i": -1.0
+    },
+    {
+      "pattern": "o_data",
+      "strategy": "logic_tree_balance_gf",
+      "design": "aes",
+      "version": "v0.2",
+      "A_i": -1.414213562373095
+    },
+    {
+      "pattern": "o_data",
+      "strategy": "logic_tree_balance_gf",
+      "design": "aes",
+      "version": "v1.4",
+      "A_i": -0.8504648684290569
+    },
+    {
+      "pattern": "valid_key",
+      "strategy": "condition_precompute",
+      "design": "aes",
+      "version": "v4.2",
+      "A_i": -0.7071067811865487
+    },
+    {
+      "pattern": "steps_ff",
+      "strategy": "condition_precompute",
+      "design": "aes",
+      "version": "v4.3",
+      "A_i": -0.7071067811865487
+    },
+    {
+      "pattern": "steps_ff",
+      "strategy": "tree_balancing",
+      "design": "aes",
+      "version": "v7.1",
+      "A_i": -1.0
+    },
+    {
+      "pattern": "step_key",
+      "strategy": "wire_decomposition",
+      "design": "aes",
+      "version": "v8.5",
+      "A_i": -1.153624603263013
+    },
+    {
+      "pattern": "step_key[i][31:0]",
+      "strategy": "tree_balancing",
+      "design": "aes",
+      "version": "v9.1",
+      "A_i": -0.8624033840485608
+    },
+    {
+      "pattern": "gf16_mul",
+      "strategy": "common_subexpression_elimination",
+      "design": "aes",
+      "version": "v9.2",
+      "A_i": -0.8624033840485608
+    },
+    {
+      "pattern": "sel, bit_count, done_condition",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v0.5",
+      "A_i": -1.9975088525411193
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "design": "communication",
+      "version": "v1.1",
+      "A_i": -0.7215006672201272
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "design": "communication",
+      "version": "v1.3",
+      "A_i": -0.7652457002957195
+    },
+    {
+      "pattern": "done_condition",
+      "strategy": "wire_decomposition",
+      "design": "communication",
+      "version": "v1.5",
+      "A_i": -0.7965131847020257
+    },
+    {
+      "pattern": "bit_count",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v2.3",
+      "A_i": -0.7868882723843588
+    },
+    {
+      "pattern": "uut_rx_block/data_out",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v2.4",
+      "A_i": -0.7868882723843588
+    },
+    {
+      "pattern": "uut_rx_block/count",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v3.2",
+      "A_i": -1.052785959106039
+    },
+    {
+      "pattern": "uut_rx_block/data_out",
+      "strategy": "mux_tree_restructure",
+      "design": "communication",
+      "version": "v3.4",
+      "A_i": -0.8027707512492451
+    },
+    {
+      "pattern": "uut_rx_block/data_out",
+      "strategy": "mux_select_parallelization",
+      "design": "communication",
+      "version": "v4.2",
+      "A_i": -0.6103393220266697
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "design": "communication",
+      "version": "v4.4",
+      "A_i": -0.751142505980449
+    },
+    {
+      "pattern": "uut_rx_block/count",
+      "strategy": "mux_restructure",
+      "design": "communication",
+      "version": "v5.1",
+      "A_i": -1.274786785486075
+    },
+    {
+      "pattern": "count",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v5.2",
+      "A_i": -0.6805174174946633
+    },
+    {
+      "pattern": "uut_rx_block/count",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v6.1",
+      "A_i": -1.381905831823397
+    },
+    {
+      "pattern": "data_out",
+      "strategy": "mux_tree_restructure",
+      "design": "communication",
+      "version": "v6.5",
+      "A_i": -1.0306378360397943
+    },
+    {
+      "pattern": "uut_tx_block/bit_count",
+      "strategy": "late_mux_select_condition_precompute",
+      "design": "communication",
+      "version": "v7.1",
+      "A_i": -1.2501145027518439
+    },
+    {
+      "pattern": "serial_out_enable",
+      "strategy": "condition_precompute",
+      "design": "communication",
+      "version": "v8.1",
+      "A_i": -0.6595630203866638
+    },
+    {
+      "pattern": [
+        "bit_count",
+        "data_reg"
+      ],
+      "strategy": "mux_tree_restructure",
+      "design": "communication",
+      "version": "v8.5",
+      "A_i": -0.7050057557314132
+    },
+    {
+      "pattern": "uut_rx_block/done",
+      "strategy": "tree_balancing",
+      "design": "communication",
+      "version": "v9.2",
+      "A_i": -0.8967789402227511
+    },
+    {
+      "pattern": "data_out",
+      "strategy": "mux_tree_restructure",
+      "design": "communication",
+      "version": "v9.5",
+      "A_i": -0.5122860004786984
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v0.2",
+      "A_i": -0.6806500137318103
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "design": "controller",
+      "version": "v0.4",
+      "A_i": -0.7332375991823702
+    },
+    {
+      "pattern": [
+        "rk_sel",
+        "key_en"
+      ],
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v1.5",
+      "A_i": -0.6511577228506485
+    },
+    {
+      "pattern": "encrypt_decrypt",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v3.2",
+      "A_i": -0.9989764075292821
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v3.4",
+      "A_i": -0.9989764075292821
+    },
+    {
+      "pattern": [
+        "col_sel",
+        "col_en"
+      ],
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v4.3",
+      "A_i": -0.7000646347289332
+    },
+    {
+      "pattern": "last_round_and_mode_cbc_and_not_enc_dec",
+      "strategy": "common_subexpression",
+      "design": "controller",
+      "version": "v4.4",
+      "A_i": -0.7000646347289332
+    },
+    {
+      "pattern": "key_en",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v5.1",
+      "A_i": -0.5000000000000001
+    },
+    {
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v5.2",
+      "A_i": -0.5000000000000001
+    },
+    {
+      "pattern": "rd_count",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v5.4",
+      "A_i": -0.5000000000000001
+    },
+    {
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v5.5",
+      "A_i": -0.5000000000000001
+    },
+    {
+      "pattern": "key_en",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v7.1",
+      "A_i": -0.8164628711452323
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v7.2",
+      "A_i": -0.8164628711452323
+    },
+    {
+      "pattern": "key_en",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v7.3",
+      "A_i": -0.8164628711452323
+    },
+    {
+      "pattern": "last_round",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v8.3",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": "mode_cbc",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v8.4",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": [
+        "col_sel"
+      ],
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v8.5",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": "col_sel",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v9.1",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": [
+        "col_sel",
+        "col_en"
+      ],
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v9.3",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "controller",
+      "version": "v9.4",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": [
+        "state",
+        "opcode",
+        "alu_op"
+      ],
+      "strategy": [
+        "one_hot_pre_decode",
+        "condition_precompute",
+        "common_subexpression_elimination"
+      ],
+      "design": "cpu_fsm",
+      "version": "v0.5",
+      "A_i": -1.0
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v0.1",
+      "A_i": -1.061223434618078
+    },
+    {
+      "pattern": "state, opcode, alu_result",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v0.4",
+      "A_i": -0.9368417800336916
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v1.1",
+      "A_i": -0.6094148771128391
+    },
+    {
+      "pattern": "state",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v1.2",
+      "A_i": -0.8004894356090647
+    },
+    {
+      "pattern": "alu_result",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v3.2",
+      "A_i": -1.7317256259496847
+    },
+    {
+      "pattern": "nst[0]+nst[1]+nst[2]",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v4.5",
+      "A_i": -0.7876267158348776
+    },
+    {
+      "pattern": "imem",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v5.2",
+      "A_i": -0.9371235330252449
+    },
+    {
+      "pattern": "branch_cond",
+      "strategy": "mux_tree_restructure",
+      "design": "cpu_fsm",
+      "version": "v5.3",
+      "A_i": -0.7762928332447303
+    },
+    {
+      "pattern": "imem[imem_addr]",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v6.2",
+      "A_i": -0.5595981220011808
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v6.3",
+      "A_i": -1.0924502320557095
+    },
+    {
+      "pattern": "alu_result",
+      "strategy": "common_subexpression_elimination",
+      "design": "cpu_fsm",
+      "version": "v7.1",
+      "A_i": -1.1855874779247062
+    },
+    {
+      "pattern": "imem_write_cond",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v7.2",
+      "A_i": -1.1855874779247062
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": null,
+      "design": "cpu_fsm",
+      "version": "v8.2",
+      "A_i": -1.0413631329103954
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v8.3",
+      "A_i": -0.9125678471031803
+    },
+    {
+      "pattern": "imem_write_cond",
+      "strategy": "condition_precompute",
+      "design": "cpu_fsm",
+      "version": "v9.2",
+      "A_i": -1.6727987577050314
+    },
+    {
+      "pattern": "isomorphism_inv",
+      "strategy": "common_subexpression_elimination",
+      "design": "datapath",
+      "version": "v0.3",
+      "A_i": -0.7868770994269928
+    },
+    {
+      "pattern": "iv+sbox_input",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v0.4",
+      "A_i": -0.6242147914582513
+    },
+    {
+      "pattern": "col_en_cnt_unit_pp1",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v3.1",
+      "A_i": -0.697541750904884
+    },
+    {
+      "pattern": "col_en_cnt_unit_pp1",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v3.3",
+      "A_i": -0.697541750904884
+    },
+    {
+      "pattern": "sbox_sel_host",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v3.5",
+      "A_i": -0.697541750904884
+    },
+    {
+      "pattern": "key_en_pp1",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v4.1",
+      "A_i": -0.5773502691896258
+    },
+    {
+      "pattern": "bkp_en",
+      "strategy": "common_subexpression",
+      "design": "datapath",
+      "version": "v4.3",
+      "A_i": -0.5773502691896258
+    },
+    {
+      "pattern": "sbox_input",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v4.5",
+      "A_i": -0.5773502691896258
+    },
+    {
+      "pattern": "iv",
+      "strategy": "condition_precompute",
+      "design": "datapath",
+      "version": "v5.2",
+      "A_i": -1.0
+    },
+    {
+      "pattern": "opReg/data",
+      "strategy": "condition_precompute",
+      "design": "DSP",
+      "version": "v0.1",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": "carryInRegIn",
+      "strategy": "mux_tree_restructure",
+      "design": "DSP",
+      "version": "v0.4",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": "Z, X",
+      "strategy": "condition_precompute",
+      "design": "DSP",
+      "version": "v0.5",
+      "A_i": -0.5773502691896257
+    },
+    {
+      "pattern": "cRegOut",
+      "strategy": "mux_tree_restructure",
+      "design": "DSP",
+      "version": "v2.4",
+      "A_i": -1.0
+    },
+    {
+      "pattern": "pRegIn",
+      "strategy": "tree_balancing",
+      "design": "DSP",
+      "version": "v5.3",
+      "A_i": -0.7071067811865476
+    },
+    {
+      "pattern": "carryInRegIn",
+      "strategy": "condition_precompute",
+      "design": "DSP",
+      "version": "v5.4",
+      "A_i": -0.7071067811865476
+    },
+    {
+      "pattern": "lower_add_result",
+      "strategy": "carry_select_style_decomposition",
+      "design": "DSP",
+      "version": "v7.3",
+      "A_i": -1.7320508075688772
+    },
+    {
+      "pattern": "pRegIn",
+      "strategy": "carry_select_style_decomposition",
+      "design": "DSP",
+      "version": "v8.1",
+      "A_i": -1.5415602224578178
+    },
+    {
+      "pattern": "lower_sub_result",
+      "strategy": "carry_select_style_subtraction",
+      "design": "DSP",
+      "version": "v8.4",
+      "A_i": -0.8474442264205176
+    },
+    {
+      "pattern": "pRegIn",
+      "strategy": "carry_select_style_split",
+      "design": "DSP",
+      "version": "v9.1",
+      "A_i": -0.9430913851765809
+    },
+    {
+      "pattern": "upper_result_temp",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "design": "DSP",
+      "version": "v9.5",
+      "A_i": -1.0548468828929254
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v0.1",
+      "A_i": -1.2242892901849576
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v0.4",
+      "A_i": -1.2242892901849576
+    },
+    {
+      "pattern": "full",
+      "strategy": "late_mux_select",
+      "design": "FIFO",
+      "version": "v1.1",
+      "A_i": -1.483011746253187
+    },
+    {
+      "pattern": "write_uut/next_state",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v2.1",
+      "A_i": -0.9958833980281157
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v2.4",
+      "A_i": -1.0041066623338428
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "mux_tree_restructure",
+      "design": "FIFO",
+      "version": "v3.4",
+      "A_i": -0.6812771431123525
+    },
+    {
+      "pattern": "dataOut",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v3.5",
+      "A_i": -0.6809531956809745
+    },
+    {
+      "pattern": "wbincmp",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v4.2",
+      "A_i": -1.7320508075688776
+    },
+    {
+      "pattern": "full",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v5.3",
+      "A_i": -0.5273184051691384
+    },
+    {
+      "pattern": "w0",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v5.4",
+      "A_i": -0.8727612630342999
+    },
+    {
+      "pattern": "full",
+      "strategy": "mux_tree_restructure",
+      "design": "FIFO",
+      "version": "v6.3",
+      "A_i": -0.9149705498398656
+    },
+    {
+      "pattern": "dataOut",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v6.5",
+      "A_i": -0.9163882967900882
+    },
+    {
+      "pattern": "w0",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v7.4",
+      "A_i": -0.9875993576725066
+    },
+    {
+      "pattern": "empty",
+      "strategy": "register_duplication_fanout_reduction",
+      "design": "FIFO",
+      "version": "v7.5",
+      "A_i": -0.9874633981868078
+    },
+    {
+      "pattern": "w0",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v8.4",
+      "A_i": -1.0082458581472917
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "design": "FIFO",
+      "version": "v8.5",
+      "A_i": -1.0082458581472917
+    },
+    {
+      "pattern": "full+wrptr+w0",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v9.2",
+      "A_i": -0.6365385330081311
+    },
+    {
+      "pattern": "w0",
+      "strategy": "condition_precompute",
+      "design": "FIFO",
+      "version": "v9.4",
+      "A_i": -0.6365385330081311
+    },
+    {
+      "pattern": "wgraynext+rgraynext",
+      "strategy": "wire_decomposition",
+      "design": "FIFO",
+      "version": "v9.5",
+      "A_i": -0.6365385330081311
+    },
+    {
+      "pattern": "al",
+      "strategy": "condition_precompute",
+      "design": "i2c",
+      "version": "v1.3",
+      "A_i": -1.0
+    },
+    {
+      "pattern": "al",
+      "strategy": "condition_precompute",
+      "design": "i2c",
+      "version": "v2.1",
+      "A_i": -0.7071067811865476
+    },
+    {
+      "pattern": "byte_controller/bit_controller/cnt",
+      "strategy": "condition_precompute",
+      "design": "i2c",
+      "version": "v2.4",
+      "A_i": -0.7071067811865476
+    },
+    {
+      "pattern": "wb_dat_o",
+      "strategy": "tree_balancing",
+      "design": "i2c",
+      "version": "v5.1",
+      "A_i": -0.9315407204121428
+    },
+    {
+      "pattern": "c_state",
+      "strategy": "condition_precompute",
+      "design": "i2c",
+      "version": "v6.2",
+      "A_i": -1.4142135623730951
+    },
+    {
+      "pattern": "byte_controller/bit_controller/c_state",
+      "strategy": "condition_precompute",
+      "design": "i2c",
+      "version": "v8.2",
+      "A_i": -0.7071067811865459
+    },
+    {
+      "pattern": "cr",
+      "strategy": "condition_precompute",
+      "design": "i2c",
+      "version": "v8.3",
+      "A_i": -0.7071067811865459
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "SPI",
+      "version": "v0.3",
+      "A_i": -1.3536108723500109
+    },
+    {
+      "pattern": "uut_master/current_state+uut_master/data_count+uut_slave/data_count+uut_slave/next_state",
+      "strategy": [
+        "condition_precompute",
+        "one_hot_pre_decode",
+        "one_hot_pre_decode",
+        "condition_precompute"
+      ],
+      "design": "SPI",
+      "version": "v1.1",
+      "A_i": -0.6297341852352302
+    },
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "design": "SPI",
+      "version": "v1.5",
+      "A_i": -0.6359868975126515
+    },
+    {
+      "pattern": "data_out, data_save",
+      "strategy": "condition_precompute",
+      "design": "SPI",
+      "version": "v2.2",
+      "A_i": -0.9229826198668226
+    },
+    {
+      "pattern": "data_save+data_in+data_count",
+      "strategy": "condition_precompute",
+      "design": "SPI",
+      "version": "v3.1",
+      "A_i": -0.6492385382289222
+    },
+    {
+      "pattern": "uut_master/data_count",
+      "strategy": "condition_precompute_with_balanced_tree",
+      "design": "SPI",
+      "version": "v3.2",
+      "A_i": -0.6880704238540286
+    },
+    {
+      "pattern": "data_count, next_state",
+      "strategy": "condition_precompute",
+      "design": "SPI",
+      "version": "v4.4",
+      "A_i": -0.8120298107150574
+    },
+    {
+      "pattern": "data_count, data_out",
+      "strategy": "condition_precompute, balanced_mux_tree",
+      "design": "SPI",
+      "version": "v4.5",
+      "A_i": -0.5967092291293954
+    },
+    {
+      "pattern": "multiple",
+      "strategy": "expression_simplification",
+      "design": "SPI",
+      "version": "v5.2",
+      "A_i": -0.6359199477929348
+    },
+    {
+      "pattern": "next_state+next_state",
+      "strategy": [
+        "direct_bit_assignment_with_precomputed_conditions",
+        "direct_bit_assignment_with_precomputed_conditions"
+      ],
+      "design": "SPI",
+      "version": "v5.3",
+      "A_i": -0.5993688736807852
+    },
+    {
+      "pattern": "sck",
+      "strategy": "mux_tree_restructure",
+      "design": "SPI",
+      "version": "v6.3",
+      "A_i": -1.9992467820131345
+    },
+    {
+      "pattern": "data_save",
+      "strategy": "common_subexpression_elimination",
+      "design": "SPI",
+      "version": "v7.2",
+      "A_i": -0.5191311299864083
+    },
+    {
+      "pattern": "data_save, data_in, cs, mosi, sck",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "design": "SPI",
+      "version": "v7.5",
+      "A_i": -1.4137670270939957
+    },
+    {
+      "pattern": "data_out_next",
+      "strategy": "mux_tree_restructure",
+      "design": "SPI",
+      "version": "v8.2",
+      "A_i": -0.5288672894490049
+    },
+    {
+      "pattern": "data_out, command_save, address_save, data_save",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "design": "SPI",
+      "version": "v8.5",
+      "A_i": -0.5288672894490049
+    },
+    {
+      "pattern": "uut_slave/next_state",
+      "strategy": "condition_precompute",
+      "design": "SPI",
+      "version": "v9.1",
+      "A_i": -1.1979706625838231
+    },
+    {
+      "pattern": "data_count_reset",
+      "strategy": "tree_balance",
+      "design": "SPI",
+      "version": "v9.2",
+      "A_i": -1.1979706625838231
+    },
+    {
+      "pattern": "NextState, ready, bill, dispense, return_sig",
+      "strategy": "condition_precompute_and_one_hot_pre_decode",
+      "design": "ticket_machine",
+      "version": "v0.2",
+      "A_i": -1.1250727031168684
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v1.1",
+      "A_i": -0.7071067811865475
+    },
+    {
+      "pattern": "State",
+      "strategy": "none",
+      "design": "ticket_machine",
+      "version": "v1.3",
+      "A_i": -0.7071067811865475
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v2.1",
+      "A_i": -0.9999775123455924
+    },
+    {
+      "pattern": "State",
+      "strategy": "mux_tree_restructure",
+      "design": "ticket_machine",
+      "version": "v2.3",
+      "A_i": -0.9999775123455924
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v3.3",
+      "A_i": -1.7180638027868655
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v5.1",
+      "A_i": -1.0825148647848857
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "one_hot_case_mux_restructure",
+      "design": "ticket_machine",
+      "version": "v5.2",
+      "A_i": -0.6375360113571247
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v5.3",
+      "A_i": -0.6375360113571247
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "design": "ticket_machine",
+      "version": "v6.2",
+      "A_i": -0.9999999999999998
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v7.1",
+      "A_i": -0.6905294884796919
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v7.3",
+      "A_i": -0.9696983870173213
+    },
+    {
+      "pattern": "State",
+      "strategy": "tree_balance",
+      "design": "ticket_machine",
+      "version": "v8.1",
+      "A_i": -1.1397684332754012
+    },
+    {
+      "pattern": "State",
+      "strategy": "register_duplication",
+      "design": "ticket_machine",
+      "version": "v8.3",
+      "A_i": -1.1204224811982102
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "design": "ticket_machine",
+      "version": "v9.1",
+      "A_i": -1.4884318877865885
+    },
+    {
+      "pattern": "baud_count+next_state+next_state+count_16+count_8",
+      "strategy": "condition_precompute",
+      "design": "UART",
+      "version": "v0.5",
+      "A_i": -1.0
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "design": "communication",
+  "major_version": "v4",
+  "extracted_at": "2026-06-08T03:29:20",
+  "minors": [
+    {
+      "version": "v4.1",
+      "sec": "pass",
+      "score": -0.04894171947219531,
+      "promoted": false,
+      "relative_advantage": 1.7142917022332995
+    },
+    {
+      "version": "v4.2",
+      "sec": "pass",
+      "score": -0.19831741500788969,
+      "promoted": false,
+      "relative_advantage": -0.6103393220266697
+    },
+    {
+      "version": "v4.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v4.4",
+      "sec": "pass",
+      "score": -0.20736511905951727,
+      "promoted": false,
+      "relative_advantage": -0.751142505980449
+    },
+    {
+      "version": "v4.5",
+      "sec": "pass",
+      "score": -0.18176913702972422,
+      "promoted": false,
+      "relative_advantage": -0.3528098742261798
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "bit_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v4.1",
+      "relative_advantage": 1.7142917022332995
+    },
+    {
+      "pattern": "uut_rx_block/data_out",
+      "strategy": "mux_select_parallelization",
+      "skill_source": "proposed",
+      "version": "v4.2",
+      "relative_advantage": -0.6103393220266697
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "skill_source": "proposed",
+      "version": "v4.4",
+      "relative_advantage": -0.751142505980449
+    },
+    {
+      "pattern": "serial_out_enable, data_out",
+      "strategy": "balanced_or_structure, mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v4.5",
+      "relative_advantage": -0.3528098742261798
+    }
+  ]
+}

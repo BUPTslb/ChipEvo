@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : i2c_master_top
+Version: T-2022.03-SP2
+Date   : Sun Jun 14 02:43:06 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                           33
+Number of nets:                           809
+Number of cells:                          699
+Number of combinational cells:            567
+Number of sequential cells:               128
+Number of macros/black boxes:               0
+Number of buf/inv:                        130
+Number of references:                      38
+
+Combinational area:                578.550001
+Buf/Inv area:                       76.076000
+Noncombinational area:             673.778018
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1252.328019
+Total area:                 undefined
+1

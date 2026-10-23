@@ -1,0 +1,179 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v6",
+  "target_version": "v6.1",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 1
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.83,
+  "tns_before": -431.5,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.6186,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.83,
+      "path_coverage": 0.7143,
+      "fanout_proxy": 4,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00122",
+        "start_line": 122,
+        "end_line": 196,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "ALU_OUT",
+        "IR",
+        "PC",
+        "state"
+      ],
+      "write_set": [
+        "ALU_OUT",
+        "IR",
+        "PC",
+        "state"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "ALU_OUT",
+        "IR",
+        "PC",
+        "state"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "fsm_reencode",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.3212,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.5,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00216",
+        "start_line": 216,
+        "end_line": 227,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "IR",
+        "regis"
+      ],
+      "write_set": [
+        "IR",
+        "regis"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "IR",
+        "regis"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0002",
+      "score": 0.1554,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.1,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00197",
+        "start_line": 197,
+        "end_line": 202,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "imem"
+      ],
+      "write_set": [
+        "imem"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "imem"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v6.1.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "alu_result",
+    "pattern_id": "tree_balancing",
+    "lines_touched": 15,
+    "span_refined": {
+      "start_line": 188,
+      "end_line": 202
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "alu_result",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "pattern_id": "tree_balancing"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.8,
+    "tns_after": -431.01,
+    "area": 32202.757382
+  },
+  "scoring": {
+    "wns_norm": 0.02439024390243891,
+    "tns_norm": -0.002978614478858755,
+    "area_norm": -0.002011425502383671,
+    "area_penalty": 0.0,
+    "score": 0.01085089305826134
+  },
+  "relative_advantage": -0.22043366971778422
+}

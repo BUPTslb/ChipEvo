@@ -1,0 +1,76 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v9",
+  "target_version": "v9.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.88,
+  "tns_before": -429.68,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v9.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "alu_combinational_block",
+      "branch_cond_wire"
+    ],
+    "refined_level": 5,
+    "target_signal": "branch_cond,alu_result",
+    "pattern_id": "mux_tree_restructure_condition_precompute",
+    "lines_touched": 18,
+    "span_refined": {
+      "start_line": 82,
+      "end_line": 110
+    },
+    "optimizations": [
+      {
+        "signal": "branch_cond",
+        "pattern": "condition_precompute",
+        "description": "Direct branch_sub_zero = (rd_data - rs_data == 0) bypasses alu_inB mux and alu_result mux from branch critical path. For branch opcodes alu_src_imm=0 so rd_data-rs_data equals alu_sub. Removes 2 mux levels from state_is_exec → branch_cond → PC path."
+      },
+      {
+        "signal": "alu_result",
+        "pattern": "mux_tree_restructure",
+        "description": "Compute alu_add_result and alu_sub unconditionally in parallel. Replace priority if-else chain with flat 2-level ternary mux: is_add_group ? add : (is_sub|is_branch) ? sub : 0. Pre-compute all control signals (do_reg_write, do_zero_en, do_branch_en) as combinational wires independent of ALU mux. ALU always block reduced to direct assignments."
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "alu_combinational_block",
+      "pattern": "branch_cond,alu_result",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "mux_tree_restructure_condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.8,
+    "tns_after": -429.95,
+    "area": 32288.941381
+  },
+  "scoring": {
+    "wns_norm": 0.02439024390243891,
+    "tns_norm": -0.0005119493635537906,
+    "area_norm": 0.0006594838637376018,
+    "area_penalty": 0.0,
+    "score": 0.012114862253536269
+  },
+  "relative_advantage": 0.9810011912226875
+}

@@ -1,0 +1,62 @@
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fifo
+Version: T-2022.03-SP2
+Date   : Sat Jun 13 21:02:39 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fifo                   5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 300.4711 mW   (95%)
+  Net Switching Power  =  15.2392 mW    (5%)
+                         ---------
+Total Dynamic Power    = 315.7102 mW  (100%)
+
+Cell Leakage Power     = 595.0912 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  2.9592e+05            0.0000            0.0000            0.0000  (   0.00%)  i
+register         519.7188           92.2179        3.2849e+05        2.9686e+05  (  93.85%)
+sequential       274.0915            2.0658        6.5610e+03          282.7183  (   0.09%)
+combinational  3.7646e+03        1.5145e+04        2.6004e+05        1.9170e+04  (   6.06%)
+--------------------------------------------------------------------------------------------------
+Total          3.0048e+05 uW     1.5239e+04 uW     5.9509e+05 nW     3.1631e+05 uW
+1

@@ -1,0 +1,79 @@
+{
+  "design": "FIFO",
+  "major_version": "v7",
+  "extracted_at": "2026-06-14T00:17:06",
+  "minors": [
+    {
+      "version": "v7.1",
+      "sec": "pass",
+      "score": 0.0163446980823013,
+      "promoted": false,
+      "relative_advantage": 0.3484773225939398
+    },
+    {
+      "version": "v7.2",
+      "sec": "pass",
+      "score": 0.13815512751835013,
+      "promoted": false,
+      "relative_advantage": 1.7091825021946223
+    },
+    {
+      "version": "v7.3",
+      "sec": "pass",
+      "score": -0.022245113684074495,
+      "promoted": false,
+      "relative_advantage": -0.08259706892924755
+    },
+    {
+      "version": "v7.4",
+      "sec": "pass",
+      "score": -0.10326098625154316,
+      "promoted": false,
+      "relative_advantage": -0.9875993576725066
+    },
+    {
+      "version": "v7.5",
+      "sec": "pass",
+      "score": -0.10324881514821589,
+      "promoted": false,
+      "relative_advantage": -0.9874633981868078
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "wbincmp",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.1",
+      "relative_advantage": 0.3484773225939398
+    },
+    {
+      "pattern": "wgraycmp",
+      "strategy": "tree_balance",
+      "skill_source": "proposed",
+      "version": "v7.2",
+      "relative_advantage": 1.7091825021946223
+    },
+    {
+      "pattern": "wgraycmp",
+      "strategy": "logic_tree_balance",
+      "skill_source": "proposed",
+      "version": "v7.3",
+      "relative_advantage": -0.08259706892924755
+    },
+    {
+      "pattern": "w0",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.4",
+      "relative_advantage": -0.9875993576725066
+    },
+    {
+      "pattern": "empty",
+      "strategy": "register_duplication_fanout_reduction",
+      "skill_source": "proposed",
+      "version": "v7.5",
+      "relative_advantage": -0.9874633981868078
+    }
+  ]
+}

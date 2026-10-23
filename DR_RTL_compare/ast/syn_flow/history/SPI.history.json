@@ -1,0 +1,431 @@
+{
+  "design": "SPI",
+  "track": "ast_subtree",
+  "baseline": {
+    "Area": 1748.41798,
+    "WNS": -0.26,
+    "TNS": -28.19,
+    "Power": 9.6577
+  },
+  "best_version": "v9",
+  "best_ppa": {
+    "Area": 1684.843987,
+    "WNS": -0.35,
+    "TNS": -39.05,
+    "Power": 9.2031
+  },
+  "best_score": -0.31336610096209455,
+  "end_reason": "max_major_reached",
+  "major_rounds": [
+    {
+      "major_version": "v0",
+      "minors": [
+        {
+          "version": "v0.1",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        },
+        {
+          "version": "v0.2",
+          "sec": "pass",
+          "score": 0.0,
+          "promoted": false,
+          "relative_advantage": 1.0314929108507853
+        },
+        {
+          "version": "v0.3",
+          "sec": "pass",
+          "score": -0.19509022672951606,
+          "promoted": true,
+          "relative_advantage": -1.3536108723500109
+        },
+        {
+          "version": "v0.4",
+          "sec": "pass",
+          "score": -0.058023521106286294,
+          "promoted": false,
+          "relative_advantage": 0.3221179614992259
+        },
+        {
+          "version": "v0.5",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        }
+      ],
+      "promoted_to": "v1"
+    },
+    {
+      "major_version": "v1",
+      "minors": [
+        {
+          "version": "v1.1",
+          "sec": "pass",
+          "score": -0.20474209809162167,
+          "promoted": false,
+          "relative_advantage": -0.6297341852352302
+        },
+        {
+          "version": "v1.2",
+          "sec": "pass",
+          "score": -0.06899058937398898,
+          "promoted": false,
+          "relative_advantage": 1.7278332790441804
+        },
+        {
+          "version": "v1.3",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        },
+        {
+          "version": "v1.4",
+          "sec": "pass",
+          "score": -0.19509022672951606,
+          "promoted": false,
+          "relative_advantage": -0.4621121962962981
+        },
+        {
+          "version": "v1.5",
+          "sec": "pass",
+          "score": -0.20510213662205526,
+          "promoted": true,
+          "relative_advantage": -0.6359868975126515
+        }
+      ],
+      "promoted_to": "v2"
+    },
+    {
+      "major_version": "v2",
+      "minors": [
+        {
+          "version": "v2.1",
+          "sec": "pass",
+          "score": -0.20233971498414882,
+          "promoted": false,
+          "relative_advantage": 1.6894803126670952
+        },
+        {
+          "version": "v2.2",
+          "sec": "pass",
+          "score": -0.2058214646867042,
+          "promoted": true,
+          "relative_advantage": -0.9229826198668226
+        },
+        {
+          "version": "v2.3",
+          "sec": "pass",
+          "score": -0.20510213662205526,
+          "promoted": false,
+          "relative_advantage": -0.38324884640013634
+        },
+        {
+          "version": "v2.4",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        },
+        {
+          "version": "v2.5",
+          "sec": "pass",
+          "score": -0.20510213662205526,
+          "promoted": false,
+          "relative_advantage": -0.38324884640013634
+        }
+      ],
+      "promoted_to": "v3"
+    },
+    {
+      "major_version": "v3",
+      "minors": [
+        {
+          "version": "v3.1",
+          "sec": "pass",
+          "score": -0.19849096192435745,
+          "promoted": false,
+          "relative_advantage": -0.6492385382289222
+        },
+        {
+          "version": "v3.2",
+          "sec": "pass",
+          "score": -0.20645781428446153,
+          "promoted": true,
+          "relative_advantage": -0.6880704238540286
+        },
+        {
+          "version": "v3.3",
+          "sec": "pass",
+          "score": 0.28759784380812226,
+          "promoted": false,
+          "relative_advantage": 1.7200466015802447
+        },
+        {
+          "version": "v3.4",
+          "sec": "pass",
+          "score": -0.14381493268056464,
+          "promoted": false,
+          "relative_advantage": -0.38273763949729384
+        },
+        {
+          "version": "v3.5",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        }
+      ],
+      "promoted_to": "v4"
+    },
+    {
+      "major_version": "v4",
+      "minors": [
+        {
+          "version": "v4.1",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        },
+        {
+          "version": "v4.2",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        },
+        {
+          "version": "v4.3",
+          "sec": "pass",
+          "score": -0.08111727799532217,
+          "promoted": false,
+          "relative_advantage": 1.4087390398444528
+        },
+        {
+          "version": "v4.4",
+          "sec": "pass",
+          "score": -0.18964244285906226,
+          "promoted": true,
+          "relative_advantage": -0.8120298107150574
+        },
+        {
+          "version": "v4.5",
+          "sec": "pass",
+          "score": -0.1791200953354769,
+          "promoted": false,
+          "relative_advantage": -0.5967092291293954
+        }
+      ],
+      "promoted_to": "v5"
+    },
+    {
+      "major_version": "v5",
+      "minors": [
+        {
+          "version": "v5.1",
+          "sec": "pass",
+          "score": -0.2035771209046125,
+          "promoted": false,
+          "relative_advantage": -0.4944242780213272
+        },
+        {
+          "version": "v5.2",
+          "sec": "pass",
+          "score": -0.2044636203731429,
+          "promoted": true,
+          "relative_advantage": -0.6359199477929348
+        },
+        {
+          "version": "v5.3",
+          "sec": "pass",
+          "score": -0.20423462037740495,
+          "promoted": false,
+          "relative_advantage": -0.5993688736807852
+        },
+        {
+          "version": "v5.4",
+          "sec": "pass",
+          "score": -0.18964244285906226,
+          "promoted": false,
+          "relative_advantage": 1.7297130994950427
+        },
+        {
+          "version": "v5.5",
+          "sec": "fail",
+          "score": null,
+          "promoted": false,
+          "relative_advantage": null
+        }
+      ],
+      "promoted_to": "v6"
+    },
+    {
+      "major_version": "v6",
+      "minors": [
+        {
+          "version": "v6.1",
+          "sec": "pass",
+          "score": -0.2044636203731429,
+          "promoted": false,
+          "relative_advantage": 0.47820115798369106
+        },
+        {
+          "version": "v6.2",
+          "sec": "pass",
+          "score": -0.20439515848281162,
+          "promoted": false,
+          "relative_advantage": 0.4841289178871171
+        },
+        {
+          "version": "v6.3",
+          "sec": "pass",
+          "score": -0.2330765824250423,
+          "promoted": true,
+          "relative_advantage": -1.9992467820131345
+        },
+        {
+          "version": "v6.4",
+          "sec": "pass",
+          "score": -0.20439515848281162,
+          "promoted": false,
+          "relative_advantage": 0.4841289178871171
+        },
+        {
+          "version": "v6.5",
+          "sec": "pass",
+          "score": -0.2036021918090615,
+          "promoted": false,
+          "relative_advantage": 0.5527877882552044
+        }
+      ],
+      "promoted_to": "v7"
+    },
+    {
+      "major_version": "v7",
+      "minors": [
+        {
+          "version": "v7.1",
+          "sec": "pass",
+          "score": -0.08072615396337168,
+          "promoted": false,
+          "relative_advantage": 1.2617826627687838
+        },
+        {
+          "version": "v7.2",
+          "sec": "pass",
+          "score": -0.2330765824250423,
+          "promoted": false,
+          "relative_advantage": -0.5191311299864083
+        },
+        {
+          "version": "v7.3",
+          "sec": "pass",
+          "score": -0.2178068801812901,
+          "promoted": false,
+          "relative_advantage": -0.3406345966208663
+        },
+        {
+          "version": "v7.4",
+          "sec": "pass",
+          "score": -0.10211549330343117,
+          "promoted": false,
+          "relative_advantage": 1.0117500909324875
+        },
+        {
+          "version": "v7.5",
+          "sec": "pass",
+          "score": -0.3096092943373184,
+          "promoted": true,
+          "relative_advantage": -1.4137670270939957
+        }
+      ],
+      "promoted_to": "v8"
+    },
+    {
+      "major_version": "v8",
+      "minors": [
+        {
+          "version": "v8.1",
+          "sec": "pass",
+          "score": -0.3096092943373184,
+          "promoted": false,
+          "relative_advantage": -0.47079541945995274
+        },
+        {
+          "version": "v8.2",
+          "sec": "pass",
+          "score": -0.31336610096209455,
+          "promoted": true,
+          "relative_advantage": -0.5288672894490049
+        },
+        {
+          "version": "v8.3",
+          "sec": "pass",
+          "score": -0.149811334890987,
+          "promoted": false,
+          "relative_advantage": 1.9993254178179147
+        },
+        {
+          "version": "v8.4",
+          "sec": "pass",
+          "score": -0.3096092943373184,
+          "promoted": false,
+          "relative_advantage": -0.47079541945995274
+        },
+        {
+          "version": "v8.5",
+          "sec": "pass",
+          "score": -0.31336610096209455,
+          "promoted": false,
+          "relative_advantage": -0.5288672894490049
+        }
+      ],
+      "promoted_to": "v9"
+    },
+    {
+      "major_version": "v9",
+      "minors": [
+        {
+          "version": "v9.1",
+          "sec": "pass",
+          "score": -0.31336610096209455,
+          "promoted": true,
+          "relative_advantage": -1.1979706625838231
+        },
+        {
+          "version": "v9.2",
+          "sec": "pass",
+          "score": -0.31336610096209455,
+          "promoted": false,
+          "relative_advantage": -1.1979706625838231
+        },
+        {
+          "version": "v9.3",
+          "sec": "pass",
+          "score": -0.20690767798350534,
+          "promoted": false,
+          "relative_advantage": 0.42042553775637903
+        },
+        {
+          "version": "v9.4",
+          "sec": "pass",
+          "score": -0.16770269724258538,
+          "promoted": false,
+          "relative_advantage": 1.0164252725850313
+        },
+        {
+          "version": "v9.5",
+          "sec": "pass",
+          "score": -0.1714741889771666,
+          "promoted": false,
+          "relative_advantage": 0.9590905148262365
+        }
+      ],
+      "promoted_to": "v10"
+    }
+  ]
+}

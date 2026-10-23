@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/communication.v5.3.v:231:13: error: expected statement\n            wire [63:0] mux_group1 = sel_is_000 ? 64'h0 :\n            ^~~~\nsyn_flow/rtl/communication.v5.3.v:231:25: error: use of undeclared identifier 'mux_group1'\n            wire [63:0] mux_group1 = sel_is_000 ? 64'h0 :\n                        ^~~~~~~~~~\nsyn_flow/rtl/communication.v5.3.v:234:13: error: expected statement\n            wire [63:0] mux_group2 = sel_is_011 ? {32'h0, data_reg[31:0]} :\n            ^~~~\nsyn_flow/rtl",
+  "target_version": "v5.3",
+  "relative_advantage": null
+}

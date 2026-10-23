@@ -1,0 +1,1 @@
+/uac/gds/lbshen24/project/ChipEvo/DR_RTL/syn_flow_eda/run_design.py

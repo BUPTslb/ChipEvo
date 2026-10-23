@@ -1,0 +1,98 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v7",
+  "target_version": "v7.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.88,
+  "tns_before": -429.68,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [
+    {
+      "id": "st_0002",
+      "score": 0.1473,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.1,
+      "path_coverage": 0.1111,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00210",
+        "start_line": 210,
+        "end_line": 215,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "imem"
+      ],
+      "write_set": [
+        "imem"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "imem"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v7.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0002"
+    ],
+    "refined_level": 6,
+    "target_signal": "imem_write_cond",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 3,
+    "span_refined": {
+      "start_line": 210,
+      "end_line": 215
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0002",
+      "pattern": "imem_write_cond",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.88,
+    "tns_after": -429.68,
+    "area": 32213.397375
+  },
+  "scoring": {
+    "wns_norm": -0.07317073170731714,
+    "tns_norm": 0.00011635212808044904,
+    "area_norm": -0.0016816838184410825,
+    "area_penalty": 0.0,
+    "score": -0.036796895181596574
+  },
+  "relative_advantage": -1.1855874779247062
+}

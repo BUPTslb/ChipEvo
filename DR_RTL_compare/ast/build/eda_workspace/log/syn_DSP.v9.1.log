@@ -1,0 +1,406 @@
+/opt2/synopsys/syn/bin/dc_shell: 42: [: T/opt2: unexpected operator
+/opt2/synopsys/syn/bin/dc_shell: 46: [: Tsynopsys: unexpected operator
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP2 for linux64 - May 25, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# ==================================================
+# TCL Script for Logic Synthesis using Synopsys DC
+# ==================================================
+set tool "DC"
+DC
+set hdlin_enable_designware_support true
+true
+# Set the design environment
+set search_path [list ./lib ./input]
+./lib ./input
+set target_library [list "nangate.db"]
+nangate.db
+set link_library [concat "*" $target_library]
+* nangate.db
+# Define the top-level module name
+set DESIGN_NAME "DSP.v9.1"
+DSP.v9.1
+set TOP_NAME "DSP"
+DSP
+file mkdir ./work/${DESIGN_NAME}
+define_design_lib WORK -path ./work/${DESIGN_NAME}
+1
+# Read the design files
+# read_verilog ./rtl/${DESIGN_NAME}/*.v
+set rtl_path ./rtl/${DESIGN_NAME}.v
+./rtl/DSP.v9.1.v
+# set filelist ./filelist/list_${DESIGN_NAME}.f
+analyze -format verilog -recursive -autoread $rtl_path -top ${TOP_NAME}
+Information: Use of command 'analyze -autoread' is not recommended. This command will be obsolete in a future release. (INFO-103)
+== ANALYZE autoread for top design 'DSP' ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v'.  (AUTOREAD-100)
+Information: Scanning file { DSP.v9.1.v }. (AUTOREAD-303)
+Compiling source file /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:155: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:155: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:153: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:168: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:168: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:166: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:236: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:236: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:235: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:257: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v:257: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Autoread command completed successfully.
+1
+# Elaborate the design
+elaborate $TOP_NAME
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/gtech.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (DSP)
+Elaborated 1 design.
+Current design is now 'DSP'.
+Information: Building the design 'RegMux' instantiated from design 'DSP' with
+	the parameters "8,"SYNC",1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegMux_N8_RSTTYPESYNC_DATAREG1 line 237 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_reg_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (RegMux_N8_RSTTYPESYNC_DATAREG1)
+Information: Building the design 'RegMux' instantiated from design 'DSP' with
+	the parameters "18,"SYNC",1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegMux_N18_RSTTYPESYNC_DATAREG1 line 237 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_reg_reg     | Flip-flop |  18   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (RegMux_N18_RSTTYPESYNC_DATAREG1)
+Information: Building the design 'RegMux' instantiated from design 'DSP' with
+	the parameters "18,"SYNC",0". (HDL-193)
+Presto compilation completed successfully. (RegMux_N18_RSTTYPESYNC_DATAREG0)
+Information: Building the design 'RegMux' instantiated from design 'DSP' with
+	the parameters "48,"SYNC",1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegMux_N48_RSTTYPESYNC_DATAREG1 line 237 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_reg_reg     | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (RegMux_N48_RSTTYPESYNC_DATAREG1)
+Information: Building the design 'PreAddSub'. (HDL-193)
+Presto compilation completed successfully. (PreAddSub)
+Information: Building the design 'Mul'. (HDL-193)
+Presto compilation completed successfully. (Mul)
+Information: Building the design 'RegMux' instantiated from design 'DSP' with
+	the parameters "36,"SYNC",1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegMux_N36_RSTTYPESYNC_DATAREG1 line 237 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_reg_reg     | Flip-flop |  36   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (RegMux_N36_RSTTYPESYNC_DATAREG1)
+Information: Building the design 'RegMux' instantiated from design 'DSP' with
+	the parameters "1,"SYNC",1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegMux_N1_RSTTYPESYNC_DATAREG1 line 237 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/DSP.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_reg_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (RegMux_N1_RSTTYPESYNC_DATAREG1)
+1
+# Set design constraints
+create_clock -name clk -period 0.1 [get_ports clk]
+1
+# set_input_delay 1 [get_ports {in1 in2 in3}] -clock clk
+# set_output_delay 1 [get_ports {out1 out2}] -clock clk
+set_max_delay -to [all_outputs] -from [all_inputs] 0.1
+1
+# # Set drive strength and load
+# set_drive 0.1 [get_ports {in1 in2 in3}]
+# set_load 0.1 [get_ports {out1 out2}]
+# # Optimization constraints
+# set_max_area 0  ;# No area constraint (optimize for timing)
+# set_max_transition 0.2 [get_ports clk]
+# set_max_fanout 10 [get_ports {in1 in2 in3}]
+# Run synthesis
+# compile_ultra
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 380                                    |
+| Number of User Hierarchies                              | 13                                     |
+| Sequential Cell Count                                   | 196                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 91                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 91 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'RegMux_N48_RSTTYPESYNC_DATAREG1_0'
+  Processing 'RegMux_N1_RSTTYPESYNC_DATAREG1_0'
+  Processing 'RegMux_N36_RSTTYPESYNC_DATAREG1'
+  Processing 'Mul'
+  Processing 'RegMux_N18_RSTTYPESYNC_DATAREG1_0'
+  Processing 'PreAddSub'
+  Processing 'RegMux_N18_RSTTYPESYNC_DATAREG0_0'
+  Processing 'RegMux_N8_RSTTYPESYNC_DATAREG1'
+  Processing 'DSP'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'DSP_DW01_sub_0'
+  Processing 'DSP_DW01_sub_1'
+  Processing 'DSP_DW01_sub_2'
+  Processing 'DSP_DW01_sub_3'
+  Processing 'DSP_DW01_sub_4'
+  Processing 'DSP_DW01_sub_5'
+  Processing 'DSP_DW01_sub_6'
+  Processing 'DSP_DW01_sub_7'
+  Processing 'DSP_DW01_add_0'
+  Processing 'DSP_DW01_add_1'
+  Processing 'DSP_DW01_add_2'
+  Processing 'DSP_DW01_add_3'
+  Processing 'DSP_DW01_add_4'
+  Processing 'DSP_DW01_add_5'
+  Processing 'DSP_DW01_add_6'
+  Processing 'DSP_DW01_add_7'
+  Processing 'PreAddSub_DW01_sub_0_DW01_sub_8'
+  Processing 'PreAddSub_DW01_add_0_DW01_add_8'
+  Allocating blocks in 'DW02_mult_A_width18_B_width18'
+  Building model 'DW01_MUX'
+  Processing 'DW01_MUX'
+  Building model 'DW01_mmux_width2'
+  Processing 'DW01_mmux_width2'
+  Building model 'DW01_mmux_width3'
+  Processing 'DW01_mmux_width3'
+  Building model 'DW01_mmux_width4'
+  Processing 'DW01_mmux_width4'
+  Building model 'DW01_mmux_width5'
+  Processing 'DW01_mmux_width5'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width34' (cla)
+  Processing 'DW01_add_width34'
+  Building model 'DW02_mult_A_width18_B_width18' (csa)
+  Processing 'DW02_mult_A_width18_B_width18'
+  Processing 'Mul_DW02_mult_0'
+  Processing 'Mul_DW01_add_0_DW01_add_9'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07    5738.7      2.76     219.5      59.6                          
+    0:00:08    5737.6      2.76     219.5      59.6                          
+    0:00:08    5737.6      2.76     219.5      59.6                          
+    0:00:08    5737.1      2.76     219.5      59.6                          
+    0:00:08    5737.1      2.76     219.5      59.6                          
+    0:00:08    4671.2      3.07     193.0       0.0                          
+    0:00:08    4655.5      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4655.3      2.74     190.6       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09    4655.3      2.74     190.6       0.0                          
+    0:00:09    4659.0      2.72     190.2       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4662.7      2.71     189.8       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4671.0      2.69     189.6       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4670.7      2.68     189.4       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4671.8      2.67     189.3       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4674.9      2.67     189.2       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4676.5      2.66     189.2       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4681.1      2.65     189.0       0.0 mulReg/data_reg_reg[25]/D
+    0:00:09    4682.1      2.64     189.0       0.0 mulReg/data_reg_reg[25]/D
+    0:00:10    4682.7      2.64     189.0       0.0 mulReg/data_reg_reg[25]/D
+    0:00:10    4685.1      2.64     188.9       0.0 mulReg/data_reg_reg[29]/D
+    0:00:10    4685.1      2.64     188.9       0.0 mulReg/data_reg_reg[35]/D
+    0:00:10    4686.1      2.64     188.9       0.0 mulReg/data_reg_reg[25]/D
+    0:00:10    4686.9      2.64     188.9       0.0 mulReg/data_reg_reg[35]/D
+    0:00:10    4690.4      2.63     188.9       0.0 mulReg/data_reg_reg[29]/D
+    0:00:10    4689.6      2.63     188.9       0.0 mulReg/data_reg_reg[25]/D
+    0:00:10    4690.4      2.63     188.8       0.0                          
+    0:00:11    4690.4      2.63     188.8       0.0                          
+    0:00:11    4690.1      2.63     188.8       0.0 mulReg/data_reg_reg[25]/D
+    0:00:11    4692.5      2.62     188.8       0.0 mulReg/data_reg_reg[25]/D
+    0:00:11    4693.8      2.62     188.7       0.0 mulReg/data_reg_reg[25]/D
+    0:00:11    4694.6      2.62     188.7       0.0 mulReg/data_reg_reg[25]/D
+    0:00:11    4694.6      2.61     188.7       0.0                          
+    0:00:11    4696.0      2.61     188.7       0.0                          
+    0:00:11    4697.8      2.61     188.7       0.0                          
+    0:00:11    4698.4      2.61     188.6       0.0                          
+    0:00:11    4697.6      2.61     188.6       0.0                          
+    0:00:11    4697.3      2.61     188.6       0.0                          
+    0:00:11    4697.6      2.61     188.6       0.0                          
+    0:00:11    4697.6      2.61     188.5       0.0                          
+    0:00:12    4699.4      2.61     188.5       0.0                          
+    0:00:12    4699.2      2.61     188.5       0.0                          
+    0:00:12    4697.8      2.61     188.4       0.0                          
+    0:00:12    4699.7      2.61     187.5       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:12    4699.7      2.61     187.5       0.0                          
+    0:00:12    4699.7      2.61     187.5       0.0                          
+    0:00:12    4684.3      2.61     187.5       0.0                          
+    0:00:12    4674.9      2.61     187.0       0.0                          
+    0:00:12    4674.7      2.61     187.0       0.0                          
+    0:00:12    4674.7      2.61     187.0       0.0                          
+    0:00:12    4674.7      2.61     187.0       0.0                          
+    0:00:12    4674.7      2.61     187.0       0.0                          
+    0:00:12    4674.4      2.61     187.0       0.0                          
+    0:00:12    4674.4      2.61     187.0       0.0                          
+    0:00:12    4674.4      2.61     187.0       0.0                          
+    0:00:12    4674.4      2.61     187.0       0.0                          
+    0:00:12    4674.4      2.61     187.0       0.0                          
+    0:00:12    4674.4      2.61     187.0       0.0                          
+    0:00:12    4676.5      2.61     187.0       0.0 mulReg/data_reg_reg[25]/D
+    0:00:12    4675.7      2.61     187.0       0.0                          
+    0:00:12    4676.0      2.61     187.0       0.0                          
+    0:00:13    4676.0      2.61     187.0       0.0                          
+    0:00:13    4678.9      2.61     186.9       0.0                          
+    0:00:13    4680.8      2.61     186.9       0.0                          
+    0:00:13    4681.9      2.61     186.9       0.0                          
+    0:00:13    4681.9      2.61     186.9       0.0                          
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+# compile -map_effort medium -incremental_mapping
+# 7. Write out the synthesized netlist with hierarchy
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+1
+# Report results
+## create folders for reports and netlist
+file mkdir reports/${DESIGN_NAME}
+redirect -file reports/${DESIGN_NAME}/timing.rpt { report_timing -tran -net -input -max_paths 100000 }
+redirect -file reports/${DESIGN_NAME}/area.rpt { report_area }
+redirect -file reports/${DESIGN_NAME}/power.rpt { report_power }
+redirect -file reports/${DESIGN_NAME}/qor.rpt { report_qor }
+# Save synthesized design
+write -format verilog -hierarchy -output netlist/${DESIGN_NAME}.syn.v
+Writing verilog file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/DSP.v9.1.syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdf netlist/${DESIGN_NAME}.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/DSP.v9.1.sdf'. (WT-3)
+1
+# write -format ddc -hierarchy -output netlist/${DESIGN_NAME}.ddc
+# Exit DC
+exit
+Memory usage for this session 147 Mbytes.
+Memory usage for this session including child processes 147 Mbytes.
+CPU usage for this session 18 seconds ( 0.01 hours ).
+Elapsed time for this session 21 seconds ( 0.01 hours ).
+
+Thank you...

@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/aes.v5.5.sv:94:17: error: expected statement\n                wire [15:0] xor_upper16 = expanded_key_ff[NBW_OUT-1-:16] ^ RconXor[31:16];\n                ^~~~\nsyn_flow/rtl/aes.v5.5.sv:94:29: error: use of undeclared identifier 'xor_upper16'\n                wire [15:0] xor_upper16 = expanded_key_ff[NBW_OUT-1-:16] ^ RconXor[31:16];\n                            ^~~~~~~~~~~\nsyn_flow/rtl/aes.v5.5.sv:95:17: error: expected statement\n                wire [15:0] xor_lower16 = expanded_key_ff[N",
+  "target_version": "v5.5",
+  "relative_advantage": null
+}

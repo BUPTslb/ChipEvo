@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/SPI.v2.4.v:133:13: error: expected statement\n            wire state_is_enable = (current_state == ENABLE);\n            ^~~~\nsyn_flow/rtl/SPI.v2.4.v:133:18: error: identifier 'state_is_enable' used before its declaration\n            wire state_is_enable = (current_state == ENABLE);\n                 ^~~~~~~~~~~~~~~\nsyn_flow/rtl/SPI.v2.4.v:244:10: note: declared here\n    wire state_is_enable = (current_state == ENABLE);\n         ^\nsyn_flow/rtl/SPI.v2.4.v:134:13: error: expected stateme",
+  "target_version": "v2.4",
+  "relative_advantage": null
+}

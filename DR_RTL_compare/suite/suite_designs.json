@@ -1,0 +1,9 @@
+{
+  "suite_name": "compare6",
+  "description": "Same six designs as DR_RTL/suite for A/B comparison",
+  "designs": ["cpu_fsm", "tv80", "DSP", "LSTM", "arm_cpu1", "FIFO"],
+  "num_majors": 10,
+  "minors_per_major": 5,
+  "mimo_model": "mimo-v2.5-pro",
+  "top_paths": 15
+}

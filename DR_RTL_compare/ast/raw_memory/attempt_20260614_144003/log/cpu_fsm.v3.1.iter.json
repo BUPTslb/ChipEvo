@@ -1,0 +1,213 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v3",
+  "target_version": "v3.1",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 1
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.77,
+  "tns_before": -428.53,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.5101,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.77,
+      "path_coverage": 0.4286,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00111",
+        "start_line": 111,
+        "end_line": 184,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "ALU_OUT",
+        "IR",
+        "PC"
+      ],
+      "write_set": [
+        "ALU_OUT",
+        "IR",
+        "PC"
+      ],
+      "semantic_tag": "address_generation",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "ALU_OUT",
+        "IR",
+        "PC"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.2944,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.43,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00204",
+        "start_line": 204,
+        "end_line": 215,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "IR",
+        "regis"
+      ],
+      "write_set": [
+        "IR",
+        "regis"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "IR",
+        "regis"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0002",
+      "score": 0.2658,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.26,
+      "path_coverage": 0.2857,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00259",
+        "start_line": 259,
+        "end_line": 287,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "IR",
+        "state"
+      ],
+      "write_set": [
+        "IR",
+        "state"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "IR",
+        "state"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "fsm_reencode",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.1554,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.1,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00185",
+        "start_line": 185,
+        "end_line": 190,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "imem"
+      ],
+      "write_set": [
+        "imem"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "imem"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v3.1.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "PC",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 3,
+    "span_refined": {
+      "start_line": 157,
+      "end_line": 163
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.77,
+    "tns_after": -428.53,
+    "area": 32102.741384
+  },
+  "scoring": {
+    "wns_norm": 0.06097560975609748,
+    "tns_norm": 0.002792451073930248,
+    "area_norm": -0.005110999308655544,
+    "area_penalty": 0.0,
+    "score": 0.030698512857626
+  },
+  "relative_advantage": 0.5930627927585089
+}

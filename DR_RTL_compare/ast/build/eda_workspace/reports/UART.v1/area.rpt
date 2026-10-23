@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : uart_top_design
+Version: T-2022.03-SP2
+Date   : Sun Jun 14 14:08:57 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                           48
+Number of nets:                           924
+Number of cells:                          836
+Number of combinational cells:            694
+Number of sequential cells:               135
+Number of macros/black boxes:               0
+Number of buf/inv:                        118
+Number of references:                      35
+
+Combinational area:                731.499999
+Buf/Inv area:                       87.514000
+Noncombinational area:             520.827992
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1252.327991
+Total area:                 undefined
+1

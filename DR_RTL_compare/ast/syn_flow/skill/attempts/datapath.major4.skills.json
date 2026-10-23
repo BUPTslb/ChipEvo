@@ -1,0 +1,72 @@
+{
+  "design": "datapath",
+  "major_version": "v4",
+  "extracted_at": "2026-06-13T08:06:35",
+  "minors": [
+    {
+      "version": "v4.1",
+      "sec": "pass",
+      "score": -0.026159548772302654,
+      "promoted": false,
+      "relative_advantage": -0.5773502691896258
+    },
+    {
+      "version": "v4.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v4.3",
+      "sec": "pass",
+      "score": -0.026159548772302654,
+      "promoted": false,
+      "relative_advantage": -0.5773502691896258
+    },
+    {
+      "version": "v4.4",
+      "sec": "pass",
+      "score": -0.004958261215230141,
+      "promoted": false,
+      "relative_advantage": 1.7320508075688774
+    },
+    {
+      "version": "v4.5",
+      "sec": "pass",
+      "score": -0.026159548772302654,
+      "promoted": false,
+      "relative_advantage": -0.5773502691896258
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "key_en_pp1",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v4.1",
+      "relative_advantage": -0.5773502691896258
+    },
+    {
+      "pattern": "bkp_en",
+      "strategy": "common_subexpression",
+      "skill_source": "proposed",
+      "version": "v4.3",
+      "relative_advantage": -0.5773502691896258
+    },
+    {
+      "pattern": "iv[3]",
+      "strategy": "late_mux_select",
+      "skill_source": "proposed",
+      "version": "v4.4",
+      "relative_advantage": 1.7320508075688774
+    },
+    {
+      "pattern": "sbox_input",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v4.5",
+      "relative_advantage": -0.5773502691896258
+    }
+  ]
+}

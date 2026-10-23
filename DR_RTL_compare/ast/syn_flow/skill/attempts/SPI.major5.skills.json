@@ -1,0 +1,75 @@
+{
+  "design": "SPI",
+  "major_version": "v5",
+  "extracted_at": "2026-06-14T09:12:16",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "pass",
+      "score": -0.2035771209046125,
+      "promoted": false,
+      "relative_advantage": -0.4944242780213272
+    },
+    {
+      "version": "v5.2",
+      "sec": "pass",
+      "score": -0.2044636203731429,
+      "promoted": false,
+      "relative_advantage": -0.6359199477929348
+    },
+    {
+      "version": "v5.3",
+      "sec": "pass",
+      "score": -0.20423462037740495,
+      "promoted": false,
+      "relative_advantage": -0.5993688736807852
+    },
+    {
+      "version": "v5.4",
+      "sec": "pass",
+      "score": -0.18964244285906226,
+      "promoted": false,
+      "relative_advantage": 1.7297130994950427
+    },
+    {
+      "version": "v5.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "data_save",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.1",
+      "relative_advantage": -0.4944242780213272
+    },
+    {
+      "pattern": "multiple",
+      "strategy": "expression_simplification",
+      "skill_source": "proposed",
+      "version": "v5.2",
+      "relative_advantage": -0.6359199477929348
+    },
+    {
+      "pattern": "next_state+next_state",
+      "strategy": [
+        "direct_bit_assignment_with_precomputed_conditions",
+        "direct_bit_assignment_with_precomputed_conditions"
+      ],
+      "skill_source": "proposed",
+      "version": "v5.3",
+      "relative_advantage": -0.5993688736807852
+    },
+    {
+      "pattern": "miso",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.4",
+      "relative_advantage": 1.7297130994950427
+    }
+  ]
+}

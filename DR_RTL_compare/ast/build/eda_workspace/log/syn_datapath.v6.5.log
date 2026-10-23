@@ -1,0 +1,705 @@
+/opt2/synopsys/syn/bin/dc_shell: 42: [: T/opt2: unexpected operator
+/opt2/synopsys/syn/bin/dc_shell: 46: [: Tsynopsys: unexpected operator
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP2 for linux64 - May 25, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# ==================================================
+# TCL Script for Logic Synthesis using Synopsys DC
+# ==================================================
+set tool "DC"
+DC
+set hdlin_enable_designware_support true
+true
+# Set the design environment
+set search_path [list ./lib ./input]
+./lib ./input
+set target_library [list "nangate.db"]
+nangate.db
+set link_library [concat "*" $target_library]
+* nangate.db
+# Define the top-level module name
+set DESIGN_NAME "datapath.v6.5"
+datapath.v6.5
+set TOP_NAME "datapath"
+datapath
+file mkdir ./work/${DESIGN_NAME}
+define_design_lib WORK -path ./work/${DESIGN_NAME}
+1
+# Read the design files
+# read_verilog ./rtl/${DESIGN_NAME}/*.v
+set rtl_path ./rtl/${DESIGN_NAME}.v
+./rtl/datapath.v6.5.v
+# set filelist ./filelist/list_${DESIGN_NAME}.f
+analyze -format verilog -recursive -autoread $rtl_path -top ${TOP_NAME}
+Information: Use of command 'analyze -autoread' is not recommended. This command will be obsolete in a future release. (INFO-103)
+== ANALYZE autoread for top design 'datapath' ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.  (AUTOREAD-100)
+Information: Scanning file { datapath.v6.5.v }. (AUTOREAD-303)
+Compiling source file /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:657: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:657: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:654: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:1096: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:1096: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Autoread command completed successfully.
+1
+# Elaborate the design
+elaborate $TOP_NAME
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/gtech.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 229 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           232            |     auto/no      |
+===============================================
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:264: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:264: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v:264: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 292 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           295            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 340 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           343            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 427 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           430            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 451 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           454            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine datapath line 252 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      bkp_1_reg      | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|       bkp_reg       | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|       iv_reg        | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine datapath line 313 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       col_reg       | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine datapath line 377 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    sbox_pp2_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine datapath line 390 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       key_reg       | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    key_host_reg     | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine datapath line 476 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+|     rk_sel_pp2_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   rk_out_sel_pp2_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+| col_en_cnt_unit_pp1_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   key_out_sel_pp1_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   last_round_pp2_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   last_round_pp1_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   rk_out_sel_pp1_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     rk_sel_pp1_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     col_sel_pp1_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     col_sel_pp1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     col_sel_pp2_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     col_sel_pp2_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| col_en_cnt_unit_pp2_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     key_sel_pp1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     key_en_pp1_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      round_pp1_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   key_out_sel_pp2_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+Presto compilation completed successfully. (datapath)
+Elaborated 1 design.
+Current design is now 'datapath'.
+Information: Building the design 'data_swap'. (HDL-193)
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|  data_swap/1104  |   4    |   32    |      2       |
+======================================================
+Presto compilation completed successfully. (data_swap)
+Information: Building the design 'shift_rows'. (HDL-193)
+Presto compilation completed successfully. (shift_rows)
+Information: Building the design 'sBox'. (HDL-193)
+Presto compilation completed successfully. (sBox)
+Information: Building the design 'key_expander'. (HDL-193)
+Presto compilation completed successfully. (key_expander)
+Information: Building the design 'mix_columns'. (HDL-193)
+Presto compilation completed successfully. (mix_columns)
+Information: Building the design 'sBox_8'. (HDL-193)
+
+Inferred memory devices in process
+	in routine sBox_8 line 993 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/datapath.v6.5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_gf_pp_reg    | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|   base_new_pp_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (sBox_8)
+1
+# Set design constraints
+create_clock -name clk -period 0.1 [get_ports clk]
+1
+# set_input_delay 1 [get_ports {in1 in2 in3}] -clock clk
+# set_output_delay 1 [get_ports {out1 out2}] -clock clk
+set_max_delay -to [all_outputs] -from [all_inputs] 0.1
+1
+# # Set drive strength and load
+# set_drive 0.1 [get_ports {in1 in2 in3}]
+# set_load 0.1 [get_ports {out1 out2}]
+# # Optimization constraints
+# set_max_area 0  ;# No area constraint (optimize for timing)
+# set_max_transition 0.2 [get_ports clk]
+# set_max_fanout 10 [get_ports {in1 in2 in3}]
+# Run synthesis
+# compile_ultra
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2759                                   |
+| Number of User Hierarchies                              | 10                                     |
+| Sequential Cell Count                                   | 881                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 143                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 388 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mix_columns'
+  Processing 'key_expander'
+  Processing 'sBox_8_0'
+  Processing 'sBox'
+  Processing 'shift_rows'
+  Processing 'data_swap_0'
+  Processing 'datapath'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'datapath_DW01_inc_0'
+  Allocating blocks in 'DW_rash_A_width8_SH_width32'
+  Processing 'key_expander_DW_rash_0'
+  Processing 'key_expander_DW01_sub_0'
+  Processing 'key_expander_DW01_ash_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:25   16566.2      1.08     694.4      63.9                          
+    0:00:26   16308.7      1.08     694.9      63.9                          
+    0:00:26   16308.7      1.08     694.9      63.9                          
+    0:00:26   16308.7      1.08     694.9      63.9                          
+    0:00:27   16308.7      1.08     694.9      63.9                          
+    0:00:27   16308.7      1.08     694.9      63.9                          
+    0:00:28   11627.4      1.08     635.5       0.0                          
+    0:00:28   11563.8      1.07     630.6       0.0                          
+    0:00:29   11563.6      1.05     626.7       0.0                          
+    0:00:29   11567.3      1.05     626.4       0.0                          
+    0:00:29   11572.3      1.05     623.0       0.0                          
+    0:00:29   11578.2      1.05     622.4       0.0                          
+    0:00:29   11581.9      1.04     614.6       0.0                          
+    0:00:30   11594.7      1.03     613.7       0.0                          
+    0:00:30   11594.1      1.03     613.4       0.0                          
+    0:00:30   11598.1      1.02     610.8       0.0                          
+    0:00:30   11601.3      1.01     608.7       0.0                          
+    0:00:30   11607.2      1.01     607.9       0.0                          
+    0:00:31   11610.6      1.01     607.4       0.0                          
+    0:00:31   11610.6      1.01     607.4       0.0                          
+    0:00:31   11610.6      1.01     607.4       0.0                          
+    0:00:31   11610.6      1.01     607.4       0.0                          
+    0:00:31   11610.6      1.01     607.4       0.0                          
+    0:00:31   11610.6      1.01     607.4       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:31   11610.6      1.01     607.4       0.0                          
+    0:00:31   11621.0      1.00     606.0       0.0 col_reg[1][4]/D          
+    0:00:31   11627.1      1.00     605.7       0.0 SBOX/SBOX[3]/out_gf_pp_reg[3]/D
+    0:00:31   11634.8      0.99     605.5       0.0 key_reg[1][2]/D          
+    0:00:31   11637.8      0.99     605.2       0.0 col_reg[1][29]/D         
+    0:00:31   11640.2      0.99     603.1       0.0 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:32   11644.4      0.98     601.0       0.0 SBOX/SBOX[3]/out_gf_pp_reg[1]/D
+    0:00:32   11651.3      0.98     600.8       0.0 col_bus[21]              
+    0:00:32   11658.0      0.98     600.6       0.0 SBOX/SBOX[3]/out_gf_pp_reg[3]/D
+    0:00:32   11672.6      0.98     599.6       0.0 col_reg[1][19]/D         
+    0:00:32   11689.6      0.98     599.5      55.3 key_reg[0][25]/D         
+    0:00:32   11698.7      0.98     598.5      55.3 SBOX/SBOX[3]/out_gf_pp_reg[1]/D
+    0:00:32   11698.1      0.97     598.0      55.4 col_reg[0][20]/D         
+    0:00:32   11698.9      0.97     597.5      55.4 SBOX/SBOX[3]/out_gf_pp_reg[3]/D
+    0:00:33   11710.4      0.97     596.9      55.4 bkp_1_reg[2][30]/D       
+    0:00:33   11720.8      0.97     596.2      80.5 key_reg[1][7]/D          
+    0:00:33   11722.4      0.97     596.1      80.5 col_bus[30]              
+    0:00:33   11729.5      0.97     594.7      80.5 SBOX/SBOX[2]/out_gf_pp_reg[1]/D
+    0:00:33   11733.3      0.97     593.4      55.4 SBOX/SBOX[3]/out_gf_pp_reg[3]/D
+    0:00:33   11742.8      0.96     593.0      55.4 bkp_1_reg[0][10]/D       
+    0:00:33   11746.8      0.96     592.6      55.4 sbox_pp2_reg[21]/D       
+    0:00:33   11751.3      0.96     592.1      55.4 sbox_pp2_reg[22]/D       
+    0:00:33   11751.3      0.96     592.1      55.4 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:34   11754.8      0.96     591.9      55.4 col_bus[23]              
+    0:00:34   11763.3      0.96     590.8      55.4 col_bus[10]              
+    0:00:34   11764.6      0.96     588.9      55.4 iv_bus[6]                
+    0:00:34   11768.6      0.96     589.2      55.4 col_bus[20]              
+    0:00:34   11774.2      0.96     588.9      55.4 col_bus[12]              
+    0:00:34   11775.8      0.96     588.6      55.4 col_bus[3]               
+    0:00:34   11777.9      0.96     588.2      55.4 bkp_1_reg[1][12]/D       
+    0:00:34   11780.6      0.96     587.7      55.4 SBOX/SBOX[0]/out_gf_pp_reg[3]/D
+    0:00:34   11784.1      0.96     587.8      55.4 col_bus[31]              
+    0:00:35   11789.1      0.96     587.7      55.4 col_bus[31]              
+    0:00:35   11789.9      0.96     586.6      55.4 col_bus[14]              
+    0:00:35   11790.5      0.96     586.4      55.4 col_bus[25]              
+    0:00:35   11790.5      0.96     586.2      55.4 col_bus[5]               
+    0:00:35   11795.0      0.96     586.2      55.4 col_bus[4]               
+    0:00:35   11796.3      0.96     586.2      55.4 col_bus[10]              
+    0:00:35   11796.0      0.96     586.2      55.4 col_bus[7]               
+    0:00:35   11796.0      0.96     586.1      55.4 col_bus[29]              
+    0:00:35   11796.3      0.96     586.0      55.4 col_bus[14]              
+    0:00:36   11795.5      0.96     586.3      55.4 col_bus[25]              
+    0:00:36   11796.0      0.96     586.1      55.4 iv_bus[25]               
+    0:00:36   11793.6      0.96     586.1      55.4 col_bus[7]               
+    0:00:36   11793.6      0.96     586.1      55.4                          
+    0:00:37   11779.8      0.96     585.1      55.4                          
+    0:00:37   11773.2      0.96     587.1      55.4                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:37   11773.2      0.96     587.1      55.4                          
+    0:00:37   11766.5      0.96     587.0       0.0 col_bus[5]               
+    0:00:37   11763.9      0.96     586.8       0.0 key_bus[21]              
+    0:00:37   11763.9      0.96     586.7       0.0                          
+    0:00:37   11764.9      0.96     586.7       0.0                          
+    0:00:38   11769.4      0.95     586.5       0.0                          
+    0:00:38   11769.4      0.95     586.4       0.0                          
+    0:00:38   11771.8      0.95     586.2       0.0                          
+    0:00:38   11780.3      0.95     586.1       0.0                          
+    0:00:38   11782.5      0.95     585.9       0.0                          
+    0:00:38   11787.0      0.95     585.4       0.0                          
+    0:00:38   11787.8      0.95     585.1       0.0                          
+    0:00:39   11789.1      0.95     585.0       0.0                          
+    0:00:39   11793.6      0.95     584.8       0.0                          
+    0:00:39   11795.5      0.95     584.6       0.0                          
+    0:00:39   11794.7      0.95     584.6       0.0                          
+    0:00:39   11798.2      0.95     584.3       0.0                          
+    0:00:39   11799.2      0.95     583.9       0.0                          
+    0:00:39   11802.4      0.95     583.3       0.0                          
+    0:00:39   11803.0      0.95     583.0       0.0                          
+    0:00:39   11802.7      0.95     582.8       0.0                          
+    0:00:40   11801.4      0.95     582.5       0.0                          
+    0:00:40   11803.2      0.95     582.5       0.0                          
+    0:00:40   11805.1      0.95     582.3       0.0                          
+    0:00:40   11805.6      0.95     581.9       0.0                          
+    0:00:40   11805.9      0.95     581.8       0.0                          
+    0:00:40   11807.2      0.95     581.7       0.0                          
+    0:00:40   11810.1      0.95     581.5       0.0                          
+    0:00:40   11810.9      0.95     581.4       0.0                          
+    0:00:40   11811.2      0.95     581.3       0.0                          
+    0:00:40   11810.9      0.95     581.2       0.0                          
+    0:00:41   11808.5      0.95     580.6       0.0                          
+    0:00:41   11811.7      0.95     580.5       0.0                          
+    0:00:41   11811.5      0.95     580.3       0.0                          
+    0:00:41   11809.9      0.95     580.2       0.0                          
+    0:00:41   11811.5      0.95     580.0       0.0                          
+    0:00:41   11814.4      0.95     579.7       0.0                          
+    0:00:41   11812.8      0.95     579.7       0.0                          
+    0:00:41   11812.3      0.95     579.6       0.0                          
+    0:00:41   11812.8      0.95     579.4       0.0                          
+    0:00:42   11814.7      0.95     579.3       0.0                          
+    0:00:42   11815.2      0.95     579.0       0.0                          
+    0:00:42   11818.1      0.95     578.6       0.0                          
+    0:00:42   11816.8      0.95     578.5       0.0                          
+    0:00:42   11820.8      0.95     578.2       0.0                          
+    0:00:42   11824.5      0.95     577.8       0.0                          
+    0:00:42   11826.4      0.95     577.5       0.0                          
+    0:00:42   11825.0      0.95     577.2       0.0                          
+    0:00:42   11825.6      0.95     577.1       0.0                          
+    0:00:42   11829.3      0.95     576.9       0.0                          
+    0:00:42   11830.6      0.95     576.7       0.0                          
+    0:00:42   11833.0      0.95     576.6       0.0                          
+    0:00:43   11833.3      0.95     576.5       0.0                          
+    0:00:43   11835.7      0.95     576.2       0.0                          
+    0:00:43   11835.7      0.95     576.1       0.0                          
+    0:00:43   11837.3      0.95     575.9       0.0                          
+    0:00:43   11842.1      0.95     575.7       0.0                          
+    0:00:43   11842.6      0.95     575.5       0.0                          
+    0:00:43   11842.6      0.95     575.5       0.0                          
+    0:00:43   11846.6      0.95     575.3       0.0                          
+    0:00:43   11848.7      0.95     575.2       0.0                          
+    0:00:43   11850.0      0.95     575.1       0.0                          
+    0:00:43   11849.8      0.95     575.0       0.0                          
+    0:00:43   11850.8      0.95     574.8       0.0                          
+    0:00:44   11853.0      0.95     574.6       0.0                          
+    0:00:44   11855.6      0.95     574.4       0.0                          
+    0:00:44   11857.2      0.95     574.2       0.0                          
+    0:00:44   11857.5      0.95     574.1       0.0                          
+    0:00:44   11856.7      0.95     574.1       0.0                          
+    0:00:44   11856.7      0.95     574.1       0.0                          
+    0:00:44   11858.8      0.95     573.9       0.0                          
+    0:00:44   11858.8      0.95     573.9       0.0                          
+    0:00:44   11858.8      0.95     573.8       0.0                          
+    0:00:44   11858.8      0.95     573.8       0.0                          
+    0:00:44   11860.1      0.95     573.7       0.0                          
+    0:00:44   11860.9      0.95     573.6       0.0                          
+    0:00:44   11861.2      0.95     573.5       0.0                          
+    0:00:44   11861.2      0.95     573.4       0.0                          
+    0:00:45   11862.8      0.95     573.3       0.0                          
+    0:00:45   11862.3      0.95     573.2       0.0                          
+    0:00:45   11862.8      0.95     573.2       0.0                          
+    0:00:45   11866.8      0.95     573.1       0.0                          
+    0:00:45   11867.9      0.95     573.1       0.0                          
+    0:00:45   11868.9      0.95     573.0       0.0                          
+    0:00:45   11869.7      0.95     573.0       0.0                          
+    0:00:45   11871.0      0.95     572.9       0.0                          
+    0:00:45   11871.0      0.95     572.8       0.0                          
+    0:00:45   11869.2      0.95     572.7       0.0                          
+    0:00:45   11869.5      0.95     572.6       0.0                          
+    0:00:45   11870.8      0.95     572.6       0.0                          
+    0:00:45   11871.8      0.95     572.5       0.0                          
+    0:00:45   11871.3      0.95     572.4       0.0                          
+    0:00:46   11872.4      0.95     572.4       0.0                          
+    0:00:46   11871.8      0.95     572.3       0.0                          
+    0:00:46   11871.8      0.95     572.3       0.0                          
+    0:00:46   11871.6      0.95     572.2       0.0                          
+    0:00:46   11872.4      0.95     572.2       0.0                          
+    0:00:46   11873.2      0.95     572.2       0.0                          
+    0:00:46   11874.2      0.95     572.1       0.0                          
+    0:00:46   11873.7      0.95     572.1       0.0                          
+    0:00:46   11873.7      0.95     572.1       0.0                          
+    0:00:46   11873.4      0.95     572.0       0.0                          
+    0:00:46   11873.2      0.94     572.0       0.0                          
+    0:00:46   11873.2      0.94     571.9       0.0                          
+    0:00:46   11873.4      0.94     571.8       0.0                          
+    0:00:46   11873.4      0.94     571.8       0.0                          
+    0:00:46   11874.0      0.94     571.7       0.0                          
+    0:00:46   11874.0      0.94     571.7       0.0                          
+    0:00:47   11874.2      0.94     571.7       0.0                          
+    0:00:47   11883.0      0.94     571.7       0.0                          
+    0:00:47   11884.3      0.94     571.7       0.0                          
+    0:00:47   11885.1      0.94     571.6       0.0                          
+    0:00:47   11885.1      0.94     571.6       0.0                          
+    0:00:47   11884.9      0.94     571.6       0.0                          
+    0:00:47   11894.2      0.94     571.5       0.0                          
+    0:00:47   11894.2      0.94     571.5       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:47   11894.2      0.94     571.5       0.0                          
+    0:00:47   11894.2      0.94     571.5       0.0                          
+    0:00:48   11734.1      0.94     565.6       0.0                          
+    0:00:48   11716.8      0.94     565.4       0.0                          
+    0:00:48   11713.6      0.94     565.4       0.0                          
+    0:00:48   11711.4      0.94     565.5       0.0                          
+    0:00:48   11709.1      0.94     565.5       0.0                          
+    0:00:48   11709.1      0.94     565.5       0.0                          
+    0:00:48   11709.1      0.94     565.5       0.0                          
+    0:00:48   11678.2      0.94     564.8       0.0                          
+    0:00:48   11677.1      0.94     564.4       0.0                          
+    0:00:48   11677.1      0.94     564.4       0.0                          
+    0:00:48   11677.1      0.94     564.4       0.0                          
+    0:00:48   11677.1      0.94     564.4       0.0                          
+    0:00:48   11677.1      0.94     564.4       0.0                          
+    0:00:48   11677.1      0.94     564.4       0.0                          
+    0:00:49   11685.6      0.94     564.1       0.0 bkp_1_reg[0][10]/D       
+    0:00:49   11686.4      0.94     564.1       0.0 SBOX/SBOX[2]/out_gf_pp_reg[3]/D
+    0:00:49   11688.0      0.94     564.1       0.0 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:49   11695.8      0.94     563.9       0.0 bkp_1_reg[0][10]/D       
+    0:00:49   11703.2      0.93     563.6       0.0 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:49   11716.0      0.93     563.3       0.0 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:49   11720.8      0.93     563.3       0.0 bkp_reg[0][30]/D         
+    0:00:49   11724.7      0.93     563.3       0.0 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:49   11733.5      0.93     563.2       0.0 col_bus[15]              
+    0:00:49   11735.9      0.93     563.2       0.0 col_bus[22]              
+    0:00:49   11737.5      0.93     563.1       0.0 SBOX/SBOX[1]/out_gf_pp_reg[3]/D
+    0:00:50   11745.0      0.92     562.9       0.0 SBOX/SBOX[3]/out_gf_pp_reg[3]/D
+    0:00:50   11744.7      0.92     562.7       0.0 SBOX/SBOX[3]/out_gf_pp_reg[3]/D
+    0:00:50   11746.3      0.92     562.3       0.0 bkp_1_reg[1][23]/D       
+    0:00:50   11747.6      0.92     562.3       0.0 SBOX/SBOX[2]/out_gf_pp_reg[3]/D
+    0:00:50   11750.3      0.92     562.3       0.0 SBOX/SBOX[3]/out_gf_pp_reg[1]/D
+    0:00:50   11753.7      0.92     562.0       0.0 col_reg[0][20]/D         
+    0:00:50   11754.8      0.92     561.9       0.0 bkp_1_reg[0][12]/D       
+    0:00:50   11756.9      0.92     562.2       0.0 bkp_1_reg[1][16]/D       
+    0:00:50   11760.4      0.92     562.0       0.0 key_reg[1][26]/D         
+    0:00:50   11761.5      0.92     561.9       0.0 col_reg[3][16]/D         
+    0:00:51   11760.1      0.92     561.8       0.0 key_bus[23]              
+    0:00:51   11764.1      0.92     561.7       0.0 bkp_1_reg[1][16]/D       
+    0:00:51   11765.2      0.92     561.5       0.0 col_reg[0][20]/D         
+    0:00:51   11768.6      0.92     561.4       0.0 bkp_1_reg[2][12]/D       
+    0:00:52   11767.0      0.92     561.4       0.0                          
+    0:00:52   11763.9      0.92     561.3       0.0                          
+    0:00:52   11760.9      0.92     561.1       0.0                          
+    0:00:52   11758.8      0.92     561.0       0.0                          
+    0:00:52   11757.2      0.92     561.0       0.0                          
+    0:00:53   11747.4      0.92     561.0       0.0                          
+    0:00:53   11749.0      0.92     560.9       0.0                          
+    0:00:53   11749.2      0.92     560.8       0.0                          
+    0:00:53   11750.8      0.92     560.6       0.0                          
+    0:00:53   11749.8      0.92     560.5       0.0                          
+    0:00:54   11750.8      0.92     560.4       0.0                          
+    0:00:54   11751.1      0.92     560.4       0.0                          
+    0:00:54   11751.1      0.92     560.3       0.0                          
+    0:00:54   11752.1      0.92     560.3       0.0                          
+    0:00:54   11752.1      0.92     560.2       0.0                          
+    0:00:54   11752.7      0.92     560.2       0.0                          
+    0:00:54   11753.5      0.92     560.0       0.0                          
+    0:00:54   11753.5      0.92     560.0       0.0                          
+    0:00:54   11754.3      0.92     560.0       0.0                          
+    0:00:55   11755.6      0.92     559.9       0.0                          
+    0:00:55   11755.9      0.92     559.6       0.0                          
+    0:00:55   11757.2      0.92     559.5       0.0                          
+    0:00:55   11756.7      0.92     559.4       0.0                          
+    0:00:55   11755.1      0.92     559.3       0.0                          
+    0:00:55   11755.1      0.92     559.3       0.0                          
+    0:00:55   11755.3      0.92     559.1       0.0                          
+    0:00:55   11755.6      0.92     559.0       0.0                          
+    0:00:55   11755.6      0.92     558.9       0.0                          
+    0:00:55   11756.4      0.92     558.8       0.0                          
+    0:00:56   11755.6      0.92     558.7       0.0                          
+    0:00:56   11757.2      0.92     558.6       0.0                          
+    0:00:56   11756.1      0.92     558.5       0.0                          
+    0:00:56   11755.3      0.92     558.5       0.0                          
+    0:00:56   11755.3      0.92     558.5       0.0                          
+    0:00:56   11756.1      0.92     558.5       0.0                          
+    0:00:56   11756.9      0.92     558.4       0.0                          
+    0:00:56   11759.6      0.92     558.3       0.0                          
+    0:00:56   11761.7      0.92     558.2       0.0                          
+    0:00:56   11762.5      0.92     558.1       0.0                          
+    0:00:57   11766.0      0.92     558.0       0.0                          
+    0:00:57   11764.4      0.92     558.0       0.0                          
+    0:00:57   11765.4      0.92     557.9       0.0                          
+    0:00:57   11766.5      0.92     557.9       0.0                          
+    0:00:57   11770.5      0.92     557.8       0.0                          
+    0:00:57   11772.9      0.92     557.7       0.0                          
+    0:00:57   11773.4      0.92     557.6       0.0                          
+    0:00:57   11775.0      0.92     557.4       0.0                          
+    0:00:57   11775.0      0.92     557.4       0.0                          
+    0:00:57   11778.7      0.92     557.3       0.0                          
+    0:00:57   11780.1      0.92     557.2       0.0                          
+    0:00:57   11780.6      0.92     557.0       0.0                          
+    0:00:58   11784.1      0.92     556.7       0.0                          
+    0:00:58   11787.5      0.92     556.7       0.0                          
+    0:00:58   11789.4      0.92     556.5       0.0                          
+    0:00:58   11789.9      0.92     556.5       0.0                          
+    0:00:58   11789.9      0.92     556.5       0.0                          
+    0:00:58   11791.0      0.92     556.2       0.0                          
+    0:00:58   11791.5      0.92     556.2       0.0                          
+    0:00:58   11792.3      0.92     556.1       0.0                          
+    0:00:58   11792.0      0.92     555.9       0.0                          
+    0:00:58   11792.0      0.92     555.8       0.0                          
+    0:00:59   11791.8      0.92     555.7       0.0                          
+    0:00:59   11791.8      0.92     555.7       0.0                          
+    0:00:59   11791.5      0.92     555.7       0.0                          
+    0:00:59   11794.7      0.92     555.7       0.0                          
+    0:00:59   11795.5      0.92     555.7       0.0                          
+    0:00:59   11795.5      0.92     555.7       0.0                          
+    0:00:59   11796.3      0.92     555.6       0.0                          
+    0:00:59   11803.8      0.92     555.6       0.0                          
+    0:00:59   11803.0      0.92     555.5       0.0                          
+    0:00:59   11805.6      0.92     555.5       0.0                          
+    0:01:00   11806.1      0.92     555.5       0.0                          
+    0:01:00   11807.2      0.92     555.4       0.0                          
+    0:01:00   11809.9      0.92     555.4       0.0                          
+    0:01:00   11810.7      0.92     555.3       0.0                          
+    0:01:00   11810.7      0.92     555.3       0.0                          
+    0:01:00   11810.7      0.92     555.3       0.0                          
+    0:01:00   11814.1      0.92     555.3       0.0                          
+    0:01:00   11814.7      0.92     555.2       0.0                          
+    0:01:00   11812.5      0.92     555.2       0.0                          
+    0:01:00   11813.3      0.92     555.1       0.0                          
+    0:01:00   11814.7      0.92     555.1       0.0                          
+    0:01:00   11814.7      0.92     555.0       0.0                          
+    0:01:00   11814.4      0.92     555.0       0.0                          
+    0:01:01   11817.1      0.92     555.0       0.0                          
+    0:01:01   11816.8      0.92     554.9       0.0                          
+    0:01:01   11818.4      0.92     554.9       0.0                          
+    0:01:01   11819.2      0.92     554.9       0.0                          
+    0:01:01   11820.2      0.92     554.8       0.0                          
+    0:01:01   11820.8      0.92     554.8       0.0                          
+    0:01:01   11821.6      0.92     554.7       0.0                          
+    0:01:01   11822.4      0.92     554.7       0.0                          
+    0:01:01   11821.6      0.92     554.7       0.0                          
+    0:01:01   11822.4      0.92     554.7       0.0                          
+    0:01:01   11823.2      0.92     554.7       0.0                          
+    0:01:01   11823.2      0.92     554.7       0.0 bkp_1_reg[1][30]/D       
+    0:01:02   11830.6      0.92     554.8       0.0 col_reg[3][3]/D          
+    0:01:02   11833.5      0.92     554.7       0.0 col_reg[1][3]/D          
+    0:01:02   11837.3      0.92     554.6       0.0 col_reg[1][3]/D          
+    0:01:02   11842.1      0.91     554.3       0.0 bkp_1_reg[3][3]/D        
+    0:01:03   11843.4      0.91     554.3       0.0 col_reg[1][3]/D          
+    0:01:03   11843.9      0.91     554.3       0.0                          
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+# compile -map_effort medium -incremental_mapping
+# 7. Write out the synthesized netlist with hierarchy
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+1
+# Report results
+## create folders for reports and netlist
+file mkdir reports/${DESIGN_NAME}
+redirect -file reports/${DESIGN_NAME}/timing.rpt { report_timing -tran -net -input -max_paths 100000 }
+redirect -file reports/${DESIGN_NAME}/area.rpt { report_area }
+redirect -file reports/${DESIGN_NAME}/power.rpt { report_power }
+redirect -file reports/${DESIGN_NAME}/qor.rpt { report_qor }
+# Save synthesized design
+write -format verilog -hierarchy -output netlist/${DESIGN_NAME}.syn.v
+Writing verilog file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/datapath.v6.5.syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdf netlist/${DESIGN_NAME}.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/datapath.v6.5.sdf'. (WT-3)
+1
+# write -format ddc -hierarchy -output netlist/${DESIGN_NAME}.ddc
+# Exit DC
+exit
+Memory usage for this session 167 Mbytes.
+Memory usage for this session including child processes 167 Mbytes.
+CPU usage for this session 70 seconds ( 0.02 hours ).
+Elapsed time for this session 74 seconds ( 0.02 hours ).
+
+Thank you...

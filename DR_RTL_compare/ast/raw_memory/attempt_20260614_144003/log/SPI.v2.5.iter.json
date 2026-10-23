@@ -1,0 +1,87 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "SPI",
+  "base_version": "v2",
+  "target_version": "v2.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.32,
+  "tns_before": -35.44,
+  "area_baseline": 1748.41798,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/SPI.v2.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_slave_next_state",
+      "st_slave_miso"
+    ],
+    "refined_level": 5,
+    "target_signal": "next_state,miso",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 8,
+    "span_refined": [
+      {
+        "start_line": 187,
+        "end_line": 198,
+        "description": "Precompute next_state conditions (cs_is_zero, cs_is_one, data_end_is_one)"
+      },
+      {
+        "start_line": 200,
+        "end_line": 202,
+        "description": "Precompute next_state per state"
+      },
+      {
+        "start_line": 264,
+        "end_line": 273,
+        "description": "Use precomputed next_state in case statement"
+      },
+      {
+        "start_line": 278,
+        "end_line": 280,
+        "description": "Precompute miso condition (cmd_is_ff, miso_condition)"
+      },
+      {
+        "start_line": 284,
+        "end_line": 287,
+        "description": "Use precomputed miso condition"
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_slave_next_state",
+      "pattern": "next_state,miso",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.32,
+    "tns_after": -35.44,
+    "area": 1751.87598
+  },
+  "scoring": {
+    "wns_norm": -0.23076923076923075,
+    "tns_norm": -0.2571833983682155,
+    "area_norm": 0.001977787942903724,
+    "area_penalty": 0.0,
+    "score": -0.20510213662205526
+  },
+  "relative_advantage": -0.38324884640013634
+}

@@ -1,0 +1,63 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "controller",
+  "base_version": "v3",
+  "target_version": "v3.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.39,
+  "tns_before": -2.84,
+  "area_baseline": 234.612002,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/controller.v3.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "combinational_block_encrypt_decrypt"
+    ],
+    "refined_level": 5,
+    "target_signal": "encrypt_decrypt",
+    "pattern_id": "one_hot_predecode",
+    "lines_touched": 14,
+    "span_refined": {
+      "start_line": 142,
+      "end_line": 155
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "combinational_block_encrypt_decrypt",
+      "pattern": "encrypt_decrypt",
+      "strategy": "one_hot_predecode",
+      "skill_source": "proposed",
+      "pattern_id": "one_hot_predecode"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": -0.38,
+    "tns_after": -2.91,
+    "area": 256.690002
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": -0.021052631578947385,
+    "area_norm": 0.09410430758781047,
+    "area_penalty": 0.0,
+    "score": 0.006747225085539985
+  },
+  "relative_advantage": null
+}

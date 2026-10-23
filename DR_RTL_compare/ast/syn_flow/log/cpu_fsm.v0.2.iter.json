@@ -1,0 +1,158 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v0",
+  "target_version": "v0.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.82,
+  "tns_before": -429.73,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [
+    {
+      "id": "st_0002",
+      "score": 0.2773,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.29,
+      "path_coverage": 0.2857,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00325",
+        "start_line": 325,
+        "end_line": 354,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "IR",
+        "state"
+      ],
+      "write_set": [
+        "IR",
+        "state"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "IR",
+        "state"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "fsm_reencode",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.1554,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.1,
+      "path_coverage": 0.1429,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00178",
+        "start_line": 178,
+        "end_line": 183,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "imem"
+      ],
+      "write_set": [
+        "imem"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "imem"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v0.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0002"
+    ],
+    "refined_level": 5,
+    "target_signal": "state",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 35,
+    "span_refined": {
+      "start_line": 325,
+      "end_line": 354
+    },
+    "details": {
+      "L5_slices_targeted": [
+        "state (nst S6)",
+        "PC (S2 branch conditions)"
+      ],
+      "one_hot_wires_added": [
+        "op_is_add",
+        "op_is_addi",
+        "op_is_sub",
+        "op_is_cmp",
+        "op_is_beq",
+        "op_is_bne",
+        "op_is_jmp",
+        "op_is_halt",
+        "op_is_branch",
+        "op_uses_sub",
+        "op_uses_alu"
+      ],
+      "transformation": "Pre-decoded opcode 4-bit comparisons into one-hot named wires at module level; reused in (1) always-alu control case→AND-OR with pre-decoded signals eliminating case decode depth, (2) next-state DECODE branch using op_is_halt, (3) EXEC branch PC update using op_is_beq/op_is_bne/op_is_jmp. Reduces combinational decode depth from ~4 gate-levels (case mux + comparator) to ~2 gate-levels (direct AND-OR with pre-computed booleans).",
+      "interface_preserved": true,
+      "latency_change": "none"
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0002",
+      "pattern": "state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.8,
+    "tns_after": -428.91,
+    "area": 32200.629383
+  },
+  "scoring": {
+    "wns_norm": 0.02439024390243891,
+    "tns_norm": 0.0019081749005189145,
+    "area_norm": -0.002077373851568505,
+    "area_penalty": 0.0,
+    "score": 0.0125513770886658
+  },
+  "relative_advantage": 0.9990326073258856
+}

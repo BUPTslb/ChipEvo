@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/cpu_fsm.v1.5.v:163:49: error: expected statement\n                                                wire alu_result_zero = (alu_result == 8'h00);\n                                                ^~~~\nsyn_flow/rtl/cpu_fsm.v1.5.v:163:54: error: use of undeclared identifier 'alu_result_zero'; did you mean 'alu_result'?\n                                                wire alu_result_zero = (alu_result == 8'h00);\n                                                     ^~~~~~~~~~~~~~~\nsyn_flow/r",
+  "target_version": "v1.5",
+  "relative_advantage": null
+}

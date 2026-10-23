@@ -1,0 +1,2219 @@
+[2026-06-07 15:06:56] === DESIGN START: cpu_fsm (AST) ===
+[2026-06-07 15:06:56] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:09:01] cpu_fsm: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:11:12]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v0.1.v:59:18: error: identifier 'alu_result' used before its declaration
+wire alu_zero = (alu_result == 8'h00);
+                 ^~~~~~~~~~
+syn_flow/rtl/cpu_fsm.v0.1.v:88:12: note: declared here
+reg  [7:0] alu_result  ;
+           ^
+[2026-06-07 15:11:12] cpu_fsm: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:13:33]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v0.2.v:49:30: error: identifier 'OP_BEQ' used before its declaration
+wire beq_branch = (opcode == OP_BEQ) && (alu_result == 8'h00);
+                             ^~~~~~
+syn_flow/rtl/cpu_fsm.v0.2.v:88:18: note: declared here
+localparam [3:0] OP_BEQ  = 4'H8;
+                 ^
+syn_
+[2026-06-07 15:13:33] cpu_fsm: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:21:19]   sec=pass score=0.03017438606034664
+[2026-06-07 15:21:19] cpu_fsm: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:25:41]   sec=pass score=0.02259458128839779
+[2026-06-07 15:25:41] cpu_fsm: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:28:55]   sec=pass synth=fail
+[2026-06-07 15:28:55]   sec=fail score=None
+[2026-06-07 15:31:03] cpu_fsm: promoted v0.4 → v1 score=0.02259458128839779
+[2026-06-07 15:31:03] cpu_fsm: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-07 15:35:03]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v1.1.v:161:70: error: identifier 'alu_is_zero' used before its declaration
+                                                        zero_flag <= alu_is_zero;
+                                                                     ^~~~~~~~~~~
+syn_flow/rtl/cpu_fsm.v1.1.v:275:6: note: 
+[2026-06-07 15:35:03] cpu_fsm: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-07 15:39:00]   sec=pass synth=fail
+[2026-06-07 15:39:00]   sec=fail score=None
+[2026-06-07 15:39:00] cpu_fsm: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-07 15:40:27]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v1.3.v:60:24: error: identifier 'state' used before its declaration
+wire state_is_fetch = (state == FETCH);
+                       ^~~~~
+syn_flow/rtl/cpu_fsm.v1.3.v:85:11: note: declared here
+reg [2:0] state, nst ;
+          ^
+syn_flow/rtl/cpu_fsm.v1.3.v:60:33: error: identifier
+[2026-06-07 15:40:27] cpu_fsm: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-07 15:42:33]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v1.4.v:279:9: error: cannot assign to a net within a procedural context
+        alu_result_zero = (alu_result == 8'h00);
+        ^~~~~~~~~~~~~~~
+[2026-06-07 15:42:33] cpu_fsm: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-07 15:44:04]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v1.5.v:163:49: error: expected statement
+                                                wire alu_result_zero = (alu_result == 8'h00);
+                                                ^~~~
+syn_flow/rtl/cpu_fsm.v1.5.v:163:54: error: use of undeclared identifier 'alu_result_zero'; 
+[2026-06-07 15:44:05] cpu_fsm: no SEC-pass scored minor in major 1, stopping
+[2026-06-07 15:44:05] === DESIGN DONE: cpu_fsm best=v1 ===
+[2026-06-07 15:44:05] SUITE COMPLETE
+[2026-06-07 15:44:38] === DESIGN START: aes (AST) ===
+[2026-06-07 15:44:38] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:46:38] aes: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:46:38]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/aes.v0/timing_word.json
+[2026-06-07 15:46:38] aes: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:46:38] === DESIGN DONE: aes best=v0 ===
+[2026-06-07 15:46:38] === DESIGN START: arm_cpu1 (AST) ===
+[2026-06-07 15:46:38] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:48:34]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu1.v0/timing_word.json
+[2026-06-07 15:48:34] arm_cpu1: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:48:34] === DESIGN DONE: arm_cpu1 best=v0 ===
+[2026-06-07 15:48:34] === DESIGN START: arm_cpu2 (AST) ===
+[2026-06-07 15:48:34] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:50:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/arm_cpu2.v0/timing_word.json
+[2026-06-07 15:50:30] arm_cpu2: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:50:30] === DESIGN DONE: arm_cpu2 best=v0 ===
+[2026-06-07 15:50:30] === DESIGN START: communication (AST) ===
+[2026-06-07 15:50:30] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:52:26] communication: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:26] communication: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:52:26]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/communication.v0/timing_word.json
+[2026-06-07 15:52:27] communication: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:52:27] === DESIGN DONE: communication best=v0 ===
+[2026-06-07 15:52:27] === DESIGN START: controller (AST) ===
+[2026-06-07 15:52:27] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:54:21] controller: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:21] controller: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:54:21]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/controller.v0/timing_word.json
+[2026-06-07 15:54:22] controller: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:54:22] === DESIGN DONE: controller best=v0 ===
+[2026-06-07 15:54:22] === DESIGN START: cpu_fsm (AST) ===
+[2026-06-07 15:54:22] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 15:56:30]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_fsm.v0/timing_word.json
+[2026-06-07 15:56:30] cpu_fsm: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 15:56:30] === DESIGN DONE: cpu_fsm best=v0 ===
+[2026-06-07 15:56:30] === DESIGN START: cpu_pipe (AST) ===
+[2026-06-07 15:56:30] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:17] cpu_pipe: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 17:57:17]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/cpu_pipe.v0/timing_word.json
+[2026-06-07 17:57:18] cpu_pipe: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 17:57:18] === DESIGN DONE: cpu_pipe best=v0 ===
+[2026-06-07 17:57:18] === DESIGN START: datapath (AST) ===
+[2026-06-07 17:57:18] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 17:59:13] datapath: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:13] datapath: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 17:59:13]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/datapath.v0/timing_word.json
+[2026-06-07 17:59:14] datapath: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 17:59:14] === DESIGN DONE: datapath best=v0 ===
+[2026-06-07 17:59:14] === DESIGN START: DSP (AST) ===
+[2026-06-07 17:59:14] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:01:08] DSP: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:08] DSP: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:01:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/DSP.v0/timing_word.json
+[2026-06-07 18:01:09] DSP: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:01:09] === DESIGN DONE: DSP best=v0 ===
+[2026-06-07 18:01:09] === DESIGN START: FIFO (AST) ===
+[2026-06-07 18:01:09] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:03:08] FIFO: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:03:08]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/FIFO.v0/timing_word.json
+[2026-06-07 18:03:08] FIFO: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:03:08] === DESIGN DONE: FIFO best=v0 ===
+[2026-06-07 18:03:08] === DESIGN START: i2c (AST) ===
+[2026-06-07 18:03:08] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:05:06] i2c: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:06] i2c: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:05:06]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/i2c.v0/timing_word.json
+[2026-06-07 18:05:07] i2c: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:05:07] === DESIGN DONE: i2c best=v0 ===
+[2026-06-07 18:05:07] === DESIGN START: LSTM (AST) ===
+[2026-06-07 18:05:07] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:05:54] LSTM: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:05:54]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/LSTM.v0/timing_word.json
+[2026-06-07 18:05:54] LSTM: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:05:54] === DESIGN DONE: LSTM best=v0 ===
+[2026-06-07 18:05:54] === DESIGN START: pcie (AST) ===
+[2026-06-07 18:05:54] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:07:50] pcie: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:07:50]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/pcie.v0/timing_word.json
+[2026-06-07 18:07:50] pcie: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:07:50] === DESIGN DONE: pcie best=v0 ===
+[2026-06-07 18:07:50] === DESIGN START: router (AST) ===
+[2026-06-07 18:07:50] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:09:49] router: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:09:49]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/router.v0/timing_word.json
+[2026-06-07 18:09:49] router: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:09:49] === DESIGN DONE: router best=v0 ===
+[2026-06-07 18:09:49] === DESIGN START: simple_spi (AST) ===
+[2026-06-07 18:09:49] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:11:45] simple_spi: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:11:45]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/simple_spi.v0/timing_word.json
+[2026-06-07 18:11:45] simple_spi: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:11:45] === DESIGN DONE: simple_spi best=v0 ===
+[2026-06-07 18:11:45] === DESIGN START: SPI (AST) ===
+[2026-06-07 18:11:45] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:13:41] SPI: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:13:41]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/SPI.v0/timing_word.json
+[2026-06-07 18:13:41] SPI: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:13:41] === DESIGN DONE: SPI best=v0 ===
+[2026-06-07 18:13:41] === DESIGN START: ticket_machine (AST) ===
+[2026-06-07 18:13:41] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:15:37]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/ticket_machine.v0/timing_word.json
+[2026-06-07 18:15:37] ticket_machine: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:15:37] === DESIGN DONE: ticket_machine best=v0 ===
+[2026-06-07 18:15:37] === DESIGN START: tv80 (AST) ===
+[2026-06-07 18:15:37] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:17:32] tv80: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:17:32]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/tv80.v0/timing_word.json
+[2026-06-07 18:17:32] tv80: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:17:32] === DESIGN DONE: tv80 best=v0 ===
+[2026-06-07 18:17:32] === DESIGN START: UART (AST) ===
+[2026-06-07 18:17:32] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:19:28] UART: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:19:28]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/UART.v0/timing_word.json
+[2026-06-07 18:19:28] UART: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:19:28] === DESIGN DONE: UART best=v0 ===
+[2026-06-07 18:19:28] === DESIGN START: vending_machine (AST) ===
+[2026-06-07 18:19:28] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 18:21:25] vending_machine: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 18:21:25]   failed: Missing timing: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/syn_flow/output/vending_machine.v0/timing_word.json
+[2026-06-07 18:21:25] vending_machine: no SEC-pass scored minor in major 0, stopping
+[2026-06-07 18:21:25] === DESIGN DONE: vending_machine best=v0 ===
+[2026-06-07 18:21:26] SUITE COMPLETE
+[2026-06-07 19:40:28] === DESIGN START: aes (AST) ===
+[2026-06-07 19:40:28] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-07 19:46:15] aes: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-07 19:48:38]   RTL syntax check failed: syn_flow/rtl/aes.v0.1.sv:90:13: error: declaration must come before all statements in the block
+            logic [NBW_WORD-1:0] ek_word0 = expanded_key_ff[NBW_OUT-(4*i  )*NBW_WORD-1-:NBW_WORD];
+            ^
+syn_flow/rtl/aes.v0.1.sv:90:34: warning: initializing a static variable in a procedural con
+[2026-06-07 19:48:38] aes: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-07 19:55:12]   sec=pass score=-0.28619958743962787
+[2026-06-07 19:55:12] aes: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-07 20:02:37]   sec=pass score=0.0
+[2026-06-07 20:02:37] aes: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-07 20:09:45]   sec=pass score=0.0
+[2026-06-07 20:09:45] aes: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-07 20:12:05]   RTL syntax check failed: syn_flow/rtl/aes.v0.5.sv:111:13: error: declaration must come before all statements in the block
+            logic [7:0] rcon_xor_byte;
+            ^
+syn_flow/rtl/aes.v0.5.sv:79:16: error: cannot have multiple continuous assignments to variable 'sbox_hi' [-Wmultiple-cont-assigns]
+        assign sbox
+[2026-06-07 20:15:30] aes: promoted v0.2 → v1 score=-0.28619958743962787
+[2026-06-07 20:15:30] aes: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-07 20:21:20]   sec=pass score=-0.28619958743962787
+[2026-06-07 20:21:20] aes: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-07 20:27:37]   sec=pass score=-0.1395732945725801
+[2026-06-07 20:27:37] aes: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-07 20:33:01]   sec=pass score=-0.28619958743962787
+[2026-06-07 20:33:01] aes: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-07 20:38:09]   sec=pass score=-0.3154212921474366
+[2026-06-07 20:38:09] aes: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-07 20:43:03]   sec=pass score=-0.28413548686250656
+[2026-06-07 20:46:08] aes: promoted v1.4 → v2 score=-0.3154212921474366
+[2026-06-07 20:46:08] aes: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-07 20:49:34]   RTL syntax check failed: syn_flow/rtl/aes.v2.1.sv:63:9: error: unknown module 'sbox'
+        sbox uu_sbox0 (
+        ^~~~
+syn_flow/rtl/aes.v2.1.sv:68:9: error: unknown module 'sbox'
+        sbox uu_sbox1 (
+        ^~~~
+syn_flow/rtl/aes.v2.1.sv:73:9: error: unknown module 'sbox'
+        sbox uu_sbox2 (
+        ^~~~
+syn_flow/
+[2026-06-07 20:49:34] aes: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-07 20:54:45]   sec=pass score=-0.3154212921474366
+[2026-06-07 20:54:45] aes: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-07 21:00:12]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:00:12] aes: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-07 21:04:30]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:04:30] aes: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-07 21:09:02]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:12:08] aes: promoted v2.2 → v3 score=-0.3154212921474366
+[2026-06-07 21:12:08] aes: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-07 21:13:46]   RTL syntax check failed: syn_flow/rtl/aes.v3.1.sv:89:13: error: declaration must come before all statements in the block
+            logic [NBW_WORD-1:0] A = expanded_key_ff[NBW_OUT-(4*i  )*NBW_WORD-1-:NBW_WORD];
+            ^
+syn_flow/rtl/aes.v3.1.sv:89:34: warning: initializing a static variable in a procedural context re
+[2026-06-07 21:13:46] aes: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-07 21:18:12]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:18:12] aes: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-07 21:22:48]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:22:48] aes: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-07 21:24:06]   RTL syntax check failed: syn_flow/rtl/aes.v3.4.sv:86:13: error: expected statement
+            wire [NBW_OUT-1:0] base_key = expanded_key_ff;
+            ^~~~
+syn_flow/rtl/aes.v3.4.sv:86:32: error: use of undeclared identifier 'base_key'
+            wire [NBW_OUT-1:0] base_key = expanded_key_ff;
+                            
+[2026-06-07 21:24:06] aes: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-07 21:26:52]   RTL syntax check failed: syn_flow/rtl/aes.v3.5.sv:97:13: error: expected statement
+            wire [NBW_WORD-1:0] step_xor0 =
+            ^~~~
+syn_flow/rtl/aes.v3.5.sv:97:33: error: use of undeclared identifier 'step_xor0'
+            wire [NBW_WORD-1:0] step_xor0 =
+                                ^~~~~~~~~
+syn_flow/rtl/ae
+[2026-06-07 21:29:58] aes: promoted v3.2 → v4 score=-0.3154212921474366
+[2026-06-07 21:29:58] aes: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-07 21:33:15]   RTL syntax check failed: syn_flow/rtl/aes.v4.1.sv:163:5: error: declaration must come before all statements in the block
+    logic shared_hi_xor;
+    ^
+[2026-06-07 21:33:15] aes: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-07 21:38:01]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:38:01] aes: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-07 21:42:47]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:42:47] aes: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-07 21:48:16]   sec=pass score=-0.27877886551102343
+[2026-06-07 21:48:16] aes: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-07 21:50:45]   RTL syntax check failed: syn_flow/rtl/aes.v4.5.sv:104:17: error: expected statement
+                wire [NBW_WORD-1:0] prev_xor = expanded_key_ff[NBW_OUT-(4*i+1)*NBW_WORD-1-:NBW_WORD] ^ expanded_key_ff[NBW_OUT-(4*i  )*NBW_WORD-1-:NBW_WORD];
+                ^~~~
+syn_flow/rtl/aes.v4.5.sv:104:37: error: use of undeclared iden
+[2026-06-07 21:53:51] aes: promoted v4.2 → v5 score=-0.3154212921474366
+[2026-06-07 21:53:51] aes: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-07 21:58:35]   sec=pass score=-0.3154212921474366
+[2026-06-07 21:58:35] aes: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-07 22:00:15]   RTL syntax check failed: syn_flow/rtl/aes.v5.2.sv:161:5: error: expected statement
+    wire common_term = a3b1 ^ a2b2 ^ a1b3;
+    ^~~~
+  in instance: key_expansion_128aes.steps[0].uu_sbox0
+syn_flow/rtl/aes.v5.2.sv:161:10: error: use of undeclared identifier 'common_term'
+    wire common_term = a3b1 ^ a2b2 ^ a1b3;
+         ^
+[2026-06-07 22:00:15] aes: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-07 22:06:33]   sec=pass score=-0.3154212921474366
+[2026-06-07 22:06:33] aes: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-07 22:08:15]   RTL syntax check failed: syn_flow/rtl/aes.v5.4.sv:167:5: error: expected statement
+    wire xor0_0 = a0b0 ^ a3b1;
+    ^~~~
+  in instance: key_expansion_128aes.steps[0].uu_sbox0
+syn_flow/rtl/aes.v5.4.sv:167:10: error: use of undeclared identifier 'xor0_0'
+    wire xor0_0 = a0b0 ^ a3b1;
+         ^~~~~~
+syn_flow/rtl/aes.v5.4.s
+[2026-06-07 22:08:15] aes: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-07 22:10:03]   RTL syntax check failed: syn_flow/rtl/aes.v5.5.sv:94:17: error: expected statement
+                wire [15:0] xor_upper16 = expanded_key_ff[NBW_OUT-1-:16] ^ RconXor[31:16];
+                ^~~~
+syn_flow/rtl/aes.v5.5.sv:94:29: error: use of undeclared identifier 'xor_upper16'
+                wire [15:0] xor_upper16 = expand
+[2026-06-07 22:13:09] aes: promoted v5.1 → v6 score=-0.3154212921474366
+[2026-06-07 22:13:09] aes: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-07 22:15:59]   RTL syntax check failed: syn_flow/rtl/aes.v6.1.sv:94:13: error: expected statement
+            wire [31:0] w3 = expanded_key_ff[NBW_OUT-(4*i+3)*NBW_WORD-1-:NBW_WORD] ^ RconXor;
+            ^~~~
+syn_flow/rtl/aes.v6.1.sv:94:25: error: use of undeclared identifier 'w3'
+            wire [31:0] w3 = expanded_key_ff[NBW_OUT-(4*i+
+[2026-06-07 22:15:59] aes: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-07 22:17:37]   RTL syntax check failed: syn_flow/rtl/aes.v6.2.sv:94:13: error: declaration must come before all statements in the block
+            logic [NBW_WORD-1:0] w0, w1, w2, w3;
+            ^
+[2026-06-07 22:17:37] aes: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-07 22:26:26]   sec=pass score=-0.3154212921474366
+[2026-06-07 22:26:26] aes: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-07 22:31:25]   sec=pass score=-0.3154212921474366
+[2026-06-07 22:31:25] aes: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-07 22:35:44]   sec=pass score=-0.3154212921474366
+[2026-06-07 22:38:51] aes: promoted v6.3 → v7 score=-0.3154212921474366
+[2026-06-07 22:38:51] aes: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-07 22:43:22]   sec=pass score=-0.31575153221569435
+[2026-06-07 22:43:22] aes: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-07 22:48:19]   RTL syntax check failed: syn_flow/rtl/aes.v7.2.sv:1:16: error: expected ';'
+module contains the critical timing path through its composite field GF((2^4)^2) implementation.
+               ^
+syn_flow/rtl/aes.v7.2.sv:1:17: error: use of undeclared identifier 'the'
+module contains the critical timing path through its composite
+[2026-06-07 22:48:19] aes: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-07 22:55:44]   RTL syntax check failed: syn_flow/rtl/aes.v7.3.sv:164:5: error: expected statement
+    wire common_term = a3b1 ^ a2b2 ^ a1b3;
+    ^~~~
+  in instance: key_expansion_128aes.steps[0].uu_sbox0
+syn_flow/rtl/aes.v7.3.sv:164:10: error: use of undeclared identifier 'common_term'
+    wire common_term = a3b1 ^ a2b2 ^ a1b3;
+         ^
+[2026-06-07 22:55:44] aes: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-07 22:57:28]   RTL syntax check failed: syn_flow/rtl/aes.v7.4.sv:95:13: error: declaration must come before all statements in the block
+            logic [NBW_WORD-1:0] step_key_word0;
+            ^
+syn_flow/rtl/aes.v7.4.sv:104:34: warning: initializing a static variable in a procedural context requires an explicit 'static' keyword [-Wexp
+[2026-06-07 22:57:28] aes: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-07 23:02:55]   sec=pass score=-0.3154212921474366
+[2026-06-07 23:06:01] aes: promoted v7.1 → v8 score=-0.31575153221569435
+[2026-06-07 23:06:01] aes: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-07 23:10:23]   sec=pass score=-0.25944313274021674
+[2026-06-07 23:10:23] aes: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-07 23:12:09]   RTL syntax check failed: syn_flow/rtl/aes.v8.2.sv:110:13: error: expected statement
+            wire [NBW_WORD-1:0] xor_pair0 = ek_seg0 ^ RconXor;  // step_key[i][127:96]
+            ^~~~
+syn_flow/rtl/aes.v8.2.sv:110:33: error: use of undeclared identifier 'xor_pair0'
+            wire [NBW_WORD-1:0] xor_pair0 = ek_seg0 ^ Rc
+[2026-06-07 23:12:09] aes: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-07 23:20:08]   sec=pass score=-0.18138130711425243
+[2026-06-07 23:20:08] aes: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-07 23:22:36]   RTL syntax check failed: syn_flow/rtl/aes.v8.4.sv:103:13: error: expected statement
+            wire [31:0] base0 = expanded_key_ff[NBW_OUT-(4*i  )*NBW_WORD-1-:NBW_WORD];
+            ^~~~
+syn_flow/rtl/aes.v8.4.sv:103:25: error: use of undeclared identifier 'base0'
+            wire [31:0] base0 = expanded_key_ff[NBW_OUT-(4*i
+[2026-06-07 23:22:36] aes: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-07 23:27:42]   sec=pass score=-0.31575153221569435
+[2026-06-07 23:30:43] aes: promoted v8.5 → v9 score=-0.31575153221569435
+[2026-06-07 23:30:43] aes: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-07 23:36:14]   sec=pass score=-0.31575153221569435
+[2026-06-07 23:36:14] aes: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-07 23:41:00]   sec=pass score=-0.31575153221569435
+[2026-06-07 23:41:00] aes: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-07 23:48:17]   sec=pass score=-0.02773595185893659
+[2026-06-07 23:48:17] aes: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-07 23:49:46]   RTL syntax check failed: syn_flow/rtl/aes.v9.4.sv:220:5: error: declaration must come before all statements in the block
+    logic t0_0, t0_1;
+    ^
+[2026-06-07 23:49:46] aes: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-07 23:54:06]   sec=pass score=-0.19669642951968908
+[2026-06-07 23:57:08] aes: promoted v9.1 → v10 score=-0.31575153221569435
+[2026-06-07 23:57:08] === DESIGN DONE: aes best=v8 ===
+[2026-06-07 23:57:08] === DESIGN START: arm_cpu1 (AST) ===
+[2026-06-07 23:57:08] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-08 00:00:40] arm_cpu1: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-08 00:12:01]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 00:12:01] arm_cpu1: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-08 00:24:37]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 00:24:37] arm_cpu1: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-08 00:37:13]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 00:37:13] arm_cpu1: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-08 00:47:52]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 00:47:52] arm_cpu1: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-08 00:57:59]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 00:58:00] arm_cpu1: no SEC-pass scored minor in major 0, stopping
+[2026-06-08 00:58:00] === DESIGN DONE: arm_cpu1 best=v0 ===
+[2026-06-08 00:58:00] === DESIGN START: arm_cpu2 (AST) ===
+[2026-06-08 00:58:00] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-08 01:00:44] arm_cpu2: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-08 01:11:59]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 01:11:59] arm_cpu2: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-08 01:22:57]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 01:22:57] arm_cpu2: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-08 01:32:34]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 01:32:34] arm_cpu2: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-08 01:43:11]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 01:43:11] arm_cpu2: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-08 01:53:27]   failed: LLM did not return extractable Verilog after retries
+[2026-06-08 01:53:27] arm_cpu2: no SEC-pass scored minor in major 0, stopping
+[2026-06-08 01:53:27] === DESIGN DONE: arm_cpu2 best=v0 ===
+[2026-06-08 01:53:27] === DESIGN START: communication (AST) ===
+[2026-06-08 01:53:27] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-08 01:55:00] communication: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-08 01:57:25]   sec=pass score=0.0
+[2026-06-08 01:57:25] communication: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-08 02:03:42]   sec=pass score=-0.0008484922255597013
+[2026-06-08 02:03:42] communication: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-08 02:07:44]   sec=pass score=0.01174658059348982
+[2026-06-08 02:07:44] communication: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-08 02:10:34]   sec=pass score=0.0
+[2026-06-08 02:10:34] communication: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-08 02:13:23]   sec=pass score=-0.23093445892527245
+[2026-06-08 02:14:53] communication: promoted v0.5 → v1 score=-0.23093445892527245
+[2026-06-08 02:14:53] communication: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-08 02:17:43]   sec=pass score=-0.22555260356748802
+[2026-06-08 02:17:43] communication: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-08 02:20:02]   sec=pass score=-0.05089178102771581
+[2026-06-08 02:20:02] communication: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-08 02:22:52]   sec=pass score=-0.2286911389551471
+[2026-06-08 02:22:52] communication: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-08 02:30:06]   sec=pass score=-0.1328687509708345
+[2026-06-08 02:30:06] communication: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-08 02:32:45]   sec=pass score=-0.23093445892527245
+[2026-06-08 02:34:15] communication: promoted v1.5 → v2 score=-0.23093445892527245
+[2026-06-08 02:34:15] communication: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-08 02:37:02]   sec=pass score=-0.19553190774932666
+[2026-06-08 02:37:02] communication: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-08 02:40:28]   sec=pass score=-0.1713497019359485
+[2026-06-08 02:40:28] communication: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-08 02:43:00]   sec=pass score=-0.23093445892527245
+[2026-06-08 02:43:00] communication: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-08 02:49:37]   sec=pass score=-0.23093445892527245
+[2026-06-08 02:49:37] communication: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-08 02:54:06]   sec=pass score=-0.02349624948468528
+[2026-06-08 02:55:37] communication: promoted v2.3 → v3 score=-0.23093445892527245
+[2026-06-08 02:55:37] communication: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-08 03:00:17]   sec=pass score=-0.09595910569737498
+[2026-06-08 03:00:17] communication: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-08 03:03:17]   sec=pass score=-0.19938481407043054
+[2026-06-08 03:03:18] communication: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-08 03:08:25]   RTL syntax check failed: syn_flow/rtl/communication.v3.3.v:27:1: error: unknown module 'rx_block'
+rx_block uut_rx_block (
+^~~~~~~~
+[2026-06-08 03:08:25] communication: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-08 03:11:11]   sec=pass score=-0.18176913702972422
+[2026-06-08 03:11:11] communication: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-08 03:14:20]   sec=pass score=-0.02371564963276207
+[2026-06-08 03:15:53] communication: promoted v3.2 → v4 score=-0.19938481407043054
+[2026-06-08 03:15:53] communication: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-08 03:18:26]   sec=pass score=-0.04894171947219531
+[2026-06-08 03:18:26] communication: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-08 03:22:03]   sec=pass score=-0.19831741500788969
+[2026-06-08 03:22:03] communication: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-08 03:23:43]   RTL syntax check failed: syn_flow/rtl/communication.v4.3.v:215:13: error: expected statement
+            wire [63:0] data_out_sel0 = 64'h0;
+            ^~~~
+syn_flow/rtl/communication.v4.3.v:215:25: error: use of undeclared identifier 'data_out_sel0'
+            wire [63:0] data_out_sel0 = 64'h0;
+                        ^~~
+[2026-06-08 03:23:43] communication: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-08 03:26:32]   sec=pass score=-0.20736511905951727
+[2026-06-08 03:26:32] communication: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-08 03:29:20]   sec=pass score=-0.18176913702972422
+[2026-06-08 03:30:52] communication: promoted v4.4 → v5 score=-0.20736511905951727
+[2026-06-08 03:30:52] communication: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-08 03:33:43]   sec=pass score=-0.20736511905951727
+[2026-06-08 03:33:43] communication: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-08 03:36:36]   sec=pass score=-0.1606379953366266
+[2026-06-08 03:36:36] communication: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-08 03:38:05]   RTL syntax check failed: syn_flow/rtl/communication.v5.3.v:231:13: error: expected statement
+            wire [63:0] mux_group1 = sel_is_000 ? 64'h0 :
+            ^~~~
+syn_flow/rtl/communication.v5.3.v:231:25: error: use of undeclared identifier 'mux_group1'
+            wire [63:0] mux_group1 = sel_is_000 ? 64'h0 :
+        
+[2026-06-08 03:38:05] communication: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-08 03:41:15]   sec=pass score=-0.02945612480745401
+[2026-06-08 03:41:15] communication: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-08 03:48:05]   sec=pass score=-0.031057671344410055
+[2026-06-08 03:49:36] communication: promoted v5.1 → v6 score=-0.20736511905951727
+[2026-06-08 03:49:37] communication: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-08 03:53:35]   sec=pass score=-0.1919834245023163
+[2026-06-08 03:53:35] communication: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-08 03:59:07]   sec=pass score=-0.0018381965585791667
+[2026-06-08 03:59:07] communication: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-08 04:02:09]   sec=pass score=-0.031057671344410055
+[2026-06-08 04:02:09] communication: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-08 04:05:05]   sec=pass score=-0.02945612480745401
+[2026-06-08 04:05:05] communication: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-08 04:07:55]   sec=pass score=-0.16447451105099611
+[2026-06-08 04:09:26] communication: promoted v6.1 → v7 score=-0.1919834245023163
+[2026-06-08 04:09:26] communication: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-08 04:14:38]   sec=pass score=-0.21454983110841158
+[2026-06-08 04:14:38] communication: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-08 04:21:13]   RTL syntax check failed: syn_flow/rtl/communication.v7.2.v:16:1: error: unknown module 'tx_block'
+tx_block uut_tx_block (
+^~~~~~~~
+syn_flow/rtl/communication.v7.2.v:27:1: error: unknown module 'rx_block'
+rx_block uut_rx_block (
+^~~~~~~~
+[2026-06-08 04:21:13] communication: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-08 04:24:29]   sec=pass score=-0.20338229393672516
+[2026-06-08 04:24:29] communication: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-08 04:27:58]   sec=pass score=-0.2074094851480496
+[2026-06-08 04:27:58] communication: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-08 04:31:04]   sec=pass score=-0.1919834245023163
+[2026-06-08 04:32:35] communication: promoted v7.1 → v8 score=-0.21454983110841158
+[2026-06-08 04:32:35] communication: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-08 04:41:08]   sec=pass score=-0.21454983110841158
+[2026-06-08 04:41:08] communication: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-08 04:44:45]   sec=pass score=-0.01691386017928565
+[2026-06-08 04:44:45] communication: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-08 04:48:16]   sec=pass score=-0.18890975684728
+[2026-06-08 04:48:16] communication: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-08 04:51:01]   RTL syntax check failed: syn_flow/rtl/communication.v8.4.v:119:9: error: expected statement
+        wire [6:0] reg_count_load_value;
+        ^~~~
+syn_flow/rtl/communication.v8.4.v:119:20: error: use of undeclared identifier 'reg_count_load_value'
+        wire [6:0] reg_count_load_value;
+                   ^~~~~~~~~~~~~~~~~~
+[2026-06-08 04:51:01] communication: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-08 04:54:25]   sec=pass score=-0.2183305420024155
+[2026-06-08 04:55:55] communication: promoted v8.5 → v9 score=-0.2183305420024155
+[2026-06-08 04:55:55] communication: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-08 04:59:10]   sec=pass score=-0.027877364567961267
+[2026-06-08 04:59:10] communication: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-08 05:02:18]   sec=pass score=-0.2329827177867242
+[2026-06-08 05:02:18] communication: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-08 05:02:26]   failed: <urlopen error [Errno 104] Connection reset by peer>
+[2026-06-08 05:02:26] communication: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-08 05:05:44]   sec=pass score=-0.18411083706848827
+[2026-06-08 05:05:44] communication: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-08 05:09:30]   sec=pass score=-0.20249131784424595
+[2026-06-08 05:11:02] communication: promoted v9.2 → v10 score=-0.2329827177867242
+[2026-06-08 05:11:02] === DESIGN DONE: communication best=v10 ===
+[2026-06-08 05:11:02] === DESIGN START: controller (AST) ===
+[2026-06-08 05:11:02] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-08 05:12:22] controller: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-08 05:16:31]   sec=pass score=0.5393662726538453
+[2026-06-08 05:16:31] controller: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-08 05:21:24]   sec=pass score=0.04545470820341848
+[2026-06-08 05:21:24] controller: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-08 05:24:32]   RTL syntax check failed: syn_flow/rtl/controller.v0.3.v:45:12: error: parameter declaration is missing an initializer
+localparam AES_IVR1  4'd09;
+           ^
+syn_flow/rtl/controller.v0.3.v:45:20: error: expected ';'
+localparam AES_IVR1  4'd09;
+                   ^
+warning: no top-level modules found in design [-Wmissing-to
+[2026-06-08 05:24:32] controller: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-08 05:28:16]   sec=pass score=0.03305406365536691
+[2026-06-08 05:28:16] controller: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-08 05:31:43]   RTL syntax check failed: syn_flow/rtl/controller.v0.5.v:172:34: error: cannot refer to element 4 of 'reg[3:0]' [-Windex-oob]
+wire state_is_round0_c3  = state[4];
+                                 ^
+syn_flow/rtl/controller.v0.5.v:173:34: error: cannot refer to element 5 of 'reg[3:0]' [-Windex-oob]
+wire state_is_round_key0 = s
+[2026-06-08 05:33:05] controller: promoted v0.4 → v1 score=0.03305406365536691
+[2026-06-08 05:33:05] controller: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-08 05:39:33]   sec=pass score=0.5275313281279811
+[2026-06-08 05:39:33] controller: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-08 05:42:28]   sec=pass score=0.03305406365536691
+[2026-06-08 05:42:28] controller: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-08 05:45:55]   sec=pass score=0.03305406365536691
+[2026-06-08 05:45:55] controller: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-08 05:54:12]   sec=pass score=0.03305406365536691
+[2026-06-08 05:54:12] controller: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-08 05:57:32]   sec=pass score=-0.008188327994659218
+[2026-06-08 05:58:52] controller: promoted v1.5 → v2 score=-0.008188327994659218
+[2026-06-08 05:58:52] controller: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-08 06:02:00]   sec=pass score=-0.008188327994659218
+[2026-06-08 06:02:00] controller: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-08 06:12:19]   RTL syntax check failed: syn_flow/rtl/controller.v2.2.v:307:17: error: declaration must come before all statements in the block
+                reg [3:0] r0_ns_enc, r0_ns_dec;
+                ^
+syn_flow/rtl/controller.v2.2.v:481:41: error: declaration must come before all statements in the block
+                            
+[2026-06-08 06:12:19] controller: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-08 06:16:02]   sec=pass score=-0.008188327994659218
+[2026-06-08 06:16:02] controller: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-08 06:19:28]   sec=pass score=-0.008188327994659218
+[2026-06-08 06:19:28] controller: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-08 06:22:42]   sec=pass score=-0.008188327994659218
+[2026-06-08 06:24:02] controller: promoted v2.1 → v3 score=-0.008188327994659218
+[2026-06-08 06:24:02] controller: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-08 06:29:57]   sec=pass score=0.5499928390495885
+[2026-06-08 06:29:57] controller: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-08 06:33:42]   sec=pass score=-0.008188327994659218
+[2026-06-08 06:33:42] controller: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-08 06:39:21]   sec=pass score=0.5869190832068255
+[2026-06-08 06:39:21] controller: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-08 06:44:09]   sec=pass score=-0.008188327994659218
+[2026-06-08 06:44:09] controller: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-08 06:48:11]   sec=fail score=None
+[2026-06-08 06:49:30] controller: promoted v3.2 → v4 score=-0.008188327994659218
+[2026-06-08 06:49:30] controller: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-08 06:53:15]   sec=pass score=0.5629359109572256
+[2026-06-08 06:53:15] controller: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-08 07:01:33]   RTL syntax check failed: syn_flow/rtl/controller.v4.2.v:287:45: error: use of undeclared identifier 'next_state'
+                        state_next_state <= next_state;
+                                            ^~~~~~~~~~
+syn_flow/rtl/controller.v4.2.v:288:41: error: use of undeclared identifier 'next_state'
+             
+[2026-06-08 07:01:33] controller: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-08 07:05:37]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:05:37] controller: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-08 07:14:03]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:14:03] controller: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-08 07:23:03]   sec=pass score=0.0842982455429958
+[2026-06-08 07:24:23] controller: promoted v4.3 → v5 score=-0.008188327994659218
+[2026-06-08 07:24:23] controller: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-08 07:27:13]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:27:13] controller: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-08 07:30:36]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:30:36] controller: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-08 07:35:24]   sec=pass score=0.537382741745787
+[2026-06-08 07:35:24] controller: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-08 07:39:31]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:39:31] controller: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-08 07:47:36]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:48:56] controller: promoted v5.1 → v6 score=-0.008188327994659218
+[2026-06-08 07:48:56] controller: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-08 07:52:18]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:52:18] controller: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-08 07:56:05]   sec=pass score=-0.008188327994659218
+[2026-06-08 07:56:05] controller: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-08 08:01:37]   sec=pass score=0.5498227710238274
+[2026-06-08 08:01:37] controller: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-08 08:05:20]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:05:20] controller: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-08 08:08:34]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:09:55] controller: promoted v6.1 → v7 score=-0.008188327994659218
+[2026-06-08 08:09:55] controller: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-08 08:13:34]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:13:34] controller: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-08 08:17:17]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:17:17] controller: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-08 08:20:40]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:20:40] controller: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-08 08:24:21]   sec=pass score=0.5088829207908591
+[2026-06-08 08:24:21] controller: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-08 08:27:46]   sec=pass score=0.5162137484877333
+[2026-06-08 08:29:06] controller: promoted v7.1 → v8 score=-0.008188327994659218
+[2026-06-08 08:29:06] controller: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-08 08:34:28]   sec=pass score=0.5284264230602306
+[2026-06-08 08:34:28] controller: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-08 08:42:31]   sec=fail score=None
+[2026-06-08 08:42:31] controller: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-08 08:45:49]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:45:49] controller: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-08 08:49:26]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:49:26] controller: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-08 08:52:34]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:53:54] controller: promoted v8.3 → v9 score=-0.008188327994659218
+[2026-06-08 08:53:54] controller: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-08 08:57:12]   sec=pass score=-0.008188327994659218
+[2026-06-08 08:57:12] controller: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-08 09:00:58]   sec=pass synth=fail
+[2026-06-08 09:00:58]   sec=fail score=None
+[2026-06-08 09:00:58] controller: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-08 09:13:00]   sec=pass score=-0.008188327994659218
+[2026-06-08 09:13:00] controller: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-08 09:16:38]   sec=pass score=-0.008188327994659218
+[2026-06-08 09:16:38] controller: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-08 09:20:19]   sec=pass score=0.5182348727515489
+[2026-06-08 09:21:40] controller: promoted v9.1 → v10 score=-0.008188327994659218
+[2026-06-08 09:21:40] === DESIGN DONE: controller best=v2 ===
+[2026-06-08 09:21:40] === DESIGN START: cpu_fsm (AST) ===
+[2026-06-08 09:21:40] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-08 09:23:54] cpu_fsm: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-08 09:25:33]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v0.1.v:143:70: error: identifier 'alu_result_is_zero' used before its declaration
+                                                        zero_flag <= alu_result_is_zero;
+                                                                     ^~~~~~~~~~~~~~~~~~
+syn_flow/rtl/cpu_fsm
+[2026-06-08 09:25:33] cpu_fsm: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-08 09:40:35]   sec=pass score=0.01052312973350692
+[2026-06-08 09:40:35] cpu_fsm: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-08 09:46:40]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v0.3.v:52:19: error: identifier 'alu_result' used before its declaration
+wire zero_cond = (alu_result == 8'h00);
+                  ^~~~~~~~~~
+syn_flow/rtl/cpu_fsm.v0.3.v:81:12: note: declared here
+reg  [7:0] alu_result  ;
+           ^
+[2026-06-08 09:46:40] cpu_fsm: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-08 09:50:57]   sec=fail score=None
+[2026-06-08 09:50:57] cpu_fsm: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-08 09:54:38]   sec=pass score=0.00010794374342235958
+[2026-06-08 09:57:07] cpu_fsm: promoted v0.5 → v1 score=0.00010794374342235958
+[2026-06-08 09:57:07] cpu_fsm: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-08 10:01:07]   sec=pass score=0.02508453363274058
+[2026-06-08 10:01:07] cpu_fsm: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-08 10:08:50]   sec=pass score=0.03528853856894597
+[2026-06-08 10:08:50] cpu_fsm: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-08 10:13:19]   sec=pass score=0.04385308604254137
+[2026-06-08 10:13:19] cpu_fsm: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-08 10:21:43]   sec=pass score=0.02214242210647025
+[2026-06-08 10:21:43] cpu_fsm: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-08 10:25:44]   sec=pass score=0.03528853856894597
+[2026-06-12 23:52:53] RESUME: starting from cpu_fsm, running 15 designs
+[2026-06-12 23:52:53] === DESIGN START: cpu_fsm (AST) ===
+[2026-06-12 23:52:53] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-12 23:55:15] cpu_fsm: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-13 00:00:20]   sec=pass score=0.01052312973350692
+[2026-06-13 00:00:20] cpu_fsm: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-13 00:06:22]   sec=pass score=0.0125513770886658
+[2026-06-13 00:06:22] cpu_fsm: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-13 00:14:42]   sec=fail score=None
+[2026-06-13 00:14:42] cpu_fsm: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-13 00:19:40]   sec=pass score=0.010645578961566472
+[2026-06-13 00:19:40] cpu_fsm: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-13 00:27:48]   sec=pass score=0.0125513770886658
+[2026-06-13 00:30:18] cpu_fsm: promoted v0.1 → v1 score=0.01052312973350692
+[2026-06-13 00:30:18] cpu_fsm: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-13 00:36:40]   sec=pass score=0.030943807540859243
+[2026-06-13 00:36:40] cpu_fsm: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-13 00:42:04]   sec=pass score=0.023447081989917448
+[2026-06-13 00:42:04] cpu_fsm: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-13 00:46:33]   sec=pass score=0.11017090027932151
+[2026-06-13 00:46:33] cpu_fsm: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-13 00:55:31]   sec=fail score=None
+[2026-06-13 00:55:31] cpu_fsm: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-13 01:00:47]   sec=fail score=None
+[2026-06-13 01:03:29] cpu_fsm: promoted v1.2 → v2 score=0.023447081989917448
+[2026-06-13 01:03:29] cpu_fsm: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-13 01:16:37]   sec=fail score=None
+[2026-06-13 01:16:37] cpu_fsm: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-13 01:19:25]   RTL syntax check failed: syn_flow/rtl/cpu_fsm.v2.2.v:315:9: error: expected statement
+        wire alu_op_is_add = (alu_op == ALU_ADD);
+        ^~~~
+syn_flow/rtl/cpu_fsm.v2.2.v:315:14: error: use of undeclared identifier 'alu_op_is_add'
+        wire alu_op_is_add = (alu_op == ALU_ADD);
+             ^~~~~~~~~~~~~
+syn_flow/rt
+[2026-06-13 01:19:25] cpu_fsm: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-13 01:34:03]   sec=fail score=None
+[2026-06-13 01:34:03] cpu_fsm: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-13 01:38:25]   sec=pass score=0.030698512857626
+[2026-06-13 01:38:25] cpu_fsm: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-13 01:43:44]   sec=fail score=None
+[2026-06-13 01:46:12] cpu_fsm: promoted v2.4 → v3 score=0.030698512857626
+[2026-06-13 01:46:12] cpu_fsm: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-13 01:50:15]   sec=pass score=0.030698512857626
+[2026-06-13 01:50:15] cpu_fsm: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-13 01:54:55]   sec=pass score=-0.0013124426908918893
+[2026-06-13 01:54:55] cpu_fsm: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-13 01:59:42]   sec=pass score=0.030698512857626
+[2026-06-13 01:59:42] cpu_fsm: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-13 02:04:26]   sec=pass score=0.030044978952051455
+[2026-06-13 02:04:26] cpu_fsm: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-13 02:07:49]   sec=pass synth=fail
+[2026-06-13 02:07:49]   sec=fail score=None
+[2026-06-13 02:10:13] cpu_fsm: promoted v3.2 → v4 score=-0.0013124426908918893
+[2026-06-13 02:10:13] cpu_fsm: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-13 02:15:06]   sec=pass score=-0.0012880738851983673
+[2026-06-13 02:15:06] cpu_fsm: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-13 02:18:57]   sec=pass score=-0.0013124426908918893
+[2026-06-13 02:18:57] cpu_fsm: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-13 02:24:11]   sec=pass score=-0.0013124426908918893
+[2026-06-13 02:24:11] cpu_fsm: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-13 02:30:53]   sec=pass score=0.03738418640807211
+[2026-06-13 02:30:53] cpu_fsm: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-13 02:40:38]   sec=pass score=-0.007681365041928451
+[2026-06-13 02:43:00] cpu_fsm: promoted v4.5 → v5 score=-0.007681365041928451
+[2026-06-13 02:43:00] cpu_fsm: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-13 02:47:14]   sec=pass score=0.005676808998619774
+[2026-06-13 02:47:14] cpu_fsm: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-13 02:50:51]   sec=pass score=-0.007681365041928451
+[2026-06-13 02:50:51] cpu_fsm: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-13 02:55:03]   sec=pass score=-0.005671302026127297
+[2026-06-13 02:55:03] cpu_fsm: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-13 02:58:29]   sec=pass synth=fail
+[2026-06-13 02:58:29]   sec=fail score=None
+[2026-06-13 02:58:29] cpu_fsm: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-13 03:02:15]   sec=pass score=0.02379909923900684
+[2026-06-13 03:04:37] cpu_fsm: promoted v5.2 → v6 score=-0.007681365041928451
+[2026-06-13 03:04:37] cpu_fsm: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-13 03:09:00]   sec=pass score=0.01085089305826134
+[2026-06-13 03:09:00] cpu_fsm: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-13 03:18:26]   sec=pass score=-0.007681365041928451
+[2026-06-13 03:18:26] cpu_fsm: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-13 03:22:33]   sec=pass score=-0.036796895181596574
+[2026-06-13 03:22:33] cpu_fsm: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-13 03:26:25]   sec=pass score=0.02379909923900684
+[2026-06-13 03:26:25] cpu_fsm: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-13 03:31:54]   sec=pass score=0.12430622706662621
+[2026-06-13 03:34:10] cpu_fsm: promoted v6.3 → v7 score=-0.036796895181596574
+[2026-06-13 03:34:10] cpu_fsm: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-13 03:38:19]   sec=pass score=-0.036796895181596574
+[2026-06-13 03:38:19] cpu_fsm: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-13 03:47:10]   sec=pass score=-0.036796895181596574
+[2026-06-13 03:47:10] cpu_fsm: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-13 04:00:00]   sec=pass score=-0.0071016937838349736
+[2026-06-13 04:00:00] cpu_fsm: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-13 04:03:45]   sec=pass score=0.006300072741777318
+[2026-06-13 04:03:45] cpu_fsm: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-13 04:08:09]   sec=pass score=0.006372666300474251
+[2026-06-13 04:10:24] cpu_fsm: promoted v7.1 → v8 score=-0.036796895181596574
+[2026-06-13 04:10:24] cpu_fsm: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-13 04:19:46]   sec=pass score=0.02508418717832196
+[2026-06-13 04:19:46] cpu_fsm: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-13 04:23:21]   sec=pass score=-0.036796895181596574
+[2026-06-13 04:23:21] cpu_fsm: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-13 04:28:00]   sec=pass score=-0.029913012838759755
+[2026-06-13 04:28:00] cpu_fsm: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-13 04:32:21]   sec=pass score=0.023554775157140283
+[2026-06-13 04:32:21] cpu_fsm: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-13 04:37:42]   sec=pass score=0.11238164332283256
+[2026-06-13 04:39:58] cpu_fsm: promoted v8.2 → v9 score=-0.036796895181596574
+[2026-06-13 04:39:58] cpu_fsm: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-13 04:52:53]   sec=pass score=0.0005323709497984763
+[2026-06-13 04:52:53] cpu_fsm: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-13 04:56:29]   sec=pass score=-0.036796895181596574
+[2026-06-13 04:56:29] cpu_fsm: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-13 05:00:42]   sec=pass score=0.0002864141319325168
+[2026-06-13 05:00:42] cpu_fsm: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-13 05:02:25]   failed: Remote end closed connection without response
+[2026-06-13 05:02:25] cpu_fsm: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-13 05:08:32]   sec=pass score=0.012114862253536269
+[2026-06-13 05:10:48] cpu_fsm: promoted v9.2 → v10 score=-0.036796895181596574
+[2026-06-13 05:10:48] === DESIGN DONE: cpu_fsm best=v7 ===
+[2026-06-13 05:10:48] === DESIGN START: cpu_pipe (AST) ===
+[2026-06-13 05:10:48] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-13 05:12:20] cpu_pipe: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-13 05:12:20]   failed: pipeline.py failed exit 1
+[2026-06-13 05:12:20] cpu_pipe: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-13 05:12:20]   failed: pipeline.py failed exit 1
+[2026-06-13 05:12:20] cpu_pipe: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-13 05:12:21]   failed: pipeline.py failed exit 1
+[2026-06-13 05:12:21] cpu_pipe: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-13 05:12:21]   failed: pipeline.py failed exit 1
+[2026-06-13 05:12:21] cpu_pipe: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-13 05:12:21]   failed: pipeline.py failed exit 1
+[2026-06-13 05:12:21] cpu_pipe: no SEC-pass scored minor in major 0, stopping
+[2026-06-13 05:12:21] === DESIGN DONE: cpu_pipe best=v0 ===
+[2026-06-13 05:12:21] === DESIGN START: datapath (AST) ===
+[2026-06-13 05:12:21] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-13 05:14:50] datapath: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-13 05:16:32]   failed: Remote end closed connection without response
+[2026-06-13 05:16:32] datapath: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-13 05:22:25]   sec=pass score=-0.008552413945748882
+[2026-06-13 05:22:25] datapath: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-13 05:33:18]   sec=pass score=-0.026159548772302654
+[2026-06-13 05:33:18] datapath: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-13 05:39:11]   sec=pass score=-0.02485651983958
+[2026-06-13 05:39:11] datapath: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-13 05:43:12]   RTL syntax check failed: syn_flow/rtl/datapath.v0.5.v:183:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v0.5.v:191:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v0.5.v:328:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+[2026-06-13 05:45:40] datapath: promoted v0.3 → v1 score=-0.026159548772302654
+[2026-06-13 05:45:40] datapath: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-13 05:50:24]   RTL syntax check failed: syn_flow/rtl/datapath.v1.1.v:174:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v1.1.v:182:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v1.1.v:312:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+[2026-06-13 05:50:25] datapath: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-13 05:56:31]   sec=pass score=-0.026159548772302654
+[2026-06-13 05:56:31] datapath: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-13 06:02:32]   sec=pass score=-0.026159548772302654
+[2026-06-13 06:02:32] datapath: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-13 06:08:26]   sec=pass score=-0.026159548772302654
+[2026-06-13 06:08:26] datapath: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-13 06:14:04]   sec=pass score=-0.026159548772302654
+[2026-06-13 06:16:29] datapath: promoted v1.2 → v2 score=-0.026159548772302654
+[2026-06-13 06:16:29] datapath: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-13 06:27:01]   sec=pass score=-0.026159548772302654
+[2026-06-13 06:27:01] datapath: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-13 06:30:54]   RTL syntax check failed: syn_flow/rtl/datapath.v2.2.v:181:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v2.2.v:189:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+[2026-06-13 06:30:54] datapath: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-13 06:41:39]   sec=pass score=-0.026159548772302654
+[2026-06-13 06:41:39] datapath: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-13 06:47:54]   sec=pass score=-0.026159548772302654
+[2026-06-13 06:47:54] datapath: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-13 06:52:52]   RTL syntax check failed: syn_flow/rtl/datapath.v2.5.v:198:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v2.5.v:206:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v2.5.v:336:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 06:55:19] datapath: promoted v2.1 → v3 score=-0.026159548772302654
+[2026-06-13 06:55:19] datapath: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-13 07:01:00]   sec=pass score=-0.026159548772302654
+[2026-06-13 07:01:00] datapath: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-13 07:19:01]   sec=pass score=-0.01687304836334006
+[2026-06-13 07:19:02] datapath: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-13 07:24:55]   sec=pass score=-0.026159548772302654
+[2026-06-13 07:24:55] datapath: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-13 07:30:59]   sec=pass score=-0.0003188311019618551
+[2026-06-13 07:30:59] datapath: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-13 07:37:19]   sec=pass score=-0.026159548772302654
+[2026-06-13 07:39:45] datapath: promoted v3.1 → v4 score=-0.026159548772302654
+[2026-06-13 07:39:45] datapath: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-13 07:45:36]   sec=pass score=-0.026159548772302654
+[2026-06-13 07:45:36] datapath: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-13 07:48:54]   RTL syntax check failed: syn_flow/rtl/datapath.v4.2.v:297:12: error: no implicit conversion from 'logic[127:0]' to 'reg[31:0]$[4]'; explicit conversion exists, are you missing a cast?
+assign col = (sel_shift_rows ? val_shift_rows : 128'b0) |
+       ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-06-13 07:48:54] datapath: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-13 07:54:32]   sec=pass score=-0.026159548772302654
+[2026-06-13 07:54:32] datapath: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-13 07:59:38]   sec=pass score=-0.004958261215230141
+[2026-06-13 07:59:38] datapath: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-13 08:06:35]   sec=pass score=-0.026159548772302654
+[2026-06-13 08:09:01] datapath: promoted v4.1 → v5 score=-0.026159548772302654
+[2026-06-13 08:09:01] datapath: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-13 08:20:26]   RTL syntax check failed: syn_flow/rtl/datapath.v5.1.v:180:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v5.1.v:188:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v5.1.v:321:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 08:20:26] datapath: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-13 08:33:17]   sec=pass score=-0.026159548772302654
+[2026-06-13 08:33:17] datapath: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-13 08:37:39]   RTL syntax check failed: syn_flow/rtl/datapath.v5.3.v:183:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v5.3.v:191:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v5.3.v:324:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+[2026-06-13 08:37:39] datapath: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-13 08:42:20]   RTL syntax check failed: syn_flow/rtl/datapath.v5.4.v:180:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v5.4.v:188:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+[2026-06-13 08:42:20] datapath: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-13 08:48:42]   sec=pass score=-0.008979641985876616
+[2026-06-13 08:51:07] datapath: promoted v5.2 → v6 score=-0.026159548772302654
+[2026-06-13 08:51:07] datapath: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-13 08:57:38]   RTL syntax check failed: syn_flow/rtl/datapath.v6.1.v:178:31: error: cannot refer to element 2 of 'logic[1:0]' [-Windex-oob]
+wire host_sel2 = col_sel_host[2];
+                              ^
+syn_flow/rtl/datapath.v6.1.v:179:31: error: cannot refer to element 3 of 'logic[1:0]' [-Windex-oob]
+wire host_sel3 = col_sel_host[3];
+
+[2026-06-13 08:57:38] datapath: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-13 09:11:35]   RTL syntax check failed: syn_flow/rtl/datapath.v6.2.v:198:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v6.2.v:206:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+[2026-06-13 09:11:35] datapath: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-13 09:16:16]   RTL syntax check failed: syn_flow/rtl/datapath.v6.3.v:194:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v6.3.v:202:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v6.3.v:329:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 09:16:16] datapath: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-13 09:20:49]   RTL syntax check failed: syn_flow/rtl/datapath.v6.4.v:201:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v6.4.v:209:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+[2026-06-13 09:20:49] datapath: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-13 09:27:11]   sec=pass score=-0.026159548772302654
+[2026-06-13 09:29:37] datapath: promoted v6.5 → v7 score=-0.026159548772302654
+[2026-06-13 09:29:37] datapath: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-13 09:34:49]   RTL syntax check failed: syn_flow/rtl/datapath.v7.1.v:194:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v7.1.v:202:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v7.1.v:329:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 09:34:49] datapath: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-13 09:48:53]   RTL syntax check failed: syn_flow/rtl/datapath.v7.2.v:194:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v7.2.v:202:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v7.2.v:329:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 09:48:53] datapath: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-13 09:53:25]   RTL syntax check failed: syn_flow/rtl/datapath.v7.3.v:1:7: error: expected identifier
+module with pattern candidates: `mux_before_adder`, `tree_balancing`, `common_subexpression`.
+      ^
+syn_flow/rtl/datapath.v7.3.v:1:31: error: expected ';'
+module with pattern candidates: `mux_before_adder`, `tree_balancing`, `common_sube
+[2026-06-13 09:53:25] datapath: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-13 09:59:50]   sec=pass score=-0.018968045909707056
+[2026-06-13 09:59:50] datapath: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-13 10:06:17]   sec=pass synth=fail
+[2026-06-13 10:06:17]   sec=fail score=None
+[2026-06-13 10:08:39] datapath: promoted v7.4 → v8 score=-0.018968045909707056
+[2026-06-13 10:08:39] datapath: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-13 10:28:27]   failed: LLM did not return extractable Verilog after retries
+[2026-06-13 10:28:27] datapath: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-13 10:34:53]   RTL syntax check failed: syn_flow/rtl/datapath.v8.2.v:193:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v8.2.v:201:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v8.2.v:335:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 10:34:53] datapath: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-13 10:39:58]   RTL syntax check failed: syn_flow/rtl/datapath.v8.3.v:193:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v8.3.v:201:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+[2026-06-13 10:39:58] datapath: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-13 10:45:15]   RTL syntax check failed: syn_flow/rtl/datapath.v8.4.v:193:1: error: unknown module 'data_swap'
+data_swap SWAP_IN
+^~~~~~~~~
+syn_flow/rtl/datapath.v8.4.v:201:1: error: unknown module 'data_swap'
+data_swap SWAP_OUT
+^~~~~~~~~
+syn_flow/rtl/datapath.v8.4.v:338:1: error: unknown module 'shift_rows'
+shift_rows SHIFT_ROW
+^~~~~~~~~~
+
+[2026-06-13 10:45:15] datapath: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-13 10:50:58]   RTL syntax check failed: syn_flow/rtl/datapath.v8.5.v:1:21: error: expected ';'
+module instantiation, I need to look at the surrounding logic.
+                    ^
+syn_flow/rtl/datapath.v8.5.v:1:23: error: use of undeclared identifier 'I'
+module instantiation, I need to look at the surrounding logic.
+                      
+[2026-06-13 10:50:58] datapath: no SEC-pass scored minor in major 8, stopping
+[2026-06-13 10:50:58] === DESIGN DONE: datapath best=v1 ===
+[2026-06-13 10:50:58] === DESIGN START: DSP (AST) ===
+[2026-06-13 10:50:58] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-13 10:52:46] DSP: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-13 10:56:15]   sec=pass score=0.0
+[2026-06-13 10:56:15] DSP: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-13 11:00:15]   sec=pass synth=fail
+[2026-06-13 11:00:15]   sec=fail score=None
+[2026-06-13 11:00:15] DSP: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-13 11:04:14]   sec=pass score=0.01186671151821136
+[2026-06-13 11:04:14] DSP: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-13 11:08:49]   sec=pass score=0.0
+[2026-06-13 11:08:49] DSP: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-13 11:12:02]   sec=pass score=0.0
+[2026-06-13 11:13:38] DSP: promoted v0.1 → v1 score=0.0
+[2026-06-13 11:13:38] DSP: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-13 11:17:45]   sec=fail score=None
+[2026-06-13 11:17:45] DSP: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-13 11:21:20]   RTL syntax check failed: syn_flow/rtl/DSP.v1.2.v:184:9: error: reference to non-constant variable 'mode' is not allowed in a constant expression
+    if (mode == 0) begin // Addition
+        ^~~~
+syn_flow/rtl/DSP.v1.2.v:165:11: note: declared here
+    input mode, cin;
+          ^
+syn_flow/rtl/DSP.v1.2.v:238:9: error: referen
+[2026-06-13 11:21:20] DSP: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-13 11:25:21]   sec=fail score=None
+[2026-06-13 11:25:21] DSP: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-13 11:28:52]   sec=fail score=None
+[2026-06-13 11:28:52] DSP: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-13 11:32:35]   sec=pass score=-0.0017756062248158897
+[2026-06-13 11:34:11] DSP: promoted v1.5 → v2 score=-0.0017756062248158897
+[2026-06-13 11:34:11] DSP: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-13 11:39:38]   sec=fail score=None
+[2026-06-13 11:39:38] DSP: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-13 11:44:10]   sec=pass score=0.5096728173916144
+[2026-06-13 11:44:10] DSP: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-13 11:53:26]   RTL syntax check failed: syn_flow/rtl/DSP.v2.3.v:53:5: error: unknown module 'RegMux'
+    RegMux #(8, RSTTYPE, OPMODEREG) opReg (clk, CEOpMode, rstOpMode, opMode, opModeRegOut);
+    ^~~~~~
+syn_flow/rtl/DSP.v2.3.v:54:5: error: unknown module 'RegMux'
+    RegMux #(18, RSTTYPE, DREG) dReg (clk, CED, rstD, D, dRegOut);
+    ^~~~
+[2026-06-13 11:53:26] DSP: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-13 11:58:12]   sec=pass score=-0.0036042506992150147
+[2026-06-13 11:58:12] DSP: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-13 12:01:08]   RTL syntax check failed: syn_flow/rtl/DSP.v2.5.v:1:10: error: expected ';'
+module by precomputing both add and sub results and selecting.
+         ^
+syn_flow/rtl/DSP.v2.5.v:1:11: error: use of undeclared identifier 'precomputing'
+module by precomputing both add and sub results and selecting.
+          ^~~~~~~~~~~~
+syn_flow/
+[2026-06-13 12:02:49] DSP: promoted v2.4 → v3 score=-0.0036042506992150147
+[2026-06-13 12:02:49] DSP: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-13 12:06:47]   sec=pass score=-0.0036042506992150147
+[2026-06-13 12:06:47] DSP: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-13 12:30:31]   failed: LLM did not return extractable Verilog after retries
+[2026-06-13 12:30:31] DSP: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-13 12:34:57]   sec=fail score=None
+[2026-06-13 12:34:57] DSP: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-13 12:39:42]   sec=fail score=None
+[2026-06-13 12:39:42] DSP: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-13 12:42:43]   RTL syntax check failed: syn_flow/rtl/DSP.v3.5.v:76:35: error: cannot select range of [48:25] from 'logic[47:0]' [-Wrange-oob]
+    wire [23:0] add_sum_hi_c0 = X[48:25] + Z[48:25];
+                                  ^~~~~
+syn_flow/rtl/DSP.v3.5.v:76:46: error: cannot select range of [48:25] from 'logic[47:0]' [-Wrange-oob]
+   
+[2026-06-13 12:44:22] DSP: promoted v3.1 → v4 score=-0.0036042506992150147
+[2026-06-13 12:44:22] DSP: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-13 12:49:09]   sec=pass score=-0.0036042506992150147
+[2026-06-13 12:49:09] DSP: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-13 14:51:52]   sec=fail score=None
+[2026-06-13 14:51:52] DSP: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-13 14:55:14]   sec=pass score=-0.0036042506992150147
+[2026-06-13 14:55:14] DSP: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-13 14:58:55]   sec=pass score=-0.0036042506992150147
+[2026-06-13 14:58:55] DSP: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-13 15:03:52]   sec=fail score=None
+[2026-06-13 15:05:31] DSP: promoted v4.1 → v5 score=-0.0036042506992150147
+[2026-06-13 15:05:31] DSP: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-13 15:12:29]   sec=fail score=None
+[2026-06-13 15:12:29] DSP: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-13 17:15:54]   sec=fail score=None
+[2026-06-13 17:15:54] DSP: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-13 17:20:19]   sec=pass score=-0.0036042506992150147
+[2026-06-13 17:20:19] DSP: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-13 17:25:06]   sec=pass score=-0.0036042506992150147
+[2026-06-13 17:25:06] DSP: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-13 17:30:15]   sec=pass score=0.010187173510855666
+[2026-06-13 17:31:55] DSP: promoted v5.3 → v6 score=-0.0036042506992150147
+[2026-06-13 17:31:55] DSP: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-13 17:35:35]   RTL syntax check failed: syn_flow/rtl/DSP.v6.1.v:1:7: error: expected identifier
+module (line ~71)
+      ^
+syn_flow/rtl/DSP.v6.1.v:1:13: error: expected identifier
+module (line ~71)
+            ^
+syn_flow/rtl/DSP.v6.1.v:1:18: error: expected ';'
+module (line ~71)
+                 ^
+syn_flow/rtl/DSP.v6.1.v:3:15: error: expec
+[2026-06-13 17:35:35] DSP: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-13 17:38:39]   RTL syntax check failed: syn_flow/rtl/DSP.v6.2.v:84:41: error: cannot select range of [48:24] from 'logic[47:0]' [-Wrange-oob]
+    wire [24:0] upper_add_c0 = {1'b0, X[48:24]} + {1'b0, Z[48:24]};
+                                        ^~~~~
+syn_flow/rtl/DSP.v6.2.v:84:60: error: cannot select range of [48:24] from 'logic[47:
+[2026-06-13 17:38:39] DSP: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-13 17:44:03]   sec=pass score=0.5151148375759587
+[2026-06-13 17:44:03] DSP: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-13 17:48:20]   sec=fail score=None
+[2026-06-13 17:48:20] DSP: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-13 17:51:30]   RTL syntax check failed: syn_flow/rtl/DSP.v6.5.v:151:21: error: select expression is not allowed here
+    wire lo_carry = ({1'b0, in0[8:0]} + {1'b0, in1[8:0]})[9];
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+syn_flow/rtl/DSP.v6.5.v:162:22: error: select expression is not allowed here
+    wire lo_borrow = ({
+[2026-06-13 17:53:12] DSP: promoted v6.3 → v7 score=0.5151148375759587
+[2026-06-13 17:53:12] DSP: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-13 18:03:36]   sec=pass score=0.5151148375759587
+[2026-06-13 18:03:36] DSP: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-13 18:07:48]   sec=pass score=0.5151148375759587
+[2026-06-13 18:07:48] DSP: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-13 18:13:34]   sec=pass score=-0.004889039960220108
+[2026-06-13 18:13:34] DSP: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-13 18:18:26]   sec=pass score=0.5151148375759587
+[2026-06-13 18:18:26] DSP: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-13 18:28:00]   sec=fail score=None
+[2026-06-13 18:29:43] DSP: promoted v7.3 → v8 score=-0.004889039960220108
+[2026-06-13 18:29:43] DSP: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-13 18:33:57]   sec=pass score=-0.06064946693265636
+[2026-06-13 18:33:57] DSP: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-13 18:38:18]   sec=pass score=-0.004889039960220108
+[2026-06-13 18:38:18] DSP: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-13 18:47:24]   sec=pass score=-0.004889039960220108
+[2026-06-13 18:47:24] DSP: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-13 18:53:06]   sec=pass score=-0.04425071496067312
+[2026-06-13 18:53:06] DSP: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-13 18:57:03]   sec=pass score=-0.006469367020210124
+[2026-06-13 18:58:43] DSP: promoted v8.1 → v9 score=-0.06064946693265636
+[2026-06-13 18:58:43] DSP: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-13 19:03:47]   sec=pass score=-0.0752853015569834
+[2026-06-13 19:03:47] DSP: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-13 19:07:26]   sec=pass score=-0.06489230132341915
+[2026-06-13 19:07:26] DSP: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-13 19:19:08]   sec=pass score=-0.06454841044577597
+[2026-06-13 19:19:08] DSP: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-13 19:21:19]   RTL syntax check failed: syn_flow/rtl/DSP.v9.4.v:145:10: error: redefinition of 'carryInRegIn' [-Wredefinition]
+    wire carryInRegIn = (is_opmode5 | is_carryin) ? carryInRegIn_stage1 : 1'b0;
+         ^
+syn_flow/rtl/DSP.v9.4.v:37:10: note: previous definition here
+    wire carryInRegIn, carryInRegOut, carryOutRegIn;
+       
+[2026-06-13 19:21:19] DSP: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-13 19:27:00]   sec=pass score=-0.07589325931642701
+[2026-06-13 19:28:41] DSP: promoted v9.5 → v10 score=-0.07589325931642701
+[2026-06-13 19:28:41] === DESIGN DONE: DSP best=v10 ===
+[2026-06-13 19:28:41] === DESIGN START: FIFO (AST) ===
+[2026-06-13 19:28:41] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-13 19:32:18] FIFO: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-13 19:43:56]   sec=pass score=0.0
+[2026-06-13 19:43:56] FIFO: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-13 19:52:12]   sec=pass score=0.024433338004536252
+[2026-06-13 19:52:12] FIFO: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-13 19:58:09]   sec=pass score=0.024371376023961062
+[2026-06-13 19:58:09] FIFO: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-13 20:04:04]   sec=pass score=0.0
+[2026-06-13 20:04:04] FIFO: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-13 20:17:45]   sec=pass score=0.025305009134862708
+[2026-06-13 20:21:24] FIFO: promoted v0.1 → v1 score=0.0
+[2026-06-13 20:21:24] FIFO: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-13 20:31:07]   sec=pass score=-0.05162479600255491
+[2026-06-13 20:31:07] FIFO: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-13 20:36:51]   sec=pass score=0.024433338004536252
+[2026-06-13 20:36:51] FIFO: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-13 20:42:41]   sec=pass score=-0.015167422372997388
+[2026-06-13 20:42:41] FIFO: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-13 20:48:45]   sec=pass score=0.05813753441075035
+[2026-06-13 20:48:45] FIFO: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-13 20:54:36]   sec=pass score=0.0
+[2026-06-13 20:57:29] FIFO: promoted v1.1 → v2 score=-0.05162479600255491
+[2026-06-13 20:57:29] FIFO: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-13 21:03:52]   sec=pass score=-0.06963327343269783
+[2026-06-13 21:03:52] FIFO: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-13 21:13:53]   failed: The read operation timed out
+[2026-06-13 21:13:53] FIFO: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-13 21:29:09]   sec=pass score=-0.05162479600255491
+[2026-06-13 21:29:09] FIFO: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-13 21:35:41]   sec=pass score=-0.06970740652075993
+[2026-06-13 21:35:41] FIFO: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-13 21:42:21]   sec=pass score=-0.0516558878822165
+[2026-06-13 21:45:21] FIFO: promoted v2.4 → v3 score=-0.06970740652075993
+[2026-06-13 21:45:21] FIFO: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-13 21:55:31]   sec=pass score=0.16399263353802435
+[2026-06-13 21:55:31] FIFO: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-13 21:57:37]   RTL syntax check failed: syn_flow/rtl/FIFO.v3.2.v:1:15: error: expected ';'
+module already has some optimizations from previous iterations. Looking at the write_uut/full signal assignment pattern:
+              ^
+syn_flow/rtl/FIFO.v3.2.v:1:16: error: use of undeclared identifier 'has'
+module already has some optimizations f
+[2026-06-13 21:57:37] FIFO: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-13 22:03:12]   sec=pass score=-0.03789144586787726
+[2026-06-13 22:03:12] FIFO: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-13 22:08:21]   sec=pass score=-0.06976332900628175
+[2026-06-13 22:08:21] FIFO: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-13 22:12:33]   sec=pass score=-0.06973174872741446
+[2026-06-13 22:15:23] FIFO: promoted v3.4 → v4 score=-0.06976332900628175
+[2026-06-13 22:15:23] FIFO: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-13 22:20:45]   sec=pass score=-0.06976332900628175
+[2026-06-13 22:20:45] FIFO: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-13 22:26:14]   sec=pass score=-0.10322336647762251
+[2026-06-13 22:26:14] FIFO: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-13 22:31:32]   sec=pass score=-0.06976332900628175
+[2026-06-13 22:31:32] FIFO: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-13 22:42:24]   sec=pass score=-0.06976332900628175
+[2026-06-13 22:42:24] FIFO: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-13 22:46:59]   failed: 'list' object has no attribute 'get'
+[2026-06-13 22:49:28] FIFO: promoted v4.2 → v5 score=-0.10322336647762251
+[2026-06-13 22:49:28] FIFO: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-13 22:56:40]   RTL syntax check failed: syn_flow/rtl/FIFO.v5.1.v:25:1: error: unknown module 'memory'
+memory #(datasize, addrbits, depth) mem_uut (.dataOut(dataOut), .dataIn(dataIn),
+^~~~~~
+syn_flow/rtl/FIFO.v5.1.v:31:1: error: unknown module 'RFSM'
+RFSM #(addrbits, depth) read_uut (.empty(empty), .rdaddr(rdaddr),
+^~~~
+syn_flow/rtl/FIFO.v
+[2026-06-13 22:56:40] FIFO: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-13 23:11:44]   RTL syntax check failed: syn_flow/rtl/FIFO.v5.2.v:25:1: error: unknown module 'memory'
+memory #(datasize, addrbits, depth) mem_uut (.dataOut(dataOut), .dataIn(dataIn),
+^~~~~~
+[2026-06-13 23:11:44] FIFO: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-13 23:16:17]   sec=pass score=-0.0697293001042374
+[2026-06-13 23:16:17] FIFO: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-13 23:21:06]   sec=pass score=-0.10322336647762251
+[2026-06-13 23:21:06] FIFO: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-13 23:24:12]   sec=pass score=0.11715080908787187
+[2026-06-13 23:26:41] FIFO: promoted v5.4 → v6 score=-0.10322336647762251
+[2026-06-13 23:26:41] FIFO: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-13 23:31:29]   sec=pass score=-0.0697293001042374
+[2026-06-13 23:31:29] FIFO: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-13 23:37:02]   sec=pass score=-0.03956520394708138
+[2026-06-13 23:37:02] FIFO: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-13 23:41:58]   sec=pass score=-0.10322336647762251
+[2026-06-13 23:41:58] FIFO: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-13 23:44:59]   sec=fail score=None
+[2026-06-13 23:44:59] FIFO: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-13 23:49:27]   sec=pass score=-0.10326098625154316
+[2026-06-13 23:51:56] FIFO: promoted v6.5 → v7 score=-0.10326098625154316
+[2026-06-13 23:51:56] FIFO: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-13 23:57:05]   sec=pass score=0.0163446980823013
+[2026-06-13 23:57:05] FIFO: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-14 00:02:40]   sec=pass score=0.13815512751835013
+[2026-06-14 00:02:40] FIFO: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-14 00:08:01]   sec=pass score=-0.022245113684074495
+[2026-06-14 00:08:01] FIFO: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-14 00:12:24]   sec=pass score=-0.10326098625154316
+[2026-06-14 00:12:24] FIFO: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-14 00:17:06]   sec=pass score=-0.10324881514821589
+[2026-06-14 00:19:34] FIFO: promoted v7.4 → v8 score=-0.10326098625154316
+[2026-06-14 00:19:34] FIFO: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-14 00:25:19]   sec=pass score=-0.045847487653200014
+[2026-06-14 00:25:19] FIFO: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-14 00:31:22]   sec=pass score=-0.014759972834017428
+[2026-06-14 00:31:22] FIFO: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-14 00:41:05]   sec=pass score=0.061720419469376536
+[2026-06-14 00:41:05] FIFO: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-14 00:48:36]   sec=pass score=-0.10326098625154316
+[2026-06-14 00:48:36] FIFO: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-14 00:52:48]   sec=pass score=-0.10326098625154316
+[2026-06-14 00:55:17] FIFO: promoted v8.4 → v9 score=-0.10326098625154316
+[2026-06-14 00:55:17] FIFO: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-14 01:05:32]   sec=pass score=0.14536854231933716
+[2026-06-14 01:05:32] FIFO: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-14 01:10:38]   sec=pass score=-0.10326098625154316
+[2026-06-14 01:10:38] FIFO: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-14 01:20:47]   sec=pass score=-0.04536883718893874
+[2026-06-14 01:20:47] FIFO: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-14 01:24:51]   sec=pass score=-0.10326098625154316
+[2026-06-14 01:24:51] FIFO: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-14 01:29:31]   sec=pass score=-0.10326098625154316
+[2026-06-14 01:31:59] FIFO: promoted v9.2 → v10 score=-0.10326098625154316
+[2026-06-14 01:31:59] === DESIGN DONE: FIFO best=v7 ===
+[2026-06-14 01:31:59] === DESIGN START: i2c (AST) ===
+[2026-06-14 01:31:59] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 01:33:29] i2c: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 01:45:47]   sec=fail score=None
+[2026-06-14 01:45:47] i2c: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 01:49:57]   sec=fail score=None
+[2026-06-14 01:49:57] i2c: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 01:54:35]   sec=fail score=None
+[2026-06-14 01:54:35] i2c: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 01:58:45]   sec=pass score=-0.0042287251740810786
+[2026-06-14 01:58:45] i2c: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 02:07:01]   RTL syntax check failed: syn_flow/rtl/i2c.v0.5.v:169:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v0.5.v:169:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 02:08:31] i2c: promoted v0.4 → v1 score=-0.0042287251740810786
+[2026-06-14 02:08:31] i2c: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-14 02:11:39]   RTL syntax check failed: syn_flow/rtl/i2c.v1.1.v:574:31: error: identifier 'c_state' used before its declaration
+        wire state_is_idle  = c_state[0];
+                              ^~~~~~~
+syn_flow/rtl/i2c.v1.1.v:584:19: note: declared here
+        reg [4:0] c_state; // synopsis enum_state
+                  ^
+syn_flow/r
+[2026-06-14 02:11:39] i2c: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-14 02:14:55]   RTL syntax check failed: syn_flow/rtl/i2c.v1.2.v:202:44: error: identifier 'idle' used before its declaration
+        wire state_is_idle    = c_state == idle;
+                                           ^~~~
+syn_flow/rtl/i2c.v1.2.v:229:26: note: declared here
+        parameter [16:0] idle    = 17'b0_0000_0000_0000_0000;
+    
+[2026-06-14 02:14:55] i2c: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-14 02:20:18]   sec=pass score=-0.0042287251740810786
+[2026-06-14 02:20:18] i2c: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-14 02:24:25]   sec=pass score=0.015647581552479944
+[2026-06-14 02:24:25] i2c: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-14 02:28:57]   sec=fail score=None
+[2026-06-14 02:30:27] i2c: promoted v1.3 → v2 score=-0.0042287251740810786
+[2026-06-14 02:30:27] i2c: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-14 02:34:59]   sec=pass score=-0.0042287251740810786
+[2026-06-14 02:34:59] i2c: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-14 02:39:35]   RTL syntax check failed: syn_flow/rtl/i2c.v2.2.v:531:39: error: cannot refer to element 5 of 'reg[4:0]' [-Windex-oob]
+        wire state_is_stop  = c_state[5]; // always 0 (5-bit register)
+                                      ^
+[2026-06-14 02:39:35] i2c: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-14 02:44:17]   sec=fail score=None
+[2026-06-14 02:44:17] i2c: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-14 02:48:52]   sec=pass score=-0.0042287251740810786
+[2026-06-14 02:48:52] i2c: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-14 02:53:16]   sec=pass score=-0.0034580457239722267
+[2026-06-14 02:54:45] i2c: promoted v2.1 → v3 score=-0.0042287251740810786
+[2026-06-14 02:54:45] i2c: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-14 02:59:53]   RTL syntax check failed: syn_flow/rtl/i2c.v3.1.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v3.1.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 02:59:53] i2c: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-14 03:04:48]   sec=fail score=None
+[2026-06-14 03:04:48] i2c: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-14 03:11:24]   sec=pass score=-0.003496495815984606
+[2026-06-14 03:11:24] i2c: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-14 03:15:56]   sec=fail score=None
+[2026-06-14 03:15:56] i2c: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-14 03:24:16]   sec=pass score=-0.0015430363938092866
+[2026-06-14 03:25:46] i2c: promoted v3.3 → v4 score=-0.003496495815984606
+[2026-06-14 03:25:46] i2c: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-14 03:30:49]   sec=fail score=None
+[2026-06-14 03:30:49] i2c: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-14 03:35:26]   sec=pass score=0.01536590280835334
+[2026-06-14 03:35:26] i2c: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-14 03:43:35]   RTL syntax check failed: syn_flow/rtl/i2c.v4.3.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v4.3.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 03:43:35] i2c: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-14 03:53:06]   RTL syntax check failed: syn_flow/rtl/i2c.v4.4.v:584:15: error: use of undeclared identifier 'clk_en'; did you mean 'clk_cnt'?
+          if (clk_en) begin
+              ^~~~~~
+syn_flow/rtl/i2c.v4.4.v:449:22: note: declared here
+        input [15:0] clk_cnt; // 4x SCL
+                     ^
+syn_flow/rtl/i2c.v4.4.v:627:15: er
+[2026-06-14 03:53:06] i2c: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-14 03:58:46]   sec=fail score=None
+[2026-06-14 04:00:17] i2c: promoted v4.2 → v5 score=0.01536590280835334
+[2026-06-14 04:00:17] i2c: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-14 04:04:29]   sec=pass score=-0.0019308925336562815
+[2026-06-14 04:04:29] i2c: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-14 04:08:15]   failed: 'list' object has no attribute 'get'
+[2026-06-14 04:08:15] i2c: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-14 04:12:12]   sec=pass score=0.0016182861874737718
+[2026-06-14 04:12:12] i2c: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-14 04:17:10]   sec=pass score=0.01536590280835334
+[2026-06-14 04:17:10] i2c: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-14 04:21:17]   RTL syntax check failed: syn_flow/rtl/i2c.v5.5.v:545:32: error: identifier 'c_state' used before its declaration
+        wire state_is_start  = c_state[0]; // ST_START == 5'b0_0001
+                               ^~~~~~~
+syn_flow/rtl/i2c.v5.5.v:585:19: note: declared here
+        reg [4:0] c_state; // synopsis enum_state
+   
+[2026-06-14 04:22:46] i2c: promoted v5.1 → v6 score=-0.0019308925336562815
+[2026-06-14 04:22:46] i2c: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-14 04:27:17]   sec=fail score=None
+[2026-06-14 04:27:17] i2c: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-14 04:31:48]   sec=pass score=-0.008918039750611027
+[2026-06-14 04:31:48] i2c: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-14 04:35:55]   sec=pass score=-0.0019308925336562815
+[2026-06-14 04:35:55] i2c: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-14 04:44:54]   sec=pass score=-0.0019308925336562815
+[2026-06-14 04:44:54] i2c: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-14 04:49:55]   RTL syntax check failed: syn_flow/rtl/i2c.v6.5.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v6.5.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 04:51:25] i2c: promoted v6.2 → v7 score=-0.008918039750611027
+[2026-06-14 04:51:25] i2c: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-14 05:01:45]   sec=pass score=-0.008439916521768388
+[2026-06-14 05:01:45] i2c: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-14 05:02:25]   failed: Remote end closed connection without response
+[2026-06-14 05:02:25] i2c: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-14 05:07:27]   RTL syntax check failed: syn_flow/rtl/i2c.v7.3.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v7.3.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 05:07:27] i2c: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-14 05:16:33]   failed: <urlopen error [Errno 104] Connection reset by peer>
+[2026-06-14 05:16:33] i2c: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-14 05:20:40]   sec=fail score=None
+[2026-06-14 05:22:08] i2c: promoted v7.1 → v8 score=-0.008439916521768388
+[2026-06-14 05:22:08] i2c: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-14 05:26:02]   sec=pass score=-0.007698487296393927
+[2026-06-14 05:26:02] i2c: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-14 05:30:15]   sec=pass score=-0.008439916521768388
+[2026-06-14 05:30:15] i2c: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-14 05:34:19]   sec=pass score=-0.008439916521768388
+[2026-06-14 05:34:19] i2c: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-14 05:37:09]   RTL syntax check failed: syn_flow/rtl/i2c.v8.4.v:548:29: error: identifier 'c_state' used before its declaration
+        wire shift_in_wr = (c_state == ST_WRITE) & core_ack_and_not_done;
+                            ^~~~~~~
+syn_flow/rtl/i2c.v8.4.v:580:19: note: declared here
+        reg [4:0] c_state; // synopsis enum_state
+
+[2026-06-14 05:37:09] i2c: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-14 05:41:47]   RTL syntax check failed: syn_flow/rtl/i2c.v8.5.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v8.5.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 05:43:17] i2c: promoted v8.2 → v9 score=-0.008439916521768388
+[2026-06-14 05:43:17] i2c: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-14 05:47:30]   sec=fail score=None
+[2026-06-14 05:47:30] i2c: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-14 05:50:26]   RTL syntax check failed: syn_flow/rtl/i2c.v9.2.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v9.2.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 05:50:26] i2c: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-14 06:01:36]   sec=fail score=None
+[2026-06-14 06:01:36] i2c: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-14 06:04:30]   RTL syntax check failed: syn_flow/rtl/i2c.v9.4.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+                                  ^~~~~~~~~~~~~
+syn_flow/rtl/i2c.v9.4.v:173:48: error: expected expression
+            cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+    
+[2026-06-14 06:04:30] i2c: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-14 06:08:56]   sec=pass score=-0.008439916521768388
+[2026-06-14 06:10:25] i2c: promoted v9.5 → v10 score=-0.008439916521768388
+[2026-06-14 06:10:25] === DESIGN DONE: i2c best=v7 ===
+[2026-06-14 06:10:25] === DESIGN START: LSTM (AST) ===
+[2026-06-14 06:10:25] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 06:11:45] LSTM: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 06:14:18]   sec=fail score=None
+[2026-06-14 06:14:18] LSTM: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 06:16:31]   sec=fail score=None
+[2026-06-14 06:16:31] LSTM: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 06:19:13]   sec=fail score=None
+[2026-06-14 06:19:13] LSTM: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 06:21:41]   sec=fail score=None
+[2026-06-14 06:21:41] LSTM: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 06:24:09]   sec=fail score=None
+[2026-06-14 06:24:09] LSTM: no SEC-pass scored minor in major 0, stopping
+[2026-06-14 06:24:09] === DESIGN DONE: LSTM best=v0 ===
+[2026-06-14 06:24:09] === DESIGN START: pcie (AST) ===
+[2026-06-14 06:24:09] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 06:25:59] pcie: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 06:29:25]   RTL syntax check failed: syn_flow/rtl/pcie.v0.1.v:1:7: error: expected identifier
+module (part of st_0001)
+      ^
+syn_flow/rtl/pcie.v0.1.v:1:16: error: expected ','
+module (part of st_0001)
+               ^
+syn_flow/rtl/pcie.v0.1.v:1:25: error: expected ';'
+module (part of st_0001)
+                        ^
+syn_flow/rtl/pc
+[2026-06-14 06:29:25] pcie: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 06:33:09]   RTL syntax check failed: syn_flow/rtl/pcie.v0.2.v:13:1: error: unknown module 'scrambler'
+scrambler SCR(.clk(clk),
+^~~~~~~~~
+syn_flow/rtl/pcie.v0.2.v:21:1: error: unknown module 'encoder'
+encoder ENC(.data_in(s_out),
+^~~~~~~
+syn_flow/rtl/pcie.v0.2.v:46:1: error: unknown module 'decoder'
+decoder DEC(.data_in(dec_in),
+^~~~~~~
+[2026-06-14 06:33:09] pcie: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 06:37:31]   RTL syntax check failed: syn_flow/rtl/pcie.v0.3.v:13:1: error: unknown module 'scrambler'
+scrambler SCR(.clk(clk),
+^~~~~~~~~
+syn_flow/rtl/pcie.v0.3.v:21:1: error: unknown module 'encoder'
+encoder ENC(.data_in(s_out),
+^~~~~~~
+syn_flow/rtl/pcie.v0.3.v:46:1: error: unknown module 'decoder'
+decoder DEC(.data_in(dec_in),
+^~~~~~~
+[2026-06-14 06:37:31] pcie: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 06:45:31]   RTL syntax check failed: syn_flow/rtl/pcie.v0.4.v:13:1: error: unknown module 'scrambler'
+scrambler SCR(.clk(clk),
+^~~~~~~~~
+syn_flow/rtl/pcie.v0.4.v:21:1: error: unknown module 'encoder'
+encoder ENC(.data_in(s_out),
+^~~~~~~
+syn_flow/rtl/pcie.v0.4.v:46:1: error: unknown module 'decoder'
+decoder DEC(.data_in(dec_in),
+^~~~~~~
+[2026-06-14 06:45:31] pcie: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 06:48:45]   RTL syntax check failed: syn_flow/rtl/pcie.v0.5.v:13:1: error: unknown module 'scrambler'
+scrambler SCR(.clk(clk),
+^~~~~~~~~
+syn_flow/rtl/pcie.v0.5.v:21:1: error: unknown module 'encoder'
+encoder ENC(.data_in(s_out),
+^~~~~~~
+[2026-06-14 06:48:45] pcie: no SEC-pass scored minor in major 0, stopping
+[2026-06-14 06:48:45] === DESIGN DONE: pcie best=v0 ===
+[2026-06-14 06:48:45] === DESIGN START: router (AST) ===
+[2026-06-14 06:48:45] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 06:50:35] router: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 06:54:30]   sec=fail score=None
+[2026-06-14 06:54:30] router: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 06:58:03]   sec=fail score=None
+[2026-06-14 06:58:03] router: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 07:01:33]   sec=fail score=None
+[2026-06-14 07:01:33] router: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 07:06:27]   sec=fail score=None
+[2026-06-14 07:06:27] router: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 07:10:23]   sec=fail score=None
+[2026-06-14 07:10:23] router: no SEC-pass scored minor in major 0, stopping
+[2026-06-14 07:10:23] === DESIGN DONE: router best=v0 ===
+[2026-06-14 07:10:23] === DESIGN START: simple_spi (AST) ===
+[2026-06-14 07:10:23] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 07:11:49] simple_spi: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 07:11:49]   failed: pipeline.py failed exit 1
+[2026-06-14 07:11:49] simple_spi: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 07:11:49]   failed: pipeline.py failed exit 1
+[2026-06-14 07:11:49] simple_spi: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 07:11:50]   failed: pipeline.py failed exit 1
+[2026-06-14 07:11:50] simple_spi: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 07:11:50]   failed: pipeline.py failed exit 1
+[2026-06-14 07:11:50] simple_spi: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 07:11:50]   failed: pipeline.py failed exit 1
+[2026-06-14 07:11:50] simple_spi: no SEC-pass scored minor in major 0, stopping
+[2026-06-14 07:11:50] === DESIGN DONE: simple_spi best=v0 ===
+[2026-06-14 07:11:50] === DESIGN START: SPI (AST) ===
+[2026-06-14 07:11:50] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 07:13:25] SPI: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 07:18:54]   RTL syntax check failed: syn_flow/rtl/SPI.v0.1.v:121:29: error: identifier 'current_state' used before its declaration
+    wire state_is_idle   = (current_state == IDLE);
+                            ^~~~~~~~~~~~~
+syn_flow/rtl/SPI.v0.1.v:125:15: note: declared here
+    reg [1:0] current_state, next_state;
+              ^
+syn
+[2026-06-14 07:18:54] SPI: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 07:21:56]   sec=pass score=0.0
+[2026-06-14 07:21:56] SPI: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 07:24:52]   sec=pass score=-0.19509022672951606
+[2026-06-14 07:24:52] SPI: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 07:28:47]   sec=pass score=-0.058023521106286294
+[2026-06-14 07:28:47] SPI: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 07:30:26]   RTL syntax check failed: syn_flow/rtl/SPI.v0.5.v:124:30: error: identifier 'data_count' used before its declaration
+    wire data_count_is_63 = (data_count == 63);
+                             ^~~~~~~~~~
+syn_flow/rtl/SPI.v0.5.v:144:15: note: declared here
+    reg [5:0] data_count;
+              ^
+syn_flow/rtl/SPI.v0.5.v:125
+[2026-06-14 07:32:01] SPI: promoted v0.3 → v1 score=-0.19509022672951606
+[2026-06-14 07:32:01] SPI: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-14 07:35:10]   sec=pass score=-0.20474209809162167
+[2026-06-14 07:35:10] SPI: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-14 07:38:32]   sec=pass score=-0.06899058937398898
+[2026-06-14 07:38:32] SPI: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-14 07:40:19]   RTL syntax check failed: syn_flow/rtl/SPI.v1.3.v:131:31: error: identifier 'data_count' used before its declaration
+    wire data_count_is_max = (data_count == 6'd63);
+                              ^~~~~~~~~~
+syn_flow/rtl/SPI.v1.3.v:153:15: note: declared here
+    reg [5:0] data_count;
+              ^
+[2026-06-14 07:40:19] SPI: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-14 07:44:37]   sec=pass score=-0.19509022672951606
+[2026-06-14 07:44:37] SPI: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-14 07:47:24]   sec=pass score=-0.20510213662205526
+[2026-06-14 07:48:59] SPI: promoted v1.5 → v2 score=-0.20510213662205526
+[2026-06-14 07:48:59] SPI: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-14 07:56:57]   sec=pass score=-0.20233971498414882
+[2026-06-14 07:56:57] SPI: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-14 07:59:59]   sec=pass score=-0.2058214646867042
+[2026-06-14 07:59:59] SPI: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-14 08:02:55]   sec=pass score=-0.20510213662205526
+[2026-06-14 08:02:55] SPI: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-14 08:04:28]   RTL syntax check failed: syn_flow/rtl/SPI.v2.4.v:133:13: error: expected statement
+            wire state_is_enable = (current_state == ENABLE);
+            ^~~~
+syn_flow/rtl/SPI.v2.4.v:133:18: error: identifier 'state_is_enable' used before its declaration
+            wire state_is_enable = (current_state == ENABLE);
+     
+[2026-06-14 08:04:28] SPI: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-14 08:07:25]   sec=pass score=-0.20510213662205526
+[2026-06-14 08:08:59] SPI: promoted v2.2 → v3 score=-0.2058214646867042
+[2026-06-14 08:08:59] SPI: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-14 08:12:01]   sec=pass score=-0.19849096192435745
+[2026-06-14 08:12:01] SPI: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-14 08:15:26]   sec=pass score=-0.20645781428446153
+[2026-06-14 08:15:26] SPI: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-14 08:18:49]   sec=pass score=0.28759784380812226
+[2026-06-14 08:18:49] SPI: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-14 08:21:56]   sec=pass score=-0.14381493268056464
+[2026-06-14 08:21:56] SPI: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-14 08:23:10]   failed: 'list' object has no attribute 'get'
+[2026-06-14 08:24:45] SPI: promoted v3.2 → v4 score=-0.20645781428446153
+[2026-06-14 08:24:45] SPI: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-14 08:28:11]   sec=fail score=None
+[2026-06-14 08:28:11] SPI: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-14 08:30:05]   RTL syntax check failed: syn_flow/rtl/SPI.v4.2.v:180:13: error: expected statement
+            wire load_condition = ~state_is_data;
+            ^~~~
+syn_flow/rtl/SPI.v4.2.v:180:18: error: use of undeclared identifier 'load_condition'
+            wire load_condition = ~state_is_data;
+                 ^~~~~~~~~~~~~~
+syn_flow
+[2026-06-14 08:30:05] SPI: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-14 08:40:20]   sec=pass score=-0.08111727799532217
+[2026-06-14 08:40:20] SPI: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-14 08:43:32]   sec=pass score=-0.18964244285906226
+[2026-06-14 08:43:32] SPI: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-14 08:51:00]   sec=pass score=-0.1791200953354769
+[2026-06-14 08:52:33] SPI: promoted v4.4 → v5 score=-0.18964244285906226
+[2026-06-14 08:52:33] SPI: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-14 08:56:00]   sec=pass score=-0.2035771209046125
+[2026-06-14 08:56:00] SPI: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-14 08:59:26]   sec=pass score=-0.2044636203731429
+[2026-06-14 08:59:26] SPI: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-14 09:03:15]   sec=pass score=-0.20423462037740495
+[2026-06-14 09:03:15] SPI: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-14 09:10:40]   sec=pass score=-0.18964244285906226
+[2026-06-14 09:10:40] SPI: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-14 09:12:16]   RTL syntax check failed: syn_flow/rtl/SPI.v5.5.v:179:13: error: expected statement
+            wire state_is_not_data = ~state_is_data;
+            ^~~~
+syn_flow/rtl/SPI.v5.5.v:179:18: error: use of undeclared identifier 'state_is_not_data'; did you mean 'state_is_data'?
+            wire state_is_not_data = ~state_is_data;
+
+[2026-06-14 09:13:47] SPI: promoted v5.2 → v6 score=-0.2044636203731429
+[2026-06-14 09:13:47] SPI: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-14 09:18:15]   sec=pass score=-0.2044636203731429
+[2026-06-14 09:18:15] SPI: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-14 09:21:18]   sec=pass score=-0.20439515848281162
+[2026-06-14 09:21:18] SPI: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-14 09:24:59]   sec=pass score=-0.2330765824250423
+[2026-06-14 09:24:59] SPI: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-14 09:27:56]   sec=pass score=-0.20439515848281162
+[2026-06-14 09:27:56] SPI: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-14 09:31:23]   sec=pass score=-0.2036021918090615
+[2026-06-14 09:32:54] SPI: promoted v6.3 → v7 score=-0.2330765824250423
+[2026-06-14 09:32:54] SPI: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-14 09:36:23]   sec=pass score=-0.08072615396337168
+[2026-06-14 09:36:23] SPI: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-14 09:39:19]   sec=pass score=-0.2330765824250423
+[2026-06-14 09:39:19] SPI: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-14 09:42:55]   sec=pass score=-0.2178068801812901
+[2026-06-14 09:42:55] SPI: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-14 09:46:36]   sec=pass score=-0.10211549330343117
+[2026-06-14 09:46:36] SPI: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-14 09:49:43]   sec=pass score=-0.3096092943373184
+[2026-06-14 09:51:16] SPI: promoted v7.5 → v8 score=-0.3096092943373184
+[2026-06-14 09:51:16] SPI: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-14 09:54:39]   sec=pass score=-0.3096092943373184
+[2026-06-14 09:54:39] SPI: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-14 09:57:52]   sec=pass score=-0.31336610096209455
+[2026-06-14 09:57:52] SPI: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-14 10:01:05]   sec=pass score=-0.149811334890987
+[2026-06-14 10:01:05] SPI: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-14 10:04:12]   sec=pass score=-0.3096092943373184
+[2026-06-14 10:04:12] SPI: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-14 10:07:36]   sec=pass score=-0.31336610096209455
+[2026-06-14 10:09:08] SPI: promoted v8.2 → v9 score=-0.31336610096209455
+[2026-06-14 10:09:08] SPI: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-14 10:12:50]   sec=pass score=-0.31336610096209455
+[2026-06-14 10:12:50] SPI: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-14 10:19:57]   sec=pass score=-0.31336610096209455
+[2026-06-14 10:19:57] SPI: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-14 10:24:00]   sec=pass score=-0.20690767798350534
+[2026-06-14 10:24:00] SPI: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-14 10:28:22]   sec=pass score=-0.16770269724258538
+[2026-06-14 10:28:22] SPI: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-14 10:31:48]   sec=pass score=-0.1714741889771666
+[2026-06-14 10:33:20] SPI: promoted v9.1 → v10 score=-0.31336610096209455
+[2026-06-14 10:33:20] === DESIGN DONE: SPI best=v9 ===
+[2026-06-14 10:33:20] === DESIGN START: ticket_machine (AST) ===
+[2026-06-14 10:33:20] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 10:34:39] ticket_machine: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 10:38:11]   sec=fail score=None
+[2026-06-14 10:38:11] ticket_machine: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 10:40:54]   sec=pass score=0.05759116409537171
+[2026-06-14 10:40:54] ticket_machine: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 10:43:43]   sec=pass score=0.11257907125134375
+[2026-06-14 10:43:43] ticket_machine: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 10:46:26]   sec=pass score=0.2290433508406864
+[2026-06-14 10:46:26] ticket_machine: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 10:49:15]   sec=pass score=0.11257907125134375
+[2026-06-14 10:50:39] ticket_machine: promoted v0.2 → v1 score=0.05759116409537171
+[2026-06-14 10:50:39] ticket_machine: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-14 10:53:37]   sec=pass score=0.05759116409537171
+[2026-06-14 10:53:37] ticket_machine: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-14 10:55:44]   sec=pass score=0.45893143292110566
+[2026-06-14 10:55:44] ticket_machine: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-14 10:58:31]   sec=pass score=0.05759116409537171
+[2026-06-14 10:58:31] ticket_machine: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-14 11:01:20]   sec=fail score=None
+[2026-06-14 11:01:20] ticket_machine: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-14 11:02:24]   RTL syntax check failed: syn_flow/rtl/ticket_machine.v1.5.v:60:9: error: expected statement
+        wire [5:0] rdy_next     = ten_active ? BILL10 : (twenty_active ? BILL20 : RDY);
+        ^~~~
+syn_flow/rtl/ticket_machine.v1.5.v:60:20: error: use of undeclared identifier 'rdy_next'
+        wire [5:0] rdy_next     = ten_activ
+[2026-06-14 11:03:47] ticket_machine: promoted v1.1 → v2 score=0.05759116409537171
+[2026-06-14 11:03:47] ticket_machine: major=2 minor=1 (v2.1) rank_offset=0
+[2026-06-14 11:06:26]   sec=pass score=0.05759116409537171
+[2026-06-14 11:06:26] ticket_machine: major=2 minor=2 (v2.2) rank_offset=2
+[2026-06-14 11:09:03]   sec=pass score=0.5428961419329847
+[2026-06-14 11:09:03] ticket_machine: major=2 minor=3 (v2.3) rank_offset=0
+[2026-06-14 11:16:12]   sec=pass score=0.05759116409537171
+[2026-06-14 11:16:12] ticket_machine: major=2 minor=4 (v2.4) rank_offset=4
+[2026-06-14 11:22:49]   sec=fail score=None
+[2026-06-14 11:22:49] ticket_machine: major=2 minor=5 (v2.5) rank_offset=6
+[2026-06-14 11:25:17]   sec=pass score=0.547520895046994
+[2026-06-14 11:26:40] ticket_machine: promoted v2.1 → v3 score=0.05759116409537171
+[2026-06-14 11:26:40] ticket_machine: major=3 minor=1 (v3.1) rank_offset=0
+[2026-06-14 11:30:19]   sec=pass score=0.5369075055898603
+[2026-06-14 11:30:19] ticket_machine: major=3 minor=2 (v3.2) rank_offset=2
+[2026-06-14 11:32:28]   sec=fail score=None
+[2026-06-14 11:32:28] ticket_machine: major=3 minor=3 (v3.3) rank_offset=0
+[2026-06-14 11:34:56]   sec=pass score=0.05759116409537171
+[2026-06-14 11:34:56] ticket_machine: major=3 minor=4 (v3.4) rank_offset=4
+[2026-06-14 11:37:10]   sec=pass score=0.5731030143032513
+[2026-06-14 11:37:10] ticket_machine: major=3 minor=5 (v3.5) rank_offset=6
+[2026-06-14 11:39:48]   sec=pass score=0.6179329939874808
+[2026-06-14 11:41:11] ticket_machine: promoted v3.3 → v4 score=0.05759116409537171
+[2026-06-14 11:41:12] ticket_machine: major=4 minor=1 (v4.1) rank_offset=0
+[2026-06-14 11:46:49]   sec=fail score=None
+[2026-06-14 11:46:49] ticket_machine: major=4 minor=2 (v4.2) rank_offset=2
+[2026-06-14 11:49:43]   sec=pass synth=fail
+[2026-06-14 11:49:43]   sec=fail score=None
+[2026-06-14 11:49:43] ticket_machine: major=4 minor=3 (v4.3) rank_offset=0
+[2026-06-14 11:52:15]   sec=pass score=0.05759116409537171
+[2026-06-14 11:52:15] ticket_machine: major=4 minor=4 (v4.4) rank_offset=4
+[2026-06-14 11:55:15]   sec=fail score=None
+[2026-06-14 11:55:15] ticket_machine: major=4 minor=5 (v4.5) rank_offset=6
+[2026-06-14 11:56:08]   RTL syntax check failed: syn_flow/rtl/ticket_machine.v4.5.v:66:15: error: expected a declaration name
+    NextState = (state_is_rdy    ? next_rdy_vector    : 6'b0) |
+              ^
+[2026-06-14 11:57:32] ticket_machine: promoted v4.3 → v5 score=0.05759116409537171
+[2026-06-14 11:57:32] ticket_machine: major=5 minor=1 (v5.1) rank_offset=0
+[2026-06-14 12:01:08]   sec=pass score=-0.05996937329357473
+[2026-06-14 12:01:08] ticket_machine: major=5 minor=2 (v5.2) rank_offset=2
+[2026-06-14 12:03:43]   sec=pass score=0.05759116409537171
+[2026-06-14 12:03:43] ticket_machine: major=5 minor=3 (v5.3) rank_offset=0
+[2026-06-14 12:06:34]   sec=pass score=0.05759116409537171
+[2026-06-14 12:06:34] ticket_machine: major=5 minor=4 (v5.4) rank_offset=4
+[2026-06-14 12:08:46]   sec=pass score=0.6282358247124118
+[2026-06-14 12:08:46] ticket_machine: major=5 minor=5 (v5.5) rank_offset=6
+[2026-06-14 12:11:24]   sec=pass score=0.4466715114101066
+[2026-06-14 12:12:47] ticket_machine: promoted v5.1 → v6 score=-0.05996937329357473
+[2026-06-14 12:12:47] ticket_machine: major=6 minor=1 (v6.1) rank_offset=0
+[2026-06-14 12:15:39]   RTL syntax check failed: syn_flow/rtl/ticket_machine.v6.1.v:59:9: error: expected statement
+        wire state_is_rdy_b    = (State_B == RDY);
+        ^~~~
+syn_flow/rtl/ticket_machine.v6.1.v:59:14: error: use of undeclared identifier 'state_is_rdy_b'; did you mean 'state_is_rdy_a'?
+        wire state_is_rdy_b    = (State_B 
+[2026-06-14 12:15:39] ticket_machine: major=6 minor=2 (v6.2) rank_offset=2
+[2026-06-14 12:18:16]   sec=pass score=0.05759116409537171
+[2026-06-14 12:18:16] ticket_machine: major=6 minor=3 (v6.3) rank_offset=0
+[2026-06-14 12:21:17]   sec=pass score=0.6065378402378127
+[2026-06-14 12:21:17] ticket_machine: major=6 minor=4 (v6.4) rank_offset=4
+[2026-06-14 12:23:46]   sec=fail score=None
+[2026-06-14 12:23:46] ticket_machine: major=6 minor=5 (v6.5) rank_offset=6
+[2026-06-14 12:25:05]   RTL syntax check failed: syn_flow/rtl/ticket_machine.v6.5.v:63:9: error: expected statement
+        wire [5:0] next_rdy = RDY;  // Default value
+        ^~~~
+syn_flow/rtl/ticket_machine.v6.5.v:63:20: error: use of undeclared identifier 'next_rdy'
+        wire [5:0] next_rdy = RDY;  // Default value
+                   ^~~~~~
+[2026-06-14 12:26:28] ticket_machine: promoted v6.2 → v7 score=0.05759116409537171
+[2026-06-14 12:26:28] ticket_machine: major=7 minor=1 (v7.1) rank_offset=0
+[2026-06-14 12:29:05]   sec=pass score=0.05759116409537171
+[2026-06-14 12:29:05] ticket_machine: major=7 minor=2 (v7.2) rank_offset=2
+[2026-06-14 12:31:21]   sec=pass score=0.2247051832443546
+[2026-06-14 12:31:21] ticket_machine: major=7 minor=3 (v7.3) rank_offset=0
+[2026-06-14 12:37:57]   sec=pass score=-0.005069124560967447
+[2026-06-14 12:37:57] ticket_machine: major=7 minor=4 (v7.4) rank_offset=4
+[2026-06-14 12:40:44]   sec=pass score=0.5731030143032513
+[2026-06-14 12:40:44] ticket_machine: major=7 minor=5 (v7.5) rank_offset=6
+[2026-06-14 12:43:38]   sec=fail score=None
+[2026-06-14 12:45:01] ticket_machine: promoted v7.3 → v8 score=-0.005069124560967447
+[2026-06-14 12:45:01] ticket_machine: major=8 minor=1 (v8.1) rank_offset=0
+[2026-06-14 12:47:47]   sec=pass score=-0.009693877674976701
+[2026-06-14 12:47:47] ticket_machine: major=8 minor=2 (v8.2) rank_offset=2
+[2026-06-14 12:50:36]   sec=pass score=0.4919437151089356
+[2026-06-14 12:50:36] ticket_machine: major=8 minor=3 (v8.3) rank_offset=0
+[2026-06-14 12:53:18]   sec=pass score=-0.005069124560967447
+[2026-06-14 12:53:18] ticket_machine: major=8 minor=4 (v8.4) rank_offset=4
+[2026-06-14 12:55:55]   sec=pass score=0.5576920604895281
+[2026-06-14 12:55:55] ticket_machine: major=8 minor=5 (v8.5) rank_offset=6
+[2026-06-14 12:58:17]   sec=pass score=0.2789964789270075
+[2026-06-14 12:59:41] ticket_machine: promoted v8.1 → v9 score=-0.009693877674976701
+[2026-06-14 12:59:41] ticket_machine: major=9 minor=1 (v9.1) rank_offset=0
+[2026-06-14 13:02:50]   sec=pass score=-0.009693877674976701
+[2026-06-14 13:02:50] ticket_machine: major=9 minor=2 (v9.2) rank_offset=2
+[2026-06-14 13:05:25]   sec=pass score=0.28358831572041754
+[2026-06-14 13:05:25] ticket_machine: major=9 minor=3 (v9.3) rank_offset=0
+[2026-06-14 13:09:03]   sec=pass score=0.28358831572041754
+[2026-06-14 13:09:03] ticket_machine: major=9 minor=4 (v9.4) rank_offset=4
+[2026-06-14 13:11:59]   sec=pass score=0.6431716381909363
+[2026-06-14 13:11:59] ticket_machine: major=9 minor=5 (v9.5) rank_offset=6
+[2026-06-14 13:16:20]   sec=pass score=0.291512939165206
+[2026-06-14 13:17:43] ticket_machine: promoted v9.1 → v10 score=-0.009693877674976701
+[2026-06-14 13:17:43] === DESIGN DONE: ticket_machine best=v6 ===
+[2026-06-14 13:17:43] === DESIGN START: tv80 (AST) ===
+[2026-06-14 13:17:43] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 13:20:23] tv80: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 13:31:54]   sec=fail score=None
+[2026-06-14 13:31:54] tv80: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 13:37:51]   sec=fail score=None
+[2026-06-14 13:37:51] tv80: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 13:43:09]   sec=fail score=None
+[2026-06-14 13:43:09] tv80: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 13:48:42]   sec=fail score=None
+[2026-06-14 13:48:42] tv80: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 13:54:03]   sec=fail score=None
+[2026-06-14 13:54:03] tv80: no SEC-pass scored minor in major 0, stopping
+[2026-06-14 13:54:03] === DESIGN DONE: tv80 best=v0 ===
+[2026-06-14 13:54:03] === DESIGN START: UART (AST) ===
+[2026-06-14 13:54:03] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 13:55:30] UART: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 14:00:06]   sec=fail score=None
+[2026-06-14 14:00:06] UART: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 14:05:11]   sec=pass score=0.001293261027856066
+[2026-06-14 14:05:11] UART: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 14:05:13]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:05:13] UART: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 14:05:17]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:05:17] UART: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 14:08:40]   sec=pass score=-0.02812113155968567
+[2026-06-14 14:10:07] UART: promoted v0.5 → v1 score=-0.02812113155968567
+[2026-06-14 14:10:07] UART: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-14 14:10:08]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:10:08] UART: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-14 14:10:10]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:10:10] UART: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-14 14:10:12]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:10:12] UART: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-14 14:10:17]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:10:17] UART: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-14 14:21:18]   sec=fail score=None
+[2026-06-14 14:21:19] UART: no SEC-pass scored minor in major 1, stopping
+[2026-06-14 14:21:19] === DESIGN DONE: UART best=v1 ===
+[2026-06-14 14:21:19] === DESIGN START: vending_machine (AST) ===
+[2026-06-14 14:21:19] Granularity skill: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md (prompt uses summary)
+[2026-06-14 14:24:55] vending_machine: major=0 minor=1 (v0.1) rank_offset=0
+[2026-06-14 14:24:55]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:24:55] vending_machine: major=0 minor=2 (v0.2) rank_offset=2
+[2026-06-14 14:24:56]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:24:56] vending_machine: major=0 minor=3 (v0.3) rank_offset=0
+[2026-06-14 14:34:10]   sec=pass score=0.029548779921350465
+[2026-06-14 14:34:10] vending_machine: major=0 minor=4 (v0.4) rank_offset=4
+[2026-06-14 14:34:11]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:34:11] vending_machine: major=0 minor=5 (v0.5) rank_offset=6
+[2026-06-14 14:34:11]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:37:52] vending_machine: promoted v0.3 → v1 score=0.029548779921350465
+[2026-06-14 14:37:52] vending_machine: major=1 minor=1 (v1.1) rank_offset=0
+[2026-06-14 14:37:53]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:37:53] vending_machine: major=1 minor=2 (v1.2) rank_offset=2
+[2026-06-14 14:40:00]   RTL syntax check failed: syn_flow/rtl/vending_machine.v1.2.v:111:46: error: hierarchical index -1 is out of scope's declared range
+                           (gen_carry_select[i-1].carry_ab ? sum1_ab[BLOCK_SIZE] : sum0_ab[BLOCK_SIZE]);
+                                             ^~~
+syn_flow/rtl/vending_machine.v1.2.v:82:5
+[2026-06-14 14:40:00] vending_machine: major=1 minor=3 (v1.3) rank_offset=0
+[2026-06-14 14:40:01]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:40:01] vending_machine: major=1 minor=4 (v1.4) rank_offset=4
+[2026-06-14 14:40:02]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:40:02] vending_machine: major=1 minor=5 (v1.5) rank_offset=6
+[2026-06-14 14:40:03]   failed: LLM HTTP 429: {
+    "error": {
+        "code": "429",
+        "message": "Too many requests",
+        "type": "limitation"
+    }
+}
+
+[2026-06-14 14:40:03] vending_machine: no SEC-pass scored minor in major 1, stopping
+[2026-06-14 14:40:03] === DESIGN DONE: vending_machine best=v1 ===
+[2026-06-14 14:40:09] SUITE COMPLETE

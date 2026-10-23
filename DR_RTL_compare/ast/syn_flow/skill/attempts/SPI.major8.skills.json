@@ -1,0 +1,79 @@
+{
+  "design": "SPI",
+  "major_version": "v8",
+  "extracted_at": "2026-06-14T10:07:36",
+  "minors": [
+    {
+      "version": "v8.1",
+      "sec": "pass",
+      "score": -0.3096092943373184,
+      "promoted": false,
+      "relative_advantage": -0.47079541945995274
+    },
+    {
+      "version": "v8.2",
+      "sec": "pass",
+      "score": -0.31336610096209455,
+      "promoted": false,
+      "relative_advantage": -0.5288672894490049
+    },
+    {
+      "version": "v8.3",
+      "sec": "pass",
+      "score": -0.149811334890987,
+      "promoted": false,
+      "relative_advantage": 1.9993254178179147
+    },
+    {
+      "version": "v8.4",
+      "sec": "pass",
+      "score": -0.3096092943373184,
+      "promoted": false,
+      "relative_advantage": -0.47079541945995274
+    },
+    {
+      "version": "v8.5",
+      "sec": "pass",
+      "score": -0.31336610096209455,
+      "promoted": false,
+      "relative_advantage": -0.5288672894490049
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "sck",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v8.1",
+      "relative_advantage": -0.47079541945995274
+    },
+    {
+      "pattern": "data_out_next",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v8.2",
+      "relative_advantage": -0.5288672894490049
+    },
+    {
+      "pattern": "uut_master/clock_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v8.3",
+      "relative_advantage": 1.9993254178179147
+    },
+    {
+      "pattern": "miso",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v8.4",
+      "relative_advantage": -0.47079541945995274
+    },
+    {
+      "pattern": "data_out, command_save, address_save, data_save",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v8.5",
+      "relative_advantage": -0.5288672894490049
+    }
+  ]
+}

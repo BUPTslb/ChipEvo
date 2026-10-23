@@ -1,0 +1,79 @@
+{
+  "design": "cpu_fsm",
+  "major_version": "v7",
+  "extracted_at": "2026-06-13T04:08:09",
+  "minors": [
+    {
+      "version": "v7.1",
+      "sec": "pass",
+      "score": -0.036796895181596574,
+      "promoted": false,
+      "relative_advantage": -1.1855874779247062
+    },
+    {
+      "version": "v7.2",
+      "sec": "pass",
+      "score": -0.036796895181596574,
+      "promoted": false,
+      "relative_advantage": -1.1855874779247062
+    },
+    {
+      "version": "v7.3",
+      "sec": "pass",
+      "score": -0.0071016937838349736,
+      "promoted": false,
+      "relative_advantage": 0.33242448549559755
+    },
+    {
+      "version": "v7.4",
+      "sec": "pass",
+      "score": 0.006300072741777318,
+      "promoted": false,
+      "relative_advantage": 1.0175197520452541
+    },
+    {
+      "version": "v7.5",
+      "sec": "pass",
+      "score": 0.006372666300474251,
+      "promoted": false,
+      "relative_advantage": 1.0212307183085612
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "alu_result",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "version": "v7.1",
+      "relative_advantage": -1.1855874779247062
+    },
+    {
+      "pattern": "imem_write_cond",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.2",
+      "relative_advantage": -1.1855874779247062
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.3",
+      "relative_advantage": 0.33242448549559755
+    },
+    {
+      "pattern": "rs_data, rd_data",
+      "strategy": "direct_indexing",
+      "skill_source": "proposed",
+      "version": "v7.4",
+      "relative_advantage": 1.0175197520452541
+    },
+    {
+      "pattern": "alu_result",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v7.5",
+      "relative_advantage": 1.0212307183085612
+    }
+  ]
+}

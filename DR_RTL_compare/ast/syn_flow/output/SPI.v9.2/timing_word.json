@@ -1,0 +1,11 @@
+{
+    "uut_master/current_state -> uut_master/data_count": -0.35,
+    "uut_master/current_state -> uut_slave/data_count": -0.35,
+    "uut_master/current_state -> uut_master/data_save": -0.35,
+    "uut_master/current_state -> uut_master/data_end": -0.35,
+    "uut_master/current_state -> uut_master/data_in": -0.34,
+    "uut_master/current_state -> uut_slave/data_end": -0.3,
+    "uut_master/current_state -> uut_slave/current_state": -0.28,
+    "uut_master/current_state -> uut_master/current_state": -0.23,
+    "uut_master/current_state -> uut_master/clock_count": -0.17
+}

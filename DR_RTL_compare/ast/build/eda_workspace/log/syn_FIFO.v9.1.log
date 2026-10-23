@@ -1,0 +1,686 @@
+/opt2/synopsys/syn/bin/dc_shell: 42: [: T/opt2: unexpected operator
+/opt2/synopsys/syn/bin/dc_shell: 46: [: Tsynopsys: unexpected operator
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP2 for linux64 - May 25, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# ==================================================
+# TCL Script for Logic Synthesis using Synopsys DC
+# ==================================================
+set tool "DC"
+DC
+set hdlin_enable_designware_support true
+true
+# Set the design environment
+set search_path [list ./lib ./input]
+./lib ./input
+set target_library [list "nangate.db"]
+nangate.db
+set link_library [concat "*" $target_library]
+* nangate.db
+# Define the top-level module name
+set DESIGN_NAME "FIFO.v9.1"
+FIFO.v9.1
+set TOP_NAME "fifo"
+fifo
+file mkdir ./work/${DESIGN_NAME}
+define_design_lib WORK -path ./work/${DESIGN_NAME}
+1
+# Read the design files
+# read_verilog ./rtl/${DESIGN_NAME}/*.v
+set rtl_path ./rtl/${DESIGN_NAME}.v
+./rtl/FIFO.v9.1.v
+# set filelist ./filelist/list_${DESIGN_NAME}.f
+analyze -format verilog -recursive -autoread $rtl_path -top ${TOP_NAME}
+Information: Use of command 'analyze -autoread' is not recommended. This command will be obsolete in a future release. (INFO-103)
+== ANALYZE autoread for top design 'fifo' ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.  (AUTOREAD-100)
+Information: Scanning file { FIFO.v9.1.v }. (AUTOREAD-303)
+Compiling source file /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v
+Presto compilation completed successfully.
+Autoread command completed successfully.
+1
+# Elaborate the design
+elaborate $TOP_NAME
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/gtech.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (fifo)
+Elaborated 1 design.
+Current design is now 'fifo'.
+Information: Building the design 'read_sync' instantiated from design 'fifo' with
+	the parameters "8". (HDL-193)
+
+Inferred memory devices in process
+	in routine read_sync_addrbits8 line 65 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       r0_reg        | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   sync_rdptr_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (read_sync_addrbits8)
+Information: Building the design 'write_sync' instantiated from design 'fifo' with
+	the parameters "8". (HDL-193)
+
+Inferred memory devices in process
+	in routine write_sync_addrbits8 line 100 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       w0_reg        | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   sync_wrptr_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (write_sync_addrbits8)
+Information: Building the design 'flush_sync'. (HDL-193)
+
+Inferred memory devices in process
+	in routine flush_sync line 131 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       f0_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   sync_flush_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (flush_sync)
+Information: Building the design 'memory' instantiated from design 'fifo' with
+	the parameters "32,8,128". (HDL-193)
+
+Inferred memory devices in process
+	in routine memory_datasize32_addrbits8_depth128 line 387 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      FIFO_reg       | Flip-flop | 4096  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine memory_datasize32_addrbits8_depth128 line 416 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dataOut_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+==============================================================================
+|             block name/line              | Inputs | Outputs | # sel inputs |
+==============================================================================
+| memory_datasize32_addrbits8_depth128/428 |  128   |   32    |      7       |
+==============================================================================
+Presto compilation completed successfully. (memory_datasize32_addrbits8_depth128)
+Information: Building the design 'RFSM' instantiated from design 'fifo' with
+	the parameters "8,128". (HDL-193)
+
+Statistics for case statements in always block at line 312 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           325            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine RFSM_addrbits8_depth128 line 297 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   rbinnext_r_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine RFSM_addrbits8_depth128 line 308 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     empty_r_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine RFSM_addrbits8_depth128 line 312 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      rbin_reg       | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      rden_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      rdptr_reg      | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (RFSM_addrbits8_depth128)
+Information: Building the design 'WFSM' instantiated from design 'fifo' with
+	the parameters "8,128". (HDL-193)
+
+Statistics for case statements in always block at line 207 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           220            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine WFSM_addrbits8_depth128 line 189 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   wbinnext_r_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine WFSM_addrbits8_depth128 line 200 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     full_r_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine WFSM_addrbits8_depth128 line 207 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/FIFO.v9.1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      full_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      wbin_reg       | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      wrptr_reg      | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      wren_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (WFSM_addrbits8_depth128)
+1
+# Set design constraints
+create_clock -name clk_in -period 0.1 [get_ports clk_in]
+1
+# set_input_delay 1 [get_ports {in1 in2 in3}] -clock clk
+# set_output_delay 1 [get_ports {out1 out2}] -clock clk
+set_max_delay -to [all_outputs] -from [all_inputs] 0.1
+1
+# # Set drive strength and load
+# set_drive 0.1 [get_ports {in1 in2 in3}]
+# set_load 0.1 [get_ports {out1 out2}]
+# # Optimization constraints
+# set_max_area 0  ;# No area constraint (optimize for timing)
+# set_max_transition 0.2 [get_ports clk]
+# set_max_fanout 10 [get_ports {in1 in2 in3}]
+# Run synthesis
+# compile_ultra
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 4663                                   |
+| Number of User Hierarchies                              | 6                                      |
+| Sequential Cell Count                                   | 4226                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 50                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'WFSM_addrbits8_depth128'
+  Processing 'RFSM_addrbits8_depth128'
+  Processing 'memory_datasize32_addrbits8_depth128'
+  Processing 'flush_sync'
+Information: The register 'f0_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'sync_flush_reg' is a constant and will be removed. (OPT-1206)
+  Processing 'write_sync_addrbits8'
+  Processing 'read_sync_addrbits8'
+  Processing 'fifo'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'WFSM_addrbits8_depth128_DW01_cmp6_0'
+  Processing 'WFSM_addrbits8_depth128_DW01_inc_0'
+  Processing 'RFSM_addrbits8_depth128_DW01_cmp6_0_DW01_cmp6_1'
+  Processing 'RFSM_addrbits8_depth128_DW01_inc_0_DW01_inc_1'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:02   54414.3      1.38    5228.0   42510.6                          
+    0:01:02   54414.3      1.38    5228.0   42510.6                          
+    0:01:17   51057.6      0.79    2390.2       0.0                          
+    0:01:18   50954.7      0.83    2464.7       0.0                          
+    0:01:18   50954.7      0.83    2464.7       0.0                          
+    0:01:18   50954.7      0.83    2464.7       0.0                          
+    0:01:18   50954.7      0.83    2464.7       0.0                          
+    0:01:21   36729.8      0.59    2209.8       0.0                          
+    0:01:22   36556.1      0.60    2174.2       0.0                          
+    0:01:22   36552.9      0.58    2166.4       0.0                          
+    0:01:22   36553.2      0.56    2153.0       0.0                          
+    0:01:23   36554.5      0.56    2148.4       0.0                          
+    0:01:23   36556.4      0.56    2147.7       0.0                          
+    0:01:23   36556.9      0.56    2147.1       0.0                          
+    0:01:23   36558.0      0.56    2146.4       0.0                          
+    0:01:23   36558.5      0.56    2145.8       0.0                          
+    0:01:23   36560.4      0.56    2145.1       0.0                          
+    0:01:23   36562.5      0.56    2144.2       0.0                          
+    0:01:23   36564.4      0.56    2143.8       0.0                          
+    0:01:24   36566.5      0.56    2142.9       0.0                          
+    0:01:24   36568.1      0.56    2142.6       0.0                          
+    0:01:24   36569.7      0.56    2142.2       0.0                          
+    0:01:24   36569.9      0.55    2140.0       0.0                          
+    0:01:24   36570.7      0.55    2134.5       0.0                          
+    0:01:24   36571.0      0.55    2132.3       0.0                          
+    0:01:24   36572.9      0.55    2131.5       0.0                          
+    0:01:24   36572.9      0.55    2131.5       0.0                          
+    0:01:24   36572.9      0.55    2131.5       0.0                          
+    0:01:24   36572.9      0.55    2131.5       0.0                          
+    0:01:24   36572.9      0.55    2131.5       0.0                          
+    0:01:24   36572.9      0.55    2131.5       0.0                          
+    0:01:25   36582.7      0.54    2110.6       0.0 mem_uut/FIFO_reg[94][3]/D
+    0:01:25   36586.2      0.54    2099.0       0.0 mem_uut/FIFO_reg[95][1]/D
+    0:01:26   36592.3      0.53    2085.7       0.0 mem_uut/FIFO_reg[29][8]/D
+    0:01:26   36599.7      0.52    2070.3       0.0 mem_uut/FIFO_reg[99][3]/D
+    0:01:26   36604.3      0.52    2059.8       0.0 mem_uut/FIFO_reg[28][0]/D
+    0:01:27   36616.8      0.52    2051.4       0.0 mem_uut/FIFO_reg[62][0]/D
+    0:01:27   36629.3      0.52    2040.4       0.0 mem_uut/FIFO_reg[65][0]/D
+    0:01:28   36631.7      0.51    2023.5       0.0 mem_uut/FIFO_reg[89][0]/D
+    0:01:28   36637.5      0.51    2006.2       0.0 mem_uut/FIFO_reg[10][2]/D
+    0:01:28   36642.3      0.51    1989.8       0.0 mem_uut/FIFO_reg[5][2]/D 
+    0:01:29   36647.9      0.51    1978.9       0.0 mem_uut/FIFO_reg[100][21]/D
+    0:01:29   36650.0      0.50    1969.6       0.0 mem_uut/FIFO_reg[15][0]/D
+    0:01:29   36658.0      0.50    1961.4       0.0 mem_uut/FIFO_reg[60][0]/D
+    0:01:30   36658.8      0.50    1953.7       0.0 mem_uut/FIFO_reg[5][0]/D 
+    0:01:30   36662.2      0.50    1946.2       0.0 mem_uut/FIFO_reg[11][0]/D
+    0:01:30   36667.0      0.49    1936.7       0.0 mem_uut/FIFO_reg[38][0]/D
+    0:01:31   36671.6      0.49    1910.4       0.0 mem_uut/FIFO_reg[6][8]/D 
+    0:01:31   36678.2      0.49    1901.2       0.0 mem_uut/FIFO_reg[24][8]/D
+    0:01:31   36687.8      0.48    1864.6       0.0 mem_uut/FIFO_reg[44][0]/D
+    0:01:31   36695.8      0.48    1863.9       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:31   36695.8      0.48    1863.9       0.0                          
+    0:01:32   36694.2      0.47    1858.6       0.0 mem_uut/FIFO_reg[96][0]/D
+    0:01:32   36696.8      0.47    1855.8       0.0 mem_uut/FIFO_reg[68][0]/D
+    0:01:32   36700.8      0.47    1852.4       0.0 mem_uut/FIFO_reg[60][2]/D
+    0:01:32   36704.5      0.47    1851.4       0.0 mem_uut/FIFO_reg[34][11]/D
+    0:01:32   36705.6      0.47    1848.2       0.0 mem_uut/FIFO_reg[18][8]/D
+    0:01:33   36703.2      0.47    1849.0       0.0 mem_uut/FIFO_reg[77][8]/D
+    0:01:33   36705.3      0.47    1846.7       0.0 mem_uut/FIFO_reg[35][0]/D
+    0:01:33   36706.9      0.47    1843.4       0.0 mem_uut/FIFO_reg[86][8]/D
+    0:01:33   36707.2      0.46    1840.5       0.0 mem_uut/FIFO_reg[51][21]/D
+    0:01:33   36716.2      0.46    1837.7       0.0 mem_uut/FIFO_reg[27][8]/D
+    0:01:34   36720.2      0.46    1835.9       0.0 mem_uut/FIFO_reg[7][30]/D
+    0:01:34   36720.2      0.46    1832.6       0.0 mem_uut/FIFO_reg[113][20]/D
+    0:01:34   36734.1      0.46    1831.8       0.0 mem_uut/FIFO_reg[25][22]/D
+    0:01:34   36751.1      0.46    1831.8       0.0 mem_uut/FIFO_reg[39][8]/D
+    0:01:34   36768.1      0.46    1831.8       0.0 mem_uut/FIFO_reg[35][22]/D
+    0:01:34   36773.7      0.46    1830.2       0.0 mem_uut/FIFO_reg[89][8]/D
+    0:01:34   36782.5      0.46    1828.9       0.0 mem_uut/FIFO_reg[43][20]/D
+    0:01:34   36787.5      0.46    1826.9       0.0 mem_uut/FIFO_reg[13][2]/D
+    0:01:35   36788.1      0.46    1824.9       0.0 mem_uut/FIFO_reg[91][2]/D
+    0:01:35   36785.9      0.46    1824.3       0.0 mem_uut/FIFO_reg[25][27]/D
+    0:01:35   36785.4      0.46    1823.4       0.0 mem_uut/FIFO_reg[43][23]/D
+    0:01:35   36788.1      0.46    1822.0       0.0 mem_uut/FIFO_reg[47][23]/D
+    0:01:35   36803.5      0.46    1821.4       0.0 mem_uut/FIFO_reg[47][28]/D
+    0:01:35   36804.6      0.46    1820.0       0.0 mem_uut/FIFO_reg[69][0]/D
+    0:01:35   36804.0      0.46    1817.1       0.0 mem_uut/FIFO_reg[47][10]/D
+    0:01:36   36826.1      0.46    1816.5       0.0 mem_uut/FIFO_reg[11][1]/D
+    0:01:36   36836.7      0.46    1814.5       0.0 mem_uut/FIFO_reg[27][8]/D
+    0:01:36   36847.7      0.46    1813.3       0.0 mem_uut/FIFO_reg[51][25]/D
+    0:01:36   36856.2      0.46    1810.6       0.0 mem_uut/FIFO_reg[29][3]/D
+    0:01:36   36868.7      0.46    1810.1       0.0 mem_uut/FIFO_reg[51][19]/D
+    0:01:36   36878.2      0.46    1810.0       0.0 mem_uut/FIFO_reg[55][7]/D
+    0:01:36   36888.6      0.46    1810.5       0.0 mem_uut/FIFO_reg[7][0]/D 
+    0:01:36   36894.2      0.45    1808.3       0.0 mem_uut/FIFO_reg[88][24]/D
+    0:01:37   36910.4      0.45    1808.2       0.0 mem_uut/FIFO_reg[88][19]/D
+    0:01:37   36916.3      0.45    1807.1       0.0 mem_uut/FIFO_reg[12][8]/D
+    0:01:37   36919.2      0.45    1803.8       0.0 mem_uut/FIFO_reg[84][0]/D
+    0:01:37   36928.0      0.45    1802.8       0.0 mem_uut/FIFO_reg[81][20]/D
+    0:01:37   36930.4      0.45    1799.5       0.0 mem_uut/FIFO_reg[84][14]/D
+    0:01:37   36934.9      0.45    1796.5       0.0 mem_uut/FIFO_reg[7][30]/D
+    0:01:37   36937.6      0.45    1793.9       0.0 mem_uut/FIFO_reg[54][8]/D
+    0:01:37   36940.0      0.45    1792.9       0.0 mem_uut/FIFO_reg[71][9]/D
+    0:01:38   36943.7      0.45    1790.7       0.0 mem_uut/FIFO_reg[59][0]/D
+    0:01:38   36945.3      0.45    1787.0       0.0 mem_uut/FIFO_reg[93][2]/D
+    0:01:38   36954.1      0.45    1786.8       0.0 mem_uut/FIFO_reg[98][0]/D
+    0:01:38   36959.4      0.45    1785.2       0.0 mem_uut/FIFO_reg[93][0]/D
+    0:01:38   36960.2      0.45    1784.7       0.0 mem_uut/FIFO_reg[96][4]/D
+    0:01:39   36963.4      0.45    1784.1       0.0                          
+    0:01:41   36961.2      0.45    1784.1       0.0                          
+    0:01:58   34711.4      0.45    1784.1       0.0                          
+    0:01:58   34711.4      0.45    1783.9       0.0                          
+    0:01:58   34712.5      0.45    1783.8       0.0                          
+    0:01:58   34714.3      0.45    1783.6       0.0                          
+    0:01:59   34716.7      0.45    1781.7       0.0                          
+    0:01:59   34717.8      0.45    1778.3       0.0                          
+    0:01:59   34718.3      0.45    1778.0       0.0                          
+    0:01:59   34720.4      0.45    1776.5       0.0                          
+    0:02:00   34720.4      0.45    1775.9       0.0                          
+    0:02:00   34722.0      0.45    1775.6       0.0                          
+    0:02:00   34726.0      0.45    1774.2       0.0                          
+    0:02:00   34726.3      0.45    1774.2       0.0                          
+    0:02:00   34727.1      0.45    1773.9       0.0                          
+    0:02:01   34726.3      0.45    1773.4       0.0                          
+    0:02:01   34727.4      0.45    1773.3       0.0                          
+    0:02:01   34728.4      0.45    1772.3       0.0                          
+    0:02:01   34728.7      0.45    1771.3       0.0                          
+    0:02:01   34729.2      0.45    1771.1       0.0                          
+    0:02:01   34729.8      0.45    1770.0       0.0                          
+    0:02:02   34727.9      0.45    1769.5       0.0                          
+    0:02:02   34729.8      0.45    1769.0       0.0                          
+    0:02:02   34728.4      0.45    1767.5       0.0                          
+    0:02:02   34728.4      0.45    1767.3       0.0                          
+    0:02:02   34727.9      0.45    1766.4       0.0                          
+    0:02:02   34729.0      0.45    1765.4       0.0                          
+    0:02:03   34727.9      0.45    1765.1       0.0                          
+    0:02:03   34729.8      0.45    1764.8       0.0                          
+    0:02:03   34731.6      0.45    1764.3       0.0                          
+    0:02:03   34733.0      0.45    1763.7       0.0                          
+    0:02:03   34733.7      0.45    1762.5       0.0                          
+    0:02:04   34735.6      0.45    1762.2       0.0                          
+    0:02:04   34736.1      0.45    1762.0       0.0                          
+    0:02:04   34735.9      0.45    1761.7       0.0                          
+    0:02:04   34741.2      0.45    1760.3       0.0                          
+    0:02:04   34742.5      0.45    1760.3       0.0                          
+    0:02:04   34744.9      0.45    1760.1       0.0                          
+    0:02:05   34746.0      0.45    1759.8       0.0                          
+    0:02:05   34746.0      0.45    1759.5       0.0                          
+    0:02:05   34746.0      0.45    1759.4       0.0                          
+    0:02:05   34745.5      0.45    1759.3       0.0                          
+    0:02:05   34747.6      0.45    1758.9       0.0                          
+    0:02:05   34749.2      0.45    1758.9       0.0                          
+    0:02:06   34751.3      0.45    1758.4       0.0                          
+    0:02:06   34754.2      0.45    1757.6       0.0                          
+    0:02:06   34756.6      0.45    1757.2       0.0                          
+    0:02:06   34764.9      0.45    1756.7       0.0                          
+    0:02:07   34768.1      0.45    1756.3       0.0                          
+    0:02:07   34770.2      0.45    1756.0       0.0                          
+    0:02:07   34773.1      0.45    1755.9       0.0                          
+    0:02:07   34775.5      0.45    1755.5       0.0                          
+    0:02:07   34775.8      0.45    1755.4       0.0                          
+    0:02:07   34777.4      0.45    1754.3       0.0                          
+    0:02:07   34777.6      0.45    1754.1       0.0                          
+    0:02:08   34778.4      0.45    1754.1       0.0                          
+    0:02:08   34778.7      0.45    1753.9       0.0                          
+    0:02:08   34776.3      0.45    1753.8       0.0                          
+    0:02:08   34777.1      0.45    1753.7       0.0                          
+    0:02:08   34776.3      0.45    1753.4       0.0                          
+    0:02:08   34776.3      0.45    1753.3       0.0                          
+    0:02:09   34777.4      0.45    1752.9       0.0                          
+    0:02:09   34777.6      0.45    1752.5       0.0                          
+    0:02:09   34774.7      0.45    1752.2       0.0                          
+    0:02:09   34773.6      0.45    1751.9       0.0                          
+    0:02:09   34773.9      0.45    1751.8       0.0                          
+    0:02:10   34774.2      0.45    1750.8       0.0                          
+    0:02:10   34775.0      0.45    1750.8       0.0                          
+    0:02:10   34775.5      0.45    1750.7       0.0                          
+    0:02:10   34773.9      0.45    1750.6       0.0                          
+    0:02:10   34774.7      0.45    1750.4       0.0                          
+    0:02:10   34775.0      0.45    1750.0       0.0                          
+    0:02:11   34778.2      0.45    1749.4       0.0                          
+    0:02:11   34776.6      0.45    1749.3       0.0                          
+    0:02:11   34775.5      0.45    1749.1       0.0                          
+    0:02:11   34775.0      0.45    1749.0       0.0                          
+    0:02:11   34773.4      0.45    1748.8       0.0                          
+    0:02:12   34774.4      0.45    1748.2       0.0                          
+    0:02:12   34775.5      0.45    1747.5       0.0                          
+    0:02:12   34777.4      0.45    1747.4       0.0                          
+    0:02:12   34779.2      0.45    1747.0       0.0                          
+    0:02:12   34780.0      0.45    1747.0       0.0                          
+    0:02:12   34780.6      0.45    1746.8       0.0                          
+    0:02:13   34781.1      0.45    1746.7       0.0                          
+    0:02:13   34784.6      0.45    1746.5       0.0                          
+    0:02:13   34785.9      0.45    1746.1       0.0                          
+    0:02:13   34788.3      0.45    1745.9       0.0                          
+    0:02:13   34790.7      0.45    1745.7       0.0                          
+    0:02:14   34791.7      0.45    1745.6       0.0                          
+    0:02:14   34792.3      0.45    1745.5       0.0                          
+    0:02:14   34792.5      0.45    1745.5       0.0                          
+    0:02:14   34792.8      0.45    1745.5       0.0                          
+    0:02:15   34793.1      0.45    1745.5       0.0                          
+    0:02:15   34793.1      0.45    1745.4       0.0                          
+    0:02:15   34792.3      0.45    1745.3       0.0                          
+    0:02:16   34790.7      0.45    1744.9       0.0                          
+    0:02:16   34791.7      0.45    1744.6       0.0                          
+    0:02:17   34789.1      0.45    1744.6       0.0                          
+    0:02:17   34785.1      0.45    1744.5       0.0                          
+    0:02:17   34786.2      0.45    1744.4       0.0                          
+    0:02:17   34787.7      0.45    1743.9       0.0                          
+    0:02:18   34786.9      0.45    1743.9       0.0                          
+    0:02:18   34787.2      0.45    1743.8       0.0                          
+    0:02:18   34788.3      0.45    1743.8       0.0                          
+    0:02:18   34788.8      0.45    1743.8       0.0                          
+    0:02:18   34789.6      0.45    1743.7       0.0                          
+    0:02:18   34790.9      0.45    1743.3       0.0                          
+    0:02:19   34790.4      0.45    1743.2       0.0                          
+    0:02:19   34790.1      0.45    1743.2       0.0                          
+    0:02:19   34790.4      0.45    1743.1       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:20   34790.4      0.45    1743.1       0.0                          
+    0:02:20   34790.4      0.45    1743.1       0.0                          
+    0:02:23   34764.6      0.45    1742.4       0.0                          
+    0:02:24   34745.5      0.45    1742.4       0.0                          
+    0:02:24   34744.4      0.45    1742.4       0.0                          
+    0:02:24   34743.9      0.45    1742.4       0.0                          
+    0:02:24   34743.3      0.45    1742.4       0.0                          
+    0:02:25   34742.8      0.45    1742.4       0.0                          
+    0:02:25   34742.3      0.45    1742.4       0.0                          
+    0:02:25   34741.7      0.45    1742.4       0.0                          
+    0:02:25   34741.2      0.45    1742.4       0.0                          
+    0:02:25   34740.7      0.45    1742.4       0.0                          
+    0:02:26   34740.1      0.45    1742.4       0.0                          
+    0:02:26   34739.6      0.45    1742.4       0.0                          
+    0:02:26   34739.1      0.45    1742.4       0.0                          
+    0:02:26   34737.7      0.45    1742.4       0.0                          
+    0:02:26   34737.2      0.45    1742.4       0.0                          
+    0:02:27   34736.7      0.45    1742.4       0.0                          
+    0:02:27   34736.7      0.45    1742.4       0.0                          
+    0:02:27   34736.7      0.45    1742.4       0.0                          
+    0:02:27   34719.1      0.45    1744.1       0.0                          
+    0:02:27   34719.1      0.45    1744.1       0.0                          
+    0:02:27   34719.1      0.45    1744.1       0.0                          
+    0:02:27   34719.1      0.45    1744.1       0.0                          
+    0:02:27   34719.1      0.45    1744.1       0.0                          
+    0:02:27   34719.1      0.45    1744.1       0.0                          
+    0:02:27   34722.6      0.44    1742.8       0.0 mem_uut/FIFO_reg[70][2]/D
+    0:02:27   34731.6      0.44    1742.7       0.0 mem_uut/FIFO_reg[70][22]/D
+    0:02:28   34731.4      0.44    1740.7       0.0 mem_uut/FIFO_reg[69][18]/D
+    0:02:28   34743.9      0.44    1740.6       0.0 mem_uut/FIFO_reg[46][13]/D
+    0:02:28   34746.8      0.44    1740.3       0.0 mem_uut/FIFO_reg[46][23]/D
+    0:02:28   34753.4      0.44    1740.4       0.0 mem_uut/FIFO_reg[40][10]/D
+    0:02:28   34760.3      0.43    1742.0       0.0 mem_uut/FIFO_reg[38][6]/D
+    0:02:28   34754.0      0.43    1741.4       0.0 mem_uut/FIFO_reg[19][6]/D
+    0:02:29   34757.2      0.43    1737.8       0.0 mem_uut/FIFO_reg[92][26]/D
+    0:02:29   34772.9      0.43    1737.8       0.0 mem_uut/FIFO_reg[39][13]/D
+    0:02:29   34789.9      0.43    1737.8       0.0 mem_uut/FIFO_reg[39][31]/D
+    0:02:29   34806.9      0.43    1737.7       0.0 mem_uut/FIFO_reg[47][26]/D
+    0:02:29   34809.8      0.43    1737.7       0.0 mem_uut/FIFO_reg[38][3]/D
+    0:02:29   34808.8      0.43    1736.7       0.0 mem_uut/FIFO_reg[46][23]/D
+    0:02:30   34808.0      0.43    1736.6       0.0                          
+    0:02:30   34803.7      0.43    1736.1       0.0                          
+    0:02:30   34801.3      0.43    1735.8       0.0                          
+    0:02:31   34797.9      0.43    1735.5       0.0                          
+    0:02:31   34793.1      0.43    1735.2       0.0                          
+    0:02:31   34790.7      0.43    1734.7       0.0                          
+    0:02:31   34781.9      0.43    1732.3       0.0                          
+    0:02:32   34780.0      0.43    1731.9       0.0                          
+    0:02:32   34777.1      0.43    1731.5       0.0                          
+    0:02:33   34777.1      0.43    1731.2       0.0                          
+    0:02:33   34777.4      0.43    1731.1       0.0                          
+    0:02:34   34776.8      0.43    1730.9       0.0                          
+    0:02:34   34777.6      0.43    1730.7       0.0                          
+    0:02:34   34780.3      0.43    1730.6       0.0                          
+    0:02:35   34780.3      0.43    1730.5       0.0                          
+    0:02:35   34780.6      0.43    1730.3       0.0                          
+    0:02:35   34783.2      0.43    1730.0       0.0                          
+    0:02:35   34783.0      0.43    1730.0       0.0                          
+    0:02:36   34783.5      0.43    1729.8       0.0                          
+    0:02:36   34783.8      0.43    1729.7       0.0                          
+    0:02:36   34783.0      0.43    1729.6       0.0                          
+    0:02:37   34783.2      0.43    1729.6       0.0                          
+    0:02:37   34783.2      0.43    1729.2       0.0                          
+    0:02:37   34784.8      0.43    1728.9       0.0                          
+    0:02:37   34785.1      0.43    1728.9       0.0                          
+    0:02:38   34785.1      0.43    1728.8       0.0                          
+    0:02:38   34785.1      0.43    1728.8       0.0                          
+    0:02:39   34785.1      0.43    1728.8       0.0                          
+    0:02:39   34787.2      0.43    1728.8       0.0                          
+    0:02:40   34790.1      0.43    1728.7       0.0                          
+    0:02:40   34792.3      0.43    1728.6       0.0                          
+    0:02:40   34796.5      0.43    1728.4       0.0                          
+    0:02:41   34798.4      0.43    1728.3       0.0                          
+    0:02:41   34797.6      0.43    1728.2       0.0                          
+    0:02:41   34796.5      0.43    1728.1       0.0                          
+    0:02:42   34796.0      0.43    1727.8       0.0                          
+    0:02:43   34798.9      0.43    1727.8       0.0                          
+    0:02:43   34799.7      0.43    1727.7       0.0                          
+    0:02:43   34799.5      0.43    1727.7       0.0                          
+    0:02:44   34799.5      0.43    1727.6       0.0                          
+    0:02:44   34800.2      0.43    1727.6       0.0                          
+    0:02:44   34801.0      0.43    1727.5       0.0                          
+    0:02:44   34801.0      0.43    1725.7       0.0                          
+    0:02:45   34801.6      0.43    1725.7       0.0                          
+    0:02:45   34801.8      0.43    1725.7       0.0                          
+    0:02:45   34801.0      0.43    1725.6       0.0                          
+    0:02:45   34801.8      0.43    1725.5       0.0                          
+    0:02:46   34802.9      0.43    1725.3       0.0                          
+    0:02:46   34801.3      0.43    1725.3       0.0                          
+    0:02:47   34799.2      0.43    1725.3       0.0                          
+    0:02:47   34799.5      0.43    1725.2       0.0                          
+    0:02:48   34798.7      0.43    1725.2       0.0                          
+    0:02:49   34798.7      0.43    1725.2       0.0                          
+    0:02:49   34797.1      0.43    1725.2       0.0                          
+    0:02:49   34797.1      0.43    1725.1       0.0                          
+    0:02:49   34795.7      0.43    1725.0       0.0                          
+    0:02:49   34794.7      0.43    1725.0       0.0                          
+    0:02:50   34794.7      0.43    1724.9       0.0                          
+    0:02:50   34797.9      0.43    1724.4       0.0                          
+    0:02:51   34797.3      0.43    1724.3       0.0                          
+    0:02:51   34797.3      0.43    1723.7       0.0                          
+    0:02:51   34795.7      0.43    1723.6       0.0                          
+    0:02:52   34796.0      0.43    1723.3       0.0                          
+    0:02:52   34794.7      0.43    1723.1       0.0                          
+    0:02:53   34795.7      0.43    1723.1       0.0                          
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'fifo' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'write_uut/clk_in': 4144 load(s), 1 driver(s)
+1
+# compile -map_effort medium -incremental_mapping
+# 7. Write out the synthesized netlist with hierarchy
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+Warning: Design 'fifo' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+# Report results
+## create folders for reports and netlist
+file mkdir reports/${DESIGN_NAME}
+redirect -file reports/${DESIGN_NAME}/timing.rpt { report_timing -tran -net -input -max_paths 100000 }
+redirect -file reports/${DESIGN_NAME}/area.rpt { report_area }
+redirect -file reports/${DESIGN_NAME}/power.rpt { report_power }
+redirect -file reports/${DESIGN_NAME}/qor.rpt { report_qor }
+# Save synthesized design
+write -format verilog -hierarchy -output netlist/${DESIGN_NAME}.syn.v
+Writing verilog file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/FIFO.v9.1.syn.v'.
+1
+write_sdf netlist/${DESIGN_NAME}.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/FIFO.v9.1.sdf'. (WT-3)
+1
+# write -format ddc -hierarchy -output netlist/${DESIGN_NAME}.ddc
+# Exit DC
+exit
+Memory usage for this session 498 Mbytes.
+Memory usage for this session including child processes 498 Mbytes.
+CPU usage for this session 182 seconds ( 0.05 hours ).
+Elapsed time for this session 185 seconds ( 0.05 hours ).
+
+Thank you...

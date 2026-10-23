@@ -1,0 +1,413 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "i2c",
+  "base_version": "v5",
+  "target_version": "v5.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.35,
+  "tns_before": -26.68,
+  "area_baseline": 1290.100019,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.198,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.35,
+      "path_coverage": 0.0513,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "byte_controller/bit_controller/cnt"
+      },
+      "read_set": [
+        "byte_controller/bit_controller/clk_en",
+        "byte_controller/bit_controller/cnt"
+      ],
+      "write_set": [
+        "byte_controller/bit_controller/clk_en",
+        "byte_controller/bit_controller/cnt"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/bit_controller/clk_en",
+        "byte_controller/bit_controller/cnt"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0008",
+      "score": 0.1765,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.2,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00844",
+        "start_line": 844,
+        "end_line": 872,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "cr",
+        "wb_dat_o"
+      ],
+      "write_set": [
+        "cr",
+        "wb_dat_o"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "cr",
+        "wb_dat_o"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0007",
+      "score": 0.1725,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.25,
+      "path_coverage": 0.0513,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "byte_controller/ld"
+      },
+      "read_set": [
+        "byte_controller/dcnt",
+        "byte_controller/ld",
+        "byte_controller/sr"
+      ],
+      "write_set": [
+        "byte_controller/dcnt",
+        "byte_controller/ld",
+        "byte_controller/sr"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/dcnt",
+        "byte_controller/ld",
+        "byte_controller/sr"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.1646,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.28,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "byte_controller/bit_controller/cmd_ack"
+      },
+      "read_set": [
+        "byte_controller/bit_controller/cmd_ack",
+        "byte_controller/core_txd"
+      ],
+      "write_set": [
+        "byte_controller/bit_controller/cmd_ack",
+        "byte_controller/core_txd"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/bit_controller/cmd_ack",
+        "byte_controller/core_txd"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0006",
+      "score": 0.1608,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.27,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "byte_controller/core_cmd"
+      },
+      "read_set": [
+        "byte_controller/bit_controller/cmd_stop",
+        "byte_controller/core_cmd"
+      ],
+      "write_set": [
+        "byte_controller/bit_controller/cmd_stop",
+        "byte_controller/core_cmd"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/bit_controller/cmd_stop",
+        "byte_controller/core_cmd"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0009",
+      "score": 0.1574,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": -0.15,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00941",
+        "start_line": 941,
+        "end_line": 943,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "byte_controller/bit_controller/al",
+        "irq_flag"
+      ],
+      "write_set": [
+        "byte_controller/bit_controller/al",
+        "irq_flag"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/bit_controller/al",
+        "irq_flag"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0011",
+      "score": 0.1459,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": -0.12,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00938",
+        "start_line": 938,
+        "end_line": 938,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "al",
+        "byte_controller/bit_controller/al"
+      ],
+      "write_set": [
+        "al",
+        "byte_controller/bit_controller/al"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "al",
+        "byte_controller/bit_controller/al"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0015",
+      "score": 0.1306,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": -0.08,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00936",
+        "start_line": 936,
+        "end_line": 936,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "byte_controller/ack_out",
+        "rxack"
+      ],
+      "write_set": [
+        "byte_controller/ack_out",
+        "rxack"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/ack_out",
+        "rxack"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0010",
+      "score": 0.1304,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.14,
+      "path_coverage": 0.0513,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "byte_controller/bit_controller/sSCL"
+      },
+      "read_set": [
+        "byte_controller/bit_controller/dSCL",
+        "byte_controller/bit_controller/dout",
+        "byte_controller/bit_controller/sSCL"
+      ],
+      "write_set": [
+        "byte_controller/bit_controller/dSCL",
+        "byte_controller/bit_controller/dout",
+        "byte_controller/bit_controller/sSCL"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "byte_controller/bit_controller/dSCL",
+        "byte_controller/bit_controller/dout",
+        "byte_controller/bit_controller/sSCL"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0016",
+      "score": 0.1268,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.07,
+      "path_coverage": 0.0256,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00927",
+        "start_line": 927,
+        "end_line": 935,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "ctr",
+        "wb_inta_o"
+      ],
+      "write_set": [
+        "ctr",
+        "wb_inta_o"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "ctr",
+        "wb_inta_o"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/i2c.v5.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "clk_en",
+    "pattern_id": "mux_tree_restructure",
+    "lines_touched": 2,
+    "span_refined": {
+      "start_line": 65,
+      "end_line": 66
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "clk_en",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "pattern_id": "mux_tree_restructure"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.35,
+    "tns_after": -26.68,
+    "area": 1303.93202
+  },
+  "scoring": {
+    "wns_norm": 0.027777777777777804,
+    "tns_norm": -0.00037495313085856804,
+    "area_norm": 0.010721650101766251,
+    "area_penalty": 0.0,
+    "score": 0.01536590280835334
+  },
+  "relative_advantage": 1.3872766893544497
+}

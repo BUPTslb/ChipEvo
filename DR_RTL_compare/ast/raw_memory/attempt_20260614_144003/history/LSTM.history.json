@@ -1,0 +1,57 @@
+{
+  "design": "LSTM",
+  "track": "ast_subtree",
+  "baseline": {
+    "Area": 14828.435987,
+    "WNS": -6.51,
+    "TNS": -166.76,
+    "Power": 7.4406
+  },
+  "best_version": "v0",
+  "best_ppa": {
+    "Area": 14828.435987,
+    "WNS": -6.51,
+    "TNS": -166.76,
+    "Power": 7.4406
+  },
+  "best_score": null,
+  "end_reason": "no_improvement",
+  "major_rounds": [
+    {
+      "major_version": "v0",
+      "minors": [
+        {
+          "version": "v0.1",
+          "sec": "fail",
+          "score": null,
+          "promoted": false
+        },
+        {
+          "version": "v0.2",
+          "sec": "fail",
+          "score": null,
+          "promoted": false
+        },
+        {
+          "version": "v0.3",
+          "sec": "fail",
+          "score": null,
+          "promoted": false
+        },
+        {
+          "version": "v0.4",
+          "sec": "fail",
+          "score": null,
+          "promoted": false
+        },
+        {
+          "version": "v0.5",
+          "sec": "fail",
+          "score": null,
+          "promoted": false
+        }
+      ],
+      "promoted_to": null
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "DSP",
+  "base_version": "v4",
+  "target_version": "v4.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -2.62,
+  "tns_before": -155.26,
+  "area_baseline": 4755.281969,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/DSP.v4.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_dsp_opmode_ctrl"
+    ],
+    "refined_level": 5,
+    "target_signal": "opModeRegOut",
+    "pattern_id": "register_duplication",
+    "lines_touched": 15,
+    "span_refined": {
+      "start_line": 18,
+      "end_line": 32
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_dsp_opmode_ctrl",
+      "pattern": "opModeRegOut",
+      "strategy": "register_duplication",
+      "skill_source": "proposed",
+      "pattern_id": "register_duplication"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": -2.61,
+    "tns_after": -156.94,
+    "area": 4851.573969
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": -0.014873254009312026,
+    "area_norm": 0.020249482707383987,
+    "area_penalty": 0.0,
+    "score": -0.002168216497151611
+  },
+  "relative_advantage": null
+}

@@ -1,0 +1,72 @@
+{
+  "design": "communication",
+  "major_version": "v5",
+  "extracted_at": "2026-06-08T03:48:05",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "pass",
+      "score": -0.20736511905951727,
+      "promoted": false,
+      "relative_advantage": -1.274786785486075
+    },
+    {
+      "version": "v5.2",
+      "sec": "pass",
+      "score": -0.1606379953366266,
+      "promoted": false,
+      "relative_advantage": -0.6805174174946633
+    },
+    {
+      "version": "v5.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.4",
+      "sec": "pass",
+      "score": -0.02945612480745401,
+      "promoted": false,
+      "relative_advantage": 0.9878362298134601
+    },
+    {
+      "version": "v5.5",
+      "sec": "pass",
+      "score": -0.031057671344410055,
+      "promoted": false,
+      "relative_advantage": 0.9674679731672787
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "uut_rx_block/count",
+      "strategy": "mux_restructure",
+      "skill_source": "proposed",
+      "version": "v5.1",
+      "relative_advantage": -1.274786785486075
+    },
+    {
+      "pattern": "count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.2",
+      "relative_advantage": -0.6805174174946633
+    },
+    {
+      "pattern": "reg_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.4",
+      "relative_advantage": 0.9878362298134601
+    },
+    {
+      "pattern": "update_condition",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.5",
+      "relative_advantage": 0.9674679731672787
+    }
+  ]
+}

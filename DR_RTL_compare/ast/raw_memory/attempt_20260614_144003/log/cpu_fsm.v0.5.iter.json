@@ -1,0 +1,98 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v0",
+  "target_version": "v0.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.82,
+  "tns_before": -429.73,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v0.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "alu_ctrl_unit",
+      "exec_branch",
+      "nst_decode"
+    ],
+    "refined_level": 5,
+    "target_signal": "opcode",
+    "pattern_id": "one_hot_pre_decode",
+    "lines_touched": 34,
+    "span_refined": {
+      "start_line": 95,
+      "end_line": 215
+    },
+    "slices_detail": [
+      {
+        "slice": "reg_write (L5)",
+        "transform": "case(opcode) replaced with op_is_add | op_is_addi | op_is_sub"
+      },
+      {
+        "slice": "alu_src_imm (L5)",
+        "transform": "case(opcode) replaced with op_is_addi"
+      },
+      {
+        "slice": "alu_op (L5)",
+        "transform": "case(opcode) replaced with direct bit-encoding from one-hot signals"
+      },
+      {
+        "slice": "zero_en (L5)",
+        "transform": "case(opcode) replaced with op_is_add | op_is_addi | op_is_sub | op_is_cmp"
+      },
+      {
+        "slice": "branch_en (L5)",
+        "transform": "case(opcode) replaced with op_is_beq | op_is_bne"
+      },
+      {
+        "slice": "EXEC PC update (L5)",
+        "transform": "opcode == OP_BEQ replaced with op_is_beq, same for BNE/JMP"
+      },
+      {
+        "slice": "nst DECODE (L5)",
+        "transform": "opcode == OP_HALT replaced with op_is_halt"
+      }
+    ],
+    "strategy": "one_hot_pre_decode",
+    "confidence": "high",
+    "notes": "Single strategy applied to opcode only; avoided combining with state/alu_op pre-decode per anti-pattern for cpu_fsm v0.5. ALU case on alu_op retained (only 2 entries). No latency change, no interface change."
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "alu_ctrl_unit",
+      "pattern": "opcode",
+      "strategy": "one_hot_pre_decode",
+      "skill_source": "proposed",
+      "pattern_id": "one_hot_pre_decode"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.8,
+    "tns_after": -428.91,
+    "area": 32200.629383
+  },
+  "scoring": {
+    "wns_norm": 0.02439024390243891,
+    "tns_norm": 0.0019081749005189145,
+    "area_norm": -0.002077373851568505,
+    "area_penalty": 0.0,
+    "score": 0.0125513770886658
+  },
+  "relative_advantage": 0.9990326073258856
+}

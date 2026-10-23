@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/DSP.v6.1.v:1:7: error: expected identifier\nmodule (line ~71)\n      ^\nsyn_flow/rtl/DSP.v6.1.v:1:13: error: expected identifier\nmodule (line ~71)\n            ^\nsyn_flow/rtl/DSP.v6.1.v:1:18: error: expected ';'\nmodule (line ~71)\n                 ^\nsyn_flow/rtl/DSP.v6.1.v:3:15: error: expected ';'\n**Worst timing path**: The critical path through `b1RegIn` computation (min_slack: -1.86)\n              ^\nsyn_flow/rtl/DSP.v6.1.v:3:20: error: expected a declaration name\n**Worst timing path**",
+  "target_version": "v6.1",
+  "relative_advantage": null
+}

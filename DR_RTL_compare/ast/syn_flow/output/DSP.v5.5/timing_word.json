@@ -1,0 +1,13 @@
+{
+    "b1Reg/data -> mulReg/data": -2.59,
+    "a1Reg/data -> mulReg/data": -1.87,
+    "dReg/data -> b1Reg/data": -1.86,
+    "opReg/data -> pReg/data": -1.24,
+    "opReg/data -> carryOutReg/data": -1.11,
+    "opReg/data -> b1Reg/data": -0.4,
+    "opReg/data -> opReg/data": -0.23,
+    "carryInReg/data -> carryInReg/data": -0.17,
+    "a1Reg/data -> a1Reg/data": -0.16,
+    "dReg/data -> dReg/data": -0.13,
+    "cReg/data -> cReg/data": -0.11
+}

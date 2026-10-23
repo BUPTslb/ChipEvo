@@ -1,0 +1,63 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "FIFO",
+  "base_version": "v5",
+  "target_version": "v5.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.64,
+  "tns_before": -2065.62,
+  "area_baseline": 36060.82277,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/FIFO.v5.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0006"
+    ],
+    "refined_level": 5,
+    "target_signal": "dataOut",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 8,
+    "span_refined": {
+      "start_line": 120,
+      "end_line": 127
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0006",
+      "pattern": "dataOut",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.63,
+    "tns_after": -13.25,
+    "area": 673.246014
+  },
+  "scoring": {
+    "wns_norm": -0.1666666666666666,
+    "tns_norm": 0.9933819489535988,
+    "area_norm": -0.9813302647503626,
+    "area_penalty": 0.0,
+    "score": 0.11715080908787187
+  },
+  "relative_advantage": 1.4000796682034384
+}

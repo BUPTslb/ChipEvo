@@ -1,0 +1,99 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "ticket_machine",
+  "base_version": "v9",
+  "target_version": "v9.1",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 1
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.23,
+  "tns_before": -1.24,
+  "area_baseline": 78.203999,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.4237,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.23,
+      "path_coverage": 1.0,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00060",
+        "start_line": 60,
+        "end_line": 65,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "State"
+      ],
+      "write_set": [
+        "State"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "State"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "fsm_reencode",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/ticket_machine.v9.1.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 5,
+    "target_signal": "State",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 6,
+    "span_refined": {
+      "start_line": 60,
+      "end_line": 65
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.23,
+    "tns_after": -1.24,
+    "area": 73.149999
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": 0.0,
+    "area_norm": -0.06462585116651134,
+    "area_penalty": 0.0,
+    "score": -0.009693877674976701
+  },
+  "relative_advantage": -1.4884318877865885
+}

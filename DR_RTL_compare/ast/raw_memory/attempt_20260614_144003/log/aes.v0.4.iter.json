@@ -1,0 +1,61 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "aes",
+  "base_version": "v0",
+  "target_version": "v0.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.7,
+  "tns_before": -913.49,
+  "area_baseline": 33755.134217,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/aes.v0.4.json",
+  "rewrite": {
+    "subtree_ids": [],
+    "refined_level": 6,
+    "target_signal": "RconXor",
+    "pattern_id": "wire_decomposition",
+    "lines_touched": 10,
+    "span_refined": {
+      "start_line": 40,
+      "end_line": 70
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "?",
+      "pattern": "RconXor",
+      "strategy": "wire_decomposition",
+      "skill_source": "proposed",
+      "pattern_id": "wire_decomposition"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.7,
+    "tns_after": -913.49,
+    "area": 33755.134217
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": 0.0,
+    "area_norm": 0.0,
+    "area_penalty": 0.0,
+    "score": 0.0
+  },
+  "relative_advantage": 0.7071067811865476
+}

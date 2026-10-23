@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : qor
+Design : vending_machine
+Version: T-2022.03-SP2
+Date   : Sun Jun 14 14:32:57 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.33
+  Critical Path Slack:          -0.26
+  Critical Path Clk Period:      0.10
+  Total Negative Slack:         -0.99
+  No. of Violating Paths:        4.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'default'
+  -----------------------------------
+  Levels of Logic:              27.00
+  Critical Path Length:          1.07
+  Critical Path Slack:          -0.97
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:       -815.12
+  No. of Violating Paths:     1024.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:              20361
+  Buf/Inv Cell Count:            2509
+  Buf Cell Count:                 208
+  Inv Cell Count:                2301
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     20357
+  Sequential Cell Count:            4
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    20567.385818
+  Noncombinational Area:    21.280001
+  Buf/Inv Area:           1424.696007
+  Total Buffer Area:           166.78
+  Total Inverter Area:        1257.91
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             20588.665819
+  Design Area:           20588.665819
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         24465
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: linux2.cse.cuhk.edu.hk
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    3.01
+  Logic Optimization:                 73.44
+  Mapping Optimization:               52.25
+  -----------------------------------------
+  Overall Compile Time:              130.57
+  Overall Compile Wall Clock Time:   131.17
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.97  TNS: 816.11  Number of Violating Paths: 1028
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

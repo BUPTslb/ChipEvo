@@ -1,0 +1,78 @@
+{
+  "design": "controller",
+  "major_version": "v2",
+  "extracted_at": "2026-06-08T06:22:42",
+  "minors": [
+    {
+      "version": "v2.1",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v2.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v2.3",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v2.4",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v2.5",
+      "sec": "pass",
+      "score": -0.008188327994659218,
+      "promoted": false,
+      "relative_advantage": 0.0
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.1",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": "key_en",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.3",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": [
+        "mode_cbc",
+        "next_state"
+      ],
+      "strategy": [
+        "condition_precompute",
+        "one_hot_pre_decode"
+      ],
+      "skill_source": "proposed",
+      "version": "v2.4",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": "state",
+      "strategy": "one_hot_pre_decode",
+      "skill_source": "proposed",
+      "version": "v2.5",
+      "relative_advantage": 0.0
+    }
+  ]
+}

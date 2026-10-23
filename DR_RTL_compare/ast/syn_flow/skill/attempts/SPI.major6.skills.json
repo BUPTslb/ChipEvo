@@ -1,0 +1,79 @@
+{
+  "design": "SPI",
+  "major_version": "v6",
+  "extracted_at": "2026-06-14T09:31:23",
+  "minors": [
+    {
+      "version": "v6.1",
+      "sec": "pass",
+      "score": -0.2044636203731429,
+      "promoted": false,
+      "relative_advantage": 0.47820115798369106
+    },
+    {
+      "version": "v6.2",
+      "sec": "pass",
+      "score": -0.20439515848281162,
+      "promoted": false,
+      "relative_advantage": 0.4841289178871171
+    },
+    {
+      "version": "v6.3",
+      "sec": "pass",
+      "score": -0.2330765824250423,
+      "promoted": false,
+      "relative_advantage": -1.9992467820131345
+    },
+    {
+      "version": "v6.4",
+      "sec": "pass",
+      "score": -0.20439515848281162,
+      "promoted": false,
+      "relative_advantage": 0.4841289178871171
+    },
+    {
+      "version": "v6.5",
+      "sec": "pass",
+      "score": -0.2036021918090615,
+      "promoted": false,
+      "relative_advantage": 0.5527877882552044
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "uut_slave/current_state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v6.1",
+      "relative_advantage": 0.47820115798369106
+    },
+    {
+      "pattern": "data_out",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v6.2",
+      "relative_advantage": 0.4841289178871171
+    },
+    {
+      "pattern": "sck",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v6.3",
+      "relative_advantage": -1.9992467820131345
+    },
+    {
+      "pattern": "data_count_in_data_and_gt_32",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v6.4",
+      "relative_advantage": 0.4841289178871171
+    },
+    {
+      "pattern": "data_count_plus1",
+      "strategy": "carry_select_adder",
+      "skill_source": "proposed",
+      "version": "v6.5",
+      "relative_advantage": 0.5527877882552044
+    }
+  ]
+}

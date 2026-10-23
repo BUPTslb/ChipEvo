@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : mini_cpu
+Version: T-2022.03-SP2
+Date   : Sat Jun 13 04:51:31 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                           83
+Number of nets:                         13317
+Number of cells:                        13229
+Number of combinational cells:           9063
+Number of sequential cells:              4163
+Number of macros/black boxes:               0
+Number of buf/inv:                       1237
+Number of references:                      37
+
+Combinational area:              13364.372064
+Buf/Inv area:                      944.299986
+Noncombinational area:           18825.085317
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 32189.457381
+Total area:                 undefined
+1

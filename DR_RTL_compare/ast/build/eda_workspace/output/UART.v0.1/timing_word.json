@@ -1,0 +1,17 @@
+{
+    "uut_baud_rate/baud_count -> uut_baud_rate/baud_count": -0.4,
+    "uut_baud_rate/baud_count -> uut_baud_rate/baud_tick": -0.39,
+    "uut_rx/count_16 -> uut_rx/count_16": -0.33,
+    "uut_rx/count_16 -> uut_rx/data_save": -0.32,
+    "uut_tx/count_16 -> uut_tx/data_save": -0.32,
+    "uut_tx/count_16 -> uut_tx/count_16": -0.31,
+    "uut_tx/current_state -> uut_tx/count_16": -0.31,
+    "uut_rx/count_16 -> uut_rx/count_8": -0.29,
+    "uut_rx/current_state -> uut_rx/count_8": -0.29,
+    "uut_rx/count_16 -> uut_rx/count_16_indication": -0.23,
+    "uut_rx/count_16 -> uut_rx/count_8_indication": -0.2,
+    "uut_tx/count_16 -> uut_tx/count_8_indication": -0.18,
+    "uut_tx/count_16 -> uut_tx/count_16_indication": -0.18,
+    "uut_rx/data_save -> uut_rx/ext_data_out": -0.07,
+    "uut_baud_rate/temp_en -> uut_baud_rate/delayed_en": -0.06
+}

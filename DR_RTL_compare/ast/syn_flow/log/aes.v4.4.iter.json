@@ -1,0 +1,91 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "aes",
+  "base_version": "v4",
+  "target_version": "v4.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.93,
+  "tns_before": -1157.44,
+  "area_baseline": 33755.134217,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/aes.v4.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "sbox_gf16_mul_p",
+      "sbox_gf16_mul_q",
+      "sbox_isomorphic_map"
+    ],
+    "refined_level": 6,
+    "target_signal": "o_data (via gf16_mul p/q CSE + isomorphic map CSE)",
+    "pattern_id": "common_subexpression_elimination",
+    "lines_touched": 68,
+    "span_refined": {
+      "start_line": 1,
+      "end_line": 310
+    },
+    "changes": [
+      {
+        "description": "sbox: CSE in gf16_mul for p=ghf16_mul(b_h, d_hat_inv) - extracted shared partial sum p_sum = a3b1^a2b2^a1b3 common to all 4 output bits, reducing XOR depth per bit from 4 to 3 levels",
+        "target_signal": "p[3:0]",
+        "refined_level": 6,
+        "pattern_id": "common_subexpression"
+      },
+      {
+        "description": "sbox: CSE in gf16_mul for q=gf16_mul(d_hat_sq, d_hat_inv) - extracted shared partial sum q_sum = a3b1^a2b2^a1b3 common to all 4 output bits, reducing XOR depth per bit from 4 to 3 levels",
+        "target_signal": "q[3:0]",
+        "refined_level": 6,
+        "pattern_id": "common_subexpression"
+      },
+      {
+        "description": "sbox: CSE in isomorphic mapping - extracted d75=i_data[7]^i_data[5] (shared by b_h[0],b_h[2],b_h[3]) and d76=i_data[7]^i_data[6] (shared by b_l[0],b_l[1],b_l[2])",
+        "target_signal": "b_h[3:0], b_l[3:0]",
+        "refined_level": 6,
+        "pattern_id": "common_subexpression"
+      },
+      {
+        "description": "Removed unused gf16_mul function (was inlined and optimized at both call sites)",
+        "target_signal": "gf16_mul (removed)",
+        "refined_level": 6,
+        "pattern_id": "dead_code_elimination"
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "sbox_gf16_mul_p",
+      "pattern": "o_data (via gf16_mul p/q CSE + isomorphic map CSE)",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "pattern_id": "common_subexpression_elimination"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.9,
+    "tns_after": -1130.23,
+    "area": 21855.623981
+  },
+  "scoring": {
+    "wns_norm": -0.2857142857142858,
+    "tns_norm": -0.23726587045287853,
+    "area_norm": -0.35252445330248705,
+    "area_penalty": 0.0,
+    "score": -0.27877886551102343
+  },
+  "relative_advantage": 1.414213562373094
+}

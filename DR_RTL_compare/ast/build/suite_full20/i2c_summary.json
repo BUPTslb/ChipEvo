@@ -1,0 +1,7 @@
+{
+  "design": "i2c",
+  "status": "done",
+  "best_version": "v7",
+  "best_score": -0.008918039750611027,
+  "end_reason": "max_major_reached"
+}

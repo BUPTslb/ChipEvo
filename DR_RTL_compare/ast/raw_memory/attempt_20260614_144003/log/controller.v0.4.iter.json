@@ -1,0 +1,182 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "controller",
+  "base_version": "v0",
+  "target_version": "v0.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.38,
+  "tns_before": -2.85,
+  "area_baseline": 234.612002,
+  "critical_subtrees": [
+    {
+      "id": "st_0004",
+      "score": 0.1117,
+      "level": 2,
+      "kind": "continuous_assign_container",
+      "min_slack": 0.02,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ContinuousAssign",
+        "block_id": "blk_00207",
+        "start_line": 207,
+        "end_line": 207,
+        "procedure_kind": null
+      },
+      "read_set": [
+        "aes_mode",
+        "mode_cbc"
+      ],
+      "write_set": [
+        "aes_mode",
+        "mode_cbc"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "aes_mode",
+        "mode_cbc"
+      ],
+      "pattern_candidates": [
+        "mux_before_adder",
+        "tree_balancing",
+        "common_subexpression"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.1117,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": 0.1,
+      "path_coverage": 0.0714,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_00214",
+        "start_line": 214,
+        "end_line": 308,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "key_init",
+        "start"
+      ],
+      "write_set": [
+        "key_init",
+        "start"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "key_init",
+        "start"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/controller.v0.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0004",
+      "st_0005"
+    ],
+    "refined_level": 5,
+    "target_signals": [
+      "col_sel",
+      "key_en",
+      "col_en",
+      "bypass_rk",
+      "next_state"
+    ],
+    "pattern_ids": [
+      "mux_tree_restructure",
+      "condition_precompute",
+      "common_subexpression_elimination"
+    ],
+    "lines_touched": 34,
+    "span_refined": {
+      "start_line": 207,
+      "end_line": 308
+    },
+    "changes": [
+      {
+        "slice": "ROUND0 col_sel/col_en (L5: lines ~231-260)",
+        "pattern": "mux_tree_restructure",
+        "description": "Pre-computed enc_dec mux branch values for ROUND0_COL0 and ROUND0_COL3 col_sel and col_en into explicit wires (round0_col0_sel, round0_col3_sel, round0_col0_en, round0_col3_en), replacing inline ternaries inside case branches."
+      },
+      {
+        "slice": "key_en for ROUND0/ROUND_COL states (L5: 6 target signals)",
+        "pattern": "condition_precompute",
+        "description": "Extracted enc_dec-gated key_en mux branches into pre-computed wires (r0c1_key_en_enc/dec through rc2_key_en_enc/dec), selecting with top-level ternary in each case branch. Moves mux outside the if-else."
+      },
+      {
+        "slice": "ROUND_COL0/ROUND_COL3 col_sel (L5: nested 3-level mux)",
+        "pattern": "mux_tree_restructure",
+        "description": "Flattened nested if-else mux tree for col_sel into explicit wire tree: pre-compute rc0_sel_not_special and rc3_sel_not_special from enc_dec and last_round branches, then select with last_round_special_case in one ternary."
+      },
+      {
+        "slice": "ROUND_COL0/ROUND_COL3 col_en (L5)",
+        "pattern": "mux_tree_restructure",
+        "description": "Pre-computed rc0_en_enc/dec and rc3_en_enc/dec branch values, selected with top-level enc_dec ternary."
+      },
+      {
+        "slice": "bypass_rk/bypass_key_en (L5: ROUND0 states)",
+        "pattern": "condition_precompute",
+        "description": "Introduced r0_bypass_en wire grouping ROUND0 state conditions (available for future use); preserved explicit state-level bypass_rk/ENABLE assignments for current SEC correctness."
+      },
+      {
+        "slice": "ROUND_KEY0 next_state (L5)",
+        "pattern": "mux_tree_restructure",
+        "description": "Pre-computed enc_dec mux branches for ROUND_KEY0 next_state into rndkey0_ns wire, replacing inline ternary."
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0004",
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "skill_source": "proposed",
+      "pattern_id": "unknown"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.37,
+    "tns_after": -2.76,
+    "area": 248.444002
+  },
+  "scoring": {
+    "wns_norm": 0.026315789473684233,
+    "tns_norm": 0.03157894736842116,
+    "area_norm": 0.058956915597182545,
+    "area_penalty": 0.0,
+    "score": 0.03305406365536691
+  },
+  "relative_advantage": -0.7332375991823702
+}

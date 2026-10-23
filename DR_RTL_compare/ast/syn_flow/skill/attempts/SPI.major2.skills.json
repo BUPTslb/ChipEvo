@@ -1,0 +1,72 @@
+{
+  "design": "SPI",
+  "major_version": "v2",
+  "extracted_at": "2026-06-14T08:07:25",
+  "minors": [
+    {
+      "version": "v2.1",
+      "sec": "pass",
+      "score": -0.20233971498414882,
+      "promoted": false,
+      "relative_advantage": 1.6894803126670952
+    },
+    {
+      "version": "v2.2",
+      "sec": "pass",
+      "score": -0.2058214646867042,
+      "promoted": false,
+      "relative_advantage": -0.9229826198668226
+    },
+    {
+      "version": "v2.3",
+      "sec": "pass",
+      "score": -0.20510213662205526,
+      "promoted": false,
+      "relative_advantage": -0.38324884640013634
+    },
+    {
+      "version": "v2.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v2.5",
+      "sec": "pass",
+      "score": -0.20510213662205526,
+      "promoted": false,
+      "relative_advantage": -0.38324884640013634
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "sck",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.1",
+      "relative_advantage": 1.6894803126670952
+    },
+    {
+      "pattern": "data_out, data_save",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.2",
+      "relative_advantage": -0.9229826198668226
+    },
+    {
+      "pattern": "uut_master/data_count, uut_slave/data_count, uut_slave/next_state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.3",
+      "relative_advantage": -0.38324884640013634
+    },
+    {
+      "pattern": "next_state,miso",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.5",
+      "relative_advantage": -0.38324884640013634
+    }
+  ]
+}

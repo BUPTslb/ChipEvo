@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/aes.v5.2.sv:161:5: error: expected statement\n    wire common_term = a3b1 ^ a2b2 ^ a1b3;\n    ^~~~\n  in instance: key_expansion_128aes.steps[0].uu_sbox0\nsyn_flow/rtl/aes.v5.2.sv:161:10: error: use of undeclared identifier 'common_term'\n    wire common_term = a3b1 ^ a2b2 ^ a1b3;\n         ^~~~~~~~~~~\n  in instance: key_expansion_128aes.steps[0].uu_sbox0\nsyn_flow/rtl/aes.v5.2.sv:164:26: error: use of undeclared identifier 'common_term'\n    gf16_mul[0] = a0b0 ^ common_term;\n              ",
+  "target_version": "v5.2",
+  "relative_advantage": null
+}

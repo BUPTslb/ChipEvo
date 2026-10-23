@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/DSP.v9.4.v:145:10: error: redefinition of 'carryInRegIn' [-Wredefinition]\n    wire carryInRegIn = (is_opmode5 | is_carryin) ? carryInRegIn_stage1 : 1'b0;\n         ^\nsyn_flow/rtl/DSP.v9.4.v:37:10: note: previous definition here\n    wire carryInRegIn, carryInRegOut, carryOutRegIn;\n         ^",
+  "target_version": "v9.4",
+  "relative_advantage": null
+}

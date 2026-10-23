@@ -1,0 +1,38 @@
+{
+  "design": "arm_cpu1",
+  "major_version": "v0",
+  "extracted_at": "2026-06-08T00:58:00",
+  "minors": [
+    {
+      "version": "v0.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    }
+  ],
+  "patterns": []
+}

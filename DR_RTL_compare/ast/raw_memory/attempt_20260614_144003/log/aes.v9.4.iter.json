@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/aes.v9.4.sv:220:5: error: declaration must come before all statements in the block\n    logic t0_0, t0_1;\n    ^",
+  "target_version": "v9.4",
+  "relative_advantage": null
+}

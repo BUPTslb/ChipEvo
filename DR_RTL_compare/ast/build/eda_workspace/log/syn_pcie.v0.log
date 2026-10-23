@@ -1,0 +1,434 @@
+/opt2/synopsys/syn/bin/dc_shell: 42: [: T/opt2: unexpected operator
+/opt2/synopsys/syn/bin/dc_shell: 46: [: Tsynopsys: unexpected operator
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP2 for linux64 - May 25, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# ==================================================
+# TCL Script for Logic Synthesis using Synopsys DC
+# ==================================================
+set tool "DC"
+DC
+set hdlin_enable_designware_support true
+true
+# Set the design environment
+set search_path [list ./lib ./input]
+./lib ./input
+set target_library [list "nangate.db"]
+nangate.db
+set link_library [concat "*" $target_library]
+* nangate.db
+# Define the top-level module name
+set DESIGN_NAME "pcie.v0"
+pcie.v0
+set TOP_NAME "top"
+top
+file mkdir ./work/${DESIGN_NAME}
+define_design_lib WORK -path ./work/${DESIGN_NAME}
+1
+# Read the design files
+# read_verilog ./rtl/${DESIGN_NAME}/*.v
+set rtl_path ./rtl/${DESIGN_NAME}.v
+./rtl/pcie.v0.v
+# set filelist ./filelist/list_${DESIGN_NAME}.f
+analyze -format verilog -recursive -autoread $rtl_path -top ${TOP_NAME}
+Information: Use of command 'analyze -autoread' is not recommended. This command will be obsolete in a future release. (INFO-103)
+== ANALYZE autoread for top design 'top' ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.  (AUTOREAD-100)
+Information: Scanning file { pcie.v0.v }. (AUTOREAD-303)
+Compiling source file /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v
+Presto compilation completed successfully.
+Autoread command completed successfully.
+1
+# Elaborate the design
+elaborate $TOP_NAME
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/gtech.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (top)
+Elaborated 1 design.
+Current design is now 'top'.
+Information: Building the design 'scrambler'. (HDL-193)
+
+Inferred memory devices in process
+	in routine scrambler line 898 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dataout_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      lfsr_reg       | Flip-flop |   8   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      lfsr_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (scrambler)
+Information: Building the design 'encoder'. (HDL-193)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v:542: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 521 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           523            |     no/auto      |
+|           542            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine encoder line 521 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    data_out_reg     | Latch |  10   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully. (encoder)
+Information: Building the design 'piso'. (HDL-193)
+
+Inferred memory devices in process
+	in routine piso line 69 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       out_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (piso)
+Information: Building the design 'sipo'. (HDL-193)
+
+Inferred memory devices in process
+	in routine sipo line 97 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      temp_reg       | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (sipo)
+Information: Building the design 'decoder'. (HDL-193)
+
+Statistics for case statements in always block at line 120 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           122            |     no/auto      |
+|           140            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine decoder line 120 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    data_out_reg     | Latch |   8   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully. (decoder)
+Information: Building the design 'descrambler'. (HDL-193)
+
+Inferred memory devices in process
+	in routine descrambler line 482 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/pcie.v0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      lfsr_reg       | Flip-flop |   8   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      lfsr_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (descrambler)
+1
+# Set design constraints
+create_clock -name clk -period 0.1 [get_ports clk]
+1
+# set_input_delay 1 [get_ports {in1 in2 in3}] -clock clk
+# set_output_delay 1 [get_ports {out1 out2}] -clock clk
+set_max_delay -to [all_outputs] -from [all_inputs] 0.1
+1
+# # Set drive strength and load
+# set_drive 0.1 [get_ports {in1 in2 in3}]
+# set_load 0.1 [get_ports {out1 out2}]
+# # Optimization constraints
+# set_max_area 0  ;# No area constraint (optimize for timing)
+# set_max_transition 0.2 [get_ports clk]
+# set_max_fanout 10 [get_ports {in1 in2 in3}]
+# Run synthesis
+# compile_ultra
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 4112                                   |
+| Number of User Hierarchies                              | 6                                      |
+| Sequential Cell Count                                   | 97                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1478                                   |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'descrambler'
+  Processing 'decoder'
+  Processing 'sipo'
+  Processing 'piso'
+  Processing 'encoder'
+  Processing 'scrambler'
+  Processing 'top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:17    2348.0      0.95      28.0       0.0                          
+    0:00:17    2343.7      0.95      29.0       0.0                          
+    0:00:17    2343.7      0.95      29.0       0.0                          
+    0:00:17    2343.7      0.95      29.0       0.0                          
+    0:00:17    2343.7      0.95      29.0       0.0                          
+    0:00:17    2038.4      0.95      27.9       0.0                          
+    0:00:18    2038.6      0.95      27.9       0.0                          
+    0:00:18    2042.6      0.93      27.8       0.0                          
+    0:00:18    2046.6      0.93      27.7       0.0                          
+    0:00:18    2049.3      0.92      27.7       0.0                          
+    0:00:18    2051.7      0.92      27.7       0.0                          
+    0:00:18    2054.1      0.92      27.7       0.0                          
+    0:00:18    2056.7      0.92      27.7       0.0                          
+    0:00:18    2057.8      0.92      27.7       0.0                          
+    0:00:18    2057.8      0.92      27.7       0.0                          
+    0:00:18    2057.8      0.92      27.7       0.0                          
+    0:00:18    2057.8      0.92      27.7       0.0                          
+    0:00:18    2057.8      0.92      27.7       0.0                          
+    0:00:18    2057.8      0.92      27.7       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:18    2057.8      0.92      27.7       0.0                          
+    0:00:18    2059.4      0.91      27.6       0.0 DES/data_out_reg[7]/D    
+    0:00:19    2062.0      0.91      27.6       6.3 DES/data_out_reg[2]/D    
+    0:00:19    2068.7      0.90      27.3       6.3 DES/data_out_reg[5]/D    
+    0:00:19    2069.7      0.90      27.3       0.0 DES/data_out_reg[7]/D    
+    0:00:19    2071.6      0.89      27.3       0.0 DES/data_out_reg[6]/D    
+    0:00:19    2074.5      0.89      27.2       0.0 DES/data_out_reg[1]/D    
+    0:00:19    2078.8      0.88      27.2       0.0 DES/data_out_reg[7]/D    
+    0:00:19    2083.0      0.88      27.2       0.0 DES/data_out_reg[0]/D    
+    0:00:19    2085.4      0.88      27.2       0.0 DES/data_out_reg[7]/D    
+    0:00:19    2087.0      0.87      27.1       0.0 DES/data_out_reg[1]/D    
+    0:00:19    2092.1      0.87      27.1       0.0 DES/data_out_reg[7]/D    
+    0:00:19    2095.8      0.87      27.0       0.0 DES/data_out_reg[6]/D    
+    0:00:20    2099.0      0.87      27.0       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2102.7      0.86      27.0       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2104.9      0.86      26.9       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2105.7      0.86      26.9       0.0 DES/data_out_reg[1]/D    
+    0:00:20    2117.1      0.85      26.9       0.0 DES/data_out_reg[2]/D    
+    0:00:20    2109.9      0.85      26.7       0.0 DES/data_out_reg[5]/D    
+    0:00:20    2113.6      0.85      26.7       0.0 DES/data_out_reg[4]/D    
+    0:00:20    2115.0      0.84      26.7       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2117.9      0.84      26.6       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2120.3      0.84      26.6       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2121.9      0.84      26.6       0.0 DES/data_out_reg[1]/D    
+    0:00:20    2124.3      0.84      26.6       0.0 DES/data_out_reg[7]/D    
+    0:00:20    2129.6      0.83      26.5       0.0 PISO/temp_reg[3]/SI      
+    0:00:21    2128.8      0.83      26.5       0.0 DES/data_out_reg[7]/D    
+    0:00:21    2132.5      0.83      26.5       0.0 DES/data_out_reg[2]/D    
+    0:00:21    2133.3      0.83      26.5       0.0 DES/data_out_reg[6]/D    
+    0:00:21    2134.7      0.83      26.5       0.0 DES/data_out_reg[7]/D    
+    0:00:21    2137.8      0.83      26.5       0.0 DES/data_out_reg[5]/D    
+    0:00:21    2144.5      0.82      26.4       0.0 DES/data_out_reg[7]/D    
+    0:00:21    2146.1      0.82      26.4       0.0 PISO/temp_reg[3]/SI      
+    0:00:21    2148.5      0.82      26.4       0.0 DES/data_out_reg[7]/D    
+    0:00:21    2149.0      0.82      26.4       0.0 DES/data_out_reg[0]/D    
+    0:00:21    2149.3      0.82      26.4       0.0 DES/data_out_reg[1]/D    
+    0:00:21    2153.3      0.81      26.4       0.0 DES/data_out_reg[5]/D    
+    0:00:21    2152.2      0.81      26.4       0.0 DES/data_out_reg[5]/D    
+    0:00:21    2157.0      0.81      26.3       0.0 DES/data_out_reg[7]/D    
+    0:00:21    2159.1      0.81      26.3       0.0 DES/data_out_reg[7]/D    
+    0:00:22    2160.5      0.81      26.3       0.0 DES/data_out_reg[7]/D    
+    0:00:22    2161.5      0.81      26.3       0.0 DES/data_out_reg[7]/D    
+    0:00:22    2164.2      0.81      26.3       0.0 DES/data_out_reg[7]/D    
+    0:00:22    2164.4      0.81      26.3       0.0 DES/data_out_reg[6]/D    
+    0:00:23    2163.9      0.80      26.2       0.0                          
+    0:00:23    2151.4      0.80      25.8       0.0                          
+    0:00:23    2153.5      0.80      25.8       0.0 DES/data_out_reg[4]/D    
+    0:00:23    2155.1      0.80      25.8       0.0 DES/data_out_reg[7]/D    
+    0:00:23    2157.8      0.80      25.8       0.0 DES/data_out_reg[4]/D    
+    0:00:23    2159.9      0.80      25.7       0.0 DES/data_out_reg[7]/D    
+    0:00:23    2161.0      0.80      25.6       0.0 DES/data_out_reg[7]/D    
+    0:00:23    2162.3      0.80      25.7       0.0 DES/data_out_reg[4]/D    
+    0:00:23    2166.0      0.80      25.7       0.0 DES/data_out_reg[0]/D    
+    0:00:23    2164.7      0.80      25.7       0.0 DES/data_out_reg[4]/D    
+    0:00:24    2166.0      0.80      25.6       0.0 DES/data_out_reg[5]/D    
+    0:00:24    2166.0      0.80      25.6       0.0 DES/data_out_reg[0]/D    
+    0:00:24    2166.8      0.80      25.6       0.0 DES/data_out_reg[7]/D    
+    0:00:24    2167.1      0.80      25.6       0.0 DES/data_out_reg[7]/D    
+    0:00:24    2166.8      0.80      25.6       0.0 DES/data_out_reg[4]/D    
+    0:00:24    2166.0      0.80      25.6       0.0 DES/data_out_reg[4]/D    
+    0:00:24    2167.1      0.80      25.6       0.0 DES/data_out_reg[7]/D    
+    0:00:24    2166.6      0.80      25.6       0.0 DES/data_out_reg[0]/D    
+    0:00:24    2167.6      0.80      25.6       0.0 DES/data_out_reg[7]/D    
+    0:00:25    2169.8      0.79      25.6       0.0                          
+    0:00:25    2169.8      0.79      25.6       0.0                          
+    0:00:25    2171.9      0.79      25.6       0.0                          
+    0:00:25    2172.7      0.79      25.5       0.0                          
+    0:00:25    2185.5      0.79      25.3       0.0                          
+    0:00:25    2190.0      0.79      24.9       0.0                          
+    0:00:25    2191.0      0.79      24.9       0.0                          
+    0:00:25    2192.6      0.79      24.8       0.0                          
+    0:00:25    2194.0      0.79      24.8       0.0                          
+    0:00:25    2196.6      0.79      24.7       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:25    2196.6      0.79      24.7       0.0                          
+    0:00:25    2196.6      0.79      24.7       0.0                          
+    0:00:25    2163.4      0.80      24.4       0.0                          
+    0:00:25    2153.8      0.80      24.2       0.0                          
+    0:00:25    2153.8      0.80      24.2       0.0                          
+    0:00:25    2153.8      0.80      24.2       0.0                          
+    0:00:25    2153.8      0.80      24.2       0.0                          
+    0:00:25    2153.8      0.80      24.2       0.0                          
+    0:00:25    2146.6      0.80      24.2       0.0                          
+    0:00:25    2145.6      0.80      24.2       0.0                          
+    0:00:25    2145.6      0.80      24.2       0.0                          
+    0:00:25    2145.6      0.80      24.2       0.0                          
+    0:00:25    2145.6      0.80      24.2       0.0                          
+    0:00:25    2145.6      0.80      24.2       0.0                          
+    0:00:25    2145.6      0.80      24.2       0.0                          
+    0:00:25    2146.1      0.80      24.2       0.0 DES/data_out_reg[4]/D    
+    0:00:26    2147.4      0.79      24.2       0.0 DES/data_out_reg[4]/D    
+    0:00:26    2146.6      0.79      24.2       0.0                          
+    0:00:26    2142.1      0.79      24.2       0.0                          
+    0:00:26    2137.8      0.79      24.2       0.0                          
+    0:00:26    2138.6      0.79      24.2       0.0                          
+    0:00:26    2138.6      0.79      24.2       0.0                          
+    0:00:26    2140.8      0.79      24.2       0.0                          
+    0:00:26    2141.8      0.79      24.2       0.0                          
+    0:00:26    2142.6      0.79      24.2       0.0                          
+    0:00:26    2143.2      0.79      24.2       0.0                          
+    0:00:26    2144.5      0.79      24.2       0.0                          
+    0:00:26    2146.9      0.79      24.1       0.0                          
+    0:00:27    2151.1      0.79      24.1       0.0                          
+    0:00:27    2152.2      0.79      24.1       0.0                          
+    0:00:27    2153.8      0.79      24.0       0.0 DES/data_out_reg[7]/D    
+    0:00:27    2154.1      0.79      24.0       0.0 DES/data_out_reg[7]/D    
+    0:00:27    2155.4      0.79      24.0       0.0 DES/data_out_reg[4]/D    
+    0:00:27    2156.2      0.79      24.0       0.0 DES/data_out_reg[4]/D    
+    0:00:27    2156.2      0.79      24.0       0.0                          
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+# compile -map_effort medium -incremental_mapping
+# 7. Write out the synthesized netlist with hierarchy
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+1
+# Report results
+## create folders for reports and netlist
+file mkdir reports/${DESIGN_NAME}
+redirect -file reports/${DESIGN_NAME}/timing.rpt { report_timing -tran -net -input -max_paths 100000 }
+redirect -file reports/${DESIGN_NAME}/area.rpt { report_area }
+redirect -file reports/${DESIGN_NAME}/power.rpt { report_power }
+redirect -file reports/${DESIGN_NAME}/qor.rpt { report_qor }
+# Save synthesized design
+write -format verilog -hierarchy -output netlist/${DESIGN_NAME}.syn.v
+Writing verilog file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/pcie.v0.syn.v'.
+1
+write_sdf netlist/${DESIGN_NAME}.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/pcie.v0.sdf'. (WT-3)
+1
+# write -format ddc -hierarchy -output netlist/${DESIGN_NAME}.ddc
+# Exit DC
+exit
+Memory usage for this session 146 Mbytes.
+Memory usage for this session including child processes 146 Mbytes.
+CPU usage for this session 32 seconds ( 0.01 hours ).
+Elapsed time for this session 34 seconds ( 0.01 hours ).
+
+Thank you...

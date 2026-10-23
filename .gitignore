@@ -1,0 +1,7 @@
+/archive/
+
+# Local archives, experiment outputs and editor settings
+/archive/
+/DR_RTL_compare/archive/
+/DR_RTL_compare/results/
+/DR_RTL_compare/.cursor/

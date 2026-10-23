@@ -1,0 +1,384 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "router",
+  "base_version": "v0",
+  "target_version": "v0.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.53,
+  "tns_before": -289.91,
+  "area_baseline": 5478.801906,
+  "critical_subtrees": [
+    {
+      "id": "st_0004",
+      "score": 0.2528,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.42,
+      "path_coverage": 0.0612,
+      "fanout_proxy": 4,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "s/soft_reset_0"
+      },
+      "read_set": [
+        "fifo[0].f/dataout",
+        "fifo[0].f/dataout_tri_enable",
+        "fifo[0].f/read_ptr",
+        "s/soft_reset_0"
+      ],
+      "write_set": [
+        "fifo[0].f/dataout",
+        "fifo[0].f/dataout_tri_enable",
+        "fifo[0].f/read_ptr",
+        "s/soft_reset_0"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "fifo[0].f/dataout",
+        "fifo[0].f/dataout_tri_enable",
+        "fifo[0].f/read_ptr",
+        "s/soft_reset_0"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0006",
+      "score": 0.2233,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.39,
+      "path_coverage": 0.0408,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "s/soft_reset_1"
+      },
+      "read_set": [
+        "fifo[1].f/dataout_tri_enable",
+        "fifo[1].f/read_ptr",
+        "s/soft_reset_1"
+      ],
+      "write_set": [
+        "fifo[1].f/dataout_tri_enable",
+        "fifo[1].f/read_ptr",
+        "s/soft_reset_1"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "fifo[1].f/dataout_tri_enable",
+        "fifo[1].f/read_ptr",
+        "s/soft_reset_1"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.2092,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.4,
+      "path_coverage": 0.0204,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "s/soft_reset_2"
+      },
+      "read_set": [
+        "fifo[2].f/read_ptr",
+        "s/soft_reset_2"
+      ],
+      "write_set": [
+        "fifo[2].f/read_ptr",
+        "s/soft_reset_2"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "fifo[2].f/read_ptr",
+        "s/soft_reset_2"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0007",
+      "score": 0.1977,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.37,
+      "path_coverage": 0.0204,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "fifo[2].f/full"
+      },
+      "read_set": [
+        "fifo[2].f/full",
+        "fsm/present_state"
+      ],
+      "write_set": [
+        "fifo[2].f/full",
+        "fsm/present_state"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "fifo[2].f/full",
+        "fsm/present_state"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0008",
+      "score": 0.1824,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.33,
+      "path_coverage": 0.0204,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "fsm/temp"
+      },
+      "read_set": [
+        "fsm/present_state",
+        "fsm/temp"
+      ],
+      "write_set": [
+        "fsm/present_state",
+        "fsm/temp"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "fsm/present_state",
+        "fsm/temp"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0009",
+      "score": 0.1824,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.33,
+      "path_coverage": 0.0204,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "fifo[2].f/count"
+      },
+      "read_set": [
+        "fifo[2].f/count",
+        "fifo[2].f/dataout_tri_enable"
+      ],
+      "write_set": [
+        "fifo[2].f/count",
+        "fifo[2].f/dataout_tri_enable"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "fifo[2].f/count",
+        "fifo[2].f/dataout_tri_enable"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0010",
+      "score": 0.1723,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.29,
+      "path_coverage": 0.0408,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "s/count0"
+      },
+      "read_set": [
+        "s/count0",
+        "s/soft_reset_0"
+      ],
+      "write_set": [
+        "s/count0",
+        "s/soft_reset_0"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "s/count0",
+        "s/soft_reset_0"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0011",
+      "score": 0.1723,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.29,
+      "path_coverage": 0.0408,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "s/count1"
+      },
+      "read_set": [
+        "s/count1",
+        "s/soft_reset_1"
+      ],
+      "write_set": [
+        "s/count1",
+        "s/soft_reset_1"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "s/count1",
+        "s/soft_reset_1"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0012",
+      "score": 0.1723,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.29,
+      "path_coverage": 0.0408,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "s/count2"
+      },
+      "read_set": [
+        "s/count2",
+        "s/soft_reset_2"
+      ],
+      "write_set": [
+        "s/count2",
+        "s/soft_reset_2"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "s/count2",
+        "s/soft_reset_2"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0013",
+      "score": 0.1404,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.22,
+      "path_coverage": 0.0204,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "r1/packet_parity_byte"
+      },
+      "read_set": [
+        "r1/err",
+        "r1/packet_parity_byte"
+      ],
+      "write_set": [
+        "r1/err",
+        "r1/packet_parity_byte"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "r1/err",
+        "r1/packet_parity_byte"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/router.v0.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0004",
+      "st_0006"
+    ],
+    "refined_level": 5,
+    "target_signal": "soft_reset_0",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 8,
+    "span_refined": {
+      "start_line": 52,
+      "end_line": 120
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0004",
+      "pattern": "soft_reset_0",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": -0.53,
+    "tns_after": -289.91,
+    "area": 5478.801906
+  },
+  "scoring": {
+    "wns_norm": 0.0,
+    "tns_norm": 0.0,
+    "area_norm": 0.0,
+    "area_penalty": 0.0,
+    "score": 0.0
+  },
+  "relative_advantage": null
+}

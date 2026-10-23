@@ -1,0 +1,220 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "FIFO",
+  "base_version": "v0",
+  "target_version": "v0.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.54,
+  "tns_before": -2002.1,
+  "area_baseline": 36060.82277,
+  "critical_subtrees": [
+    {
+      "id": "st_0002",
+      "score": 0.1981,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.23,
+      "path_coverage": 0.1818,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/full"
+      },
+      "read_set": [
+        "write_uut/current_state",
+        "write_uut/full",
+        "write_uut/wren"
+      ],
+      "write_set": [
+        "write_uut/current_state",
+        "write_uut/full",
+        "write_uut/wren"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "write_uut/current_state",
+        "write_uut/full",
+        "write_uut/wren"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.115,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.14,
+      "path_coverage": 0.0909,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/current_state"
+      },
+      "read_set": [
+        "write_uut/current_state"
+      ],
+      "write_set": [
+        "write_uut/current_state"
+      ],
+      "semantic_tag": "state_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "write_uut/current_state"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.1048,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.08,
+      "path_coverage": 0.0909,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "w2r_uut/w0"
+      },
+      "read_set": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "write_set": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.1048,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.08,
+      "path_coverage": 0.0909,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/wrptr"
+      },
+      "read_set": [
+        "w2r_uut/w0",
+        "write_uut/wrptr"
+      ],
+      "write_set": [
+        "w2r_uut/w0",
+        "write_uut/wrptr"
+      ],
+      "semantic_tag": "address_generation",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "w2r_uut/w0",
+        "write_uut/wrptr"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0006",
+      "score": 0.0895,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.0909,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "flush_uut/f0"
+      },
+      "read_set": [
+        "flush_uut/f0",
+        "flush_uut/sync_flush"
+      ],
+      "write_set": [
+        "flush_uut/f0",
+        "flush_uut/sync_flush"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "flush_uut/f0",
+        "flush_uut/sync_flush"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/FIFO.v0.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0002",
+      "st_0003"
+    ],
+    "refined_level": 5,
+    "target_signal": "next_state",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 28,
+    "span_refined": {
+      "start_line": 133,
+      "end_line": 160
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0002",
+      "pattern": "next_state",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.53,
+    "tns_after": -1913.11,
+    "area": 35968.786777
+  },
+  "scoring": {
+    "wns_norm": 0.018518518518518535,
+    "tns_norm": 0.044448329254283006,
+    "area_norm": -0.0025522432914804427,
+    "area_penalty": 0.0,
+    "score": 0.024433338004536252
+  },
+  "relative_advantage": 0.7938989289563135
+}

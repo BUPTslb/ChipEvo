@@ -1,0 +1,81 @@
+{
+  "design": "LSTM",
+  "major_version": "v0",
+  "extracted_at": "2026-06-14T06:24:09",
+  "minors": [
+    {
+      "version": "v0.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v0.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "c_out",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "version": "v0.1",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "Y",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.2",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "c_out",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v0.3",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "Y+Y+out",
+      "strategy": [
+        "condition_precompute",
+        "mux_tree_restructure",
+        "common_subexpression_elimination"
+      ],
+      "skill_source": "proposed",
+      "version": "v0.4",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "Y+Y",
+      "strategy": [
+        "condition_precompute",
+        "mux_tree_restructure"
+      ],
+      "skill_source": "proposed",
+      "version": "v0.5",
+      "relative_advantage": null
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "design": "i2c",
+  "major_version": "v2",
+  "extracted_at": "2026-06-14T02:53:16",
+  "minors": [
+    {
+      "version": "v2.1",
+      "sec": "pass",
+      "score": -0.0042287251740810786,
+      "promoted": false,
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "version": "v2.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v2.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v2.4",
+      "sec": "pass",
+      "score": -0.0042287251740810786,
+      "promoted": false,
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "version": "v2.5",
+      "sec": "pass",
+      "score": -0.0034580457239722267,
+      "promoted": false,
+      "relative_advantage": 1.4142135623730951
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "al",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.1",
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "pattern": "prer+ctr+txr+cr",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.3",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "byte_controller/bit_controller/cnt",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.4",
+      "relative_advantage": -0.7071067811865476
+    },
+    {
+      "pattern": "cr",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.5",
+      "relative_advantage": 1.4142135623730951
+    }
+  ]
+}

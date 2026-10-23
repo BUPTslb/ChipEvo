@@ -1,0 +1,58 @@
+{
+  "design": "aes",
+  "major_version": "v3",
+  "extracted_at": "2026-06-07T21:26:52",
+  "minors": [
+    {
+      "version": "v3.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v3.2",
+      "sec": "pass",
+      "score": -0.3154212921474366,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v3.3",
+      "sec": "pass",
+      "score": -0.3154212921474366,
+      "promoted": false,
+      "relative_advantage": 0.0
+    },
+    {
+      "version": "v3.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v3.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "shift_cond",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v3.2",
+      "relative_advantage": 0.0
+    },
+    {
+      "pattern": "steps_ff",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v3.3",
+      "relative_advantage": 0.0
+    }
+  ]
+}

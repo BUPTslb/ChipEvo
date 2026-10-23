@@ -1,0 +1,763 @@
+/opt2/synopsys/syn/bin/dc_shell: 42: [: T/opt2: unexpected operator
+/opt2/synopsys/syn/bin/dc_shell: 46: [: Tsynopsys: unexpected operator
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP2 for linux64 - May 25, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# ==================================================
+# TCL Script for Logic Synthesis using Synopsys DC
+# ==================================================
+set tool "DC"
+DC
+set hdlin_enable_designware_support true
+true
+# Set the design environment
+set search_path [list ./lib ./input]
+./lib ./input
+set target_library [list "nangate.db"]
+nangate.db
+set link_library [concat "*" $target_library]
+* nangate.db
+# Define the top-level module name
+set DESIGN_NAME "vending_machine.v0"
+vending_machine.v0
+set TOP_NAME "vending_machine"
+vending_machine
+file mkdir ./work/${DESIGN_NAME}
+define_design_lib WORK -path ./work/${DESIGN_NAME}
+1
+# Read the design files
+# read_verilog ./rtl/${DESIGN_NAME}/*.v
+set rtl_path ./rtl/${DESIGN_NAME}.v
+./rtl/vending_machine.v0.v
+# set filelist ./filelist/list_${DESIGN_NAME}.f
+analyze -format verilog -recursive -autoread $rtl_path -top ${TOP_NAME}
+Information: Use of command 'analyze -autoread' is not recommended. This command will be obsolete in a future release. (INFO-103)
+== ANALYZE autoread for top design 'vending_machine' ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/vending_machine.v0.v'.  (AUTOREAD-100)
+Information: Scanning file { vending_machine.v0.v }. (AUTOREAD-303)
+Compiling source file /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/vending_machine.v0.v
+Presto compilation completed successfully.
+Autoread command completed successfully.
+1
+# Elaborate the design
+elaborate $TOP_NAME
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/gtech.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 61 in file
+	'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/vending_machine.v0.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            62            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine vending_machine line 42 in file
+		'/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/vending_machine.v0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (vending_machine)
+Elaborated 1 design.
+Current design is now 'vending_machine'.
+1
+# Set design constraints
+create_clock -name clk -period 0.1 [get_ports clk]
+1
+# set_input_delay 1 [get_ports {in1 in2 in3}] -clock clk
+# set_output_delay 1 [get_ports {out1 out2}] -clock clk
+set_max_delay -to [all_outputs] -from [all_inputs] 0.1
+1
+# # Set drive strength and load
+# set_drive 0.1 [get_ports {in1 in2 in3}]
+# set_load 0.1 [get_ports {out1 out2}]
+# # Optimization constraints
+# set_max_area 0  ;# No area constraint (optimize for timing)
+# set_max_transition 0.2 [get_ports clk]
+# set_max_fanout 10 [get_ports {in1 in2 in3}]
+# Run synthesis
+# compile_ultra
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 78                                     |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 4                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 29                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'vending_machine'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'vending_machine_DW01_add_0'
+  Processing 'vending_machine_DW01_add_1'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:18   30927.8      1.20    1010.8       0.0                          
+    0:01:18   30925.2      1.20    1010.9       0.0                          
+    0:01:18   30925.2      1.20    1010.9       0.0                          
+    0:01:18   30925.2      1.20    1010.9       0.0                          
+    0:01:18   30925.2      1.20    1010.9       0.0                          
+    0:01:25   19623.1      1.32    1024.7       0.0                          
+    0:01:26   19606.1      1.33    1011.4       0.0                          
+    0:01:27   19582.4      1.20     955.5       0.0                          
+    0:01:27   19587.2      1.18     952.6       0.0                          
+    0:01:27   19612.4      1.17     943.2       0.0                          
+    0:01:28   19601.8      1.17     940.4       0.0                          
+    0:01:28   19603.1      1.15     939.1       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+    0:01:28   19605.5      1.15     938.3       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:29   19605.5      1.15     938.3       0.0                          
+    0:01:29   19607.7      1.14     933.6       0.0 total_discount[559]      
+    0:01:29   19619.4      1.13     932.1       0.0 total_discount[623]      
+    0:01:29   19626.8      1.13     931.7       0.0 total_discount[191]      
+    0:01:29   19638.0      1.13     930.8       0.0 total_discount[447]      
+    0:01:29   19644.9      1.12     928.9       0.0 total_discount[255]      
+    0:01:29   19655.5      1.12     927.6       0.0 total_discount[607]      
+    0:01:29   19657.7      1.12     920.6       0.0 total_discount[863]      
+    0:01:30   19664.8      1.11     919.3       0.0 total_discount[447]      
+    0:01:30   19666.7      1.11     918.0       0.0 total_discount[431]      
+    0:01:30   19669.9      1.11     916.5       0.0 total_discount[127]      
+    0:01:30   19675.8      1.11     915.8       0.0 total_discount[127]      
+    0:01:30   19676.6      1.11     914.4       0.0 total_discount[415]      
+    0:01:30   19680.8      1.11     913.1       0.0 total_discount[975]      
+    0:01:30   19685.3      1.10     911.6       0.0 total_discount[971]      
+    0:01:30   19691.7      1.10     909.5       0.0 total_discount[431]      
+    0:01:30   19694.4      1.10     910.0       0.0 total_discount[431]      
+    0:01:30   19697.6      1.10     908.0       0.0 total_discount[559]      
+    0:01:30   19700.5      1.10     906.5       0.0 total_discount[943]      
+    0:01:31   19701.6      1.09     905.6       0.0 total_discount[575]      
+    0:01:31   19705.5      1.09     906.6       0.0 total_discount[191]      
+    0:01:31   19708.5      1.09     905.1       0.0 total_discount[591]      
+    0:01:31   19719.1      1.09     905.0       0.0 total_discount[431]      
+    0:01:31   19735.9      1.09     904.4       0.0 total_discount[831]      
+    0:01:31   19739.3      1.09     904.1       0.0 total_discount[511]      
+    0:01:31   19746.5      1.09     903.8       0.0 total_discount[863]      
+    0:01:31   19754.2      1.08     903.7       0.0 total_discount[655]      
+    0:01:31   19757.9      1.08     902.4       0.0 total_discount[431]      
+    0:01:31   19761.9      1.08     901.8       0.0 total_discount[191]      
+    0:01:32   19764.6      1.08     899.2       0.0 total_discount[655]      
+    0:01:32   19768.9      1.08     897.0       0.0 total_discount[863]      
+    0:01:32   19769.7      1.08     896.9       0.0 total_discount[863]      
+    0:01:32   19772.6      1.08     895.4       0.0 total_discount[319]      
+    0:01:32   19773.4      1.08     895.0       0.0 total_discount[415]      
+    0:01:32   19780.6      1.08     894.2       0.0 total_discount[863]      
+    0:01:32   19783.5      1.07     892.8       0.0 total_discount[863]      
+    0:01:32   19793.3      1.07     892.1       0.0 total_discount[863]      
+    0:01:32   19795.7      1.07     891.8       0.0 total_discount[623]      
+    0:01:32   19796.8      1.07     891.5       0.0 total_discount[863]      
+    0:01:32   19801.8      1.07     891.4       0.0 total_discount[863]      
+    0:01:32   19802.4      1.07     891.1       0.0 total_discount[943]      
+    0:01:32   19808.5      1.07     889.8       0.0 total_discount[319]      
+    0:01:33   19811.7      1.07     889.5       0.0 total_discount[863]      
+    0:01:33   19820.7      1.07     888.7       0.0 total_discount[511]      
+    0:01:33   19830.3      1.06     887.5       0.0 total_discount[239]      
+    0:01:33   19836.9      1.06     887.0       0.0 total_discount[623]      
+    0:01:33   19842.0      1.06     886.3       0.0 total_discount[975]      
+    0:01:33   19846.3      1.06     886.1       0.0 total_discount[863]      
+    0:01:33   19849.2      1.06     886.2       0.0 total_discount[863]      
+    0:01:33   19854.0      1.06     884.7       0.0 total_discount[431]      
+    0:01:33   19856.4      1.06     883.9       0.0 total_discount[831]      
+    0:01:33   19860.1      1.06     883.6       0.0 total_discount[255]      
+    0:01:34   19863.5      1.06     881.9       0.0 total_discount[959]      
+    0:01:34   19866.5      1.06     881.4       0.0 total_discount[431]      
+    0:01:34   19870.7      1.05     881.2       0.0 total_discount[911]      
+    0:01:34   19877.1      1.05     880.8       0.0 total_discount[863]      
+    0:01:34   19887.0      1.05     879.6       0.0 total_discount[911]      
+    0:01:34   19889.1      1.05     879.4       0.0 total_discount[863]      
+    0:01:34   19891.2      1.05     878.6       0.0 total_discount[959]      
+    0:01:34   19893.3      1.05     878.5       0.0 total_discount[911]      
+    0:01:34   19895.7      1.05     878.0       0.0 total_discount[863]      
+    0:01:34   19895.5      1.05     877.0       0.0 total_discount[863]      
+    0:01:34   19902.1      1.05     876.6       0.0 total_discount[863]      
+    0:01:35   19910.1      1.05     876.3       0.0 total_discount[863]      
+    0:01:35   19917.0      1.05     876.2       0.0 total_discount[863]      
+    0:01:35   19918.1      1.05     876.2       0.0 total_discount[367]      
+    0:01:35   19925.8      1.05     876.0       0.0 total_discount[1007]     
+    0:01:35   19928.5      1.05     875.8       0.0 total_discount[863]      
+    0:01:35   19935.4      1.04     875.7       0.0 total_discount[959]      
+    0:01:35   19945.5      1.04     875.5       0.0 total_discount[863]      
+    0:01:35   19946.3      1.04     875.3       0.0 total_discount[655]      
+    0:01:35   19950.3      1.04     873.1       0.0 total_discount[303]      
+    0:01:35   19953.2      1.04     873.2       0.0 total_discount[127]      
+    0:01:35   19956.1      1.04     872.8       0.0 total_discount[319]      
+    0:01:36   19959.3      1.04     872.6       0.0 total_discount[495]      
+    0:01:36   19963.3      1.04     872.5       0.0 total_discount[415]      
+    0:01:36   19966.0      1.04     872.5       0.0 total_discount[655]      
+    0:01:36   19967.6      1.04     872.1       0.0 total_discount[415]      
+    0:01:36   19971.3      1.04     871.7       0.0 total_discount[799]      
+    0:01:36   19977.4      1.04     871.7       0.0 total_discount[623]      
+    0:01:36   19983.0      1.04     871.6       0.0 total_discount[971]      
+    0:01:36   19984.0      1.04     871.4       0.0 total_discount[671]      
+    0:01:36   19990.4      1.03     871.1       0.0 total_discount[1023]     
+    0:01:36   19996.0      1.03     870.8       0.0 total_discount[287]      
+    0:01:36   19999.7      1.03     870.7       0.0 total_discount[975]      
+    0:01:36   19999.5      1.03     870.4       0.0 total_discount[639]      
+    0:01:36   20005.9      1.03     870.5       0.0 total_discount[751]      
+    0:01:37   20008.8      1.03     870.6       0.0 total_discount[511]      
+    0:01:37   20012.0      1.03     870.2       0.0 total_discount[927]      
+    0:01:37   20016.5      1.03     869.8       0.0 total_discount[431]      
+    0:01:37   20021.8      1.03     869.9       0.0 total_discount[239]      
+    0:01:37   20026.3      1.03     870.0       0.0 total_discount[655]      
+    0:01:37   20029.5      1.03     870.3       0.0 total_discount[479]      
+    0:01:37   20033.8      1.03     870.1       0.0 total_discount[927]      
+    0:01:37   20038.8      1.03     869.3       0.0 total_discount[767]      
+    0:01:37   20045.0      1.03     869.0       0.0 total_discount[751]      
+    0:01:37   20046.6      1.03     869.0       0.0 total_discount[255]      
+    0:01:38   20050.0      1.03     868.6       0.0 total_discount[735]      
+    0:01:38   20051.6      1.03     868.2       0.0 total_discount[671]      
+    0:01:38   20104.8      1.03     867.7       0.0 total_discount[959]      
+    0:01:38   20107.7      1.03     867.5       0.0 total_discount[751]      
+    0:01:38   20110.7      1.03     867.8       0.0 total_discount[255]      
+    0:01:38   20112.3      1.03     867.2       0.0 total_discount[751]      
+    0:01:38   20120.5      1.02     866.8       0.0 total_discount[303]      
+    0:01:38   20124.2      1.02     866.7       0.0 total_discount[447]      
+    0:01:38   20147.6      1.02     866.0       0.0 total_discount[431]      
+    0:01:38   20168.4      1.02     865.5       0.0 total_discount[511]      
+    0:01:38   20170.2      1.02     865.5       0.0 total_discount[431]      
+    0:01:38   20175.8      1.02     865.5       0.0 total_discount[655]      
+    0:01:38   20177.4      1.02     865.5       0.0 total_discount[843]      
+    0:01:39   20183.0      1.02     865.0       0.0 total_discount[395]      
+    0:01:39   20247.9      1.02     864.9       0.0 total_discount[859]      
+    0:01:39   20250.0      1.02     864.8       0.0 total_discount[655]      
+    0:01:39   20256.7      1.02     864.7       0.0 total_discount[751]      
+    0:01:39   20263.3      1.02     864.5       0.0 total_discount[511]      
+    0:01:39   20264.1      1.02     864.1       0.0 total_discount[927]      
+    0:01:39   20267.1      1.02     864.2       0.0 total_discount[655]      
+    0:01:39   20269.5      1.02     863.9       0.0 total_discount[831]      
+    0:01:39   20277.4      1.02     864.1       0.0 total_discount[431]      
+    0:01:39   20300.6      1.01     864.1       0.0 total_discount[703]      
+    0:01:39   20302.4      1.01     864.1       0.0 total_discount[655]      
+    0:01:39   20304.0      1.01     863.8       0.0 total_discount[943]      
+    0:01:40   20307.8      1.01     863.9       0.0 total_discount[655]      
+    0:01:40   20312.6      1.01     863.8       0.0 total_discount[299]      
+    0:01:40   20313.6      1.01     863.7       0.0 total_discount[319]      
+    0:01:40   20315.2      1.01     863.3       0.0 total_discount[655]      
+    0:01:40   20316.3      1.01     863.0       0.0 total_discount[847]      
+    0:01:40   20319.2      1.01     862.9       0.0 total_discount[911]      
+    0:01:40   20320.5      1.01     862.5       0.0 total_discount[527]      
+    0:01:40   20322.1      1.01     862.3       0.0 total_discount[655]      
+    0:01:40   20324.0      1.01     862.6       0.0 total_discount[655]      
+    0:01:40   20321.3      1.01     862.4       0.0 total_discount[591]      
+    0:01:40   20330.6      1.01     862.2       0.0 total_discount[543]      
+    0:01:40   20334.1      1.01     861.6       0.0 total_discount[463]      
+    0:01:40   20333.6      1.01     861.2       0.0 total_discount[799]      
+    0:01:41   20338.4      1.01     861.1       0.0 total_discount[591]      
+    0:01:41   20342.6      1.01     861.0       0.0 total_discount[799]      
+    0:01:41   20344.2      1.01     860.7       0.0 total_discount[191]      
+    0:01:41   20346.9      1.01     860.5       0.0 total_discount[319]      
+    0:01:41   20349.0      1.01     859.6       0.0 total_discount[383]      
+    0:01:41   20350.3      1.01     859.3       0.0 total_discount[767]      
+    0:01:41   20353.0      1.01     859.1       0.0 total_discount[255]      
+    0:01:41   20356.4      1.01     858.7       0.0 total_discount[191]      
+    0:01:41   20359.9      1.00     858.8       0.0 total_discount[831]      
+    0:01:41   20365.5      1.00     858.6       0.0 total_discount[239]      
+    0:01:42   20367.6      1.00     858.4       0.0 total_discount[303]      
+    0:01:42   20368.2      1.00     858.1       0.0 total_discount[415]      
+    0:01:42   20371.3      1.00     857.9       0.0 total_discount[191]      
+    0:01:42   20374.0      1.00     857.9       0.0 total_discount[367]      
+    0:01:42   20374.0      1.00     857.7       0.0 total_discount[415]      
+    0:01:42   20375.9      1.00     857.6       0.0 total_discount[895]      
+    0:01:42   20377.2      1.00     857.5       0.0 total_discount[639]      
+    0:01:42   20379.6      1.00     857.2       0.0 total_discount[671]      
+    0:01:43   20381.7      1.00     856.9       0.0                          
+    0:01:43   20381.7      1.00     856.9       0.0                          
+    0:01:43   20382.5      1.00     856.9       0.0                          
+    0:01:43   20382.8      1.00     856.5       0.0                          
+    0:01:43   20387.3      1.00     856.1       0.0                          
+    0:01:43   20392.4      1.00     855.6       0.0                          
+    0:01:43   20392.4      1.00     855.4       0.0                          
+    0:01:44   20394.2      1.00     855.2       0.0                          
+    0:01:44   20397.7      1.00     855.0       0.0                          
+    0:01:44   20404.9      1.00     854.8       0.0                          
+    0:01:44   20405.4      1.00     854.7       0.0                          
+    0:01:44   20404.9      1.00     854.6       0.0                          
+    0:01:44   20403.8      1.00     854.4       0.0                          
+    0:01:44   20409.6      1.00     854.1       0.0                          
+    0:01:44   20412.0      1.00     854.0       0.0                          
+    0:01:44   20411.8      1.00     853.8       0.0                          
+    0:01:44   20413.4      1.00     853.7       0.0                          
+    0:01:44   20415.0      1.00     853.3       0.0                          
+    0:01:44   20416.0      1.00     853.3       0.0                          
+    0:01:44   20419.5      1.00     853.1       0.0                          
+    0:01:44   20429.6      1.00     852.8       0.0                          
+    0:01:45   20432.5      1.00     852.5       0.0                          
+    0:01:45   20443.2      1.00     852.1       0.0                          
+    0:01:45   20443.7      1.00     852.1       0.0                          
+    0:01:45   20445.3      1.00     851.8       0.0                          
+    0:01:45   20445.8      1.00     851.6       0.0                          
+    0:01:45   20448.7      1.00     851.4       0.0                          
+    0:01:45   20450.9      1.00     851.2       0.0                          
+    0:01:45   20457.0      1.00     850.9       0.0                          
+    0:01:45   20457.0      1.00     850.8       0.0                          
+    0:01:45   20459.1      1.00     850.6       0.0                          
+    0:01:45   20460.5      1.00     850.5       0.0                          
+    0:01:45   20459.7      1.00     850.3       0.0                          
+    0:01:45   20459.4      1.00     850.1       0.0                          
+    0:01:45   20462.8      1.00     849.9       0.0                          
+    0:01:46   20464.4      1.00     849.9       0.0                          
+    0:01:46   20465.5      1.00     849.7       0.0                          
+    0:01:46   20467.6      1.00     849.6       0.0                          
+    0:01:46   20466.8      1.00     849.6       0.0                          
+    0:01:46   20467.4      1.00     849.5       0.0                          
+    0:01:46   20464.2      1.00     849.2       0.0                          
+    0:01:46   20465.0      1.00     849.0       0.0                          
+    0:01:46   20464.7      1.00     848.9       0.0                          
+    0:01:46   20465.8      1.00     848.9       0.0                          
+    0:01:46   20466.0      1.00     848.9       0.0                          
+    0:01:46   20467.6      1.00     848.7       0.0                          
+    0:01:46   20466.6      1.00     848.3       0.0                          
+    0:01:46   20468.2      1.00     848.1       0.0                          
+    0:01:46   20470.6      1.00     847.9       0.0                          
+    0:01:46   20472.2      1.00     847.8       0.0                          
+    0:01:46   20471.9      1.00     847.5       0.0                          
+    0:01:46   20468.7      1.00     847.3       0.0                          
+    0:01:47   20469.0      1.00     847.2       0.0                          
+    0:01:47   20470.3      1.00     847.0       0.0                          
+    0:01:47   20472.7      1.00     846.9       0.0                          
+    0:01:47   20473.5      1.00     846.6       0.0                          
+    0:01:47   20474.3      1.00     846.5       0.0                          
+    0:01:47   20474.6      1.00     846.2       0.0                          
+    0:01:47   20475.6      1.00     846.2       0.0                          
+    0:01:47   20477.7      1.00     846.1       0.0                          
+    0:01:47   20479.3      1.00     846.0       0.0                          
+    0:01:47   20482.3      1.00     845.8       0.0                          
+    0:01:47   20486.3      1.00     845.6       0.0                          
+    0:01:47   20488.4      1.00     845.5       0.0                          
+    0:01:47   20487.3      1.00     845.2       0.0                          
+    0:01:47   20487.3      1.00     845.1       0.0                          
+    0:01:47   20487.9      1.00     845.1       0.0                          
+    0:01:47   20491.3      1.00     845.0       0.0                          
+    0:01:47   20493.2      1.00     844.7       0.0                          
+    0:01:47   20494.2      1.00     844.7       0.0                          
+    0:01:47   20496.1      1.00     844.6       0.0                          
+    0:01:47   20496.4      1.00     844.2       0.0                          
+    0:01:48   20497.7      1.00     843.7       0.0                          
+    0:01:48   20499.8      1.00     843.4       0.0                          
+    0:01:48   20501.9      1.00     843.4       0.0                          
+    0:01:48   20502.5      1.00     843.3       0.0                          
+    0:01:48   20503.0      1.00     843.3       0.0                          
+    0:01:48   20504.9      1.00     843.1       0.0                          
+    0:01:48   20505.7      1.00     843.0       0.0                          
+    0:01:48   20507.3      1.00     842.9       0.0                          
+    0:01:48   20506.2      1.00     842.9       0.0                          
+    0:01:48   20507.3      1.00     842.8       0.0                          
+    0:01:48   20510.2      1.00     842.7       0.0                          
+    0:01:48   20512.6      1.00     842.6       0.0                          
+    0:01:48   20514.7      1.00     842.5       0.0                          
+    0:01:48   20531.7      1.00     842.5       0.0                          
+    0:01:48   20531.5      1.00     842.4       0.0                          
+    0:01:48   20532.5      1.00     841.9       0.0                          
+    0:01:48   20531.5      1.00     841.8       0.0                          
+    0:01:48   20532.0      1.00     841.7       0.0                          
+    0:01:49   20536.0      1.00     840.7       0.0                          
+    0:01:49   20537.6      1.00     840.3       0.0                          
+    0:01:49   20536.3      1.00     840.3       0.0                          
+    0:01:49   20538.7      1.00     840.1       0.0                          
+    0:01:49   20540.8      1.00     840.0       0.0                          
+    0:01:49   20541.8      1.00     839.9       0.0                          
+    0:01:49   20540.5      1.00     839.6       0.0                          
+    0:01:49   20540.8      1.00     839.3       0.0                          
+    0:01:49   20558.3      1.00     839.3       0.0                          
+    0:01:49   20559.7      1.00     839.1       0.0                          
+    0:01:49   20560.2      1.00     839.0       0.0                          
+    0:01:49   20559.7      1.00     839.0       0.0                          
+    0:01:49   20561.3      1.00     838.9       0.0                          
+    0:01:49   20561.8      1.00     838.8       0.0                          
+    0:01:49   20558.1      1.00     838.0       0.0                          
+    0:01:49   20560.2      1.00     837.8       0.0                          
+    0:01:49   20562.1      1.00     837.8       0.0                          
+    0:01:50   20567.7      1.00     837.7       0.0                          
+    0:01:50   20568.2      1.00     837.6       0.0                          
+    0:01:50   20569.2      1.00     837.7       0.0                          
+    0:01:50   20570.6      1.00     837.6       0.0                          
+    0:01:50   20572.2      1.00     837.5       0.0                          
+    0:01:50   20572.2      1.00     837.5       0.0                          
+    0:01:50   20575.1      1.00     837.3       0.0                          
+    0:01:50   20575.4      1.00     837.3       0.0                          
+    0:01:50   20579.6      1.00     837.1       0.0                          
+    0:01:50   20580.7      1.00     837.0       0.0                          
+    0:01:50   20581.2      1.00     837.0       0.0                          
+    0:01:50   20582.3      1.00     836.9       0.0                          
+    0:01:50   20581.5      1.00     836.9       0.0                          
+    0:01:50   20581.7      1.00     836.7       0.0                          
+    0:01:50   20582.3      1.00     836.6       0.0                          
+    0:01:50   20583.3      1.00     836.6       0.0                          
+    0:01:50   20583.3      1.00     836.6       0.0                          
+    0:01:50   20585.5      1.00     836.4       0.0                          
+    0:01:50   20587.1      1.00     836.3       0.0                          
+    0:01:50   20589.7      1.00     836.2       0.0                          
+    0:01:50   20592.9      1.00     835.9       0.0                          
+    0:01:51   20593.5      1.00     835.9       0.0                          
+    0:01:51   20593.7      1.00     835.9       0.0                          
+    0:01:51   20594.3      1.00     835.8       0.0                          
+    0:01:51   20593.7      1.00     835.8       0.0                          
+    0:01:51   20594.0      1.00     835.7       0.0                          
+    0:01:51   20598.0      1.00     835.6       0.0                          
+    0:01:51   20598.8      1.00     835.5       0.0                          
+    0:01:51   20596.9      1.00     835.5       0.0                          
+    0:01:51   20597.7      1.00     835.5       0.0                          
+    0:01:51   20598.5      1.00     835.4       0.0                          
+    0:01:51   20599.6      1.00     835.4       0.0                          
+    0:01:51   20600.6      1.00     835.4       0.0                          
+    0:01:51   20602.2      1.00     834.9       0.0                          
+    0:01:51   20603.8      1.00     834.9       0.0                          
+    0:01:51   20604.4      1.00     834.8       0.0                          
+    0:01:51   20606.5      1.00     834.8       0.0                          
+    0:01:51   20606.2      1.00     834.8       0.0                          
+    0:01:51   20609.4      1.00     834.9       0.0                          
+    0:01:51   20611.0      1.00     834.9       0.0                          
+    0:01:52   20611.0      1.00     834.8       0.0                          
+    0:01:52   20611.5      1.00     834.8       0.0                          
+    0:01:52   20603.3      1.00     834.6       0.0                          
+    0:01:52   20606.2      1.00     834.5       0.0                          
+    0:01:52   20605.7      1.00     834.4       0.0                          
+    0:01:52   20605.7      1.00     834.3       0.0                          
+    0:01:52   20607.6      1.00     834.1       0.0                          
+    0:01:52   20608.6      1.00     834.1       0.0                          
+    0:01:52   20608.6      1.00     834.0       0.0                          
+    0:01:52   20609.7      1.00     834.0       0.0                          
+    0:01:52   20608.9      1.00     833.8       0.0                          
+    0:01:52   20611.0      1.00     833.7       0.0                          
+    0:01:52   20612.1      1.00     833.6       0.0                          
+    0:01:52   20612.6      1.00     833.5       0.0                          
+    0:01:52   20614.2      1.00     833.5       0.0                          
+    0:01:52   20615.3      1.00     833.5       0.0                          
+    0:01:52   20615.5      1.00     833.3       0.0                          
+    0:01:53   20614.5      1.00     832.3       0.0                          
+    0:01:53   20614.7      1.00     832.2       0.0                          
+    0:01:53   20615.3      1.00     832.2       0.0                          
+    0:01:53   20632.8      1.00     832.1       0.0                          
+    0:01:53   20633.9      1.00     832.1       0.0                          
+    0:01:53   20636.0      1.00     832.1       0.0                          
+    0:01:53   20636.5      1.00     832.0       0.0                          
+    0:01:53   20637.1      1.00     832.0       0.0                          
+    0:01:53   20636.8      1.00     832.0       0.0                          
+    0:01:53   20636.3      1.00     831.9       0.0                          
+    0:01:53   20637.6      1.00     831.8       0.0                          
+    0:01:53   20637.3      1.00     831.8       0.0                          
+    0:01:53   20638.9      1.00     831.6       0.0                          
+    0:01:53   20639.7      1.00     831.6       0.0                          
+    0:01:53   20643.5      1.00     831.6       0.0                          
+    0:01:53   20643.7      1.00     831.6       0.0                          
+    0:01:54   20644.3      1.00     831.5       0.0                          
+    0:01:54   20642.7      1.00     831.3       0.0                          
+    0:01:54   20643.5      1.00     831.3       0.0                          
+    0:01:54   20643.7      1.00     831.3       0.0                          
+    0:01:54   20644.5      1.00     831.3       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:54   20644.5      1.00     831.3       0.0                          
+    0:01:54   20644.5      1.00     831.3       0.0                          
+    0:01:54   20457.5      1.00     832.1       0.0                          
+    0:01:55   20450.1      1.00     832.3       0.0                          
+    0:01:55   20449.5      1.00     832.3       0.0                          
+    0:01:55   20449.5      1.00     832.3       0.0                          
+    0:01:55   20449.5      1.00     832.3       0.0                          
+    0:01:55   20449.5      1.00     832.3       0.0                          
+    0:01:55   20449.5      1.00     832.3       0.0                          
+    0:01:55   20307.2      1.00     832.9       0.0                          
+    0:01:55   20296.9      1.00     832.9       0.0                          
+    0:01:55   20296.9      1.00     832.9       0.0                          
+    0:01:55   20296.9      1.00     832.9       0.0                          
+    0:01:55   20296.9      1.00     832.9       0.0                          
+    0:01:55   20296.9      1.00     832.9       0.0                          
+    0:01:55   20296.9      1.00     832.9       0.0                          
+    0:01:56   20298.7      1.00     832.5       0.0 total_discount[911]      
+    0:01:56   20303.8      0.99     832.6       0.0 total_discount[447]      
+    0:01:56   20306.4      0.99     832.5       0.0 total_discount[559]      
+    0:01:56   20311.5      0.99     832.4       0.0 total_discount[431]      
+    0:01:56   20312.8      0.99     832.7       0.0 total_discount[959]      
+    0:01:56   20315.2      0.99     833.2       0.0 total_discount[639]      
+    0:01:56   20319.5      0.99     833.5       0.0 total_discount[319]      
+    0:01:56   20330.9      0.98     833.6       0.0 total_discount[1023]     
+    0:01:56   20329.8      0.98     833.7       0.0 total_discount[751]      
+    0:01:56   20332.8      0.98     833.4       0.0 total_discount[751]      
+    0:01:56   20335.7      0.98     833.3       0.0 total_discount[495]      
+    0:01:57   20347.7      0.98     833.3       0.0 total_discount[447]      
+    0:01:57   20348.2      0.98     833.2       0.0 total_discount[639]      
+    0:01:57   20347.4      0.98     833.1       0.0 total_discount[511]      
+    0:01:57   20349.0      0.98     833.1       0.0 total_discount[511]      
+    0:01:57   20352.2      0.98     833.2       0.0 total_discount[367]      
+    0:01:57   20358.8      0.98     833.3       0.0 total_discount[191]      
+    0:01:57   20362.6      0.98     833.2       0.0 total_discount[367]      
+    0:01:57   20362.0      0.98     833.2       0.0                          
+    0:01:57   20360.2      0.98     833.2       0.0                          
+    0:01:57   20357.0      0.98     833.0       0.0                          
+    0:01:58   20353.3      0.98     832.7       0.0                          
+    0:01:58   20352.5      0.98     832.7       0.0                          
+    0:01:58   20351.7      0.98     832.6       0.0                          
+    0:01:58   20349.8      0.98     832.6       0.0                          
+    0:01:58   20346.9      0.98     832.4       0.0                          
+    0:01:58   20349.0      0.98     832.0       0.0                          
+    0:01:58   20349.5      0.98     832.0       0.0                          
+    0:01:59   20350.6      0.98     831.8       0.0                          
+    0:01:59   20351.7      0.98     831.6       0.0                          
+    0:01:59   20353.0      0.98     831.5       0.0                          
+    0:01:59   20353.3      0.98     831.2       0.0                          
+    0:01:59   20353.5      0.98     831.0       0.0                          
+    0:01:59   20353.8      0.98     830.9       0.0                          
+    0:01:59   20354.6      0.98     830.7       0.0                          
+    0:01:59   20355.9      0.98     830.7       0.0                          
+    0:01:59   20356.7      0.98     830.4       0.0                          
+    0:01:59   20357.8      0.98     830.1       0.0                          
+    0:01:59   20359.1      0.98     830.0       0.0                          
+    0:01:59   20359.1      0.98     830.0       0.0                          
+    0:02:00   20361.5      0.98     829.5       0.0                          
+    0:02:00   20364.7      0.98     829.2       0.0                          
+    0:02:00   20365.8      0.98     829.1       0.0                          
+    0:02:00   20367.1      0.98     829.0       0.0                          
+    0:02:00   20369.5      0.98     829.0       0.0                          
+    0:02:00   20370.3      0.98     829.0       0.0                          
+    0:02:00   20374.0      0.98     828.9       0.0                          
+    0:02:00   20375.1      0.98     828.7       0.0                          
+    0:02:00   20374.3      0.98     828.6       0.0                          
+    0:02:00   20373.5      0.98     828.6       0.0                          
+    0:02:00   20374.0      0.98     828.5       0.0                          
+    0:02:00   20374.5      0.98     828.4       0.0                          
+    0:02:00   20374.3      0.98     828.4       0.0                          
+    0:02:00   20380.9      0.98     828.2       0.0                          
+    0:02:00   20382.2      0.98     828.1       0.0                          
+    0:02:01   20383.6      0.98     828.0       0.0                          
+    0:02:01   20384.1      0.98     828.0       0.0                          
+    0:02:01   20387.0      0.98     827.9       0.0                          
+    0:02:01   20387.0      0.98     827.9       0.0                          
+    0:02:01   20388.9      0.98     827.7       0.0                          
+    0:02:01   20388.1      0.98     827.5       0.0                          
+    0:02:01   20387.8      0.98     827.4       0.0                          
+    0:02:01   20388.4      0.98     827.4       0.0                          
+    0:02:01   20388.9      0.98     827.4       0.0                          
+    0:02:01   20388.9      0.98     827.4       0.0                          
+    0:02:01   20389.7      0.98     827.3       0.0                          
+    0:02:01   20391.0      0.98     827.2       0.0                          
+    0:02:01   20392.9      0.98     827.1       0.0                          
+    0:02:01   20393.7      0.98     827.1       0.0                          
+    0:02:01   20394.5      0.98     826.9       0.0                          
+    0:02:02   20394.5      0.98     826.6       0.0                          
+    0:02:02   20394.0      0.98     826.1       0.0                          
+    0:02:02   20395.0      0.98     826.1       0.0                          
+    0:02:02   20396.1      0.98     826.1       0.0                          
+    0:02:02   20395.8      0.98     825.9       0.0                          
+    0:02:02   20395.8      0.98     825.9       0.0                          
+    0:02:02   20396.1      0.98     825.7       0.0                          
+    0:02:02   20395.5      0.98     825.6       0.0                          
+    0:02:02   20397.4      0.98     824.9       0.0                          
+    0:02:02   20397.4      0.98     824.9       0.0                          
+    0:02:02   20397.9      0.98     824.6       0.0                          
+    0:02:02   20398.7      0.98     824.6       0.0                          
+    0:02:02   20397.7      0.98     824.6       0.0                          
+    0:02:02   20398.2      0.98     824.6       0.0                          
+    0:02:02   20399.0      0.98     824.5       0.0                          
+    0:02:03   20400.6      0.98     824.4       0.0                          
+    0:02:03   20401.1      0.98     824.4       0.0                          
+    0:02:03   20403.5      0.98     824.1       0.0                          
+    0:02:03   20403.0      0.98     824.5       0.0                          
+    0:02:03   20403.5      0.98     824.4       0.0                          
+    0:02:03   20405.1      0.98     824.4       0.0                          
+    0:02:03   20408.1      0.98     824.4       0.0                          
+    0:02:03   20409.6      0.98     824.3       0.0                          
+    0:02:03   20410.4      0.98     824.2       0.0                          
+    0:02:03   20410.7      0.98     824.2       0.0                          
+    0:02:03   20410.7      0.98     824.2       0.0                          
+    0:02:03   20416.0      0.98     824.1       0.0                          
+    0:02:03   20416.3      0.98     824.1       0.0                          
+    0:02:03   20416.3      0.98     824.1       0.0                          
+    0:02:03   20416.8      0.98     824.1       0.0                          
+    0:02:03   20418.2      0.98     823.9       0.0                          
+    0:02:03   20418.7      0.98     823.9       0.0                          
+    0:02:03   20425.1      0.98     823.8       0.0                          
+    0:02:03   20424.3      0.98     823.8       0.0                          
+    0:02:04   20424.3      0.98     823.7       0.0                          
+    0:02:04   20425.6      0.98     823.7       0.0                          
+    0:02:04   20425.1      0.98     823.6       0.0                          
+    0:02:04   20427.7      0.98     823.6       0.0                          
+    0:02:04   20428.8      0.98     823.5       0.0                          
+    0:02:04   20428.8      0.98     823.4       0.0                          
+    0:02:04   20428.8      0.98     823.3       0.0                          
+    0:02:04   20429.3      0.98     823.3       0.0                          
+    0:02:04   20430.1      0.98     823.2       0.0                          
+    0:02:04   20430.1      0.98     823.2       0.0                          
+    0:02:04   20429.9      0.98     823.2       0.0                          
+    0:02:04   20430.9      0.98     823.2       0.0                          
+    0:02:04   20431.5      0.98     823.2       0.0                          
+    0:02:04   20432.5      0.98     823.1       0.0                          
+    0:02:04   20431.5      0.98     823.1       0.0                          
+    0:02:05   20432.0      0.98     823.1       0.0                          
+    0:02:05   20433.1      0.98     823.0       0.0                          
+    0:02:05   20433.1      0.98     823.0       0.0                          
+    0:02:05   20434.1      0.98     823.0       0.0                          
+    0:02:05   20434.7      0.98     822.9       0.0                          
+    0:02:05   20435.2      0.98     822.9       0.0                          
+    0:02:05   20435.7      0.98     822.9       0.0                          
+    0:02:05   20435.7      0.98     822.9       0.0                          
+    0:02:05   20436.8      0.98     822.9       0.0                          
+    0:02:05   20437.3      0.98     822.9       0.0                          
+    0:02:05   20437.8      0.98     822.9       0.0                          
+    0:02:05   20443.2      0.98     822.8       0.0                          
+    0:02:05   20443.2      0.98     822.7       0.0                          
+    0:02:06   20443.7      0.98     822.7       0.0                          
+    0:02:06   20452.7      0.98     822.7       0.0                          
+    0:02:06   20451.7      0.98     822.7       0.0                          
+    0:02:06   20451.7      0.98     822.5       0.0                          
+    0:02:06   20452.7      0.98     822.5       0.0                          
+    0:02:06   20453.0      0.98     822.4       0.0                          
+    0:02:06   20453.5      0.98     822.4       0.0                          
+    0:02:06   20454.6      0.98     822.3       0.0                          
+    0:02:06   20455.4      0.98     822.3       0.0                          
+    0:02:06   20454.6      0.98     822.2       0.0                          
+    0:02:07   20455.1      0.98     822.2       0.0                          
+    0:02:07   20456.2      0.98     822.2       0.0                          
+    0:02:07   20456.7      0.98     822.2       0.0                          
+    0:02:07   20457.3      0.98     822.1       0.0                          
+    0:02:07   20457.8      0.98     822.1       0.0                          
+    0:02:07   20458.9      0.98     822.1       0.0                          
+    0:02:07   20459.4      0.98     822.1       0.0                          
+    0:02:07   20459.9      0.98     822.0       0.0                          
+    0:02:07   20461.0      0.98     822.0       0.0                          
+    0:02:07   20463.1      0.98     822.0       0.0                          
+    0:02:08   20467.1      0.98     821.9       0.0                          
+    0:02:08   20469.5      0.98     821.9       0.0                          
+    0:02:08   20470.8      0.98     821.8       0.0                          
+    0:02:08   20472.7      0.98     821.6       0.0 total_discount[511]      
+    0:02:08   20478.5      0.98     821.6       0.0 total_discount[559]      
+    0:02:08   20480.4      0.98     822.0       0.0 total_discount[559]      
+    0:02:08   20484.1      0.98     822.0       0.0 total_discount[751]      
+    0:02:09   20488.1      0.97     822.2       0.0                          
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+# compile -map_effort medium -incremental_mapping
+# 7. Write out the synthesized netlist with hierarchy
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+1
+# Report results
+## create folders for reports and netlist
+file mkdir reports/${DESIGN_NAME}
+redirect -file reports/${DESIGN_NAME}/timing.rpt { report_timing -tran -net -input -max_paths 100000 }
+redirect -file reports/${DESIGN_NAME}/area.rpt { report_area }
+redirect -file reports/${DESIGN_NAME}/power.rpt { report_power }
+redirect -file reports/${DESIGN_NAME}/qor.rpt { report_qor }
+# Save synthesized design
+write -format verilog -hierarchy -output netlist/${DESIGN_NAME}.syn.v
+Writing verilog file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/vending_machine.v0.syn.v'.
+1
+write_sdf netlist/${DESIGN_NAME}.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/vending_machine.v0.sdf'. (WT-3)
+1
+# write -format ddc -hierarchy -output netlist/${DESIGN_NAME}.ddc
+# Exit DC
+exit
+Memory usage for this session 361 Mbytes.
+Memory usage for this session including child processes 361 Mbytes.
+CPU usage for this session 139 seconds ( 0.04 hours ).
+Elapsed time for this session 141 seconds ( 0.04 hours ).
+
+Thank you...

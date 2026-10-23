@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : DSP
+Version: T-2022.03-SP2
+Date   : Sat Jun 13 19:27:28 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                          346
+Number of nets:                          3496
+Number of cells:                         2992
+Number of combinational cells:           2781
+Number of sequential cells:               196
+Number of macros/black boxes:               0
+Number of buf/inv:                        762
+Number of references:                      33
+
+Combinational area:               3721.074008
+Buf/Inv area:                      440.496001
+Noncombinational area:             887.907968
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4608.981976
+Total area:                 undefined
+1

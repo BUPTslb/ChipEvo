@@ -1,0 +1,322 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 100000
+        -transition_time
+Design : ticket_machine
+Version: T-2022.03-SP2
+Date   : Sun Jun 14 10:45:15 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: State_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ticket_machine     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  State_reg[1]/CK (DFF_X1)                 0.00      0.00       0.00 r
+  State_reg[1]/Q (DFF_X1)                  0.01      0.09       0.09 f
+  State[1] (net)                 4                   0.00       0.09 f
+  U133/A4 (NOR4_X1)                        0.01      0.02       0.10 f
+  U133/ZN (NOR4_X1)                        0.04      0.08       0.18 r
+  n109 (net)                     1                   0.00       0.18 r
+  U134/A1 (NAND4_X1)                       0.04      0.01       0.20 r
+  U134/ZN (NAND4_X1)                       0.04      0.06       0.25 f
+  n128 (net)                     4                   0.00       0.25 f
+  U135/A1 (NAND4_X1)                       0.04      0.02       0.27 f
+  U135/ZN (NAND4_X1)                       0.02      0.03       0.30 r
+  n133 (net)                     2                   0.00       0.30 r
+  U105/A (INV_X1)                          0.02      0.01       0.32 r
+  U105/ZN (INV_X1)                         0.01      0.01       0.33 f
+  n134 (net)                     1                   0.00       0.33 f
+  U90/A1 (NAND2_X1)                        0.01      0.01       0.34 f
+  U90/ZN (NAND2_X1)                        0.01      0.01       0.35 r
+  n140 (net)                     1                   0.00       0.35 r
+  U109/A1 (NAND2_X1)                       0.01      0.01       0.36 r
+  U109/ZN (NAND2_X1)                       0.01      0.01       0.37 f
+  n49 (net)                      1                   0.00       0.37 f
+  State_reg[5]/D (DFF_X1)                  0.01      0.01       0.38 f
+  data arrival time                                             0.38
+
+  clock clk (rise edge)                              0.10       0.10
+  clock network delay (ideal)                        0.00       0.10
+  State_reg[5]/CK (DFF_X1)                           0.00       0.10 r
+  library setup time                                -0.04       0.06
+  data required time                                            0.06
+  ---------------------------------------------------------------------
+  data required time                                            0.06
+  data arrival time                                            -0.38
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.32
+
+
+  Startpoint: State_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ticket_machine     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  State_reg[5]/CK (DFF_X1)                 0.00      0.00       0.00 r
+  State_reg[5]/Q (DFF_X1)                  0.01      0.09       0.09 f
+  State[5] (net)                 3                   0.00       0.09 f
+  U131/B (AOI211_X1)                       0.01      0.01       0.10 f
+  U131/ZN (AOI211_X1)                      0.03      0.06       0.16 r
+  n108 (net)                     1                   0.00       0.16 r
+  U55/A1 (AND3_X1)                         0.03      0.01       0.17 r
+  U55/ZN (AND3_X1)                         0.02      0.06       0.23 r
+  n67 (net)                      3                   0.00       0.23 r
+  U97/A1 (AND2_X1)                         0.02      0.01       0.24 r
+  U97/ZN (AND2_X1)                         0.01      0.03       0.27 r
+  n83 (net)                      1                   0.00       0.27 r
+  U148/B1 (OAI21_X1)                       0.01      0.01       0.28 r
+  U148/ZN (OAI21_X1)                       0.01      0.01       0.30 f
+  n131 (net)                     1                   0.00       0.30 f
+  U151/B1 (OAI33_X1)                       0.01      0.01       0.31 f
+  U151/ZN (OAI33_X1)                       0.06      0.06       0.37 r
+  n48 (net)                      1                   0.00       0.37 r
+  State_reg[4]/D (DFF_X2)                  0.06      0.01       0.38 r
+  data arrival time                                             0.38
+
+  clock clk (rise edge)                              0.10       0.10
+  clock network delay (ideal)                        0.00       0.10
+  State_reg[4]/CK (DFF_X2)                           0.00       0.10 r
+  library setup time                                -0.04       0.06
+  data required time                                            0.06
+  ---------------------------------------------------------------------
+  data required time                                            0.06
+  data arrival time                                            -0.38
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.32
+
+
+  Startpoint: State_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ticket_machine     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  State_reg[1]/CK (DFF_X1)                 0.00      0.00       0.00 r
+  State_reg[1]/Q (DFF_X1)                  0.01      0.09       0.09 f
+  State[1] (net)                 4                   0.00       0.09 f
+  U133/A4 (NOR4_X1)                        0.01      0.02       0.10 f
+  U133/ZN (NOR4_X1)                        0.04      0.08       0.18 r
+  n109 (net)                     1                   0.00       0.18 r
+  U134/A1 (NAND4_X1)                       0.04      0.01       0.20 r
+  U134/ZN (NAND4_X1)                       0.04      0.06       0.25 f
+  n128 (net)                     4                   0.00       0.25 f
+  U104/A1 (AND4_X1)                        0.04      0.01       0.26 f
+  U104/ZN (AND4_X1)                        0.01      0.05       0.31 f
+  n89 (net)                      2                   0.00       0.31 f
+  U136/A1 (NAND3_X1)                       0.01      0.01       0.33 f
+  U136/ZN (NAND3_X1)                       0.01      0.02       0.34 r
+  n115 (net)                     1                   0.00       0.34 r
+  U139/A1 (NAND3_X1)                       0.01      0.01       0.35 r
+  U139/ZN (NAND3_X1)                       0.01      0.02       0.37 f
+  n45 (net)                      1                   0.00       0.37 f
+  State_reg[1]/D (DFF_X1)                  0.01      0.01       0.38 f
+  data arrival time                                             0.38
+
+  clock clk (rise edge)                              0.10       0.10
+  clock network delay (ideal)                        0.00       0.10
+  State_reg[1]/CK (DFF_X1)                           0.00       0.10 r
+  library setup time                                -0.04       0.06
+  data required time                                            0.06
+  ---------------------------------------------------------------------
+  data required time                                            0.06
+  data arrival time                                            -0.38
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.32
+
+
+  Startpoint: State_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ticket_machine     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  State_reg[5]/CK (DFF_X1)                 0.00      0.00       0.00 r
+  State_reg[5]/Q (DFF_X1)                  0.02      0.09       0.09 r
+  State[5] (net)                 3                   0.00       0.09 r
+  U73/A (INV_X1)                           0.02      0.02       0.11 r
+  U73/ZN (INV_X1)                          0.01      0.01       0.12 f
+  n66 (net)                      2                   0.00       0.12 f
+  U127/A1 (NAND3_X1)                       0.01      0.01       0.14 f
+  U127/ZN (NAND3_X1)                       0.02      0.02       0.16 r
+  n122 (net)                     2                   0.00       0.16 r
+  U128/A (INV_X1)                          0.02      0.01       0.17 r
+  U128/ZN (INV_X1)                         0.01      0.01       0.19 f
+  n105 (net)                     2                   0.00       0.19 f
+  U84/B2 (OAI21_X1)                        0.01      0.01       0.20 f
+  U84/ZN (OAI21_X1)                        0.02      0.03       0.23 r
+  n72 (net)                      1                   0.00       0.23 r
+  U135/A2 (NAND4_X1)                       0.02      0.01       0.24 r
+  U135/ZN (NAND4_X1)                       0.02      0.04       0.28 f
+  n133 (net)                     2                   0.00       0.28 f
+  U68/A (BUF_X1)                           0.02      0.01       0.29 f
+  U68/Z (BUF_X1)                           0.01      0.03       0.32 f
+  n78 (net)                      1                   0.00       0.32 f
+  U142/A1 (OAI33_X1)                       0.01      0.01       0.33 f
+  U142/ZN (OAI33_X1)                       0.06      0.04       0.37 r
+  n46 (net)                      1                   0.00       0.37 r
+  State_reg[2]/D (DFF_X1)                  0.06      0.01       0.38 r
+  data arrival time                                             0.38
+
+  clock clk (rise edge)                              0.10       0.10
+  clock network delay (ideal)                        0.00       0.10
+  State_reg[2]/CK (DFF_X1)                           0.00       0.10 r
+  library setup time                                -0.04       0.06
+  data required time                                            0.06
+  ---------------------------------------------------------------------
+  data required time                                            0.06
+  data arrival time                                            -0.38
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.32
+
+
+  Startpoint: State_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ticket_machine     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  State_reg[5]/CK (DFF_X1)                 0.00      0.00       0.00 r
+  State_reg[5]/Q (DFF_X1)                  0.02      0.09       0.09 r
+  State[5] (net)                 3                   0.00       0.09 r
+  U73/A (INV_X1)                           0.02      0.02       0.11 r
+  U73/ZN (INV_X1)                          0.01      0.01       0.12 f
+  n66 (net)                      2                   0.00       0.12 f
+  U127/A1 (NAND3_X1)                       0.01      0.01       0.14 f
+  U127/ZN (NAND3_X1)                       0.02      0.02       0.16 r
+  n122 (net)                     2                   0.00       0.16 r
+  U128/A (INV_X1)                          0.02      0.01       0.17 r
+  U128/ZN (INV_X1)                         0.01      0.01       0.19 f
+  n105 (net)                     2                   0.00       0.19 f
+  U85/B2 (OAI21_X1)                        0.01      0.01       0.20 f
+  U85/ZN (OAI21_X1)                        0.03      0.04       0.24 r
+  n73 (net)                      2                   0.00       0.24 r
+  U104/A2 (AND4_X1)                        0.03      0.01       0.25 r
+  U104/ZN (AND4_X1)                        0.02      0.07       0.31 r
+  n89 (net)                      2                   0.00       0.31 r
+  U155/A1 (NAND3_X1)                       0.02      0.01       0.33 r
+  U155/ZN (NAND3_X1)                       0.01      0.02       0.35 f
+  n149 (net)                     1                   0.00       0.35 f
+  U156/A1 (NAND2_X1)                       0.01      0.01       0.36 f
+  U156/ZN (NAND2_X1)                       0.01      0.01       0.38 r
+  n50 (net)                      1                   0.00       0.38 r
+  State_reg[0]/D (DFF_X1)                  0.01      0.01       0.38 r
+  data arrival time                                             0.38
+
+  clock clk (rise edge)                              0.10       0.10
+  clock network delay (ideal)                        0.00       0.10
+  State_reg[0]/CK (DFF_X1)                           0.00       0.10 r
+  library setup time                                -0.03       0.07
+  data required time                                            0.07
+  ---------------------------------------------------------------------
+  data required time                                            0.07
+  data arrival time                                            -0.38
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.32
+
+
+  Startpoint: State_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ticket_machine     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  State_reg[2]/CK (DFF_X1)                 0.00      0.00       0.00 r
+  State_reg[2]/Q (DFF_X1)                  0.01      0.09       0.09 f
+  State[2] (net)                 5                   0.00       0.09 f
+  U94/A2 (OR2_X1)                          0.01      0.01       0.10 f
+  U94/ZN (OR2_X1)                          0.01      0.05       0.16 f
+  n117 (net)                     2                   0.00       0.16 f
+  U91/A2 (OR2_X1)                          0.01      0.01       0.16 f
+  U91/ZN (OR2_X1)                          0.01      0.05       0.22 f
+  n157 (net)                     2                   0.00       0.22 f
+  U140/A (OAI211_X1)                       0.01      0.01       0.23 f
+  U140/ZN (OAI211_X1)                      0.03      0.03       0.26 r
+  n146 (net)                     2                   0.00       0.26 r
+  U56/A (BUF_X1)                           0.03      0.01       0.27 r
+  U56/Z (BUF_X1)                           0.02      0.04       0.30 r
+  n93 (net)                      3                   0.00       0.30 r
+  U154/A1 (OAI33_X1)                       0.02      0.02       0.32 r
+  U154/ZN (OAI33_X1)                       0.01      0.02       0.34 f
+  n47 (net)                      1                   0.00       0.34 f
+  State_reg[3]/D (DFF_X1)                  0.01      0.01       0.35 f
+  data arrival time                                             0.35
+
+  clock clk (rise edge)                              0.10       0.10
+  clock network delay (ideal)                        0.00       0.10
+  State_reg[3]/CK (DFF_X1)                           0.00       0.10 r
+  library setup time                                -0.04       0.06
+  data required time                                            0.06
+  ---------------------------------------------------------------------
+  data required time                                            0.06
+  data arrival time                                            -0.35
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.29
+
+
+1

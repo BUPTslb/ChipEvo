@@ -1,0 +1,33 @@
+Warning: Design 'fifo' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : fifo
+Version: T-2022.03-SP2
+Date   : Sat Jun 13 20:16:30 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                           72
+Number of nets:                         13651
+Number of cells:                        13547
+Number of combinational cells:           9334
+Number of sequential cells:              4207
+Number of macros/black boxes:               0
+Number of buf/inv:                       1747
+Number of references:                      34
+
+Combinational area:              13565.734063
+Buf/Inv area:                     1414.055990
+Noncombinational area:           22411.298711
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 35977.032774
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

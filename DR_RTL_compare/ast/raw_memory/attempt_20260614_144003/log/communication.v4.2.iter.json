@@ -1,0 +1,227 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "communication",
+  "base_version": "v4",
+  "target_version": "v4.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.42,
+  "tns_before": -108.91,
+  "area_baseline": 2091.55805,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.2563,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.42,
+      "path_coverage": 0.125,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/count"
+      },
+      "read_set": [
+        "uut_rx_block/count",
+        "uut_rx_block/data_out",
+        "uut_rx_block/done"
+      ],
+      "write_set": [
+        "uut_rx_block/count",
+        "uut_rx_block/data_out",
+        "uut_rx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/count",
+        "uut_rx_block/data_out",
+        "uut_rx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.2257,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.34,
+      "path_coverage": 0.125,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/done"
+      },
+      "read_set": [
+        "uut_tx_block/bit_count",
+        "uut_tx_block/data",
+        "uut_tx_block/done"
+      ],
+      "write_set": [
+        "uut_tx_block/bit_count",
+        "uut_tx_block/data",
+        "uut_tx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/bit_count",
+        "uut_tx_block/data",
+        "uut_tx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.1913,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.25,
+      "path_coverage": 0.125,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_rx_block/done"
+      },
+      "read_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "write_set": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_rx_block/bit_count",
+        "uut_rx_block/data",
+        "uut_rx_block/done"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.0822,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.0625,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "uut_tx_block/reg_count"
+      },
+      "read_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "write_set": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "uut_tx_block/reg_count",
+        "uut_tx_block/temp_reg_count"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/communication.v4.2.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000",
+      "st_0003"
+    ],
+    "refined_level": 5,
+    "target_signal": "uut_rx_block/data_out",
+    "pattern_id": "mux_select_parallelization",
+    "lines_touched": 14,
+    "span_refined": {
+      "start_line": 68,
+      "end_line": 81
+    },
+    "changes": [
+      {
+        "subtree_id": "st_0000",
+        "module": "rx_block",
+        "target_signal": "data_out",
+        "transform": "late_mux_select",
+        "description": "Extracted data_reg_slice wire computed from sel mux tree OUTSIDE the always block. The sel-based 5:1 mux (4 gate levels) now evaluates in PARALLEL with done_condition (6 gate levels). data_out assignment reduced from 5:1 ternary inside done_condition branch to a simple 2:1 mux (done_condition ? data_reg_slice : 64'h0). Critical path reduced from ~10 to ~8 gate stages.",
+        "before_lines": "data_out <= (sel_is_000) ? 64'h0 : (sel_is_001) ? ... : 64'h0; (5-level ternary inside else-if(done_condition) block)",
+        "after_lines": "wire [63:0] data_reg_slice = (sel_is_000) ? 64'h0 : (sel_is_001) ? ... : 64'h0; // computed outside always block\ndata_out <= data_reg_slice; // simple 2:1 mux implicit in else-if(done_condition)"
+      },
+      {
+        "subtree_id": "st_0003",
+        "module": "tx_block",
+        "target_signal": "data_reg",
+        "transform": "late_mux_select",
+        "description": "Extracted data_reg_load_slice wire for TX block data_in mux. The sel→data path now evaluates in parallel with done_condition→data_reg path. data_reg load inside always block reduced to 2:1 mux.",
+        "before_lines": "if(sel_is_000) begin data_reg <= 64'h0; ... end // 5-branch if-else chain for data_reg",
+        "after_lines": "wire [63:0] data_reg_load_slice = (sel_is_001) ? ... : 64'h0; // outside always\ndata_reg <= data_reg_load_slice; // simple assignment"
+      },
+      {
+        "subtree_id": "st_0003",
+        "module": "tx_block",
+        "target_signal": "serial_out",
+        "transform": "condition_precompute",
+        "description": "Extracted reg_count_positive wire for serial_out_enable condition. Computed once, shared with serial_out conditional.",
+        "before_lines": "wire serial_out_enable = (reg_count > 7'h0) || bit_count_positive;",
+        "after_lines": "wire reg_count_positive = (reg_count > 7'h0);\nwire serial_out_enable = reg_count_positive || bit_count_positive;"
+      }
+    ]
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "uut_rx_block/data_out",
+      "strategy": "mux_select_parallelization",
+      "skill_source": "proposed",
+      "pattern_id": "mux_select_parallelization"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.42,
+    "tns_after": -108.48,
+    "area": 2038.890037
+  },
+  "scoring": {
+    "wns_norm": -0.049999999999999906,
+    "tns_norm": -0.48440065681445,
+    "area_norm": -0.025181234152214994,
+    "area_penalty": 0.0,
+    "score": -0.19831741500788969
+  },
+  "relative_advantage": -0.6103393220266697
+}

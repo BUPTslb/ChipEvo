@@ -1,0 +1,65 @@
+{
+  "design": "ticket_machine",
+  "major_version": "v6",
+  "extracted_at": "2026-06-14T12:25:05",
+  "minors": [
+    {
+      "version": "v6.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v6.2",
+      "sec": "pass",
+      "score": 0.05759116409537171,
+      "promoted": false,
+      "relative_advantage": -0.9999999999999998
+    },
+    {
+      "version": "v6.3",
+      "sec": "pass",
+      "score": 0.6065378402378127,
+      "promoted": false,
+      "relative_advantage": 1.0
+    },
+    {
+      "version": "v6.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v6.5",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v6.2",
+      "relative_advantage": -0.9999999999999998
+    },
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v6.3",
+      "relative_advantage": 1.0
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "one_hot_direct_bit_equations",
+      "skill_source": "proposed",
+      "version": "v6.4",
+      "relative_advantage": null
+    }
+  ]
+}

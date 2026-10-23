@@ -1,0 +1,516 @@
+/opt2/synopsys/syn/bin/dc_shell: 42: [: T/opt2: unexpected operator
+/opt2/synopsys/syn/bin/dc_shell: 46: [: Tsynopsys: unexpected operator
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP2 for linux64 - May 25, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# ==================================================
+# TCL Script for Logic Synthesis using Synopsys DC
+# ==================================================
+set tool "DC"
+DC
+set hdlin_enable_designware_support true
+true
+# Set the design environment
+set search_path [list ./lib ./input]
+./lib ./input
+set target_library [list "nangate.db"]
+nangate.db
+set link_library [concat "*" $target_library]
+* nangate.db
+# Define the top-level module name
+set DESIGN_NAME "LSTM.v0.3"
+LSTM.v0.3
+set TOP_NAME "lstm_cell"
+lstm_cell
+file mkdir ./work/${DESIGN_NAME}
+define_design_lib WORK -path ./work/${DESIGN_NAME}
+1
+# Read the design files
+# read_verilog ./rtl/${DESIGN_NAME}/*.v
+set rtl_path ./rtl/${DESIGN_NAME}.v
+./rtl/LSTM.v0.3.v
+# set filelist ./filelist/list_${DESIGN_NAME}.f
+analyze -format verilog -recursive -autoread $rtl_path -top ${TOP_NAME}
+Information: Use of command 'analyze -autoread' is not recommended. This command will be obsolete in a future release. (INFO-103)
+== ANALYZE autoread for top design 'lstm_cell' ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v'.  (AUTOREAD-100)
+Information: Scanning file { LSTM.v0.3.v }. (AUTOREAD-303)
+Compiling source file /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v
+Presto compilation completed successfully.
+Autoread command completed successfully.
+1
+# Elaborate the design
+elaborate $TOP_NAME
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/gtech.db'
+Loading db file '/opt2/synopsys/syn/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:28: unsigned to signed assignment occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:33: unsigned to signed assignment occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:37: unsigned to signed assignment occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:40: unsigned to signed assignment occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:41: unsigned to signed assignment occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:70: signed to unsigned part selection occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:71: signed to unsigned part selection occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:84: signed to unsigned part selection occurs. (VER-318)
+Presto compilation completed successfully. (lstm_cell)
+Elaborated 1 design.
+Current design is now 'lstm_cell'.
+Information: Building the design 'ConcatMultAdd'. (HDL-193)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:160: signed to unsigned part selection occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:161: signed to unsigned part selection occurs. (VER-318)
+Presto compilation completed successfully. (ConcatMultAdd)
+Information: Building the design 'sigmoid'. (HDL-193)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:97: signed to unsigned conversion occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:101: signed to unsigned conversion occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:102: signed to unsigned conversion occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:104: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully. (sigmoid)
+Information: Building the design 'tanh'. (HDL-193)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:127: signed to unsigned conversion occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:128: signed to unsigned conversion occurs. (VER-318)
+Warning:  /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/rtl/LSTM.v0.3.v:130: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully. (tanh)
+1
+# Set design constraints
+create_clock -name clk -period 0.1 [get_ports clk]
+Warning: Can't find port 'clk' in design 'lstm_cell'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+0
+# set_input_delay 1 [get_ports {in1 in2 in3}] -clock clk
+# set_output_delay 1 [get_ports {out1 out2}] -clock clk
+set_max_delay -to [all_outputs] -from [all_inputs] 0.1
+1
+# # Set drive strength and load
+# set_drive 0.1 [get_ports {in1 in2 in3}]
+# set_load 0.1 [get_ports {out1 out2}]
+# # Optimization constraints
+# set_max_area 0  ;# No area constraint (optimize for timing)
+# set_max_transition 0.2 [get_ports clk]
+# set_max_fanout 10 [get_ports {in1 in2 in3}]
+# Run synthesis
+# compile_ultra
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 70                                     |
+| Number of User Hierarchies                              | 8                                      |
+| Sequential Cell Count                                   | 0                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch Cells                              | 28                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 203 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'tanh_0'
+  Processing 'sigmoid_0'
+  Processing 'ConcatMultAdd_0'
+  Processing 'lstm_cell'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'tanh_1_DW01_cmp2_0'
+  Processing 'tanh_1_DW01_cmp2_1'
+  Processing 'sigmoid_1_DW01_cmp2_0_DW01_cmp2_2'
+  Processing 'sigmoid_1_DW01_cmp2_1_DW01_cmp2_3'
+  Processing 'sigmoid_1_DW01_add_0'
+  Processing 'tanh_0_DW01_cmp2_0_DW01_cmp2_4'
+  Processing 'tanh_0_DW01_cmp2_1_DW01_cmp2_5'
+  Processing 'sigmoid_0_DW01_cmp2_0_DW01_cmp2_6'
+  Processing 'sigmoid_0_DW01_cmp2_1_DW01_cmp2_7'
+  Processing 'sigmoid_0_DW01_add_0_DW01_add_1'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width16' (rpl)
+  Processing 'DW01_add_width16'
+  Building model 'DW01_add_width16' (cla)
+  Processing 'DW01_add_width16'
+  Allocating blocks in 'DW02_mult_A_width16_B_width16'
+  Building model 'DW01_MUX'
+  Processing 'DW01_MUX'
+  Building model 'DW01_mmux_width2'
+  Processing 'DW01_mmux_width2'
+  Building model 'DW01_mmux_width3'
+  Processing 'DW01_mmux_width3'
+  Building model 'DW01_mmux_width4'
+  Processing 'DW01_mmux_width4'
+  Building model 'DW01_mmux_width5'
+  Processing 'DW01_mmux_width5'
+  Building model 'DW01_add_width30' (cla)
+  Processing 'DW01_add_width30'
+  Building model 'DW02_mult_A_width16_B_width16' (csa)
+  Processing 'DW02_mult_A_width16_B_width16'
+  Processing 'ConcatMultAdd_3_DW01_add_0_DW01_add_2'
+  Processing 'ConcatMultAdd_3_DW01_add_1_DW01_add_3'
+  Processing 'ConcatMultAdd_3_DW02_mult_0'
+  Processing 'ConcatMultAdd_3_DW01_add_2_DW01_add_4'
+  Processing 'ConcatMultAdd_3_DW02_mult_1'
+  Processing 'ConcatMultAdd_3_DW01_add_3_DW01_add_5'
+  Processing 'ConcatMultAdd_2_DW01_add_0_DW01_add_6'
+  Processing 'ConcatMultAdd_2_DW01_add_1_DW01_add_7'
+  Processing 'ConcatMultAdd_2_DW02_mult_0_DW02_mult_2'
+  Processing 'ConcatMultAdd_2_DW01_add_2_DW01_add_8'
+  Processing 'ConcatMultAdd_2_DW02_mult_1_DW02_mult_3'
+  Processing 'ConcatMultAdd_2_DW01_add_3_DW01_add_9'
+  Processing 'ConcatMultAdd_1_DW01_add_0_DW01_add_10'
+  Processing 'ConcatMultAdd_1_DW01_add_1_DW01_add_11'
+  Processing 'ConcatMultAdd_1_DW02_mult_0_DW02_mult_4'
+  Processing 'ConcatMultAdd_1_DW01_add_2_DW01_add_12'
+  Processing 'ConcatMultAdd_1_DW02_mult_1_DW02_mult_5'
+  Processing 'ConcatMultAdd_1_DW01_add_3_DW01_add_13'
+  Processing 'ConcatMultAdd_0_DW01_add_0_DW01_add_14'
+  Processing 'ConcatMultAdd_0_DW01_add_1_DW01_add_15'
+  Processing 'ConcatMultAdd_0_DW02_mult_0_DW02_mult_6'
+  Processing 'ConcatMultAdd_0_DW01_add_2_DW01_add_16'
+  Processing 'ConcatMultAdd_0_DW02_mult_1_DW02_mult_7'
+  Processing 'ConcatMultAdd_0_DW01_add_3_DW01_add_17'
+  Processing 'lstm_cell_DW01_add_0_DW01_add_18'
+  Processing 'lstm_cell_DW02_mult_0_DW02_mult_8'
+  Processing 'lstm_cell_DW01_add_1_DW01_add_19'
+  Processing 'lstm_cell_DW02_mult_1_DW02_mult_9'
+  Processing 'lstm_cell_DW01_add_2_DW01_add_20'
+  Processing 'lstm_cell_DW02_mult_2_DW02_mult_10'
+  Processing 'lstm_cell_DW01_add_3_DW01_add_21'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:23   16390.7      7.67     194.6       0.0                          
+    0:00:23   16390.7      7.67     194.6       0.0                          
+    0:00:23   16390.7      7.67     194.6       0.0                          
+    0:00:23   16390.7      7.67     194.6       0.0                          
+    0:00:23   16390.7      7.67     194.6       0.0                          
+    0:00:25   14610.3      7.39     187.0       0.0                          
+    0:00:25   14596.8      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14596.0      7.39     186.9       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:26   14596.0      7.39     186.9       0.0                          
+    0:00:26   14613.8      7.34     185.8      32.9 h_out[14]                
+    0:00:26   14615.6      7.29     184.8      32.9 h_out[14]                
+    0:00:26   14621.2      7.28     184.7      32.9 h_out[14]                
+    0:00:26   14620.7      7.27     184.7      32.9 h_out[14]                
+    0:00:26   14636.9      7.25     184.5      32.9 h_out[14]                
+    0:00:27   14640.1      7.23     184.3      32.9 h_out[14]                
+    0:00:27   14640.6      7.22     184.0      32.9 h_out[14]                
+    0:00:27   14647.6      7.21     183.9      66.8 h_out[14]                
+    0:00:27   14653.1      7.21     183.8      66.8 h_out[14]                
+    0:00:27   14664.8      7.18     183.2      66.8 h_out[14]                
+    0:00:27   14674.7      7.16     182.5      66.8 h_out[14]                
+    0:00:28   14677.1      7.15     182.4      66.8 h_out[14]                
+    0:00:28   14684.3      7.15     182.3      66.8 h_out[14]                
+    0:00:28   14697.0      7.12     181.9      66.8 h_out[14]                
+    0:00:28   14702.6      7.10     181.3      66.8 h_out[14]                
+    0:00:28   14705.0      7.10     181.3      66.8 h_out[14]                
+    0:00:29   14705.0      7.10     181.3      66.8 h_out[14]                
+    0:00:29   14706.3      7.10     181.2      66.8 h_out[14]                
+    0:00:29   14717.0      7.09     181.1      66.8 h_out[14]                
+    0:00:29   14725.8      7.08     180.8      66.8 h_out[14]                
+    0:00:29   14725.5      7.05     180.2      66.8 h_out[14]                
+    0:00:29   14725.0      7.05     180.1      66.8 h_out[14]                
+    0:00:29   14728.7      7.04     179.9      66.8 h_out[14]                
+    0:00:30   14727.9      7.04     179.9      66.8 h_out[14]                
+    0:00:30   14734.8      6.99     179.4      66.8 h_out[14]                
+    0:00:30   14740.1      6.97     179.0      66.8 h_out[14]                
+    0:00:30   14746.0      6.96     178.8      66.8 h_out[15]                
+    0:00:30   14750.0      6.93     178.1      66.8 h_out[14]                
+    0:00:31   14755.6      6.93     177.9      66.8 h_out[14]                
+    0:00:31   14755.6      6.92     177.6      66.8 h_out[14]                
+    0:00:31   14761.7      6.91     177.3      66.8 h_out[14]                
+    0:00:31   14767.5      6.89     177.0      66.8 h_out[14]                
+    0:00:31   14771.8      6.88     177.0      66.8 h_out[14]                
+    0:00:31   14776.8      6.87     176.7      66.8 h_out[14]                
+    0:00:31   14777.9      6.86     176.6      66.8 h_out[14]                
+    0:00:32   14781.6      6.85     176.5      66.8 h_out[14]                
+    0:00:32   14782.4      6.85     176.4      66.8 h_out[14]                
+    0:00:32   14783.7      6.84     176.2      66.8 h_out[14]                
+    0:00:32   14784.8      6.84     176.0      66.8 h_out[14]                
+    0:00:32   14798.9      6.82     175.7      66.8 h_out[14]                
+    0:00:32   14802.6      6.82     175.6      66.8 h_out[14]                
+    0:00:32   14804.8      6.82     175.4      66.8 h_out[14]                
+    0:00:33   14806.4      6.82     175.4      66.8 h_out[14]                
+    0:00:33   14808.5      6.81     175.3      66.8 h_out[14]                
+    0:00:33   14811.7      6.80     175.2      66.8 h_out[14]                
+    0:00:33   14814.1      6.80     175.1      66.8 h_out[14]                
+    0:00:33   14814.6      6.80     175.1      66.8 h_out[14]                
+    0:00:33   14816.2      6.79     174.9      66.8 h_out[14]                
+    0:00:33   14817.5      6.79     174.9      66.8 h_out[14]                
+    0:00:33   14821.3      6.78     174.8      66.8 h_out[14]                
+    0:00:34   14822.8      6.78     174.7      66.8 h_out[14]                
+    0:00:34   14825.2      6.78     174.7      66.8 h_out[14]                
+    0:00:34   14826.3      6.77     174.6      66.8 h_out[14]                
+    0:00:34   14825.8      6.77     174.5      66.8 h_out[14]                
+    0:00:34   14826.0      6.76     174.5      66.8 h_out[14]                
+    0:00:35   14827.6      6.76     174.4      66.8 h_out[14]                
+    0:00:35   14829.8      6.75     174.3      66.8 h_out[14]                
+    0:00:35   14833.5      6.75     174.2      66.8 h_out[14]                
+    0:00:35   14841.2      6.74     174.0      66.8 h_out[14]                
+    0:00:35   14845.7      6.74     173.9      66.8 h_out[14]                
+    0:00:35   14845.5      6.74     173.8      66.8 h_out[14]                
+    0:00:35   14848.7      6.73     173.8      66.8 h_out[14]                
+    0:00:36   14850.2      6.73     173.7      66.8 h_out[14]                
+    0:00:36   14842.0      6.73     173.7      34.0 h_out[14]                
+    0:00:37   14842.0      6.73     173.7      34.0                          
+    0:00:37   14842.0      6.73     173.7      34.0                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:37   14842.0      6.73     173.7      34.0                          
+    0:00:37   14838.5      6.73     173.6       0.0 h_out[14]                
+    0:00:37   14838.5      6.72     173.5       0.0 h_out[14]                
+    0:00:37   14841.5      6.72     173.4       0.0 h_out[14]                
+    0:00:37   14841.5      6.72     173.4       0.0 h_out[14]                
+    0:00:37   14848.9      6.71     173.2       0.0 h_out[14]                
+    0:00:38   14851.3      6.71     173.2       0.0 h_out[14]                
+    0:00:38   14862.0      6.71     173.2       0.0 h_out[14]                
+    0:00:38   14862.2      6.71     173.1       0.0 h_out[14]                
+    0:00:38   14871.3      6.70     172.9       0.0 h_out[14]                
+    0:00:39   14870.7      6.70     172.8       0.0 h_out[14]                
+    0:00:39   14870.2      6.70     172.8       0.0 h_out[14]                
+    0:00:39   14880.6      6.70     172.7       0.0 h_out[14]                
+    0:00:39   14882.7      6.70     172.6       0.0 h_out[14]                
+    0:00:39   14884.8      6.69     172.4       0.0 h_out[14]                
+    0:00:39   14892.8      6.68     172.4       0.0 h_out[14]                
+    0:00:39   14899.7      6.68     172.3       0.0 h_out[14]                
+    0:00:40   14900.3      6.67     172.0       0.0 h_out[14]                
+    0:00:40   14905.6      6.67     172.0       0.0 h_out[14]                
+    0:00:40   14910.9      6.66     171.8       0.0 h_out[14]                
+    0:00:40   14913.3      6.66     171.7       0.0 h_out[14]                
+    0:00:40   14919.9      6.65     171.6       0.0 h_out[14]                
+    0:00:40   14922.3      6.65     171.4       0.0 h_out[14]                
+    0:00:40   14922.3      6.64     171.3       0.0 h_out[14]                
+    0:00:40   14932.7      6.64     171.3       0.0 h_out[14]                
+    0:00:40   14960.9      6.64     171.1       0.0 h_out[14]                
+    0:00:41   14962.0      6.63     171.0       0.0 h_out[14]                
+    0:00:41   14971.5      6.63     170.9       0.0 h_out[14]                
+    0:00:41   14972.9      6.63     170.9       0.0 h_out[14]                
+    0:00:41   14987.5      6.62     170.8      38.3 h_out[14]                
+    0:00:41   14989.6      6.62     170.7      38.3 h_out[14]                
+    0:00:41   15000.8      6.62     170.6      76.7 h_out[14]                
+    0:00:41   15008.8      6.61     170.4      76.7 h_out[14]                
+    0:00:41   15018.4      6.61     170.4      76.7 h_out[14]                
+    0:00:42   15025.8      6.61     170.2      76.7 h_out[14]                
+    0:00:42   15030.6      6.61     170.2      76.7 h_out[14]                
+    0:00:42   15030.3      6.61     170.2      76.7 h_out[14]                
+    0:00:42   15030.9      6.60     170.2      76.7 h_out[14]                
+    0:00:42   15031.4      6.60     170.1      76.7 h_out[14]                
+    0:00:43   15036.2      6.59     169.9      76.7 h_out[14]                
+    0:00:43   15035.9      6.59     169.8      38.3 A2/mult_153/ab[13][4]    
+    0:00:43   15037.5      6.59     169.8       0.0 h_out[14]                
+    0:00:44   15039.9      6.59     169.6       0.0 h_out[14]                
+    0:00:44   15040.7      6.59     169.6       0.0 h_out[14]                
+    0:00:44   15040.7      6.58     169.4       0.0 h_out[14]                
+    0:00:44   15041.5      6.58     169.4       0.0 h_out[14]                
+    0:00:44   15042.8      6.58     169.3       0.0 h_out[14]                
+    0:00:44   15043.1      6.58     169.3       0.0 h_out[14]                
+    0:00:44   15045.8      6.57     169.2       0.0 h_out[14]                
+    0:00:45   15045.8      6.57     169.0       0.0 h_out[14]                
+    0:00:45   15046.6      6.56     168.9       0.0 h_out[14]                
+    0:00:45   15046.6      6.56     168.9       0.0 h_out[14]                
+    0:00:45   15049.5      6.56     168.8       0.0 h_out[14]                
+    0:00:45   15051.1      6.56     168.8       0.0 h_out[14]                
+    0:00:45   15042.6      6.56     168.7       0.0 h_out[14]                
+    0:00:46   15042.6      6.56     168.7       0.0 h_out[14]                
+    0:00:46   15042.6      6.56     168.7       0.0                          
+    0:00:46   15043.1      6.56     168.6       0.0                          
+    0:00:47   15043.1      6.56     168.6       0.0                          
+    0:00:47   15044.4      6.56     168.6       0.0                          
+    0:00:47   15046.0      6.56     168.6       0.0                          
+    0:00:47   15046.0      6.56     168.6       0.0                          
+    0:00:47   15046.0      6.56     168.5       0.0                          
+    0:00:47   15046.0      6.56     168.5       0.0                          
+    0:00:47   15045.2      6.56     168.4       0.0                          
+    0:00:47   15044.7      6.56     168.4       0.0                          
+    0:00:47   15043.4      6.56     168.3       0.0                          
+    0:00:47   15044.2      6.56     168.3       0.0                          
+    0:00:47   15043.4      6.56     168.3       0.0                          
+    0:00:47   15042.3      6.56     168.2       0.0                          
+    0:00:47   15042.6      6.56     168.2       0.0                          
+    0:00:47   15041.5      6.56     168.2       0.0                          
+    0:00:47   15040.7      6.56     168.2       0.0                          
+    0:00:47   15041.0      6.56     168.1       0.0                          
+    0:00:48   15039.6      6.56     168.1       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:48   15039.6      6.56     168.1       0.0                          
+    0:00:48   15039.6      6.56     168.1       0.0                          
+    0:00:48   14930.8      6.55     168.1       0.0                          
+    0:00:48   14875.8      6.57     168.5       0.0                          
+    0:00:48   14874.7      6.57     168.5       0.0                          
+    0:00:48   14873.7      6.57     168.5       0.0                          
+    0:00:48   14873.7      6.57     168.5       0.0                          
+    0:00:48   14873.7      6.57     168.5       0.0                          
+    0:00:48   14872.3      6.57     168.5       0.0                          
+    0:00:48   14849.2      6.57     168.4       0.0                          
+    0:00:48   14849.2      6.57     168.4       0.0                          
+    0:00:48   14849.2      6.57     168.4       0.0                          
+    0:00:48   14849.2      6.57     168.4       0.0                          
+    0:00:48   14849.2      6.57     168.4       0.0                          
+    0:00:48   14849.2      6.57     168.4       0.0                          
+    0:00:49   14850.0      6.57     168.5       0.0 h_out[14]                
+    0:00:49   14854.8      6.56     168.4       0.0 h_out[14]                
+    0:00:49   14857.2      6.56     168.4       0.0 h_out[14]                
+    0:00:49   14860.1      6.55     168.1       0.0 h_out[14]                
+    0:00:49   14860.4      6.55     168.1       0.0 h_out[14]                
+    0:00:49   14861.4      6.55     168.0       0.0 h_out[14]                
+    0:00:49   14871.5      6.55     167.9       0.0 h_out[14]                
+    0:00:49   14872.1      6.54     167.8       0.0 h_out[14]                
+    0:00:50   14876.3      6.54     167.7       0.0 h_out[14]                
+    0:00:50   14882.4      6.53     167.5       0.0 h_out[14]                
+    0:00:50   14894.4      6.53     167.5       0.0 h_out[14]                
+    0:00:50   14894.4      6.53     167.4       0.0 h_out[14]                
+    0:00:50   14894.4      6.53     167.4       0.0 h_out[14]                
+    0:00:51   14893.9      6.53     167.4       0.0                          
+    0:00:51   14876.8      6.53     167.4       0.0                          
+    0:00:51   14875.0      6.53     167.4       0.0                          
+    0:00:51   14865.1      6.53     167.4       0.0                          
+    0:00:51   14861.7      6.53     167.4       0.0                          
+    0:00:51   14855.0      6.53     167.4       0.0                          
+    0:00:51   14844.7      6.53     167.4       0.0                          
+    0:00:52   14841.2      6.53     167.3       0.0                          
+    0:00:52   14843.1      6.53     167.3       0.0                          
+    0:00:52   14843.1      6.53     167.3       0.0                          
+    0:00:52   14843.9      6.53     167.2       0.0                          
+    0:00:52   14843.6      6.53     167.2       0.0                          
+    0:00:52   14843.6      6.53     167.2       0.0                          
+    0:00:52   14843.6      6.53     167.2       0.0                          
+    0:00:52   14843.6      6.53     167.2       0.0                          
+    0:00:52   14843.6      6.53     167.2       0.0                          
+    0:00:53   14844.4      6.53     167.2       0.0 h_out[14]                
+    0:00:53   14843.3      6.53     167.2       0.0 h_out[14]                
+    0:00:53   14846.5      6.53     167.1       0.0 h_out[14]                
+Loading db file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+# compile -map_effort medium -incremental_mapping
+# 7. Write out the synthesized netlist with hierarchy
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+1
+# Report results
+## create folders for reports and netlist
+file mkdir reports/${DESIGN_NAME}
+redirect -file reports/${DESIGN_NAME}/timing.rpt { report_timing -tran -net -input -max_paths 100000 }
+redirect -file reports/${DESIGN_NAME}/area.rpt { report_area }
+redirect -file reports/${DESIGN_NAME}/power.rpt { report_power }
+redirect -file reports/${DESIGN_NAME}/qor.rpt { report_qor }
+# Save synthesized design
+write -format verilog -hierarchy -output netlist/${DESIGN_NAME}.syn.v
+Writing verilog file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/LSTM.v0.3.syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdf netlist/${DESIGN_NAME}.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/netlist/LSTM.v0.3.sdf'. (WT-3)
+1
+# write -format ddc -hierarchy -output netlist/${DESIGN_NAME}.ddc
+# Exit DC
+exit
+Memory usage for this session 154 Mbytes.
+Memory usage for this session including child processes 154 Mbytes.
+CPU usage for this session 59 seconds ( 0.02 hours ).
+Elapsed time for this session 62 seconds ( 0.02 hours ).
+
+Thank you...

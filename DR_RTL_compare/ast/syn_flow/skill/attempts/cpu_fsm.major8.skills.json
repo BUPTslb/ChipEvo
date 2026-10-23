@@ -1,0 +1,79 @@
+{
+  "design": "cpu_fsm",
+  "major_version": "v8",
+  "extracted_at": "2026-06-13T04:37:42",
+  "minors": [
+    {
+      "version": "v8.1",
+      "sec": "pass",
+      "score": 0.02508418717832196,
+      "promoted": false,
+      "relative_advantage": 0.11641256569649489
+    },
+    {
+      "version": "v8.2",
+      "sec": "pass",
+      "score": -0.036796895181596574,
+      "promoted": false,
+      "relative_advantage": -1.0413631329103954
+    },
+    {
+      "version": "v8.3",
+      "sec": "pass",
+      "score": -0.029913012838759755,
+      "promoted": false,
+      "relative_advantage": -0.9125678471031803
+    },
+    {
+      "version": "v8.4",
+      "sec": "pass",
+      "score": 0.023554775157140283,
+      "promoted": false,
+      "relative_advantage": 0.08779774508003595
+    },
+    {
+      "version": "v8.5",
+      "sec": "pass",
+      "score": 0.11238164332283256,
+      "promoted": false,
+      "relative_advantage": 1.749720669237045
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "IR, ALU_OUT, zero_flag, regis, PC",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v8.1",
+      "relative_advantage": 0.11641256569649489
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": null,
+      "skill_source": "proposed",
+      "version": "v8.2",
+      "relative_advantage": -1.0413631329103954
+    },
+    {
+      "pattern": "PC",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v8.3",
+      "relative_advantage": -0.9125678471031803
+    },
+    {
+      "pattern": "alu_result",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v8.4",
+      "relative_advantage": 0.08779774508003595
+    },
+    {
+      "pattern": "branch_cond",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v8.5",
+      "relative_advantage": 1.749720669237045
+    }
+  ]
+}

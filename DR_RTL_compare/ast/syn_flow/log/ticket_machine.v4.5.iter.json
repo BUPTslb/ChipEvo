@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/ticket_machine.v4.5.v:66:15: error: expected a declaration name\n    NextState = (state_is_rdy    ? next_rdy_vector    : 6'b0) |\n              ^",
+  "target_version": "v4.5",
+  "relative_advantage": null
+}

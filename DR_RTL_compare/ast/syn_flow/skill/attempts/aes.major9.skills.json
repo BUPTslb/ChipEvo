@@ -1,0 +1,72 @@
+{
+  "design": "aes",
+  "major_version": "v9",
+  "extracted_at": "2026-06-07T23:54:06",
+  "minors": [
+    {
+      "version": "v9.1",
+      "sec": "pass",
+      "score": -0.31575153221569435,
+      "promoted": false,
+      "relative_advantage": -0.8624033840485608
+    },
+    {
+      "version": "v9.2",
+      "sec": "pass",
+      "score": -0.31575153221569435,
+      "promoted": false,
+      "relative_advantage": -0.8624033840485608
+    },
+    {
+      "version": "v9.3",
+      "sec": "pass",
+      "score": -0.02773595185893659,
+      "promoted": false,
+      "relative_advantage": 1.5783089688592824
+    },
+    {
+      "version": "v9.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v9.5",
+      "sec": "pass",
+      "score": -0.19669642951968908,
+      "promoted": false,
+      "relative_advantage": 0.14649779923783868
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "step_key[i][31:0]",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "version": "v9.1",
+      "relative_advantage": -0.8624033840485608
+    },
+    {
+      "pattern": "gf16_mul",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "version": "v9.2",
+      "relative_advantage": -0.8624033840485608
+    },
+    {
+      "pattern": "step_key",
+      "strategy": "tree_balancing",
+      "skill_source": "proposed",
+      "version": "v9.3",
+      "relative_advantage": 1.5783089688592824
+    },
+    {
+      "pattern": "step_key",
+      "strategy": "logic_tree_balance_gf",
+      "skill_source": "proposed",
+      "version": "v9.5",
+      "relative_advantage": 0.14649779923783868
+    }
+  ]
+}

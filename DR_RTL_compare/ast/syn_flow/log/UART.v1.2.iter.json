@@ -1,0 +1,5 @@
+{
+  "error": "LLM HTTP 429: {\n    \"error\": {\n        \"code\": \"429\",\n        \"message\": \"Too many requests\",\n        \"type\": \"limitation\"\n    }\n}\n",
+  "target_version": "v1.2",
+  "relative_advantage": null
+}

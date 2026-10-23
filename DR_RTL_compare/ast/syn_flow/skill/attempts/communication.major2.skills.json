@@ -1,0 +1,79 @@
+{
+  "design": "communication",
+  "major_version": "v2",
+  "extracted_at": "2026-06-08T02:54:06",
+  "minors": [
+    {
+      "version": "v2.1",
+      "sec": "pass",
+      "score": -0.19553190774932666,
+      "promoted": false,
+      "relative_advantage": -0.32631449948690716
+    },
+    {
+      "version": "v2.2",
+      "sec": "pass",
+      "score": -0.1713497019359485,
+      "promoted": false,
+      "relative_advantage": -0.011713167139487236
+    },
+    {
+      "version": "v2.3",
+      "sec": "pass",
+      "score": -0.23093445892527245,
+      "promoted": false,
+      "relative_advantage": -0.7868882723843588
+    },
+    {
+      "version": "v2.4",
+      "sec": "pass",
+      "score": -0.23093445892527245,
+      "promoted": false,
+      "relative_advantage": -0.7868882723843588
+    },
+    {
+      "version": "v2.5",
+      "sec": "pass",
+      "score": -0.02349624948468528,
+      "promoted": false,
+      "relative_advantage": 1.9118042113951126
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "data_out",
+      "strategy": "hierarchical_case_decomposition",
+      "skill_source": "proposed",
+      "version": "v2.1",
+      "relative_advantage": -0.32631449948690716
+    },
+    {
+      "pattern": "done_condition",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.2",
+      "relative_advantage": -0.011713167139487236
+    },
+    {
+      "pattern": "bit_count",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.3",
+      "relative_advantage": -0.7868882723843588
+    },
+    {
+      "pattern": "uut_rx_block/data_out",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.4",
+      "relative_advantage": -0.7868882723843588
+    },
+    {
+      "pattern": "data_out",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v2.5",
+      "relative_advantage": 1.9118042113951126
+    }
+  ]
+}

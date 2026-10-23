@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/aes.v6.1.sv:94:13: error: expected statement\n            wire [31:0] w3 = expanded_key_ff[NBW_OUT-(4*i+3)*NBW_WORD-1-:NBW_WORD] ^ RconXor;\n            ^~~~\nsyn_flow/rtl/aes.v6.1.sv:94:25: error: use of undeclared identifier 'w3'\n            wire [31:0] w3 = expanded_key_ff[NBW_OUT-(4*i+3)*NBW_WORD-1-:NBW_WORD] ^ RconXor;\n                        ^~\nsyn_flow/rtl/aes.v6.1.sv:95:13: error: expected statement\n            wire [31:0] w2 = expanded_key_ff[NBW_OUT-(4*i+2)*NBW_WORD-1-:NBW_WO",
+  "target_version": "v6.1",
+  "relative_advantage": null
+}

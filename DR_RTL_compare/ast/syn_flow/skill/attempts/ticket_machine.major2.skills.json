@@ -1,0 +1,79 @@
+{
+  "design": "ticket_machine",
+  "major_version": "v2",
+  "extracted_at": "2026-06-14T11:25:17",
+  "minors": [
+    {
+      "version": "v2.1",
+      "sec": "pass",
+      "score": 0.05759116409537171,
+      "promoted": false,
+      "relative_advantage": -0.9999775123455924
+    },
+    {
+      "version": "v2.2",
+      "sec": "pass",
+      "score": 0.5428961419329847,
+      "promoted": false,
+      "relative_advantage": 0.990493335721278
+    },
+    {
+      "version": "v2.3",
+      "sec": "pass",
+      "score": 0.05759116409537171,
+      "promoted": false,
+      "relative_advantage": -0.9999775123455924
+    },
+    {
+      "version": "v2.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v2.5",
+      "sec": "pass",
+      "score": 0.547520895046994,
+      "promoted": false,
+      "relative_advantage": 1.0094616889699068
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "State",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.1",
+      "relative_advantage": -0.9999775123455924
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "late_mux_select",
+      "skill_source": "proposed",
+      "version": "v2.2",
+      "relative_advantage": 0.990493335721278
+    },
+    {
+      "pattern": "State",
+      "strategy": "mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v2.3",
+      "relative_advantage": -0.9999775123455924
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.4",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "NextState",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v2.5",
+      "relative_advantage": 1.0094616889699068
+    }
+  ]
+}

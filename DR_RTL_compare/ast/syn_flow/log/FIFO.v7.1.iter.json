@@ -1,0 +1,225 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "FIFO",
+  "base_version": "v7",
+  "target_version": "v7.1",
+  "diversity_strategy": {
+    "subtree_rank_offset": 0,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 1
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 0
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.64,
+  "tns_before": -2065.62,
+  "area_baseline": 36060.82277,
+  "critical_subtrees": [
+    {
+      "id": "st_0000",
+      "score": 0.4488,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.64,
+      "path_coverage": 0.5,
+      "fanout_proxy": 4,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/wbin"
+      },
+      "read_set": [
+        "mem_uut/FIFO",
+        "write_uut/full",
+        "write_uut/wbin",
+        "write_uut/wrptr"
+      ],
+      "write_set": [
+        "mem_uut/FIFO",
+        "write_uut/full",
+        "write_uut/wbin",
+        "write_uut/wrptr"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "mem_uut/FIFO",
+        "write_uut/full",
+        "write_uut/wbin",
+        "write_uut/wrptr"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.278,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.51,
+      "path_coverage": 0.125,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/wren"
+      },
+      "read_set": [
+        "mem_uut/FIFO",
+        "write_uut/wren"
+      ],
+      "write_set": [
+        "mem_uut/FIFO",
+        "write_uut/wren"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "mem_uut/FIFO",
+        "write_uut/wren"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0002",
+      "score": 0.1632,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.21,
+      "path_coverage": 0.125,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/full"
+      },
+      "read_set": [
+        "write_uut/full",
+        "write_uut/wren"
+      ],
+      "write_set": [
+        "write_uut/full",
+        "write_uut/wren"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "write_uut/full",
+        "write_uut/wren"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0003",
+      "score": 0.1135,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.08,
+      "path_coverage": 0.125,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "write_uut/wrptr"
+      },
+      "read_set": [
+        "w2r_uut/w0",
+        "write_uut/wrptr"
+      ],
+      "write_set": [
+        "w2r_uut/w0",
+        "write_uut/wrptr"
+      ],
+      "semantic_tag": "address_generation",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "w2r_uut/w0",
+        "write_uut/wrptr"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0004",
+      "score": 0.0982,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.04,
+      "path_coverage": 0.125,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "w2r_uut/w0"
+      },
+      "read_set": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "write_set": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "w2r_uut/sync_wrptr",
+        "w2r_uut/w0"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/FIFO.v7.1.json",
+  "rewrite": {
+    "subtree_ids": [
+      "st_0000"
+    ],
+    "refined_level": 6,
+    "target_signal": "wbincmp",
+    "pattern_id": "condition_precompute",
+    "lines_touched": 3,
+    "span_refined": {
+      "start_line_comment": "WFSM wbincmp assignment (single assignment slice)",
+      "description": "Fixed wbincmp to use wbinnext[addrbits-1:0] instead of wbin[addrbits-1:0] (bug: full detection must check NEXT write position). Replaced depth-width '>=' comparator with direct bit-indexing: wbinnext[addrbits-1] | (&wbinnext[addrbits-2:0]), reducing gate depth from O(N) ripple comparator to O(1) OR + AND-reduction. Same fix applied to RFSM rbincmp for consistency."
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "st_0000",
+      "pattern": "wbincmp",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.56,
+    "tns_after": -1805.97,
+    "area": 36199.408764
+  },
+  "scoring": {
+    "wns_norm": -0.03703703703703707,
+    "tns_norm": 0.09796213975325903,
+    "area_norm": 0.0038431179145278537,
+    "area_penalty": 0.0,
+    "score": 0.0163446980823013
+  },
+  "relative_advantage": 0.3484773225939398
+}

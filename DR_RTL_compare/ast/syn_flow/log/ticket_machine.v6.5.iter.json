@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/ticket_machine.v6.5.v:63:9: error: expected statement\n        wire [5:0] next_rdy = RDY;  // Default value\n        ^~~~\nsyn_flow/rtl/ticket_machine.v6.5.v:63:20: error: use of undeclared identifier 'next_rdy'\n        wire [5:0] next_rdy = RDY;  // Default value\n                   ^~~~~~~~\nsyn_flow/rtl/ticket_machine.v6.5.v:64:9: error: expected statement\n        wire [5:0] next_from_rdy_ten = BILL10;\n        ^~~~\nsyn_flow/rtl/ticket_machine.v6.5.v:64:20: error: use of undeclared ide",
+  "target_version": "v6.5",
+  "relative_advantage": null
+}

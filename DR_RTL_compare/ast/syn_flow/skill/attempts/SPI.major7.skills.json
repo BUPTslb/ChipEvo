@@ -1,0 +1,79 @@
+{
+  "design": "SPI",
+  "major_version": "v7",
+  "extracted_at": "2026-06-14T09:49:43",
+  "minors": [
+    {
+      "version": "v7.1",
+      "sec": "pass",
+      "score": -0.08072615396337168,
+      "promoted": false,
+      "relative_advantage": 1.2617826627687838
+    },
+    {
+      "version": "v7.2",
+      "sec": "pass",
+      "score": -0.2330765824250423,
+      "promoted": false,
+      "relative_advantage": -0.5191311299864083
+    },
+    {
+      "version": "v7.3",
+      "sec": "pass",
+      "score": -0.2178068801812901,
+      "promoted": false,
+      "relative_advantage": -0.3406345966208663
+    },
+    {
+      "version": "v7.4",
+      "sec": "pass",
+      "score": -0.10211549330343117,
+      "promoted": false,
+      "relative_advantage": 1.0117500909324875
+    },
+    {
+      "version": "v7.5",
+      "sec": "pass",
+      "score": -0.3096092943373184,
+      "promoted": false,
+      "relative_advantage": -1.4137670270939957
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "current_state+sck+data_save",
+      "strategy": "condition_precompute_and_mux_tree_restructure",
+      "skill_source": "proposed",
+      "version": "v7.1",
+      "relative_advantage": 1.2617826627687838
+    },
+    {
+      "pattern": "data_save",
+      "strategy": "common_subexpression_elimination",
+      "skill_source": "proposed",
+      "version": "v7.2",
+      "relative_advantage": -0.5191311299864083
+    },
+    {
+      "pattern": "ast_subtree",
+      "strategy": "unknown",
+      "skill_source": "proposed",
+      "version": "v7.3",
+      "relative_advantage": -0.3406345966208663
+    },
+    {
+      "pattern": "data_save, next_state, miso, data_out, command_save, address_save",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.4",
+      "relative_advantage": 1.0117500909324875
+    },
+    {
+      "pattern": "data_save, data_in, cs, mosi, sck",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v7.5",
+      "relative_advantage": -1.4137670270939957
+    }
+  ]
+}

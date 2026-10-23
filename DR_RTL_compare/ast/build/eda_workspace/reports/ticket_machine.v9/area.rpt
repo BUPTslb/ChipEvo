@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ticket_machine
+Version: T-2022.03-SP2
+Date   : Sun Jun 14 12:58:29 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                            8
+Number of nets:                            61
+Number of cells:                           51
+Number of combinational cells:             45
+Number of sequential cells:                 6
+Number of macros/black boxes:               0
+Number of buf/inv:                         13
+Number of references:                      16
+
+Combinational area:                 46.018000
+Buf/Inv area:                        8.778000
+Noncombinational area:              27.131999
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    73.149999
+Total area:                 undefined
+1

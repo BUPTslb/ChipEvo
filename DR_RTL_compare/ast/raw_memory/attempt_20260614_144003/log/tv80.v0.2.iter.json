@@ -1,0 +1,388 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "tv80",
+  "base_version": "v0",
+  "target_version": "v0.2",
+  "diversity_strategy": {
+    "subtree_rank_offset": 2,
+    "pattern_focus": "sequential",
+    "coverage_first": false,
+    "minor_index": 2
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 2
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -1.31,
+  "tns_before": -381.2,
+  "area_baseline": 6044.317947,
+  "critical_subtrees": [
+    {
+      "id": "st_0004",
+      "score": 0.5249,
+      "level": 2,
+      "kind": "process_container",
+      "min_slack": -0.91,
+      "path_coverage": 0.0769,
+      "fanout_proxy": 7,
+      "span": {
+        "ast_type": "ProceduralBlock",
+        "block_id": "blk_04554",
+        "start_line": 4554,
+        "end_line": 4616,
+        "procedure_kind": "Always"
+      },
+      "read_set": [
+        "di",
+        "i_tv80_core/IR",
+        "i_tv80_core/tstate",
+        "iorq_n",
+        "mreq_n",
+        "rd_n",
+        "wr_n"
+      ],
+      "write_set": [
+        "di",
+        "i_tv80_core/IR",
+        "i_tv80_core/tstate",
+        "iorq_n",
+        "mreq_n",
+        "rd_n",
+        "wr_n"
+      ],
+      "semantic_tag": "sequential_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "di",
+        "i_tv80_core/IR",
+        "i_tv80_core/tstate",
+        "iorq_n",
+        "mreq_n",
+        "rd_n",
+        "wr_n"
+      ],
+      "pattern_candidates": [
+        "condition_precompute",
+        "register_duplication"
+      ],
+      "parent_id": null
+    },
+    {
+      "id": "st_0005",
+      "score": 0.503,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.91,
+      "path_coverage": 0.1077,
+      "fanout_proxy": 8,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/BusAck"
+      },
+      "read_set": [
+        "i_tv80_core/Alternate",
+        "i_tv80_core/Ap",
+        "i_tv80_core/BusAck",
+        "i_tv80_core/Fp",
+        "i_tv80_core/IR",
+        "i_tv80_core/ISet",
+        "i_tv80_core/XY_Ind",
+        "i_tv80_core/XY_State"
+      ],
+      "write_set": [
+        "i_tv80_core/Alternate",
+        "i_tv80_core/Ap",
+        "i_tv80_core/BusAck",
+        "i_tv80_core/Fp",
+        "i_tv80_core/IR",
+        "i_tv80_core/ISet",
+        "i_tv80_core/XY_Ind",
+        "i_tv80_core/XY_State"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 5,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/Alternate",
+        "i_tv80_core/Ap",
+        "i_tv80_core/BusAck",
+        "i_tv80_core/Fp",
+        "i_tv80_core/IR",
+        "i_tv80_core/ISet",
+        "i_tv80_core/XY_Ind",
+        "i_tv80_core/XY_State"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0002",
+      "score": 0.4541,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -1.04,
+      "path_coverage": 0.0308,
+      "fanout_proxy": 3,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/BusA"
+      },
+      "read_set": [
+        "i_tv80_core/BusA",
+        "i_tv80_core/F",
+        "i_tv80_core/d_o"
+      ],
+      "write_set": [
+        "i_tv80_core/BusA",
+        "i_tv80_core/F",
+        "i_tv80_core/d_o"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/BusA",
+        "i_tv80_core/F",
+        "i_tv80_core/d_o"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0001",
+      "score": 0.4413,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -1.1,
+      "path_coverage": 0.0308,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/F"
+      },
+      "read_set": [
+        "i_tv80_core/F",
+        "i_tv80_core/d_o"
+      ],
+      "write_set": [
+        "i_tv80_core/F",
+        "i_tv80_core/d_o"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/F",
+        "i_tv80_core/d_o"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0006",
+      "score": 0.3992,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.9,
+      "path_coverage": 0.0154,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/ALU_Op_r"
+      },
+      "read_set": [
+        "i_tv80_core/ALU_Op_r",
+        "i_tv80_core/d_o"
+      ],
+      "write_set": [
+        "i_tv80_core/ALU_Op_r",
+        "i_tv80_core/d_o"
+      ],
+      "semantic_tag": "datapath_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/ALU_Op_r",
+        "i_tv80_core/d_o"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0007",
+      "score": 0.2003,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.38,
+      "path_coverage": 0.0154,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/mcycle"
+      },
+      "read_set": [
+        "i_tv80_core/mcycle",
+        "i_tv80_core/rfsh_n"
+      ],
+      "write_set": [
+        "i_tv80_core/mcycle",
+        "i_tv80_core/rfsh_n"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/mcycle",
+        "i_tv80_core/rfsh_n"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0008",
+      "score": 0.1276,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.19,
+      "path_coverage": 0.0154,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/NMICycle"
+      },
+      "read_set": [
+        "i_tv80_core/NMICycle",
+        "i_tv80_core/NMI_s"
+      ],
+      "write_set": [
+        "i_tv80_core/NMICycle",
+        "i_tv80_core/NMI_s"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/NMICycle",
+        "i_tv80_core/NMI_s"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0010",
+      "score": 0.0817,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.07,
+      "path_coverage": 0.0154,
+      "fanout_proxy": 2,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/Auto_Wait_t1"
+      },
+      "read_set": [
+        "i_tv80_core/Auto_Wait_t1",
+        "i_tv80_core/Auto_Wait_t2"
+      ],
+      "write_set": [
+        "i_tv80_core/Auto_Wait_t1",
+        "i_tv80_core/Auto_Wait_t2"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 4,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/Auto_Wait_t1",
+        "i_tv80_core/Auto_Wait_t2"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0009",
+      "score": 0.0689,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.07,
+      "path_coverage": 0.0154,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/BusReq_s"
+      },
+      "read_set": [
+        "i_tv80_core/BusReq_s"
+      ],
+      "write_set": [
+        "i_tv80_core/BusReq_s"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/BusReq_s"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    },
+    {
+      "id": "st_0011",
+      "score": 0.0651,
+      "level": 2,
+      "kind": "signal_cluster",
+      "min_slack": -0.06,
+      "path_coverage": 0.0154,
+      "fanout_proxy": 1,
+      "span": {
+        "ast_type": "signal_cluster",
+        "signal": "i_tv80_core/Oldnmi_n"
+      },
+      "read_set": [
+        "i_tv80_core/Oldnmi_n"
+      ],
+      "write_set": [
+        "i_tv80_core/Oldnmi_n"
+      ],
+      "semantic_tag": "combinational_update",
+      "risk_level": 3,
+      "mutable": false,
+      "mutation_guidance": "Container only (L2). Decompose span into L5 assignment-slices (one target register/output + guards) before applying rtl-opt transforms.",
+      "signals": [
+        "i_tv80_core/Oldnmi_n"
+      ],
+      "pattern_candidates": [],
+      "parent_id": null
+    }
+  ],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/tv80.v0.2.json",
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": null,
+    "tns_after": null,
+    "area": null
+  },
+  "scoring": {
+    "wns_norm": null,
+    "tns_norm": null,
+    "area_norm": null,
+    "area_penalty": 0.0,
+    "score": null
+  },
+  "relative_advantage": null
+}

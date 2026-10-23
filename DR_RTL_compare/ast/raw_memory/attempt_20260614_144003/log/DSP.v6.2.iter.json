@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/DSP.v6.2.v:84:41: error: cannot select range of [48:24] from 'logic[47:0]' [-Wrange-oob]\n    wire [24:0] upper_add_c0 = {1'b0, X[48:24]} + {1'b0, Z[48:24]};\n                                        ^~~~~\nsyn_flow/rtl/DSP.v6.2.v:84:60: error: cannot select range of [48:24] from 'logic[47:0]' [-Wrange-oob]\n    wire [24:0] upper_add_c0 = {1'b0, X[48:24]} + {1'b0, Z[48:24]};\n                                                           ^~~~~\nsyn_flow/rtl/DSP.v6.2.v:85:41: error: cannot sele",
+  "target_version": "v6.2",
+  "relative_advantage": null
+}

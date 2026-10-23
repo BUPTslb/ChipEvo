@@ -1,0 +1,68 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "cpu_fsm",
+  "base_version": "v0",
+  "target_version": "v0.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.82,
+  "tns_before": -429.73,
+  "area_baseline": 32267.661379,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/cpu_fsm.v0.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "alu_control_block",
+      "main_fsm_exec_branch",
+      "next_state_decode"
+    ],
+    "refined_level": 5,
+    "target_signal": "opcode (pre-decode) / reg_write, alu_src_imm, alu_op, zero_en, branch_en, alu_result (L5 slices)",
+    "pattern_id": "one_hot_pre_decode",
+    "lines_touched": 55,
+    "span_refined": {
+      "start_line": 155,
+      "end_line": 243
+    },
+    "description": "Extracted one-hot opcode pre-decode wires (op_is_beq through op_is_halt) from 4-bit opcode, shared across ALU control block, main FSM EXEC branch, and next-state DECODE. Replaced 10-entry case statement in ALU control with direct AND-OR boolean equations for each control signal L5 slice. Simplified ALU result to direct mux on alu_op[1]. Added derived shared signals op_src_imm, op_uses_sub, op_writes_rf.",
+    "strategy": "One-hot pre-decode (#1) + direct AND-OR equations (#17)",
+    "expected_improvement": "WNS +5-15%, TNS +5-20% (92% historical success rate for cpu_fsm)"
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "alu_control_block",
+      "pattern": "opcode (pre-decode) / reg_write, alu_src_imm, alu_op, zero_en, branch_en, alu_result (L5 slices)",
+      "strategy": "one_hot_pre_decode",
+      "skill_source": "proposed",
+      "pattern_id": "one_hot_pre_decode"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.78,
+    "tns_after": -431.25,
+    "area": 32147.695383
+  },
+  "scoring": {
+    "wns_norm": 0.04878048780487796,
+    "tns_norm": -0.0035371046936448045,
+    "area_norm": -0.00371783980843673,
+    "area_penalty": 0.0,
+    "score": 0.02259458128839779
+  },
+  "relative_advantage": -1.0
+}

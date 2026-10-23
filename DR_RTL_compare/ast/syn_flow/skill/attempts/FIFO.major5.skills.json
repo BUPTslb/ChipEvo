@@ -1,0 +1,65 @@
+{
+  "design": "FIFO",
+  "major_version": "v5",
+  "extracted_at": "2026-06-13T23:24:12",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.3",
+      "sec": "pass",
+      "score": -0.0697293001042374,
+      "promoted": false,
+      "relative_advantage": -0.5273184051691384
+    },
+    {
+      "version": "v5.4",
+      "sec": "pass",
+      "score": -0.10322336647762251,
+      "promoted": false,
+      "relative_advantage": -0.8727612630342999
+    },
+    {
+      "version": "v5.5",
+      "sec": "pass",
+      "score": 0.11715080908787187,
+      "promoted": false,
+      "relative_advantage": 1.4000796682034384
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "full",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.3",
+      "relative_advantage": -0.5273184051691384
+    },
+    {
+      "pattern": "w0",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.4",
+      "relative_advantage": -0.8727612630342999
+    },
+    {
+      "pattern": "dataOut",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.5",
+      "relative_advantage": 1.4000796682034384
+    }
+  ]
+}

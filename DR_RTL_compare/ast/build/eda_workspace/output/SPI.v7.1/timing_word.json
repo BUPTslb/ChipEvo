@@ -1,0 +1,14 @@
+{
+    "uut_master/current_state -> uut_master/data_save": -0.28,
+    "uut_master/current_state -> uut_slave/data_count": -0.28,
+    "uut_master/current_state -> uut_master/data_count": -0.28,
+    "uut_master/current_state -> uut_master/data_in": -0.28,
+    "uut_master/clock_count -> uut_master/data_count": -0.28,
+    "uut_master/clock_count -> uut_master/data_save": -0.28,
+    "uut_slave/current_state -> uut_slave/data_count": -0.27,
+    "uut_master/current_state -> uut_master/data_end": -0.27,
+    "uut_master/current_state -> uut_slave/current_state": -0.27,
+    "uut_master/current_state -> uut_master/clock_count": -0.26,
+    "uut_master/current_state -> uut_master/current_state": -0.23,
+    "uut_master/current_state -> uut_slave/data_end": -0.23
+}

@@ -1,0 +1,72 @@
+{
+  "design": "DSP",
+  "major_version": "v9",
+  "extracted_at": "2026-06-13T19:27:00",
+  "minors": [
+    {
+      "version": "v9.1",
+      "sec": "pass",
+      "score": -0.0752853015569834,
+      "promoted": false,
+      "relative_advantage": -0.9430913851765809
+    },
+    {
+      "version": "v9.2",
+      "sec": "pass",
+      "score": -0.06489230132341915,
+      "promoted": false,
+      "relative_advantage": 0.9673619248214894
+    },
+    {
+      "version": "v9.3",
+      "sec": "pass",
+      "score": -0.06454841044577597,
+      "promoted": false,
+      "relative_advantage": 1.0305763432480193
+    },
+    {
+      "version": "v9.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v9.5",
+      "sec": "pass",
+      "score": -0.07589325931642701,
+      "promoted": false,
+      "relative_advantage": -1.0548468828929254
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "pRegIn",
+      "strategy": "carry_select_style_split",
+      "skill_source": "proposed",
+      "version": "v9.1",
+      "relative_advantage": -0.9430913851765809
+    },
+    {
+      "pattern": "lower_sub_result",
+      "strategy": "carry_select_style_subtraction",
+      "skill_source": "proposed",
+      "version": "v9.2",
+      "relative_advantage": 0.9673619248214894
+    },
+    {
+      "pattern": "lower_sub_result",
+      "strategy": "carry_select_style_subtraction",
+      "skill_source": "proposed",
+      "version": "v9.3",
+      "relative_advantage": 1.0305763432480193
+    },
+    {
+      "pattern": "upper_result_temp",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "version": "v9.5",
+      "relative_advantage": -1.0548468828929254
+    }
+  ]
+}

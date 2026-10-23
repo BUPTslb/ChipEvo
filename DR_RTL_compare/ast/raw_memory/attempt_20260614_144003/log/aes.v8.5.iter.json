@@ -1,0 +1,72 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "aes",
+  "base_version": "v8",
+  "target_version": "v8.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.93,
+  "tns_before": -1159.03,
+  "area_baseline": 33755.134217,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/aes.v8.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "generate_block_0",
+      "generate_block_1",
+      "generate_block_2",
+      "generate_block_3",
+      "generate_block_4",
+      "generate_block_5",
+      "generate_block_6",
+      "generate_block_7",
+      "generate_block_8",
+      "generate_block_9"
+    ],
+    "refined_level": 5,
+    "target_signal": "step_key",
+    "pattern_id": "wire_decomposition",
+    "lines_touched": 160,
+    "span_refined": {
+      "start_line": 100,
+      "end_line": 200
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "generate_block_0",
+      "pattern": "step_key",
+      "strategy": "wire_decomposition",
+      "skill_source": "proposed",
+      "pattern_id": "wire_decomposition"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.93,
+    "tns_after": -1159.03,
+    "area": 20840.833992
+  },
+  "scoring": {
+    "wns_norm": -0.32857142857142874,
+    "tns_norm": -0.268793309176893,
+    "area_norm": -0.38258773145378305,
+    "area_penalty": 0.0,
+    "score": -0.31575153221569435
+  },
+  "relative_advantage": -1.153624603263013
+}

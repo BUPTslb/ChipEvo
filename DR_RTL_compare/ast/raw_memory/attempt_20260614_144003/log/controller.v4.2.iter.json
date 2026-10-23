@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/controller.v4.2.v:287:45: error: use of undeclared identifier 'next_state'\n                        state_next_state <= next_state;\n                                            ^~~~~~~~~~\nsyn_flow/rtl/controller.v4.2.v:288:41: error: use of undeclared identifier 'next_state'\n                        state_output <= next_state;\n                                        ^~~~~~~~~~\nsyn_flow/rtl/controller.v4.2.v:321:17: error: use of undeclared identifier 'next_state'\n                next_s",
+  "target_version": "v4.2",
+  "relative_advantage": null
+}

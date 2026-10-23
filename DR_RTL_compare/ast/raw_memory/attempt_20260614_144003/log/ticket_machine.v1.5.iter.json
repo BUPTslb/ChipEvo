@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/ticket_machine.v1.5.v:60:9: error: expected statement\n        wire [5:0] rdy_next     = ten_active ? BILL10 : (twenty_active ? BILL20 : RDY);\n        ^~~~\nsyn_flow/rtl/ticket_machine.v1.5.v:60:20: error: use of undeclared identifier 'rdy_next'\n        wire [5:0] rdy_next     = ten_active ? BILL10 : (twenty_active ? BILL20 : RDY);\n                   ^~~~~~~~\nsyn_flow/rtl/ticket_machine.v1.5.v:61:9: error: expected statement\n        wire [5:0] bill10_next  = ten_active ? BILL20 : (twe",
+  "target_version": "v1.5",
+  "relative_advantage": null
+}

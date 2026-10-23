@@ -1,0 +1,58 @@
+{
+  "design": "datapath",
+  "major_version": "v5",
+  "extracted_at": "2026-06-13T08:48:42",
+  "minors": [
+    {
+      "version": "v5.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.2",
+      "sec": "pass",
+      "score": -0.026159548772302654,
+      "promoted": false,
+      "relative_advantage": -1.0
+    },
+    {
+      "version": "v5.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false,
+      "relative_advantage": null
+    },
+    {
+      "version": "v5.5",
+      "sec": "pass",
+      "score": -0.008979641985876616,
+      "promoted": false,
+      "relative_advantage": 1.0
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "iv",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v5.2",
+      "relative_advantage": -1.0
+    },
+    {
+      "pattern": "bypass_rk_n_pipe,bypass_key_en_n_pipe,col_in",
+      "strategy": "register_duplication,tree_balancing",
+      "skill_source": "proposed",
+      "version": "v5.5",
+      "relative_advantage": 1.0
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "LSTM",
+  "base_version": "v0",
+  "target_version": "v0.4",
+  "diversity_strategy": {
+    "subtree_rank_offset": 4,
+    "pattern_focus": "combinational",
+    "coverage_first": false,
+    "minor_index": 4
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 4
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -6.51,
+  "tns_before": -166.76,
+  "area_baseline": 14828.435987,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/LSTM.v0.4.json",
+  "rewrite": {
+    "subtree_ids": [
+      "lstm_cell_sigmoid",
+      "lstm_cell_tanh",
+      "lstm_cell_ConcatMultAdd"
+    ],
+    "refined_level": 5,
+    "target_signal": [
+      "Y",
+      "Y",
+      "out"
+    ],
+    "pattern_id": [
+      "condition_precompute",
+      "mux_tree_restructure",
+      "common_subexpression_elimination"
+    ],
+    "lines_touched": 8,
+    "span_refined": [
+      {
+        "start_line": 31,
+        "end_line": 35,
+        "module": "sigmoid"
+      },
+      {
+        "start_line": 24,
+        "end_line": 26,
+        "module": "tanh"
+      },
+      {
+        "start_line": 24,
+        "end_line": 26,
+        "module": "ConcatMultAdd"
+      }
+    ],
+    "transform_details": {
+      "sigmoid": "Precomputed condition wires (is_negative, below_neg_thresh, above_pos_thresh) and restructured mux tree to avoid repeated comparisons",
+      "tanh": "Precomputed condition wires and simplified mux structure to reduce logic depth",
+      "ConcatMultAdd": "Applied CSE to share shift operation after summing products, reducing arithmetic depth"
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "lstm_cell_sigmoid",
+      "pattern": "Y+Y+out",
+      "strategy": [
+        "condition_precompute",
+        "mux_tree_restructure",
+        "common_subexpression_elimination"
+      ],
+      "skill_source": "proposed",
+      "pattern_id": [
+        "condition_precompute",
+        "mux_tree_restructure",
+        "common_subexpression_elimination"
+      ]
+    }
+  ],
+  "evaluation": {
+    "sec_status": "fail",
+    "synth_status": "skip",
+    "wns_after": -5.34,
+    "tns_after": -132.93,
+    "area": 13510.139995
+  },
+  "scoring": {
+    "wns_norm": 0.17972350230414746,
+    "tns_norm": 0.20286639481890134,
+    "area_norm": -0.08890323923276489,
+    "area_penalty": 0.0,
+    "score": 0.14752950345377447
+  },
+  "relative_advantage": null
+}

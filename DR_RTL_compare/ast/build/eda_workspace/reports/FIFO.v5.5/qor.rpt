@@ -1,0 +1,84 @@
+Warning: Design 'fifo' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : qor
+Design : fifo
+Version: T-2022.03-SP2
+Date   : Sat Jun 13 23:23:00 2026
+****************************************
+
+
+  Timing Path Group 'clk_in'
+  -----------------------------------
+  Levels of Logic:              10.00
+  Critical Path Length:          0.69
+  Critical Path Slack:          -0.63
+  Critical Path Clk Period:      0.10
+  Total Negative Slack:        -13.25
+  No. of Violating Paths:       38.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                314
+  Buf/Inv Cell Count:              59
+  Buf Cell Count:                   6
+  Inv Cell Count:                  53
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       238
+  Sequential Cell Count:           76
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      268.926001
+  Noncombinational Area:   404.320013
+  Buf/Inv Area:             33.782000
+  Total Buffer Area:             5.32
+  Total Inverter Area:          28.46
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               673.246014
+  Design Area:             673.246014
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           424
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: linux2.cse.cuhk.edu.hk
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.32
+  Logic Optimization:                  1.52
+  Mapping Optimization:                1.14
+  -----------------------------------------
+  Overall Compile Time:                3.73
+  Overall Compile Wall Clock Time:     4.04
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.63  TNS: 13.25  Number of Violating Paths: 38
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

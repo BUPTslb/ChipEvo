@@ -1,0 +1,7 @@
+{
+  "design": "aes",
+  "status": "done",
+  "best_version": "v8",
+  "best_score": -0.31575153221569435,
+  "end_reason": "max_major_reached"
+}

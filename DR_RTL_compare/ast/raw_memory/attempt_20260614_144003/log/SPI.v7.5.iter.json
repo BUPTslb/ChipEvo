@@ -1,0 +1,65 @@
+{
+  "analysis_mode": "ast_subtree",
+  "design": "SPI",
+  "base_version": "v7",
+  "target_version": "v7.5",
+  "diversity_strategy": {
+    "subtree_rank_offset": 6,
+    "pattern_focus": "sequential",
+    "coverage_first": true,
+    "minor_index": 5
+  },
+  "granularity_policy": {
+    "default_mutation_levels": [
+      5,
+      6
+    ],
+    "rank_pool_level": 2,
+    "rank_offset": 6
+  },
+  "granularity_skill": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/.claude/skill/rtl-subtree-granularity/skill.md",
+  "wns_before": -0.33,
+  "tns_before": -35.92,
+  "area_baseline": 1748.41798,
+  "critical_subtrees": [],
+  "subtree_file": "/research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/artifacts/subtrees/SPI.v7.5.json",
+  "rewrite": {
+    "subtree_ids": [
+      "spi_master_data_save_update",
+      "spi_master_data_in_update",
+      "spi_master_output_logic"
+    ],
+    "refined_level": 5,
+    "target_signal": "data_save, data_in, cs, mosi, sck",
+    "pattern_id": "mux_tree_restructure_condition_precompute",
+    "lines_touched": 45,
+    "span_refined": {
+      "start_line": 120,
+      "end_line": 180
+    }
+  },
+  "optimization_trajectory": [
+    {
+      "subtree_id": "spi_master_data_save_update",
+      "pattern": "data_save, data_in, cs, mosi, sck",
+      "strategy": "mux_tree_restructure_condition_precompute",
+      "skill_source": "proposed",
+      "pattern_id": "mux_tree_restructure_condition_precompute"
+    }
+  ],
+  "evaluation": {
+    "sec_status": "pass",
+    "synth_status": "pass",
+    "wns_after": -0.35,
+    "tns_after": -38.65,
+    "area": 1670.745986
+  },
+  "scoring": {
+    "wns_norm": -0.34615384615384603,
+    "tns_norm": -0.37105356509400483,
+    "area_norm": -0.04442415651662427,
+    "area_penalty": 0.0,
+    "score": -0.3096092943373184
+  },
+  "relative_advantage": -1.4137670270939957
+}

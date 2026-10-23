@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/aes.v2.1.sv:63:9: error: unknown module 'sbox'\n        sbox uu_sbox0 (\n        ^~~~\nsyn_flow/rtl/aes.v2.1.sv:68:9: error: unknown module 'sbox'\n        sbox uu_sbox1 (\n        ^~~~\nsyn_flow/rtl/aes.v2.1.sv:73:9: error: unknown module 'sbox'\n        sbox uu_sbox2 (\n        ^~~~\nsyn_flow/rtl/aes.v2.1.sv:78:9: error: unknown module 'sbox'\n        sbox uu_sbox3 (\n        ^~~~",
+  "target_version": "v2.1",
+  "relative_advantage": null
+}

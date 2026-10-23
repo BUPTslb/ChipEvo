@@ -1,0 +1,61 @@
+{
+  "design": "i2c",
+  "major_version": "v9",
+  "extracted_at": "2026-06-14T06:08:56",
+  "minors": [
+    {
+      "version": "v9.1",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v9.2",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v9.3",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v9.4",
+      "sec": "fail",
+      "score": null,
+      "promoted": false
+    },
+    {
+      "version": "v9.5",
+      "sec": "pass",
+      "score": -0.008439916521768388,
+      "promoted": false,
+      "relative_advantage": 0.0
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "cr",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v9.1",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "al",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v9.3",
+      "relative_advantage": null
+    },
+    {
+      "pattern": "byte_controller/sr, wb_dat_o, al, rxack, tip, irq_flag",
+      "strategy": "condition_precompute",
+      "skill_source": "proposed",
+      "version": "v9.5",
+      "relative_advantage": 0.0
+    }
+  ]
+}

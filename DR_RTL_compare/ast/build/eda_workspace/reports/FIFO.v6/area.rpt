@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : fifo
+Version: T-2022.03-SP2
+Date   : Sat Jun 13 23:25:25 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/d7/gds/lbshen24/research/ChipEvo/DR_RTL_compare/ast/build/eda_workspace/lib/nangate.db)
+
+Number of ports:                           72
+Number of nets:                         14047
+Number of cells:                        13933
+Number of combinational cells:           9727
+Number of sequential cells:              4204
+Number of macros/black boxes:               0
+Number of buf/inv:                       2206
+Number of references:                      31
+
+Combinational area:              13775.342057
+Buf/Inv area:                     1683.247983
+Noncombinational area:           22399.328711
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 36174.670768
+Total area:                 undefined
+1

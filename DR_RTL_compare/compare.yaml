@@ -1,0 +1,59 @@
+# DR_RTL vs DR_RTL+AST comparison matrix
+experiment_id: rtl-path-vs-ast-v1
+mode: dual       # full20: DR_RTL paper path + DR_RTL_compare AST
+default_suite: full20
+
+tracks:
+  baseline:
+    description: Original DR_RTL (read-only reference, not in default runs)
+    root: ../DR_RTL
+    mimo: MIMO_API_KEY_CN / MIMO_URL_CN
+    disabled: false
+
+  ast:
+    description: AST subtree rank + bounded rewrite (active)
+    root: ast
+    mimo: MIMO_API_KEY_CN / MIMO_URL_CN
+    agents: ast/.claude/agents
+    model: mimo-v2.5-pro
+
+shared:
+  rtl_dataset: ../DR_RTL/rtl_dataset
+  syn_flow_eda: ../DR_RTL/syn_flow_eda
+  scoring: shared/scoring.json
+  design_set: shared/design_set.json
+
+suites:
+  smoke:
+    designs: [cpu_fsm]
+    majors: 2
+    minors_per_major: 2
+
+  pilot:
+    designs: [cpu_fsm, vending_machine]
+    majors: 10
+    minors_per_major: 5
+
+  full:
+    designs: all
+    majors: 10
+    minors_per_major: 5
+
+ast:
+  top_k_subtrees: 10
+  subtree_score_weights:
+    min_slack: 0.45
+    path_coverage: 0.30
+    fanout_proxy: 0.15
+    pattern_amenability: 0.10
+  parser: slang   # ~/tools/slang/slang via ast_ir/slang_driver.py
+  granularity:
+    rank_pool_level: 2          # L2 process containers (slang ProceduralBlock / ContinuousAssign)
+    default_mutation_levels: [5, 6]   # L5 assignment-slice, L6 expression
+    rank_offset_minors: [0, 2, 0, 4, 6]   # maps to minor 1..5 diversity
+    freeze_semantic_tags: [clock_reset, protected_region, memory_interface]
+
+metrics:
+  primary: [best_score, sec_pass_rate, best_wns, best_tns]
+  secondary: [iterations_to_best, lines_changed, analyzer_latency_s]
+  ast_only: [subtree_coverage, pattern_hit_rate]

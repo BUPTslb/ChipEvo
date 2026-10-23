@@ -1,0 +1,5 @@
+{
+  "error": "rtl_syntax: syn_flow/rtl/cpu_fsm.v0.1.v:59:18: error: identifier 'alu_result' used before its declaration\nwire alu_zero = (alu_result == 8'h00);\n                 ^~~~~~~~~~\nsyn_flow/rtl/cpu_fsm.v0.1.v:88:12: note: declared here\nreg  [7:0] alu_result  ;\n           ^",
+  "target_version": "v0.1",
+  "relative_advantage": null
+}
