@@ -1,0 +1,1132 @@
+[
+  {
+    "module": "Mux__da6d3ae684ad7806",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2926,
+    "end_line": 2941,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 366365.79,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterFile__3b3c54e4f90e121d",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1350,
+    "end_line": 1388,
+    "instances": 47,
+    "exclusive_area_all_instances_um2": 139409.802,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterFile__84f0703fd9bfd535",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4245,
+    "end_line": 4283,
+    "instances": 18,
+    "exclusive_area_all_instances_um2": 83914.488,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "CrossbarRTL__daed722bd45da2f6",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 11725,
+    "end_line": 12056,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 30070.768,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "MulRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 7703,
+    "end_line": 7889,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 29365.336,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterFile__97521c3e6de8d08e",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1072,
+    "end_line": 1110,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 26851.902,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterFile__532c9a19654f92d3",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6860,
+    "end_line": 6898,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 23947.448,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "Mux__e3fae52f387252cd",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 587,
+    "end_line": 602,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 23727.998,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterFile__7e065e99bcbcb3c9",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 188,
+    "end_line": 226,
+    "instances": 7,
+    "exclusive_area_all_instances_um2": 21178.388,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterFile__be5b75af204f20bd",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1549,
+    "end_line": 1587,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 18065.124,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RingRouteUnitRTL__811433b6dff0599c",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2714,
+    "end_line": 2788,
+    "instances": 30,
+    "exclusive_area_all_instances_um2": 16143.54,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "FlexibleFuRTL__489b9127525b3431",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 9674,
+    "end_line": 10455,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 15771.672,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterFile__78ad02bf7eb2979b",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6708,
+    "end_line": 6746,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 10376.128,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "CtrlMemDynamicRTL__7531561cc1c156b4",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6899,
+    "end_line": 7325,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 10023.944,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "CrossbarRTL__35a0feee61c1221d",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 10456,
+    "end_line": 10743,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 9255.736,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterFile__da749a1852bb59a5",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 12057,
+    "end_line": 12095,
+    "instances": 16,
+    "exclusive_area_all_instances_um2": 8354.528,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "SelRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 9280,
+    "end_line": 9456,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 6937.28,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterFile__e6e244c14d4afbbe",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6573,
+    "end_line": 6611,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 6837.264,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "AdderRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 7326,
+    "end_line": 7551,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 6592.544,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterFile__419a96305de89f85",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4430,
+    "end_line": 4468,
+    "instances": 8,
+    "exclusive_area_all_instances_um2": 6322.288,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "ShifterRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 8108,
+    "end_line": 8304,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 5727.512,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "GlobalReduceUnitRTL__f4c437a52d97698d",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1224,
+    "end_line": 1349,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 5443.69,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "MemUnitRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 9026,
+    "end_line": 9279,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 4656.064,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterBankRTL__8b95a13a898ab3e7",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 10744,
+    "end_line": 10930,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3943.184,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterBankRTL__bc9cc99cab2bb455",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 10931,
+    "end_line": 11117,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3943.184,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterBankRTL__884a83c2388b61ea",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 11118,
+    "end_line": 11304,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3943.184,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegisterBankRTL__5cd5a8a1bb8b6889",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 11305,
+    "end_line": 11491,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3943.184,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "Mux__e74309b8c051af19",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3570,
+    "end_line": 3585,
+    "instances": 10,
+    "exclusive_area_all_instances_um2": 3880.94,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "GrantRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 8799,
+    "end_line": 9025,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3827.208,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "CompRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 8546,
+    "end_line": 8798,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3558.016,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "LogicRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 7890,
+    "end_line": 8107,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3496.304,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "PhiRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 8305,
+    "end_line": 8545,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 3277.12,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RetRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 9457,
+    "end_line": 9673,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 2901.528,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueCtrlRTL__num_entries_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 123,
+    "end_line": 187,
+    "instances": 70,
+    "exclusive_area_all_instances_um2": 2811.62,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "TileRTL__80552dd1320c93e4",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 12289,
+    "end_line": 13139,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 2669.576,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterFile__d7db49d148735cf9",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5276,
+    "end_line": 5314,
+    "instances": 3,
+    "exclusive_area_all_instances_um2": 2370.858,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "CreditRecvRTL2SendRTL__8f5183a92c9ca658",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3747,
+    "end_line": 3872,
+    "instances": 5,
+    "exclusive_area_all_instances_um2": 1993.67,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "ControllerRTL__ddd56b6da3a23069",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1748,
+    "end_line": 2438,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 1638.826,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Mux__Type_MemAccessPacket_4_3_128__d2e885ad92ecb31c__ninputs_4",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4861,
+    "end_line": 4876,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 1437.996,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegisterClusterRTL__9b64e99d13e3878e",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 11492,
+    "end_line": 11724,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 1414.056,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "BypassQueue1EntryRTL__d3296a4a8c71ad6a",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 17,
+    "end_line": 72,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 1316.168,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "Counter__Type_Bits2__reset_value_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2439,
+    "end_line": 2466,
+    "instances": 40,
+    "exclusive_area_all_instances_um2": 1149.12,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "BypassQueueCtrlRTL__num_entries_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3500,
+    "end_line": 3569,
+    "instances": 21,
+    "exclusive_area_all_instances_um2": 888.174,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "Mux__Type_MemAccessPacket_4_3_128__d2e885ad92ecb31c__ninputs_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4414,
+    "end_line": 4429,
+    "instances": 8,
+    "exclusive_area_all_instances_um2": 827.792,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Mux__Type_MemAccessPacket_3_4_128__d2e885ad92ecb31c__ninputs_3",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5705,
+    "end_line": 5720,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 697.984,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegEnRst__Type_Bits6__reset_value_1",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2789,
+    "end_line": 2812,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 674.31,
+    "protected": true,
+    "fixed_storage": false
+  },
+  {
+    "module": "LinkOrRTL__a54ca58e7852ace8",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 12256,
+    "end_line": 12288,
+    "instances": 16,
+    "exclusive_area_all_instances_um2": 578.816,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "ConstQueueDynamicRTL__8f4d11f2dd80f063",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6612,
+    "end_line": 6707,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 472.416,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RoundRobinArbiterEn__nreqs_6",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2813,
+    "end_line": 2901,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 422.94,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Mux__e251eb6629f2a636",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1,
+    "end_line": 16,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 394.478,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "DataMemControllerRTL__855c64d5103d1825",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6102,
+    "end_line": 6572,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 341.012,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "Mux__Type_MemAccessPacket_3_4_128__d2e885ad92ecb31c__ninputs_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5260,
+    "end_line": 5275,
+    "instances": 3,
+    "exclusive_area_all_instances_um2": 310.422,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "DataMemWrapperRTL__d40387976026818a",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4284,
+    "end_line": 4413,
+    "instances": 2,
+    "exclusive_area_all_instances_um2": 211.736,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "SwitchUnitRTL__1084276829834de0",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2942,
+    "end_line": 3031,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 191.52,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegEnRst__Type_Bits4__reset_value_1",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4720,
+    "end_line": 4743,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 178.752,
+    "protected": true,
+    "fixed_storage": false
+  },
+  {
+    "module": "NormalQueueCtrlRTL__num_entries_16",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1007,
+    "end_line": 1071,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 122.626,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "OutputUnitCreditRTL__6d31c46182ddb0c6",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2634,
+    "end_line": 2713,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 111.72,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RoundRobinArbiterEn__nreqs_4",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4744,
+    "end_line": 4836,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 97.356,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Encoder__in_nbits_6__out_nbits_3",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2902,
+    "end_line": 2925,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 91.77,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegEnRst__Type_Bits3__reset_value_1",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5568,
+    "end_line": 5591,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 87.248,
+    "protected": true,
+    "fixed_storage": false
+  },
+  {
+    "module": "XbarRouteUnitRTL__00a6195ffedfd51d",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4675,
+    "end_line": 4719,
+    "instances": 8,
+    "exclusive_area_all_instances_um2": 76.608,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RegEnRst__Type_Bits2__reset_value_1",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3383,
+    "end_line": 3406,
+    "instances": 5,
+    "exclusive_area_all_instances_um2": 73.15,
+    "protected": true,
+    "fixed_storage": false
+  },
+  {
+    "module": "InputUnitCreditRTL__cee857d8d31bccfc",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2547,
+    "end_line": 2633,
+    "instances": 15,
+    "exclusive_area_all_instances_um2": 67.83,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "RegEnRst__Type_Bits7__reset_value_1",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 450,
+    "end_line": 473,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 52.136,
+    "protected": true,
+    "fixed_storage": false
+  },
+  {
+    "module": "RoundRobinArbiterEn__nreqs_3",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5592,
+    "end_line": 5680,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 50.008,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "SwitchUnitRTL__dd1d08bfc1bf9063",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4877,
+    "end_line": 4962,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 44.688,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RecvRTL2CreditSendRTL__6d31c46182ddb0c6",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 2467,
+    "end_line": 2546,
+    "instances": 5,
+    "exclusive_area_all_instances_um2": 37.24,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "XbarRouteUnitRTL__3d381188eecf2ad5",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5521,
+    "end_line": 5567,
+    "instances": 3,
+    "exclusive_area_all_instances_um2": 36.708,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RoundRobinArbiterEn__nreqs_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3407,
+    "end_line": 3499,
+    "instances": 5,
+    "exclusive_area_all_instances_um2": 34.58,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RoundRobinArbiterEn__nreqs_7",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 474,
+    "end_line": 562,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 31.92,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "SwitchUnitRTL__1d80e2f7633297e5",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5721,
+    "end_line": 5804,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 23.408,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Encoder__in_nbits_4__out_nbits_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4837,
+    "end_line": 4860,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 19.152,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "XbarRouteUnitRTL__9d3d24c0a1986ad3",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 409,
+    "end_line": 449,
+    "instances": 7,
+    "exclusive_area_all_instances_um2": 18.62,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "NahRTL__21e487e69ebe8a50",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 7552,
+    "end_line": 7702,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 14.896,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "SwitchUnitRTL__6a10258d770d7164",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 603,
+    "end_line": 694,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 14.098,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Encoder__in_nbits_7__out_nbits_3",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 563,
+    "end_line": 586,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 8.512,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "Encoder__in_nbits_3__out_nbits_2",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5681,
+    "end_line": 5704,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 5.32,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "BypassQueueRTL__cf12eb093b04a1b9",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 73,
+    "end_line": 122,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueDpathRTL__7ef8d7c4e0895436",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 227,
+    "end_line": 266,
+    "instances": 7,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueRTL__7ef8d7c4e0895436",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 267,
+    "end_line": 339,
+    "instances": 7,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "InputUnitRTL__b13fbc4a05fc0d93",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 340,
+    "end_line": 386,
+    "instances": 7,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "OutputUnitRTL__64437ef86e4e35ee",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 387,
+    "end_line": 408,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "XbarRTL__6c7ab8185a86fe91",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 695,
+    "end_line": 1006,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "NormalQueueDpathRTL__3237358e22368b3c",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1111,
+    "end_line": 1150,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueRTL__3237358e22368b3c",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1151,
+    "end_line": 1223,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueDpathRTL__81615e1e2a6a0781",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1389,
+    "end_line": 1428,
+    "instances": 37,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueRTL__81615e1e2a6a0781",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1429,
+    "end_line": 1501,
+    "instances": 37,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "ChannelRTL__673a1c2e63951e3b",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1502,
+    "end_line": 1548,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "NormalQueueDpathRTL__e47313c50ea3896f",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1588,
+    "end_line": 1627,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueRTL__e47313c50ea3896f",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1628,
+    "end_line": 1700,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "ChannelRTL__380c4a6127312dbb",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 1701,
+    "end_line": 1747,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RingRouterRTL__c342fe1d66581078",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3032,
+    "end_line": 3382,
+    "instances": 5,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "BypassQueueDpathRTL__81615e1e2a6a0781",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3586,
+    "end_line": 3644,
+    "instances": 10,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "BypassQueueRTL__81615e1e2a6a0781",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3645,
+    "end_line": 3722,
+    "instances": 10,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "Encoder__in_nbits_2__out_nbits_1",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3723,
+    "end_line": 3746,
+    "instances": 5,
+    "exclusive_area_all_instances_um2": 0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "RingNetworkRTL__ea2a16af74aa57fe",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 3873,
+    "end_line": 4222,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "ChannelRTL__9cfa4311ae6b2bdc",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4223,
+    "end_line": 4244,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "BypassQueueDpathRTL__14fd9da3b44ff47c",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4469,
+    "end_line": 4527,
+    "instances": 8,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "BypassQueueRTL__14fd9da3b44ff47c",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4528,
+    "end_line": 4605,
+    "instances": 8,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "InputUnitRTL__038aec93b1308e36",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4606,
+    "end_line": 4652,
+    "instances": 8,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "OutputUnitRTL__2be89df1167853ab",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4653,
+    "end_line": 4674,
+    "instances": 6,
+    "exclusive_area_all_instances_um2": 0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "XbarBypassQueueRTL__0de4e0c11bc743cb",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 4963,
+    "end_line": 5259,
+    "instances": 2,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "BypassQueueDpathRTL__ed203f02fe6e2575",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5315,
+    "end_line": 5373,
+    "instances": 3,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "BypassQueueRTL__ed203f02fe6e2575",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5374,
+    "end_line": 5451,
+    "instances": 3,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "InputUnitRTL__6c9f5552096daf0d",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5452,
+    "end_line": 5498,
+    "instances": 3,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "OutputUnitRTL__bd3139ab3632fd74",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5499,
+    "end_line": 5520,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "XbarBypassQueueRTL__bc2d5635c510e13b",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 5805,
+    "end_line": 6101,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "NormalQueueDpathRTL__64fd0ceeaebb3f45",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6747,
+    "end_line": 6786,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueRTL__64fd0ceeaebb3f45",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 6787,
+    "end_line": 6859,
+    "instances": 4,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueDpathRTL__e10c2d77bcb9538e",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 12096,
+    "end_line": 12135,
+    "instances": 16,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "NormalQueueRTL__e10c2d77bcb9538e",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 12136,
+    "end_line": 12208,
+    "instances": 16,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": true,
+    "fixed_storage": true
+  },
+  {
+    "module": "ChannelRTL__d316842813c529a6",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 12209,
+    "end_line": 12255,
+    "instances": 16,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  },
+  {
+    "module": "CgraRTL__ee448ce8f855514e",
+    "file": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+    "start_line": 13140,
+    "end_line": 13866,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0.0,
+    "protected": false,
+    "fixed_storage": false
+  }
+]

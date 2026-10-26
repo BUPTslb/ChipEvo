@@ -1,0 +1,9 @@
+reference/birrd_2x2_simple_cmd_flow_seq.v
+reference/birrd_2x2_simple_last_cmd_flow_seq.v
+reference/birrd_simple_cmd_flow_seq.v
+reference/feather_controller.v
+reference/feather_pe.v
+reference/feather_top.v
+reference/o_bus_autopick_seq.v
+reference/sram_bank_sp.v
+reference/sram_sp_2d_array.v

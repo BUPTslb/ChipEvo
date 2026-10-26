@@ -1,0 +1,10 @@
+{
+  "executables": {
+    "yosys": "tools/runtime/linux-x86_64/bin/yosys",
+    "abc": "tools/runtime/linux-x86_64/bin/abc",
+    "sta": "tools/runtime/linux-x86_64/bin/sta"
+  },
+  "yosys_version": "0.61+0 77005b69a",
+  "opensta_version": "3.1.0 12683d645c",
+  "abc_source": "bundled matching Yosys ABC build"
+}

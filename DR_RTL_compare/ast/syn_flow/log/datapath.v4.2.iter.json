@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/datapath.v4.2.v:297:12: error: no implicit conversion from 'logic[127:0]' to 'reg[31:0]$[4]'; explicit conversion exists, are you missing a cast?\nassign col = (sel_shift_rows ? val_shift_rows : 128'b0) |\n       ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-  "target_version": "v4.2",
-  "relative_advantage": null
-}

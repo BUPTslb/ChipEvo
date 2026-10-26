@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "/home/shen/Desktop/project/ChipEvo/chips/gemmini/manifest.json": "1f583e706bb224c6abc36a31284e9c39323d0f7b2712a518bb5fc3b2a1ea689e",
+    "/home/shen/Desktop/project/ChipEvo/chips/gemmini/scripts/flow.py": "b1efd37af0eabb0610121b511c322482ea1a4cd3c87a25f07f4966ae58a2f384",
+    "/home/shen/Desktop/project/ChipEvo/chips/gemmini/constraints/benchmark.sdc": "7b0ac445b9561f51d7d7959a7fd94603be854c856bb2d6800bd635ba3496963c",
+    "/home/shen/Desktop/project/ChipEvo/chips/technology/sram/gemmini_wrappers.candidate.v": "220f8f3cdb44ad0a90ac67976cb8ce15e483487b5c67e14a897a087386f5fa5e",
+    "/home/shen/Desktop/project/ChipEvo/chips/technology/sram/configs/sram_1rw_256x32.py": "d881794beb7ffcbc35c931324419991c92a87176ed684d46fe59c80bf5a5c4f0",
+    "/home/shen/Desktop/project/ChipEvo/chips/technology/sram/configs/sram_1r1w_256x32.py": "9f9ab56066b72954faba2c54cc619977dfa085c9d2a1f815e30268467e38e68a",
+    "/home/shen/Desktop/project/ChipEvo/chips/tools/OpenRAM-b2b069ce119d1488cbe6883b2240bceb5c7ce29a/compiler/modules/sram_1bank.py": "d9217dabe0d281be6a2348e4309a56bd91136ae5d1df16c2d28576631beaeb16"
+  },
+  "macro_counts": {
+    "sram_1rw_256x32": 256,
+    "sram_1r1w_256x32": 64
+  }
+}

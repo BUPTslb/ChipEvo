@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/cpu_fsm.v2.2.v:315:9: error: expected statement\n        wire alu_op_is_add = (alu_op == ALU_ADD);\n        ^~~~\nsyn_flow/rtl/cpu_fsm.v2.2.v:315:14: error: use of undeclared identifier 'alu_op_is_add'\n        wire alu_op_is_add = (alu_op == ALU_ADD);\n             ^~~~~~~~~~~~~\nsyn_flow/rtl/cpu_fsm.v2.2.v:316:9: error: expected statement\n        wire alu_op_is_sub = (alu_op == ALU_SUB);\n        ^~~~\nsyn_flow/rtl/cpu_fsm.v2.2.v:316:14: error: use of undeclared identifier 'alu_op_is_sub'",
-  "target_version": "v2.2",
-  "relative_advantage": null
-}

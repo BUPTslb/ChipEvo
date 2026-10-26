@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v3.5.sv:97:13: error: expected statement\n            wire [NBW_WORD-1:0] step_xor0 =\n            ^~~~\nsyn_flow/rtl/aes.v3.5.sv:97:33: error: use of undeclared identifier 'step_xor0'\n            wire [NBW_WORD-1:0] step_xor0 =\n                                ^~~~~~~~~\nsyn_flow/rtl/aes.v3.5.sv:100:35: error: use of undeclared identifier 'step_xor0'\n            step_key[i][127:96] = step_xor0;\n                                  ^~~~~~~~~\nsyn_flow/rtl/aes.v3.5.sv:101:93: error: use o",
-  "target_version": "v3.5",
-  "relative_advantage": null
-}

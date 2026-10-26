@@ -1,0 +1,13 @@
+--- a/compiler/modules/sram_1bank.py
++++ b/compiler/modules/sram_1bank.py
+@@ -1074,7 +1074,9 @@
+         # Some technologies have an isolation
+         self.add_dnwell(inflate=2.5)
+ 
+-        init_bbox = self.get_bbox()
++        # Skip unused geometry traversal when neither routing operation is enabled.
++        if OPTS.perimeter_pins or OPTS.route_supplies:
++            init_bbox = self.get_bbox()
+         # Route the supplies together and/or to the ring/stripes.
+         # Route the pins to the perimeter
+         if OPTS.perimeter_pins:

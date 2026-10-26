@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/SPI.v0.1.v:121:29: error: identifier 'current_state' used before its declaration\n    wire state_is_idle   = (current_state == IDLE);\n                            ^~~~~~~~~~~~~\nsyn_flow/rtl/SPI.v0.1.v:125:15: note: declared here\n    reg [1:0] current_state, next_state;\n              ^\nsyn_flow/rtl/SPI.v0.1.v:122:29: error: identifier 'current_state' used before its declaration\n    wire state_is_enable = (current_state == ENABLE);\n                            ^~~~~~~~~~~~~\nsyn_flow/rtl/",
-  "target_version": "v0.1",
-  "relative_advantage": null
-}

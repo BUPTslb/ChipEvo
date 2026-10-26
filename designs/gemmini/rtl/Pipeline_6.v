@@ -1,0 +1,138 @@
+module Pipeline_6 (
+	clock,
+	reset,
+	io_in_ready,
+	io_in_valid,
+	io_in_bits_cmd_inst_funct,
+	io_in_bits_cmd_rs1,
+	io_in_bits_cmd_rs2,
+	io_in_bits_dram_addr,
+	io_in_bits_spad_addr,
+	io_in_bits_pool_dram_addr,
+	io_in_bits_pool_spad_addr,
+	io_in_bits_channels,
+	io_in_bits_is_pool,
+	io_in_bits_I,
+	io_in_bits_J,
+	io_out_ready,
+	io_out_valid,
+	io_out_bits_cmd_inst_funct,
+	io_out_bits_cmd_rs1,
+	io_out_bits_cmd_rs2,
+	io_out_bits_dram_addr,
+	io_out_bits_spad_addr,
+	io_out_bits_pool_dram_addr,
+	io_out_bits_pool_spad_addr,
+	io_out_bits_channels,
+	io_out_bits_is_pool,
+	io_out_bits_I,
+	io_out_bits_J,
+	io_busy
+);
+	input clock;
+	input reset;
+	output wire io_in_ready;
+	input io_in_valid;
+	input [6:0] io_in_bits_cmd_inst_funct;
+	input [63:0] io_in_bits_cmd_rs1;
+	input [63:0] io_in_bits_cmd_rs2;
+	input [67:0] io_in_bits_dram_addr;
+	input [67:0] io_in_bits_spad_addr;
+	input [64:0] io_in_bits_pool_dram_addr;
+	input [65:0] io_in_bits_pool_spad_addr;
+	input [15:0] io_in_bits_channels;
+	input io_in_bits_is_pool;
+	input [15:0] io_in_bits_I;
+	input [15:0] io_in_bits_J;
+	input io_out_ready;
+	output wire io_out_valid;
+	output wire [6:0] io_out_bits_cmd_inst_funct;
+	output wire [63:0] io_out_bits_cmd_rs1;
+	output wire [63:0] io_out_bits_cmd_rs2;
+	output wire [67:0] io_out_bits_dram_addr;
+	output wire [67:0] io_out_bits_spad_addr;
+	output wire [64:0] io_out_bits_pool_dram_addr;
+	output wire [65:0] io_out_bits_pool_spad_addr;
+	output wire [15:0] io_out_bits_channels;
+	output wire io_out_bits_is_pool;
+	output wire [15:0] io_out_bits_I;
+	output wire [15:0] io_out_bits_J;
+	output wire io_busy;
+	reg [6:0] stages_0_cmd_inst_funct;
+	reg [63:0] stages_0_cmd_rs1;
+	reg [63:0] stages_0_cmd_rs2;
+	reg [67:0] stages_0_dram_addr;
+	reg [67:0] stages_0_spad_addr;
+	reg [64:0] stages_0_pool_dram_addr;
+	reg [65:0] stages_0_pool_spad_addr;
+	reg [15:0] stages_0_channels;
+	reg stages_0_is_pool;
+	reg [15:0] stages_0_I;
+	reg [15:0] stages_0_J;
+	reg [6:0] stages_1_cmd_inst_funct;
+	reg [63:0] stages_1_cmd_rs1;
+	reg [63:0] stages_1_cmd_rs2;
+	reg [67:0] stages_1_dram_addr;
+	reg [67:0] stages_1_spad_addr;
+	reg [64:0] stages_1_pool_dram_addr;
+	reg [65:0] stages_1_pool_spad_addr;
+	reg [15:0] stages_1_channels;
+	reg stages_1_is_pool;
+	reg [15:0] stages_1_I;
+	reg [15:0] stages_1_J;
+	reg valids_0;
+	reg valids_1;
+	wire stalling_1 = valids_1 & ~io_out_ready;
+	wire stalling_0 = valids_0 & stalling_1;
+	wire _GEN = ~stalling_0 & io_in_valid;
+	always @(posedge clock) begin
+		if (_GEN) begin
+			stages_0_cmd_inst_funct <= io_in_bits_cmd_inst_funct;
+			stages_0_cmd_rs1 <= io_in_bits_cmd_rs1;
+			stages_0_cmd_rs2 <= io_in_bits_cmd_rs2;
+			stages_0_dram_addr <= io_in_bits_dram_addr;
+			stages_0_spad_addr <= io_in_bits_spad_addr;
+			stages_0_pool_dram_addr <= io_in_bits_pool_dram_addr;
+			stages_0_pool_spad_addr <= io_in_bits_pool_spad_addr;
+			stages_0_channels <= io_in_bits_channels;
+			stages_0_is_pool <= io_in_bits_is_pool;
+			stages_0_I <= io_in_bits_I;
+			stages_0_J <= io_in_bits_J;
+		end
+		if (~stalling_1) begin
+			stages_1_cmd_inst_funct <= stages_0_cmd_inst_funct;
+			stages_1_cmd_rs1 <= stages_0_cmd_rs1;
+			stages_1_cmd_rs2 <= stages_0_cmd_rs2;
+			stages_1_dram_addr <= stages_0_dram_addr;
+			stages_1_spad_addr <= stages_0_spad_addr;
+			stages_1_pool_dram_addr <= stages_0_pool_dram_addr;
+			stages_1_pool_spad_addr <= stages_0_pool_spad_addr;
+			stages_1_channels <= stages_0_channels;
+			stages_1_is_pool <= stages_0_is_pool;
+			stages_1_I <= stages_0_I;
+			stages_1_J <= stages_0_J;
+		end
+		if (reset) begin
+			valids_0 <= 1'h0;
+			valids_1 <= 1'h0;
+		end
+		else begin
+			valids_0 <= _GEN | (stalling_1 & valids_0);
+			valids_1 <= valids_0 | (~io_out_ready & valids_1);
+		end
+	end
+	assign io_in_ready = ~stalling_0;
+	assign io_out_valid = valids_1;
+	assign io_out_bits_cmd_inst_funct = stages_1_cmd_inst_funct;
+	assign io_out_bits_cmd_rs1 = stages_1_cmd_rs1;
+	assign io_out_bits_cmd_rs2 = stages_1_cmd_rs2;
+	assign io_out_bits_dram_addr = stages_1_dram_addr;
+	assign io_out_bits_spad_addr = stages_1_spad_addr;
+	assign io_out_bits_pool_dram_addr = stages_1_pool_dram_addr;
+	assign io_out_bits_pool_spad_addr = stages_1_pool_spad_addr;
+	assign io_out_bits_channels = stages_1_channels;
+	assign io_out_bits_is_pool = stages_1_is_pool;
+	assign io_out_bits_I = stages_1_I;
+	assign io_out_bits_J = stages_1_J;
+	assign io_busy = (io_in_valid | valids_0) | valids_1;
+endmodule

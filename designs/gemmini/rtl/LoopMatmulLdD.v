@@ -1,0 +1,108 @@
+module LoopMatmulLdD (
+	clock,
+	reset,
+	io_req_ready,
+	io_req_valid,
+	io_req_bits_max_j,
+	io_req_bits_max_i,
+	io_req_bits_pad_j,
+	io_req_bits_pad_i,
+	io_req_bits_dram_addr,
+	io_req_bits_dram_stride,
+	io_req_bits_low_d,
+	io_req_bits_addr_start,
+	io_req_bits_loop_id,
+	io_cmd_ready,
+	io_cmd_valid,
+	io_cmd_bits_rs1,
+	io_cmd_bits_rs2,
+	io_idle,
+	io_rob_overloaded,
+	io_loop_id
+);
+	input clock;
+	input reset;
+	output wire io_req_ready;
+	input io_req_valid;
+	input [15:0] io_req_bits_max_j;
+	input [15:0] io_req_bits_max_i;
+	input [3:0] io_req_bits_pad_j;
+	input [3:0] io_req_bits_pad_i;
+	input [39:0] io_req_bits_dram_addr;
+	input [39:0] io_req_bits_dram_stride;
+	input io_req_bits_low_d;
+	input [9:0] io_req_bits_addr_start;
+	input io_req_bits_loop_id;
+	input io_cmd_ready;
+	output wire io_cmd_valid;
+	output wire [63:0] io_cmd_bits_rs1;
+	output wire [63:0] io_cmd_bits_rs2;
+	output wire io_idle;
+	input io_rob_overloaded;
+	output wire io_loop_id;
+	reg state;
+	reg [15:0] req_max_j;
+	reg [15:0] req_max_i;
+	reg [3:0] req_pad_j;
+	reg [3:0] req_pad_i;
+	reg [39:0] req_dram_addr;
+	reg [39:0] req_dram_stride;
+	reg req_low_d;
+	reg [9:0] req_addr_start;
+	reg req_loop_id;
+	wire [15:0] max_blocks = (req_low_d ? (req_max_j < 16'h0005 ? req_max_j : 16'h0004) : (req_max_j < 16'h0002 ? req_max_j : 16'h0001));
+	reg [15:0] j;
+	reg [15:0] i;
+	wire [27:0] _dram_offset_T_5 = {12'h000, i} * req_dram_stride[27:0];
+	wire [28:0] _sp_addr_T_4 = {19'h00000, req_addr_start} + {({9'h000, i} * {9'h000, req_max_j}) + {9'h000, j}, 4'h0};
+	wire [16:0] _next_j_T_4 = {1'h0, j} + {1'h0, max_blocks};
+	wire [15:0] blocks = (_next_j_T_4[15:0] <= req_max_j ? max_blocks : req_max_j - j);
+	wire [15:0] _next_i_max_T = req_max_i - 16'h0001;
+	wire io_cmd_valid_0 = (state & ~io_rob_overloaded) & |req_dram_addr;
+	wire _GEN = req_dram_addr == 40'h0000000000;
+	wire _GEN_0 = io_cmd_ready & io_cmd_valid_0;
+	wire [16:0] _next_i_T_3 = {1'h0, i} + 17'h00001;
+	wire _next_i_T_4 = _next_i_T_3 > {1'h0, _next_i_max_T};
+	wire [15:0] next_i = (_next_i_T_4 ? 16'h0000 : _next_i_T_3[15:0]);
+	wire _next_j_T_5 = _next_j_T_4 > {1'h0, req_max_j - 16'h0001};
+	wire _GEN_1 = ~state & io_req_valid;
+	always @(posedge clock) begin
+		if (reset)
+			state <= 1'h0;
+		else
+			state <= _GEN_1 | (~(_GEN | ((_GEN_0 & ~(|next_i)) & ((|next_i ? j : (_next_j_T_5 ? 16'h0000 : _next_j_T_4[15:0])) == 16'h0000))) & state);
+		if (_GEN_1) begin
+			req_max_j <= io_req_bits_max_j;
+			req_max_i <= io_req_bits_max_i;
+			req_pad_j <= io_req_bits_pad_j;
+			req_pad_i <= io_req_bits_pad_i;
+			req_dram_addr <= io_req_bits_dram_addr;
+			req_dram_stride <= io_req_bits_dram_stride;
+			req_low_d <= io_req_bits_low_d;
+			req_addr_start <= io_req_bits_addr_start;
+			req_loop_id <= io_req_bits_loop_id;
+			j <= 16'h0000;
+			i <= 16'h0000;
+		end
+		else begin
+			if ((_GEN | ~_GEN_0) | |next_i)
+				;
+			else if (_next_j_T_5)
+				j <= 16'h0000;
+			else
+				j <= _next_j_T_4[15:0];
+			if (_GEN | ~_GEN_0)
+				;
+			else if (_next_i_T_4)
+				i <= 16'h0000;
+			else
+				i <= _next_i_T_3[15:0];
+		end
+	end
+	assign io_req_ready = ~state;
+	assign io_cmd_valid = io_cmd_valid_0;
+	assign io_cmd_bits_rs1 = {23'h000000, {9'h000, (req_low_d ? {_dram_offset_T_5 + {12'h000, j}, 4'h0} : {_dram_offset_T_5[25:0] + {10'h000, j}, 6'h00})} + {1'h0, req_dram_addr}};
+	assign io_cmd_bits_rs2 = {11'h000, 5'h10 - {1'h0, (i == _next_i_max_T ? req_pad_i : 4'h0)}, 9'h000, {blocks[2:0], 4'h0} - {3'h0, ((j + blocks) >= req_max_j ? req_pad_j : 4'h0)}, 3'h4, _sp_addr_T_4[28:26], 11'h000, _sp_addr_T_4[14:0]};
+	assign io_idle = ~state;
+	assign io_loop_id = req_loop_id;
+endmodule

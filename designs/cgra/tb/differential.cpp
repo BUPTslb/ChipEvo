@@ -1,0 +1,83 @@
+#include "Vdut.h"
+#include "verilated.h"
+#include <iostream>
+#include <cstdint>
+uint32_t state=1; uint32_t rng(){state^=state<<13;state^=state>>17;state^=state<<5;return state;}
+int main(int argc,char** argv){ Verilated::commandArgs(argc,argv); Vdut d;
+d.address_lower=0;
+d.address_upper=0;
+d.cgra_id=0;
+d.clk=0;
+d.reset=0;
+for(int j=0;j<3;j++) d.recv_data_on_boundary_east___05Fmsg[j]=0;
+d.recv_data_on_boundary_east___05Fval=0;
+for(int j=0;j<3;j++) d.recv_data_on_boundary_north___05Fmsg[j]=0;
+d.recv_data_on_boundary_north___05Fval=0;
+for(int j=0;j<3;j++) d.recv_data_on_boundary_south___05Fmsg[j]=0;
+d.recv_data_on_boundary_south___05Fval=0;
+for(int j=0;j<3;j++) d.recv_data_on_boundary_west___05Fmsg[j]=0;
+d.recv_data_on_boundary_west___05Fval=0;
+for(int j=0;j<7;j++) d.recv_from_cpu_pkt___05Fmsg[j]=0;
+d.recv_from_cpu_pkt___05Fval=0;
+for(int j=0;j<7;j++) d.recv_from_inter_cgra_noc___05Fmsg[j]=0;
+d.recv_from_inter_cgra_noc___05Fval=0;
+d.send_data_on_boundary_east___05Frdy=0;
+d.send_data_on_boundary_north___05Frdy=0;
+d.send_data_on_boundary_south___05Frdy=0;
+d.send_data_on_boundary_west___05Frdy=0;
+d.send_to_cpu_pkt___05Frdy=0;
+d.send_to_inter_cgra_noc___05Frdy=0;
+for(int cycle=0;cycle<1024;cycle++){
+d.address_lower=(cycle<32)?0:(rng() & 0x7fu);
+d.address_upper=(cycle<32)?0:(rng() & 0x7fu);
+d.cgra_id=(cycle<32)?0:(rng() & 0x3u);
+for(int j=0;j<3;j++) d.recv_data_on_boundary_east___05Fmsg[j]=(cycle<32)?0:rng();
+d.recv_data_on_boundary_east___05Fmsg[2] &= 0x3fu;
+d.recv_data_on_boundary_east___05Fval=(cycle<32)?0:(rng() & 0x3u);
+for(int j=0;j<3;j++) d.recv_data_on_boundary_north___05Fmsg[j]=(cycle<32)?0:rng();
+d.recv_data_on_boundary_north___05Fmsg[2] &= 0x3fu;
+d.recv_data_on_boundary_north___05Fval=(cycle<32)?0:(rng() & 0x3u);
+for(int j=0;j<3;j++) d.recv_data_on_boundary_south___05Fmsg[j]=(cycle<32)?0:rng();
+d.recv_data_on_boundary_south___05Fmsg[2] &= 0x3fu;
+d.recv_data_on_boundary_south___05Fval=(cycle<32)?0:(rng() & 0x3u);
+for(int j=0;j<3;j++) d.recv_data_on_boundary_west___05Fmsg[j]=(cycle<32)?0:rng();
+d.recv_data_on_boundary_west___05Fmsg[2] &= 0x3fu;
+d.recv_data_on_boundary_west___05Fval=(cycle<32)?0:(rng() & 0x3u);
+for(int j=0;j<7;j++) d.recv_from_cpu_pkt___05Fmsg[j]=(cycle<32)?0:rng();
+d.recv_from_cpu_pkt___05Fmsg[6] &= 0x7fu;
+d.recv_from_cpu_pkt___05Fval=(cycle<32)?0:(rng() & 0x1u);
+for(int j=0;j<7;j++) d.recv_from_inter_cgra_noc___05Fmsg[j]=(cycle<32)?0:rng();
+d.recv_from_inter_cgra_noc___05Fmsg[6] &= 0x3ffu;
+d.recv_from_inter_cgra_noc___05Fval=(cycle<32)?0:(rng() & 0x1u);
+d.send_data_on_boundary_east___05Frdy=(cycle<32)?0:(rng() & 0x3u);
+d.send_data_on_boundary_north___05Frdy=(cycle<32)?0:(rng() & 0x3u);
+d.send_data_on_boundary_south___05Frdy=(cycle<32)?0:(rng() & 0x3u);
+d.send_data_on_boundary_west___05Frdy=(cycle<32)?0:(rng() & 0x3u);
+d.send_to_cpu_pkt___05Frdy=(cycle<32)?0:(rng() & 0x1u);
+d.send_to_inter_cgra_noc___05Frdy=(cycle<32)?0:(rng() & 0x1u);
+d.reset=((cycle%256)<16)?1:0;
+d.clk=0;
+d.eval();
+d.clk=1;
+d.eval();
+std::cout << cycle;
+std::cout << " recv_data_on_boundary_east___05Frdy=" << uint64_t(d.recv_data_on_boundary_east___05Frdy);
+std::cout << " recv_data_on_boundary_north___05Frdy=" << uint64_t(d.recv_data_on_boundary_north___05Frdy);
+std::cout << " recv_data_on_boundary_south___05Frdy=" << uint64_t(d.recv_data_on_boundary_south___05Frdy);
+std::cout << " recv_data_on_boundary_west___05Frdy=" << uint64_t(d.recv_data_on_boundary_west___05Frdy);
+std::cout << " recv_from_cpu_pkt___05Frdy=" << uint64_t(d.recv_from_cpu_pkt___05Frdy);
+std::cout << " recv_from_inter_cgra_noc___05Frdy=" << uint64_t(d.recv_from_inter_cgra_noc___05Frdy);
+for(int j=0;j<3;j++) std::cout << " send_data_on_boundary_east___05Fmsg[" << j << "]=" << d.send_data_on_boundary_east___05Fmsg[j];
+std::cout << " send_data_on_boundary_east___05Fval=" << uint64_t(d.send_data_on_boundary_east___05Fval);
+for(int j=0;j<3;j++) std::cout << " send_data_on_boundary_north___05Fmsg[" << j << "]=" << d.send_data_on_boundary_north___05Fmsg[j];
+std::cout << " send_data_on_boundary_north___05Fval=" << uint64_t(d.send_data_on_boundary_north___05Fval);
+for(int j=0;j<3;j++) std::cout << " send_data_on_boundary_south___05Fmsg[" << j << "]=" << d.send_data_on_boundary_south___05Fmsg[j];
+std::cout << " send_data_on_boundary_south___05Fval=" << uint64_t(d.send_data_on_boundary_south___05Fval);
+for(int j=0;j<3;j++) std::cout << " send_data_on_boundary_west___05Fmsg[" << j << "]=" << d.send_data_on_boundary_west___05Fmsg[j];
+std::cout << " send_data_on_boundary_west___05Fval=" << uint64_t(d.send_data_on_boundary_west___05Fval);
+for(int j=0;j<7;j++) std::cout << " send_to_cpu_pkt___05Fmsg[" << j << "]=" << d.send_to_cpu_pkt___05Fmsg[j];
+std::cout << " send_to_cpu_pkt___05Fval=" << uint64_t(d.send_to_cpu_pkt___05Fval);
+for(int j=0;j<7;j++) std::cout << " send_to_inter_cgra_noc___05Fmsg[" << j << "]=" << d.send_to_inter_cgra_noc___05Fmsg[j];
+std::cout << " send_to_inter_cgra_noc___05Fval=" << uint64_t(d.send_to_inter_cgra_noc___05Fval);
+std::cout << "\n";
+} d.final(); return 0;}

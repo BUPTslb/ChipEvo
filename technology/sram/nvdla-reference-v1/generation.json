@@ -1,0 +1,309 @@
+{
+  "baseline_version": "nvdla-macro-reference-v1",
+  "legacy_equivalence_required": false,
+  "shape_count": 36,
+  "shapes": [
+    {
+      "module": "nv_ram_rws_128x18",
+      "depth": 128,
+      "width": 18,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rws_16x256",
+      "depth": 16,
+      "width": 256,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 8
+    },
+    {
+      "module": "nv_ram_rws_16x272",
+      "depth": 16,
+      "width": 272,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 9
+    },
+    {
+      "module": "nv_ram_rws_16x64",
+      "depth": 16,
+      "width": 64,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 2
+    },
+    {
+      "module": "nv_ram_rws_256x3",
+      "depth": 256,
+      "width": 3,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rws_256x64",
+      "depth": 256,
+      "width": 64,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 2
+    },
+    {
+      "module": "nv_ram_rwsp_128x11",
+      "depth": 128,
+      "width": 11,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_128x257",
+      "depth": 128,
+      "width": 257,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 9
+    },
+    {
+      "module": "nv_ram_rwsp_128x6",
+      "depth": 128,
+      "width": 6,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_16x14",
+      "depth": 16,
+      "width": 14,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_16x16",
+      "depth": 16,
+      "width": 16,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_16x65",
+      "depth": 16,
+      "width": 65,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 3
+    },
+    {
+      "module": "nv_ram_rwsp_256x14",
+      "depth": 256,
+      "width": 14,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_256x16",
+      "depth": 256,
+      "width": 16,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_256x257",
+      "depth": 256,
+      "width": 257,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 9
+    },
+    {
+      "module": "nv_ram_rwsp_32x129",
+      "depth": 32,
+      "width": 129,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 5
+    },
+    {
+      "module": "nv_ram_rwsp_64x129",
+      "depth": 64,
+      "width": 129,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 5
+    },
+    {
+      "module": "nv_ram_rwsp_64x14",
+      "depth": 64,
+      "width": 14,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_64x16",
+      "depth": 64,
+      "width": 16,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsp_8x129",
+      "depth": 8,
+      "width": 129,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 5
+    },
+    {
+      "module": "nv_ram_rwsp_8x257",
+      "depth": 8,
+      "width": 257,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 9
+    },
+    {
+      "module": "nv_ram_rwsp_8x65",
+      "depth": 8,
+      "width": 65,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 3
+    },
+    {
+      "module": "nv_ram_rwst_256x8",
+      "depth": 256,
+      "width": 8,
+      "pipeline": false,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_20x16",
+      "depth": 20,
+      "width": 16,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_20x32",
+      "depth": 20,
+      "width": 32,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_20x4",
+      "depth": 20,
+      "width": 4,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_20x8",
+      "depth": 20,
+      "width": 8,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_60x168",
+      "depth": 60,
+      "width": 168,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 6
+    },
+    {
+      "module": "nv_ram_rwsthp_60x21",
+      "depth": 60,
+      "width": 21,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_60x42",
+      "depth": 60,
+      "width": 42,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 2
+    },
+    {
+      "module": "nv_ram_rwsthp_60x84",
+      "depth": 60,
+      "width": 84,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 3
+    },
+    {
+      "module": "nv_ram_rwsthp_80x17",
+      "depth": 80,
+      "width": 17,
+      "pipeline": true,
+      "macro": "sram_1r1w_80x17",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_80x18",
+      "depth": 80,
+      "width": 18,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    },
+    {
+      "module": "nv_ram_rwsthp_80x36",
+      "depth": 80,
+      "width": 36,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 2
+    },
+    {
+      "module": "nv_ram_rwsthp_80x72",
+      "depth": 80,
+      "width": 72,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 3
+    },
+    {
+      "module": "nv_ram_rwsthp_80x9",
+      "depth": 80,
+      "width": 9,
+      "pipeline": true,
+      "macro": "sram_1r1w_256x32",
+      "tiles_per_instance": 1
+    }
+  ],
+  "macro_tool": "OpenRAM v1.2.49 / FreePDK45 / ngspice TT 1.1V 25C",
+  "fixed_semantics": {
+    "read": "request sampled rising, result valid after falling; held when disabled",
+    "write": "request sampled rising, commit falling",
+    "same_address": "explicit new-data forwarding",
+    "p_wrappers": "extra rising-edge output register, ore load enable",
+    "power": "low nine power bits disable read/write/output updates; physical low-power modes outside scope"
+  },
+  "capacity_padding": "logical depth/width preserved; unused macro words/bits inaccessible and counted in area",
+  "macro_areas": {
+    "sram_1r1w_256x32": 31609.49145,
+    "sram_1r1w_80x17": 10149.886950000002
+  },
+  "production_replaced": false
+}

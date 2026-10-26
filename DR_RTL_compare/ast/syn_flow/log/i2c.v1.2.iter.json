@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/i2c.v1.2.v:202:44: error: identifier 'idle' used before its declaration\n        wire state_is_idle    = c_state == idle;\n                                           ^~~~\nsyn_flow/rtl/i2c.v1.2.v:229:26: note: declared here\n        parameter [16:0] idle    = 17'b0_0000_0000_0000_0000;\n                         ^\nsyn_flow/rtl/i2c.v1.2.v:203:44: error: identifier 'start_a' used before its declaration\n        wire state_is_start_a = c_state == start_a;\n                                     ",
-  "target_version": "v1.2",
-  "relative_advantage": null
-}

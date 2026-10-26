@@ -1,7 +1,0 @@
-{
-  "design": "FIFO",
-  "status": "done",
-  "best_version": "v7",
-  "best_score": -0.10326098625154316,
-  "end_reason": "max_major_reached"
-}

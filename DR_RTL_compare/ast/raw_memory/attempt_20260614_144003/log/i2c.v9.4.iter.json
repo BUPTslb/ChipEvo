@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/i2c.v9.4.v:173:35: error: unknown macro or compiler directive '`I2C_CMD_STOP'\n            cmd_stop <= #1 cmd == `I2C_CMD_STOP;\n                                  ^~~~~~~~~~~~~\nsyn_flow/rtl/i2c.v9.4.v:173:48: error: expected expression\n            cmd_stop <= #1 cmd == `I2C_CMD_STOP;\n                                               ^\nsyn_flow/rtl/i2c.v9.4.v:207:37: error: unknown macro or compiler directive '`I2C_CMD_START'\n        wire cmd_is_start = (cmd == `I2C_CMD_START);\n          ",
-  "target_version": "v9.4",
-  "relative_advantage": null
-}

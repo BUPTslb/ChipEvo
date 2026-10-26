@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/i2c.v4.4.v:584:15: error: use of undeclared identifier 'clk_en'; did you mean 'clk_cnt'?\n          if (clk_en) begin\n              ^~~~~~\nsyn_flow/rtl/i2c.v4.4.v:449:22: note: declared here\n        input [15:0] clk_cnt; // 4x SCL\n                     ^\nsyn_flow/rtl/i2c.v4.4.v:627:15: error: use of undeclared identifier 'clk_en'; did you mean 'clk_cnt'?\n          if (clk_en) begin\n              ^~~~~~\nsyn_flow/rtl/i2c.v4.4.v:449:22: note: declared here\n        input [15:0] clk_cnt; /",
-  "target_version": "v4.4",
-  "relative_advantage": null
-}

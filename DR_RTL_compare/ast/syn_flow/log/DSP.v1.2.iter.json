@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/DSP.v1.2.v:184:9: error: reference to non-constant variable 'mode' is not allowed in a constant expression\n    if (mode == 0) begin // Addition\n        ^~~~\nsyn_flow/rtl/DSP.v1.2.v:165:11: note: declared here\n    input mode, cin;\n          ^\nsyn_flow/rtl/DSP.v1.2.v:238:9: error: reference to non-constant variable 'mode' is not allowed in a constant expression\n    if (mode == 0) begin // Addition\n        ^~~~\nsyn_flow/rtl/DSP.v1.2.v:228:11: note: declared here\n    input mode;\n       ",
-  "target_version": "v1.2",
-  "relative_advantage": null
-}

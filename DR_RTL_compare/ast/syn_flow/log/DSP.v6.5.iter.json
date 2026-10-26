@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/DSP.v6.5.v:151:21: error: select expression is not allowed here\n    wire lo_carry = ({1'b0, in0[8:0]} + {1'b0, in1[8:0]})[9];\n                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nsyn_flow/rtl/DSP.v6.5.v:162:22: error: select expression is not allowed here\n    wire lo_borrow = ({1'b0, in0[8:0]} + {1'b0, neg_in1[8:0]})[9];\n                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-  "target_version": "v6.5",
-  "relative_advantage": null
-}

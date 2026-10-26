@@ -1,0 +1,61 @@
+--- upstream
++++ baseline-proposed
+@@ -2432,6 +2432,9 @@
+ 	assign send_to_cpu_pkt__val = send_to_cpu_pkt_queue__send__val;
+ 	assign recv_from_im2col_pkt_queue__recv__val = 1'd0;
+ 	assign recv_from_im2col_pkt_queue__recv__msg = 199'h00000000000000000000000000000000000000000000000000;
++
++// ChipEvo fixed standalone configuration: disabled interfaces and non-context-switch clear.
++assign recv_from_im2col_pkt__rdy = '0;
+ endmodule
+ module Counter__Type_Bits2__reset_value_2 (
+ 	clk,
+@@ -10446,6 +10449,9 @@
+ 	assign fu__to_mem_wdata__rdy[10] = to_mem_wdata__rdy[0+:1];
+ 	assign to_mem_wdata__val[0+:1] = fu__to_mem_wdata__val[10];
+ 	assign fu__clear[10] = clear[0+:1];
++
++// ChipEvo fixed standalone configuration: disabled interfaces and non-context-switch clear.
++assign recv_pkt_from_controller__rdy = '0;
+ endmodule
+ module CrossbarRTL__35a0feee61c1221d (
+ 	cgra_id,
+@@ -13125,6 +13131,11 @@
+ 	assign fu_crossbar__clear = 1'd0;
+ 	assign register_cluster__clear = 1'd0;
+ 	assign routing_crossbar__clear = 1'd0;
++
++// ChipEvo fixed standalone configuration: disabled interfaces and non-context-switch clear.
++assign const_mem__clear = '0;
++assign element__recv_pkt_from_controller__msg = '0;
++assign element__recv_pkt_from_controller__val = '0;
+ endmodule
+ module CgraRTL__ee448ce8f855514e (
+ 	address_lower,
+@@ -13830,4 +13841,26 @@
+ 	assign tile__from_mem_rdata__msg[3] = 35'h000000000;
+ 	assign tile__to_mem_waddr__rdy[3] = 1'd0;
+ 	assign tile__to_mem_wdata__rdy[3] = 1'd0;
++
++// ChipEvo fixed standalone configuration: disabled interfaces and non-context-switch clear.
++assign send_to_inter_cgra_noc__val = '0;
++assign send_to_inter_cgra_noc__msg = '0;
++assign recv_from_inter_cgra_noc__rdy = '0;
++assign controller__dma_cmd__rdy = '0;
++assign controller__dma_done__msg = '0;
++assign controller__dma_done__val = '0;
++assign controller__recv_from_dma_spm_rd_req__msg = '0;
++assign controller__recv_from_dma_spm_rd_req__val = '0;
++assign controller__recv_from_dma_spm_wr_req__msg = '0;
++assign controller__recv_from_dma_spm_wr_req__val = '0;
++assign controller__recv_from_sram_load_response__msg = '0;
++assign controller__recv_from_sram_load_response__val = '0;
++assign controller__send_to_dma_spm_rd_resp__rdy = '0;
++assign controller__send_to_sram_load_request_from_dma__rdy = '0;
++assign controller__send_to_sram_store_request_from_dma__rdy = '0;
++assign data_mem__recv_from_controller_spm_rd_req__msg = '0;
++assign data_mem__recv_from_controller_spm_rd_req__val = '0;
++assign data_mem__recv_from_controller_spm_wr_req__msg = '0;
++assign data_mem__recv_from_controller_spm_wr_req__val = '0;
++assign data_mem__send_to_controller_spm_rd_resp__rdy = '0;
+ endmodule

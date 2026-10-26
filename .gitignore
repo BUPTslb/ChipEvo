@@ -1,7 +1,25 @@
+# Generated experiments, historical data and local state
+/artifacts/
 /archive/
-
-# Local archives, experiment outputs and editor settings
-/archive/
-/DR_RTL_compare/archive/
-/DR_RTL_compare/results/
-/DR_RTL_compare/.cursor/
+/reports/
+/dist/
+/.cache/
+/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+*.log
+*.vcd
+*.fst
+.env
+.env.*
+*.key
+*.pem
+/configs/studies/*.local.json
+# Native tool binaries are installed separately; keep pins and provenance.
+/tools/runtime/linux-x86_64/bin/
+/tools/runtime/linux-x86_64/lib/
+/tools/runtime/linux-x86_64/share/
+# Upstream bulk simulation stimuli, not needed by formal/STA evaluation.
+/designs/nvdla/tb/traces/

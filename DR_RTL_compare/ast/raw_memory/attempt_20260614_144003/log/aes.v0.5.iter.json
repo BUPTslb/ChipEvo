@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v0.5.sv:111:13: error: declaration must come before all statements in the block\n            logic [7:0] rcon_xor_byte;\n            ^\nsyn_flow/rtl/aes.v0.5.sv:79:16: error: cannot have multiple continuous assignments to variable 'sbox_hi' [-Wmultiple-cont-assigns]\n        assign sbox_hi = RotWord[23:20];\n               ^~~~~~~\nsyn_flow/rtl/aes.v0.5.sv:69:16: note: also assigned here\n        assign sbox_hi = RotWord[31:28];\n               ^~~~~~~\nsyn_flow/rtl/aes.v0.5.sv:80:16: er",
-  "target_version": "v0.5",
-  "relative_advantage": null
-}

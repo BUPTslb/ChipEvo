@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/datapath.v6.1.v:178:31: error: cannot refer to element 2 of 'logic[1:0]' [-Windex-oob]\nwire host_sel2 = col_sel_host[2];\n                              ^\nsyn_flow/rtl/datapath.v6.1.v:179:31: error: cannot refer to element 3 of 'logic[1:0]' [-Windex-oob]\nwire host_sel3 = col_sel_host[3];\n                              ^\nsyn_flow/rtl/datapath.v6.1.v:200:1: error: unknown module 'data_swap'\ndata_swap SWAP_IN\n^~~~~~~~~\nsyn_flow/rtl/datapath.v6.1.v:208:1: error: unknown module 'data_swap'\n",
-  "target_version": "v6.1",
-  "relative_advantage": null
-}

@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/i2c.v2.2.v:531:39: error: cannot refer to element 5 of 'reg[4:0]' [-Windex-oob]\n        wire state_is_stop  = c_state[5]; // always 0 (5-bit register)\n                                      ^",
-  "target_version": "v2.2",
-  "relative_advantage": null
-}

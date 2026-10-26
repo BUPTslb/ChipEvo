@@ -1,7 +1,0 @@
-{
-  "design": "cpu_fsm",
-  "status": "done",
-  "best_version": "v7",
-  "best_score": -0.036796895181596574,
-  "end_reason": "max_major_reached"
-}

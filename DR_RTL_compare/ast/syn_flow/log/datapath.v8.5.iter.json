@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/datapath.v8.5.v:1:21: error: expected ';'\nmodule instantiation, I need to look at the surrounding logic.\n                    ^\nsyn_flow/rtl/datapath.v8.5.v:1:23: error: use of undeclared identifier 'I'\nmodule instantiation, I need to look at the surrounding logic.\n                      ^\nsyn_flow/rtl/datapath.v8.5.v:1:29: error: expected ';'\nmodule instantiation, I need to look at the surrounding logic.\n                            ^\nsyn_flow/rtl/datapath.v8.5.v:1:30: error: use of u",
-  "target_version": "v8.5",
-  "relative_advantage": null
-}

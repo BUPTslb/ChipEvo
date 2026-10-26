@@ -1,9 +1,0 @@
-{
-    "IR -> PC": -0.8,
-    "PC -> IR": -0.69,
-    "IR -> ALU_OUT": -0.69,
-    "IR -> regis": -0.5,
-    "IR -> state": -0.27,
-    "state -> state": -0.16,
-    "imem -> imem": -0.1
-}

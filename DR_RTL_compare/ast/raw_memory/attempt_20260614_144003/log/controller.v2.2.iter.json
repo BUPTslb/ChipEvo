@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/controller.v2.2.v:307:17: error: declaration must come before all statements in the block\n                reg [3:0] r0_ns_enc, r0_ns_dec;\n                ^\nsyn_flow/rtl/controller.v2.2.v:481:41: error: declaration must come before all statements in the block\n                                        reg [1:0] col_sel3_enc, col_sel3_dec;\n                                        ^",
-  "target_version": "v2.2",
-  "relative_advantage": null
-}

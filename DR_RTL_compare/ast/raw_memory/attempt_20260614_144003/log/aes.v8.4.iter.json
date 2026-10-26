@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v8.4.sv:103:13: error: expected statement\n            wire [31:0] base0 = expanded_key_ff[NBW_OUT-(4*i  )*NBW_WORD-1-:NBW_WORD];\n            ^~~~\nsyn_flow/rtl/aes.v8.4.sv:103:25: error: use of undeclared identifier 'base0'\n            wire [31:0] base0 = expanded_key_ff[NBW_OUT-(4*i  )*NBW_WORD-1-:NBW_WORD];\n                        ^~~~~\nsyn_flow/rtl/aes.v8.4.sv:104:13: error: expected statement\n            wire [31:0] base1 = expanded_key_ff[NBW_OUT-(4*i+1)*NBW_WORD-1-:NBW_WORD",
-  "target_version": "v8.4",
-  "relative_advantage": null
-}

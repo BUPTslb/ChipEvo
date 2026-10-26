@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/pcie.v0.1.v:1:7: error: expected identifier\nmodule (part of st_0001)\n      ^\nsyn_flow/rtl/pcie.v0.1.v:1:16: error: expected ','\nmodule (part of st_0001)\n               ^\nsyn_flow/rtl/pcie.v0.1.v:1:25: error: expected ';'\nmodule (part of st_0001)\n                        ^\nsyn_flow/rtl/pcie.v0.1.v:2:12: error: expected a declaration name\n- Applying **condition pre-computation** (Strategy #2 - high confidence, 89% SEC rate)\n           ^\nsyn_flow/rtl/pcie.v0.1.v:2:27: error: expected ';",
-  "target_version": "v0.1",
-  "relative_advantage": null
-}

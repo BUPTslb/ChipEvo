@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/datapath.v6.2.v:198:1: error: unknown module 'data_swap'\ndata_swap SWAP_IN\n^~~~~~~~~\nsyn_flow/rtl/datapath.v6.2.v:206:1: error: unknown module 'data_swap'\ndata_swap SWAP_OUT\n^~~~~~~~~",
-  "target_version": "v6.2",
-  "relative_advantage": null
-}

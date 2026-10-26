@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v4.1.sv:163:5: error: declaration must come before all statements in the block\n    logic shared_hi_xor;\n    ^",
-  "target_version": "v4.1",
-  "relative_advantage": null
-}

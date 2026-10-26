@@ -1,0 +1,40 @@
+{
+  "top": "CgraRTL__ee448ce8f855514e",
+  "clock": "clk",
+  "resets": {
+    "reset": 1
+  },
+  "params": {},
+  "config": "2x2 homogeneous scalar 32-bit, frozen sv2v generated RTL",
+  "source_root": "/home/shen/Desktop/project/3D-Bench/third_party/vectorcgra/frozen",
+  "source_repo": "/home/shen/Desktop/project/3D-Bench/third_party/vectorcgra",
+  "commit": "20ea53bfd54980acf5bc6eef4b0959a710a4dd1f",
+  "upstream": "https://github.com/tancheng/VectorCGRA.git",
+  "topfile": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+  "defines": [
+    "SYNTHESIS"
+  ],
+  "includes": [
+    "rtl"
+  ],
+  "extras": [],
+  "status": "closure_elaborated",
+  "area_scope": "standard cells including mapped behavioral RAM; no physical macro substitution",
+  "reference_policy": "original RTL cycle-exact equivalence, same parameters, clocks and reset",
+  "sources": [
+    "rtl/CgraMesh2x2_homogeneous__sv2v.v"
+  ],
+  "excluded_source_files": [],
+  "rtl_file_count": 1,
+  "rtl_physical_lines": 13866,
+  "baseline_sha256": {
+    "CgraMesh2x2_homogeneous__sv2v.v": "3e345d5405aab3e4e38e992bf042f417134c570aefdba42b143b0b3d58494d97"
+  },
+  "abc_fast": false,
+  "mapping_policy": "hierarchical Yosys synth, Nangate45 mapping, all behavioral memories retained and mapped to flip-flop/latch standard cells; no physical SRAM inference",
+  "baseline_revision": "standalone-tieoffs-v1",
+  "previous_baseline_sha256": {
+    "CgraMesh2x2_homogeneous__sv2v.v": "182dc03e021bdf5aa7ce9df43cd7bf2ec24dc94f29f43697edf9a435c630e155"
+  },
+  "local_modifications": "Evaluator integration fix: explicitly tie disabled standalone interfaces and non-context-switch clear to zero; see provenance/standalone-tieoffs.patch. Not an LLM optimization."
+}

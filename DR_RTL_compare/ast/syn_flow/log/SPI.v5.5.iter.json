@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/SPI.v5.5.v:179:13: error: expected statement\n            wire state_is_not_data = ~state_is_data;\n            ^~~~\nsyn_flow/rtl/SPI.v5.5.v:179:18: error: use of undeclared identifier 'state_is_not_data'; did you mean 'state_is_data'?\n            wire state_is_not_data = ~state_is_data;\n                 ^~~~~~~~~~~~~~~~~\nsyn_flow/rtl/SPI.v5.5.v:145:10: note: declared here\n    wire state_is_data = (current_state == DATA);\n         ^\nsyn_flow/rtl/SPI.v5.5.v:180:13: error: expected stat",
-  "target_version": "v5.5",
-  "relative_advantage": null
-}

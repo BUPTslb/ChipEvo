@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "study_id": "timing-first-round",
+  "rounds": 1,
+  "candidates_per_round": 5,
+  "promotion_delay_epsilon_ns": 0.001,
+  "promotion_area_epsilon_um2": 0.001,
+  "budget": {
+    "max_api_calls": null,
+    "max_output_tokens": 128000,
+    "max_tool_calls": null,
+    "max_source_chars": null,
+    "max_eda_feedback_calls": 0,
+    "max_http_response_bytes": 4194304,
+    "api_timeout_s": 1200,
+    "candidate_wall_timeout_s": 3600,
+    "max_estimated_input_tokens": 65536,
+    "context_safety_tokens": 2048,
+    "max_read_lines": 400,
+    "max_source_result_chars": 24000,
+    "context_trigger_ratio": 0.8,
+    "context_retain_ratio": 0.5,
+    "summary_input_chars": 16000,
+    "summary_min_new_groups": 4,
+    "summary_max_output_tokens": 16384,
+    "summary_max_chars": 12000,
+    "prune_threshold_chars": 8192,
+    "candidate_time_accounting": "active-v2-excludes-api-queue",
+    "summary_policy": "summary-v5-authoritative-progress"
+  },
+  "designs": {
+    "gemmini": {
+      "timing_frequency_mhz": 10000.0,
+      "area_frequency_mhz": 153.84615384615384,
+      "area_calibration_status": "calibrated"
+    },
+    "nvdla": {
+      "timing_frequency_mhz": 10000.0,
+      "area_frequency_mhz": 200.0,
+      "area_calibration_status": "new_macro_reference_calibrated",
+      "baseline_version": "nvdla-macro-reference-v1"
+    },
+    "zipcpu": {
+      "timing_frequency_mhz": 10000.0,
+      "area_frequency_mhz": 266.6666666666667,
+      "area_calibration_status": "calibrated"
+    },
+    "cgra": {
+      "timing_frequency_mhz": 10000.0,
+      "area_frequency_mhz": 142.85714285714286,
+      "area_calibration_status": "calibrated"
+    },
+    "feather": {
+      "timing_frequency_mhz": 10000.0,
+      "area_frequency_mhz": 474.158368895211,
+      "area_calibration_status": "calibrated"
+    }
+  },
+  "models": [
+    {
+      "id": "provider",
+      "protocol": "openai_chat",
+      "base_url": "https://api.example.com/v1",
+      "model": "REPLACE_WITH_MODEL_ID",
+      "api_key_env": "CHIPEVO_API_KEY",
+      "context_window_tokens": 262144,
+      "max_concurrent_requests": 5,
+      "request_options": {
+        "reasoning_effort": "high"
+      }
+    }
+  ],
+  "experiment_protocol": "round-feedback-v1",
+  "objectives": [
+    "timing"
+  ]
+}

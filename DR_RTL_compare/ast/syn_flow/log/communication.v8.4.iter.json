@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/communication.v8.4.v:119:9: error: expected statement\n        wire [6:0] reg_count_load_value;\n        ^~~~\nsyn_flow/rtl/communication.v8.4.v:119:20: error: use of undeclared identifier 'reg_count_load_value'\n        wire [6:0] reg_count_load_value;\n                   ^~~~~~~~~~~~~~~~~~~~\nsyn_flow/rtl/communication.v8.4.v:121:13: error: use of undeclared identifier 'reg_count_load_value'\n            reg_count_load_value = 7'd7;\n            ^~~~~~~~~~~~~~~~~~~~\nsyn_flow/rtl/communica",
-  "target_version": "v8.4",
-  "relative_advantage": null
-}

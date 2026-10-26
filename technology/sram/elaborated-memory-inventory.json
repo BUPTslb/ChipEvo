@@ -1,0 +1,346 @@
+{
+  "qualification": "inventory from existing elaboration, not proof of SRAM mapping suitability; may omit arrays already lowered to flops",
+  "designs": {
+    "gemmini": {
+      "elaboration": "/home/shen/Desktop/project/ChipEvo/chips/gemmini/build/elaborated.json",
+      "arrays": [
+        {
+          "module": "mem_4096x128",
+          "memory": "Memory",
+          "instances": 4,
+          "width": 128,
+          "depth": 4096,
+          "bits_total": 2097152
+        },
+        {
+          "module": "mem_512x512",
+          "memory": "Memory",
+          "instances": 2,
+          "width": 512,
+          "depth": 512,
+          "bits_total": 524288
+        },
+        {
+          "module": "ram_6x383",
+          "memory": "Memory",
+          "instances": 2,
+          "width": 383,
+          "depth": 6,
+          "bits_total": 4596
+        },
+        {
+          "module": "ram_4x129",
+          "memory": "Memory",
+          "instances": 8,
+          "width": 129,
+          "depth": 4,
+          "bits_total": 4128
+        },
+        {
+          "module": "ram_2x274",
+          "memory": "Memory",
+          "instances": 5,
+          "width": 274,
+          "depth": 2,
+          "bits_total": 2740
+        },
+        {
+          "module": "ram_8x246",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 246,
+          "depth": 8,
+          "bits_total": 1968
+        },
+        {
+          "module": "ram_5x258",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 258,
+          "depth": 5,
+          "bits_total": 1290
+        },
+        {
+          "module": "ram_2x625",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 625,
+          "depth": 2,
+          "bits_total": 1250
+        },
+        {
+          "module": "ram_2x550",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 550,
+          "depth": 2,
+          "bits_total": 1100
+        },
+        {
+          "module": "ram_5x190",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 190,
+          "depth": 5,
+          "bits_total": 950
+        },
+        {
+          "module": "ram_2x383",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 383,
+          "depth": 2,
+          "bits_total": 766
+        },
+        {
+          "module": "ram_2x190",
+          "memory": "Memory",
+          "instances": 2,
+          "width": 190,
+          "depth": 2,
+          "bits_total": 760
+        },
+        {
+          "module": "ram_2x143",
+          "memory": "Memory",
+          "instances": 2,
+          "width": 143,
+          "depth": 2,
+          "bits_total": 572
+        },
+        {
+          "module": "ram_2x257",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 257,
+          "depth": 2,
+          "bits_total": 514
+        },
+        {
+          "module": "ram_5x88",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 88,
+          "depth": 5,
+          "bits_total": 440
+        },
+        {
+          "module": "ram_2x191",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 191,
+          "depth": 2,
+          "bits_total": 382
+        },
+        {
+          "module": "ram_2x144",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 144,
+          "depth": 2,
+          "bits_total": 288
+        },
+        {
+          "module": "ram_6x8",
+          "memory": "Memory",
+          "instances": 1,
+          "width": 8,
+          "depth": 6,
+          "bits_total": 48
+        }
+      ],
+      "total_array_bits": 2643232
+    },
+    "nvdla": {
+      "elaboration": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/build/elaborated.json",
+      "arrays": [
+        {
+          "module": "NV_NVDLA_CFGROM_rom",
+          "memory": "$auto$proc_rom.cc:155:do_switch$79546",
+          "instances": 1,
+          "width": 32,
+          "depth": 512,
+          "bits_total": 16384
+        },
+        {
+          "module": "NV_NVDLA_CDMA_IMG_ctrl",
+          "memory": "$auto$proc_rom.cc:155:do_switch$79550",
+          "instances": 1,
+          "width": 28,
+          "depth": 32,
+          "bits_total": 896
+        }
+      ],
+      "total_array_bits": 17280
+    },
+    "feather": {
+      "elaboration": "/home/shen/Desktop/project/ChipEvo/chips/feather/build/elaborated.json",
+      "arrays": [],
+      "total_array_bits": 0
+    },
+    "cgra": {
+      "elaboration": "/home/shen/Desktop/project/ChipEvo/chips/cgra/build/elaborated.json",
+      "arrays": [
+        {
+          "module": "RegisterFile__3b3c54e4f90e121d",
+          "memory": "regs",
+          "instances": 47,
+          "width": 199,
+          "depth": 2,
+          "bits_total": 18706
+        },
+        {
+          "module": "RegisterFile__84f0703fd9bfd535",
+          "memory": "regs",
+          "instances": 18,
+          "width": 35,
+          "depth": 16,
+          "bits_total": 10080
+        },
+        {
+          "module": "RegisterFile__97521c3e6de8d08e",
+          "memory": "regs",
+          "instances": 1,
+          "width": 202,
+          "depth": 16,
+          "bits_total": 3232
+        },
+        {
+          "module": "RegisterFile__532c9a19654f92d3",
+          "memory": "regs",
+          "instances": 4,
+          "width": 123,
+          "depth": 6,
+          "bits_total": 2952
+        },
+        {
+          "module": "RegisterFile__7e065e99bcbcb3c9",
+          "memory": "regs",
+          "instances": 7,
+          "width": 203,
+          "depth": 2,
+          "bits_total": 2842
+        },
+        {
+          "module": "RegisterFile__be5b75af204f20bd",
+          "memory": "regs",
+          "instances": 6,
+          "width": 202,
+          "depth": 2,
+          "bits_total": 2424
+        },
+        {
+          "module": "RegisterFile__78ad02bf7eb2979b",
+          "memory": "regs",
+          "instances": 4,
+          "width": 174,
+          "depth": 2,
+          "bits_total": 1392
+        },
+        {
+          "module": "RegisterFile__da749a1852bb59a5",
+          "memory": "regs",
+          "instances": 16,
+          "width": 35,
+          "depth": 2,
+          "bits_total": 1120
+        },
+        {
+          "module": "RegisterFile__419a96305de89f85",
+          "memory": "regs",
+          "instances": 8,
+          "width": 53,
+          "depth": 2,
+          "bits_total": 848
+        },
+        {
+          "module": "RegisterFile__e6e244c14d4afbbe",
+          "memory": "regs",
+          "instances": 4,
+          "width": 35,
+          "depth": 6,
+          "bits_total": 840
+        },
+        {
+          "module": "CtrlMemDynamicRTL__7531561cc1c156b4",
+          "memory": "prologue_count_reg_routing_crossbar",
+          "instances": 4,
+          "width": 3,
+          "depth": 48,
+          "bits_total": 576
+        },
+        {
+          "module": "RegisterFile__d7db49d148735cf9",
+          "memory": "regs",
+          "instances": 3,
+          "width": 53,
+          "depth": 2,
+          "bits_total": 318
+        },
+        {
+          "module": "CrossbarRTL__daed722bd45da2f6",
+          "memory": "$auto$proc_rom.cc:155:do_switch$26719",
+          "instances": 4,
+          "width": 8,
+          "depth": 8,
+          "bits_total": 256
+        },
+        {
+          "module": "CtrlMemDynamicRTL__7531561cc1c156b4",
+          "memory": "prologue_count_reg_fu_crossbar",
+          "instances": 4,
+          "width": 3,
+          "depth": 12,
+          "bits_total": 144
+        },
+        {
+          "module": "CtrlMemDynamicRTL__7531561cc1c156b4",
+          "memory": "prologue_count_reg_fu",
+          "instances": 4,
+          "width": 3,
+          "depth": 6,
+          "bits_total": 72
+        },
+        {
+          "module": "PhiRTL__21e487e69ebe8a50",
+          "memory": "first",
+          "instances": 4,
+          "width": 1,
+          "depth": 8,
+          "bits_total": 32
+        }
+      ],
+      "total_array_bits": 45834
+    },
+    "zipcpu": {
+      "elaboration": "/home/shen/Desktop/project/ChipEvo/chips/zipcpu/build/elaborated.json",
+      "arrays": [
+        {
+          "module": "zipcore",
+          "memory": "regset",
+          "instances": 1,
+          "width": 32,
+          "depth": 32,
+          "bits_total": 1024
+        },
+        {
+          "module": "zipcore",
+          "memory": "$auto$proc_rom.cc:155:do_switch$1664",
+          "instances": 1,
+          "width": 7,
+          "depth": 8,
+          "bits_total": 56
+        },
+        {
+          "module": "$paramod$796986e36cd738dbc10c24d4c3c5d427aad40a3e\\idecode",
+          "memory": "$auto$proc_rom.cc:155:do_switch$1660",
+          "instances": 1,
+          "width": 5,
+          "depth": 8,
+          "bits_total": 40
+        }
+      ],
+      "total_array_bits": 1120
+    }
+  }
+}

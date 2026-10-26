@@ -1,0 +1,50 @@
+{
+  "platform": "Linux x86_64",
+  "native_tools": {
+    "yosys": {
+      "original_sha256": "cd3d3e3b863678fdcb4d5ebead2707a42c2e1549b27e61728871e0365ae195b0",
+      "source_path": "/home/shen/Desktop/project/3D-Bench/third_party/taiwei-tools/yosys/yosys"
+    },
+    "abc": {
+      "original_sha256": "8a555231061a82d9c5439117b2407e074134d79d5e6bd1812612f1e2737afd71",
+      "source_path": "/home/shen/Desktop/project/3D-Bench/third_party/taiwei-tools/yosys/yosys-abc"
+    },
+    "sta": {
+      "original_sha256": "a3f2097671e4644eedbf2951e01bd145b9415e409b841e96a8f24aa4a7c6f966",
+      "source_path": "/home/shen/Desktop/project/3D-Bench/third_party/taiwei-tools/OpenROAD/build-gcc11/src/sta/sta"
+    }
+  },
+  "yosys_source": "https://github.com/YosysHQ/yosys/tree/77005b69a",
+  "opensta_source": "https://github.com/The-OpenROAD-Project/OpenSTA/tree/12683d645c",
+  "scope": "version-identical binaries from qualified flow; bundled Linux ELF loader and runtime libraries; no EDA job executed",
+  "packaging_transform": {
+    "method": "GNU strip --strip-debug",
+    "scope": "nonallocated debug sections only; all allocated section addresses, sizes, flags and bytes checked",
+    "records": [
+      {
+        "tool": "yosys",
+        "before_bytes": 827493240,
+        "after_bytes": 25349560,
+        "before_sha256": "cd3d3e3b863678fdcb4d5ebead2707a42c2e1549b27e61728871e0365ae195b0",
+        "after_sha256": "3d3b9f30237f97aa28d13b2676538c6197ecaf6217117b593b96a3622551b358",
+        "allocated_sections_identical": true
+      },
+      {
+        "tool": "abc",
+        "before_bytes": 221265680,
+        "after_bytes": 24740648,
+        "before_sha256": "8a555231061a82d9c5439117b2407e074134d79d5e6bd1812612f1e2737afd71",
+        "after_sha256": "bd592e1b9df907aa9217be37b6e477242be362088425facccd590f64c98bfca6",
+        "allocated_sections_identical": true
+      },
+      {
+        "tool": "sta",
+        "before_bytes": 7329040,
+        "after_bytes": 7325272,
+        "before_sha256": "a3f2097671e4644eedbf2951e01bd145b9415e409b841e96a8f24aa4a7c6f966",
+        "after_sha256": "cb52757638c19e22cfdddf5af805126ef31c99bec3ac7841964afc7debcdbfa5",
+        "allocated_sections_identical": true
+      }
+    ]
+  }
+}

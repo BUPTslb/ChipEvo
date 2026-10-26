@@ -1,0 +1,238 @@
+--- original-nvdla.cpp
++++ timed-corrected-nvdla.cpp
+@@ -34,6 +34,14 @@
+ }
+ #endif
+ 
++static void eval_settle(VNV_nvdla* d) {
++    d->eval();
++    while (d->eventsPending()) {
++        Verilated::timeInc(d->nextTimeSlot() - Verilated::time());
++        d->eval();
++    }
++    Verilated::timeInc(1000);
++}
+ uint64_t ticks = 0;
+ 
+ double sc_time_stamp() {
+@@ -161,9 +169,9 @@
+ 					
+ 					printf("(%lu) syncpt %08x\n", ticks, it->first);
+ 					write(intr_status_reg, it->second);
++					uint32_t completed_id = it->first;
+ 					syncpts.erase(it);
+-					
+-					return it->first;
++					return completed_id;
+ 				}
+ 			} else if ((dla->nvdla2csb_data & op.mask) != (op.data & op.mask)) {
+ 				op.reading = 0;
+@@ -176,6 +184,8 @@
+ 				}
+ 			} else
+ 				opq.pop();
++			// The queue entry may have been removed; retry/advance next cycle.
++			return 0;
+ 		}
+ 		
+ 		if (!op.write && op.reading)
+@@ -378,7 +388,7 @@
+ 			*dla.aw_awready = 1;
+ 		
+ 		/* write data */
+-		if (*dla.w_wvalid) {
++		if (*dla.w_wvalid && *dla.w_wready) {
+ 			printf("(%lu) %s: write data from dla (%08lx...)\n", ticks, name, (uint64_t) dla.w_wdata[0]);
+ 			
+ 			axi_w_txn txn;
+@@ -421,7 +431,7 @@
+ 			txn.rvalid = 0;
+ 			txn.rid = 0;
+ 			txn.rlast = 0;
+-			for (int i = 0; i < AXI_WIDTH / 32; i++) {
++			for (int i = 0; i < AXI_WIDTH / AXI_WDATA_TYLEN; i++) {
+ 				txn.rdata[i] = (AXI_WDATA_TYPE)0x5555555555555555ULL;
+ 			}
+ 			
+@@ -452,10 +462,9 @@
+ 			
+ 			if (wtxn.wlast) {
+ 				printf("(%lu) %s: write, last tick\n", ticks, name);
+-				aw_fifo.pop();
+-
+ 				axi_b_txn btxn;
+ 				btxn.bid = awtxn.awid;
++				aw_fifo.pop();
+ 				b_fifo.push(btxn);
+ 			} else {
+ 				printf("(%lu) %s: write, ticks remaining\n", ticks, name);
+@@ -486,8 +495,9 @@
+ 			r0_fifo.push(txn);
+ 		}
+ 
++		if (!*dla.r_rvalid || *dla.r_rready) {
+ 		*dla.r_rvalid = 0;
+-		if (*dla.r_rready && !r0_fifo.empty()) {
++		if (!r0_fifo.empty()) {
+ 			axi_r_txn &txn = r0_fifo.front();
+ 			
+ 			*dla.r_rvalid = txn.rvalid;
+@@ -504,16 +514,38 @@
+ 			r0_fifo.pop();
+ 		}
+ 		
++		}
+ 		/* write response */
++		if (!*dla.b_bvalid || *dla.b_bready) {
+ 		*dla.b_bvalid = 0;
+-		if (*dla.b_bready && !b_fifo.empty()) {
++		if (!b_fifo.empty()) {
+ 			*dla.b_bvalid = 1;
+ 			
+ 			axi_b_txn &txn = b_fifo.front();
+ 			*dla.b_bid = txn.bid;
+ 			b_fifo.pop();
+ 		}
+-	}
++		}
++	}
++    // Sample old pins before the active edge; apply new outputs after it.
++    struct Outputs {
++        uint8_t awready, wready, bvalid, bid, arready, rvalid, rid, rlast;
++        AXI_WDATA_TYPE data[AXI_WIDTH / AXI_WDATA_TYLEN];
++    } pending;
++    Outputs capture_outputs() {
++        Outputs o{*dla.aw_awready, *dla.w_wready, *dla.b_bvalid, *dla.b_bid,
++                  *dla.ar_arready, *dla.r_rvalid, *dla.r_rid, *dla.r_rlast, {}};
++        for (int i=0; i<AXI_WIDTH/AXI_WDATA_TYLEN; ++i) o.data[i]=dla.r_rdata[i];
++        return o;
++    }
++    void drive_outputs(const Outputs& o) {
++        *dla.aw_awready=o.awready; *dla.w_wready=o.wready;
++        *dla.b_bvalid=o.bvalid; *dla.b_bid=o.bid; *dla.ar_arready=o.arready;
++        *dla.r_rvalid=o.rvalid; *dla.r_rid=o.rid; *dla.r_rlast=o.rlast;
++        for (int i=0; i<AXI_WIDTH/AXI_WDATA_TYLEN; ++i) dla.r_rdata[i]=o.data[i];
++    }
++    void prepare() { auto old=capture_outputs(); eval(); pending=capture_outputs(); drive_outputs(old); }
++    void commit() { drive_outputs(pending); }
+ };
+ 
+ class TraceLoader {
+@@ -810,8 +842,10 @@
+ 				abort();
+ 			}
+ 			
++			FILE *diag = fopen("crc-output.bin", "wb");
+ 			while (len) {
+ 				uint8_t da = axi->read(addr);
++				if (diag) fwrite(&da, 1, 1, diag);
+ 				
+ 				crc ^= da;
+ 				for (int i = 0; i < 8; i++) {
+@@ -822,10 +856,11 @@
+ 				len--;
+ 			}
+ 			
++			if (diag) fclose(diag);
+ 			crc = ~crc;
+ 			
+ 			if (crc != op.crc) {
+-				printf("*** FAIL: CRC mismatch: %08x + %08x should have been %08x, was %08x\n", op.base, op.size, crc, op.crc);
++				printf("*** FAIL: CRC mismatch: %08x + %08x should have been %08x, was %08x\n", op.base, op.size, op.crc, crc);
+ 				_test_passed = 0;
+ 			} else
+ 				printf("*** CRC matched %08x + %08x -> %08x\n", op.base, op.size, crc);
+@@ -943,11 +978,11 @@
+ 	printf("reset...\n");
+ 	dla->dla_reset_rstn = 1;
+ 	dla->direct_reset_ = 1;
+-	dla->eval();
++	eval_settle(dla);
+ 	for (int i = 0; i < 20; i++) {
+ 		dla->dla_core_clk = 1;
+ 		dla->dla_csb_clk = 1;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -955,7 +990,7 @@
+ 		
+ 		dla->dla_core_clk = 0;
+ 		dla->dla_csb_clk = 0;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -964,12 +999,12 @@
+ 
+ 	dla->dla_reset_rstn = 0;
+ 	dla->direct_reset_ = 0;
+-	dla->eval();
++	eval_settle(dla);
+ 	
+ 	for (int i = 0; i < 20; i++) {
+ 		dla->dla_core_clk = 1;
+ 		dla->dla_csb_clk = 1;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -977,7 +1012,7 @@
+ 		
+ 		dla->dla_core_clk = 0;
+ 		dla->dla_csb_clk = 0;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -991,7 +1026,7 @@
+ 	for (int i = 0; i < 8192; i++) {
+ 		dla->dla_core_clk = 1;
+ 		dla->dla_csb_clk = 1;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -999,7 +1034,7 @@
+ 		
+ 		dla->dla_core_clk = 0;
+ 		dla->dla_csb_clk = 0;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -1028,13 +1063,13 @@
+ 			waiting = 0;
+ 		}
+ 		
+-		axi_dbb->eval();
++		axi_dbb->prepare();
+ 		if (axi_cvsram)
+-			axi_cvsram->eval();
++			axi_cvsram->prepare();
+ 
+ 		dla->dla_core_clk = 1;
+ 		dla->dla_csb_clk = 1;
+-		dla->eval();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);
+@@ -1042,7 +1077,10 @@
+ 		
+ 		dla->dla_core_clk = 0;
+ 		dla->dla_csb_clk = 0;
+-		dla->eval();
++		eval_settle(dla);
++		axi_dbb->commit();
++		if (axi_cvsram) axi_cvsram->commit();
++		eval_settle(dla);
+ 		ticks++;
+ #if VM_TRACE
+ 		tfp->dump(ticks);

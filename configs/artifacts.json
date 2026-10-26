@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "baseline_cache": {"enabled": true, "max_entries": 32, "max_bytes": 268435456},
+  "retention": {
+    "successful": "compact",
+    "failed": "diagnostic",
+    "max_log_bytes": 131072,
+    "max_failure_evidence_bytes": 16777216,
+    "compress_agent_logs": true
+  }
+}

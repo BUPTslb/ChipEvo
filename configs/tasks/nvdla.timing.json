@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "design": "nvdla",
+  "objective": "timing",
+  "period_ns": 0.1,
+  "synthesis_timeout_s": 3600,
+  "sta_timeout_s": 900,
+  "scoring": {
+    "max_area_ratio": 1.05,
+    "max_delay_ratio": 1.0,
+    "full_score_improvement": 0.4,
+    "no_hold_regression": true,
+    "hold_tolerance_ns": 0.001,
+    "no_special_check_regression": true,
+    "area_tolerance_um2": 1e-06,
+    "delay_tolerance_ns": 1e-06,
+    "delay_constraint": "baseline"
+  },
+  "memory_fixed": true,
+  "area_scope": "all mapped standard cells plus fixed macros",
+  "timing_scope": "ordinary same-clock paths; nonordinary checks retained and may not worsen",
+  "qualification": "New macro reference: storage tests, 357-module self proof, SDP/PDP/CDP regression, current objective synthesis and STA completed",
+  "limitations": [
+    "pre-layout zero-wire estimate; no routed parasitics or clock tree",
+    "hold/electrical checks are reported; no physical signoff claimed",
+    "timing objective is an aggressive optimization target, not an achieved clock rate"
+  ],
+  "localization": {
+    "strategy": "timing_module",
+    "secondary": "area_contribution",
+    "top_targets": 5,
+    "memory_fixed": true
+  },
+  "frequency_mhz": 10000.0,
+  "baseline_version": "nvdla-macro-reference-v1",
+  "baseline_report": "reports/nvdla-macro-reference-v1-20261024.json"
+}

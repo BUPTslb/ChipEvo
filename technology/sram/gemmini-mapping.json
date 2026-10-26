@@ -1,0 +1,34 @@
+{
+  "status": "admitted_synthesis_only",
+  "scope": "pre-layout macro mapping; final SDC/electrical/formal benchmark admission still pending",
+  "wrapper": "technology/sram/gemmini_wrappers.v",
+  "replace_sources": [
+    "rtl/mem_4096x128.v",
+    "rtl/mem_512x512.v"
+  ],
+  "liberties": [
+    "technology/sram/macros/sram_1rw_256x32/sram_1rw_256x32_TT_1p1V_25C.lib",
+    "technology/sram/macros/sram_1r1w_256x32/sram_1r1w_256x32_TT_1p1V_25C.lib"
+  ],
+  "asset_sha256": {
+    "technology/sram/macros/sram_1rw_256x32/sram_1rw_256x32_TT_1p1V_25C.lib": "abd17d8c4d430a50e628028841455ee62d8276d8bd2c2d5774cfa78449ef3987",
+    "technology/sram/macros/sram_1rw_256x32/sram_1rw_256x32.v": "bcc5b721d40be1cc2eeda9a54f1c41d62657da6f8e0a5a858214c8585888ac6d",
+    "technology/sram/macros/sram_1rw_256x32/sram_1rw_256x32.lef": "59f3c5404810914163c00bb7246c6b604fdc567a2b4c18977301d8913c6d68ad",
+    "technology/sram/macros/sram_1rw_256x32/sram_1rw_256x32.py": "d881794beb7ffcbc35c931324419991c92a87176ed684d46fe59c80bf5a5c4f0",
+    "technology/sram/macros/sram_1r1w_256x32/sram_1r1w_256x32_TT_1p1V_25C.lib": "da5efac6eb9b792fe671b3df76d1b3cc20149509ef2d44aa865e1d59582bf2bf",
+    "technology/sram/macros/sram_1r1w_256x32/sram_1r1w_256x32.v": "b4c8350ad02cfbd3697a3cdde48c9634a445b5860949e2fda85d1fae2f6ccbd3",
+    "technology/sram/macros/sram_1r1w_256x32/sram_1r1w_256x32.lef": "d0855c736e8197d0929511f8214e8c54c96f14b568111f84e6e1a9121f090055",
+    "technology/sram/macros/sram_1r1w_256x32/sram_1r1w_256x32.py": "9f9ab56066b72954faba2c54cc619977dfa085c9d2a1f815e30268467e38e68a",
+    "technology/sram/gemmini_wrappers.v": "220f8f3cdb44ad0a90ac67976cb8ce15e483487b5c67e14a897a087386f5fa5e"
+  },
+  "macro_areas": {
+    "sram_1rw_256x32": 15434.357400000003,
+    "sram_1r1w_256x32": 31609.49145
+  },
+  "expected_baseline_instances": {
+    "sram_1rw_256x32": 256,
+    "sram_1r1w_256x32": 64
+  },
+  "functional_evidence": "20,850 block comparisons and 14/14 Gemmini regression; final Verilog byte-identical to tested preview",
+  "formal_macro_proof": false
+}

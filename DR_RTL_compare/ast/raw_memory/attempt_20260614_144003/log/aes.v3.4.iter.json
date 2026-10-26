@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v3.4.sv:86:13: error: expected statement\n            wire [NBW_OUT-1:0] base_key = expanded_key_ff;\n            ^~~~\nsyn_flow/rtl/aes.v3.4.sv:86:32: error: use of undeclared identifier 'base_key'\n            wire [NBW_OUT-1:0] base_key = expanded_key_ff;\n                               ^~~~~~~~\nsyn_flow/rtl/aes.v3.4.sv:87:13: error: expected statement\n            wire [31:0] base_addr0 = NBW_OUT-(4*i)*NBW_WORD;\n            ^~~~\nsyn_flow/rtl/aes.v3.4.sv:87:25: error: use of undecl",
-  "target_version": "v3.4",
-  "relative_advantage": null
-}

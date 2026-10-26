@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/DSP.v2.3.v:53:5: error: unknown module 'RegMux'\n    RegMux #(8, RSTTYPE, OPMODEREG) opReg (clk, CEOpMode, rstOpMode, opMode, opModeRegOut);\n    ^~~~~~\nsyn_flow/rtl/DSP.v2.3.v:54:5: error: unknown module 'RegMux'\n    RegMux #(18, RSTTYPE, DREG) dReg (clk, CED, rstD, D, dRegOut);\n    ^~~~~~\nsyn_flow/rtl/DSP.v2.3.v:55:5: error: unknown module 'RegMux'\n    RegMux #(18, RSTTYPE, B0REG) b0Reg (clk, CEB, rstB, bIn, b0RegOut);\n    ^~~~~~\nsyn_flow/rtl/DSP.v2.3.v:56:5: error: unknown module '",
-  "target_version": "v2.3",
-  "relative_advantage": null
-}

@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/datapath.v8.4.v:193:1: error: unknown module 'data_swap'\ndata_swap SWAP_IN\n^~~~~~~~~\nsyn_flow/rtl/datapath.v8.4.v:201:1: error: unknown module 'data_swap'\ndata_swap SWAP_OUT\n^~~~~~~~~\nsyn_flow/rtl/datapath.v8.4.v:338:1: error: unknown module 'shift_rows'\nshift_rows SHIFT_ROW\n^~~~~~~~~~\nsyn_flow/rtl/datapath.v8.4.v:737:3: error: unknown module 'sBox_8'\n  sBox_8 SBOX[SBOX_NUM - 1:0]\n  ^~~~~~",
-  "target_version": "v8.4",
-  "relative_advantage": null
-}

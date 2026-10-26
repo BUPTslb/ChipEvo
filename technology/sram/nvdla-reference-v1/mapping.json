@@ -1,0 +1,33 @@
+{
+  "wrapper": "technology/sram/nvdla-reference-v1/macro_synthesis_boundary.v",
+  "replace_sources": [
+    "rtl/rams/benchmark/ce_sram_models.v"
+  ],
+  "liberties": [
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_256x32/sram_1r1w_256x32_TT_1p1V_25C.lib",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_80x17/sram_1r1w_80x17_TT_1p1V_25C.lib"
+  ],
+  "asset_sha256": {
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_256x32/sram_1r1w_256x32.v": "b4c8350ad02cfbd3697a3cdde48c9634a445b5860949e2fda85d1fae2f6ccbd3",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_256x32/sram_1r1w_256x32.lef": "d0855c736e8197d0929511f8214e8c54c96f14b568111f84e6e1a9121f090055",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_256x32/sram_1r1w_256x32_TT_1p1V_25C.lib": "da5efac6eb9b792fe671b3df76d1b3cc20149509ef2d44aa865e1d59582bf2bf",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_80x17/sram_1r1w_80x17.v": "7895afeed0195e92f41458accd356b7dddcfb368bb72275fa5bdbb00f448ca61",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_80x17/sram_1r1w_80x17.lef": "34f0a39417d9f21332127b84694119b851122dbc472f9a53d6115966c9698f51",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_80x17/sram_1r1w_80x17.gds": "902a34a1dbaafbf966f57c80b67762b1b76306ce6f72240765f5d7acf4853816",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_80x17/sram_1r1w_80x17_TT_1p1V_25C.lib": "ef3effbd7f6c8051a874f47d56f05089b0445787eb954e3fca7ae0f16fe58d42",
+    "technology/sram/nvdla-reference-v1/macro_synthesis_boundary.v": "93f032a39735a54b5c7822426a24691a2bf61bc7c4864f582344ac4a16bf0925",
+    "technology/sram/nvdla-reference-v1/macros/sram_1r1w_80x17/sram_1r1w_80x17.py": "6a221c0b976de2d3cf3508aac5f27b3d4f6aefd9be56053163c68ce72ccbabc9",
+    "technology/sram/nvdla-reference-v1/legal-probe-address.patch": "b18bb968b5128c854ba92def8fd4bdfb6b42067b14edf4cf44d2337e84c4d217"
+  },
+  "macro_areas": {
+    "sram_1r1w_256x32": 31609.49145,
+    "sram_1r1w_80x17": 10149.886950000002
+  },
+  "status": "admitted_new_reference_synthesis_only",
+  "expected_baseline_instances": {
+    "sram_1r1w_256x32": 214,
+    "sram_1r1w_80x17": 1
+  },
+  "qualification_report": "reports/nvdla-macro-reference-v1-20261024.json",
+  "legacy_equivalence_required": false
+}

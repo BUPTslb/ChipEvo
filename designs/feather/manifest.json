@@ -1,0 +1,52 @@
+{
+  "top": "feather_top",
+  "clock": "clk",
+  "resets": {
+    "rst_n": 0
+  },
+  "params": {},
+  "config": "8x8, all other upstream parameters retained; behavioral SRAM retained",
+  "source_root": "/home/shen/Desktop/project/3D-Bench/external/FEATHER/FEATHER_RTL/RTL",
+  "source_repo": "/home/shen/Desktop/project/3D-Bench/external/FEATHER",
+  "commit": "225951bfce36ce865e8a5d2165382884134536ed",
+  "upstream": "https://github.com/maeri-project/FEATHER.git",
+  "topfile": "rtl/feather_top.v",
+  "defines": [
+    "SYNTHESIS"
+  ],
+  "includes": [
+    "rtl"
+  ],
+  "extras": [],
+  "status": "closure_elaborated",
+  "area_scope": "standard cells including mapped behavioral RAM; no physical macro substitution",
+  "reference_policy": "original RTL cycle-exact equivalence, same parameters, clocks and reset",
+  "sources": [
+    "rtl/birrd_2x2_simple_cmd_flow_seq.v",
+    "rtl/birrd_2x2_simple_last_cmd_flow_seq.v",
+    "rtl/birrd_simple_cmd_flow_seq.v",
+    "rtl/feather_controller.v",
+    "rtl/feather_pe.v",
+    "rtl/feather_top.v",
+    "rtl/o_bus_autopick_seq.v",
+    "rtl/sram_bank_sp.v",
+    "rtl/sram_sp_2d_array.v"
+  ],
+  "excluded_source_files": [],
+  "rtl_file_count": 9,
+  "rtl_physical_lines": 2944,
+  "baseline_sha256": {
+    "birrd_2x2_simple_cmd_flow_seq.v": "8e0afdef6ae62e3aec95fac3a571ddbffbd5979af65fddd05d61d8f5f6ac9477",
+    "birrd_2x2_simple_last_cmd_flow_seq.v": "ba8e0e49ec82da80a364168f1c8a3b9c74f35b451fb214ca98da483cb631ec94",
+    "birrd_simple_cmd_flow_seq.v": "3feede9caa6108fc867fc546c1fba672fe349f3b1d987c54d9fba632df854b5c",
+    "feather_controller.v": "f071c815a347ab664d529cb04c5d8cdfbd1d61e8978ffd6c33cc55af21be5e6d",
+    "feather_pe.v": "37674ed1752bafba7bada3e60e784de2e5105cc6a74f3f63a4ca00d7d7a7b695",
+    "feather_top.v": "bde7b1503827f01113dcdd37525651bba763519c8ade3bc06111ae33c054a3e3",
+    "o_bus_autopick_seq.v": "d6dd416fa12bd0984ac8526f58cefb448b1aa45e647194618ef7899b6d487d0f",
+    "sram_bank_sp.v": "a490f559d43034c36ff877c59a008e8ae0e5377ca8ec2561784300cccd2f6bff",
+    "sram_sp_2d_array.v": "176a722e8514bea06310cb8acce94429dd85c5c5fc1f47ddf1401841896efa66"
+  },
+  "local_configuration_edit": "Only default DPE_COL_NUM/DPE_ROW_NUM 16 -> 8 in feather_top.v; avoids Yosys parameter elaboration crash. Original in provenance/. Both golden and candidate start at 8x8.",
+  "abc_fast": false,
+  "mapping_policy": "hierarchical Yosys synth, Nangate45 mapping, all behavioral memories retained and mapped to flip-flop/latch standard cells; no physical SRAM inference"
+}

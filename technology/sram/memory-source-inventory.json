@@ -1,0 +1,2280 @@
+{
+  "method": "lexical declaration scan; includes non-memory arrays and preprocessor alternatives; NOT elaborated instance counts or macro eligibility",
+  "designs": {
+    "gemmini": [
+      {
+        "source": "rtl/mem_4096x128.v",
+        "line": 17,
+        "declaration": "reg [127:0] Memory [0:4095];"
+      },
+      {
+        "source": "rtl/mem_512x512.v",
+        "line": 21,
+        "declaration": "reg [511:0] Memory [0:511];"
+      },
+      {
+        "source": "rtl/ram_2x143.v",
+        "line": 19,
+        "declaration": "reg [142:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x144.v",
+        "line": 19,
+        "declaration": "reg [143:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x190.v",
+        "line": 19,
+        "declaration": "reg [189:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x191.v",
+        "line": 19,
+        "declaration": "reg [190:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x257.v",
+        "line": 19,
+        "declaration": "reg [256:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x274.v",
+        "line": 19,
+        "declaration": "reg [273:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x383.v",
+        "line": 19,
+        "declaration": "reg [382:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x550.v",
+        "line": 19,
+        "declaration": "reg [549:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_2x625.v",
+        "line": 19,
+        "declaration": "reg [624:0] Memory [0:1];"
+      },
+      {
+        "source": "rtl/ram_4x129.v",
+        "line": 19,
+        "declaration": "reg [128:0] Memory [0:3];"
+      },
+      {
+        "source": "rtl/ram_5x190.v",
+        "line": 19,
+        "declaration": "reg [189:0] Memory [0:4];"
+      },
+      {
+        "source": "rtl/ram_5x258.v",
+        "line": 19,
+        "declaration": "reg [257:0] Memory [0:4];"
+      },
+      {
+        "source": "rtl/ram_5x88.v",
+        "line": 19,
+        "declaration": "reg [87:0] Memory [0:4];"
+      },
+      {
+        "source": "rtl/ram_6x383.v",
+        "line": 19,
+        "declaration": "reg [382:0] Memory [0:5];"
+      },
+      {
+        "source": "rtl/ram_6x8.v",
+        "line": 19,
+        "declaration": "reg [7:0] Memory [0:5];"
+      },
+      {
+        "source": "rtl/ram_8x246.v",
+        "line": 19,
+        "declaration": "reg [245:0] Memory [0:7];"
+      }
+    ],
+    "nvdla": [
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_RDMA_ro_fifo.v",
+        "line": 622,
+        "declaration": "reg [7:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_RDMA_ro_fifo.v",
+        "line": 1308,
+        "declaration": "reg [15:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_RDMA_ro_fifo.v",
+        "line": 1994,
+        "declaration": "reg [31:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_RDMA_ro_fifo.v",
+        "line": 2680,
+        "declaration": "reg [63:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_WDMA_dat_fifo.v",
+        "line": 863,
+        "declaration": "reg [63:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_WDMA_dat_fifo.v",
+        "line": 1790,
+        "declaration": "reg [31:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_WDMA_dat_fifo.v",
+        "line": 2717,
+        "declaration": "reg [15:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_CDP_WDMA_dat_fifo.v",
+        "line": 3644,
+        "declaration": "reg [7:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_RDMA_ro_fifo.v",
+        "line": 622,
+        "declaration": "reg [63:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_RDMA_ro_fifo.v",
+        "line": 1308,
+        "declaration": "reg [31:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_RDMA_ro_fifo.v",
+        "line": 1994,
+        "declaration": "reg [15:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_RDMA_ro_fifo.v",
+        "line": 2680,
+        "declaration": "reg [7:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_SDPIN_ro_fifo.v",
+        "line": 453,
+        "declaration": "reg [63:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_SDPIN_ro_fifo.v",
+        "line": 971,
+        "declaration": "reg [31:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_SDPIN_ro_fifo.v",
+        "line": 1489,
+        "declaration": "reg [15:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_SDPIN_ro_fifo.v",
+        "line": 2007,
+        "declaration": "reg [7:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_WDMA_DAT_fifo.v",
+        "line": 622,
+        "declaration": "reg [63:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_WDMA_DAT_fifo.v",
+        "line": 1308,
+        "declaration": "reg [31:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_WDMA_DAT_fifo.v",
+        "line": 1994,
+        "declaration": "reg [15:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/fifos/NV_NVDLA_PDP_WDMA_DAT_fifo.v",
+        "line": 2680,
+        "declaration": "reg [7:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/nvdla/car/NV_NVDLA_sync3d.v",
+        "line": 32,
+        "declaration": "reg [0:0] RandSyncBusPipe [0:1];"
+      },
+      {
+        "source": "rtl/nvdla/car/NV_NVDLA_sync3d_c.v",
+        "line": 34,
+        "declaration": "reg [0:0] RandSyncBusPipe [0:1];"
+      },
+      {
+        "source": "rtl/nvdla/car/NV_NVDLA_sync3d_s.v",
+        "line": 34,
+        "declaration": "reg [0:0] RandSyncBusPipe [0:1];"
+      },
+      {
+        "source": "rtl/nvdla/cdma/NV_NVDLA_CDMA_IMG_sg2pack_fifo.v",
+        "line": 1124,
+        "declaration": "reg [10:0] mem[127:0];"
+      },
+      {
+        "source": "rtl/nvdla/cdp/NV_NVDLA_CDP_RDMA_cq.v",
+        "line": 1757,
+        "declaration": "reg [6:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/nvdla/cdp/NV_NVDLA_CDP_wdma.v",
+        "line": 2039,
+        "declaration": "reg [16:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/csb_master/NV_NVDLA_CSB_MASTER_csb2falcon_fifo.v",
+        "line": 675,
+        "declaration": "reg [33:0] mem[1:0];"
+      },
+      {
+        "source": "rtl/nvdla/csb_master/NV_NVDLA_CSB_MASTER_falcon2csb_fifo.v",
+        "line": 943,
+        "declaration": "reg [49:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/csc/NV_NVDLA_CSC_SG_dat_fifo.v",
+        "line": 492,
+        "declaration": "reg [32:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/csc/NV_NVDLA_CSC_SG_wt_fifo.v",
+        "line": 492,
+        "declaration": "reg [19:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/nocif/NV_NVDLA_MCIF_READ_eg.v",
+        "line": 1435,
+        "declaration": "reg [63:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/nocif/NV_NVDLA_MCIF_WRITE_IG_arb.v",
+        "line": 1035,
+        "declaration": "reg [64:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/pdp/NV_NVDLA_PDP_CORE_cal1d.v",
+        "line": 2961,
+        "declaration": "reg [11:0] mem[7:0];"
+      },
+      {
+        "source": "rtl/nvdla/pdp/NV_NVDLA_PDP_RDMA_cq.v",
+        "line": 1757,
+        "declaration": "reg [17:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/nvdla/sdp/NV_NVDLA_SDP_MRDMA_EG_cmd.v",
+        "line": 796,
+        "declaration": "reg [12:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/sdp/NV_NVDLA_SDP_MRDMA_EG_cmd.v",
+        "line": 1271,
+        "declaration": "reg [14:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/sdp/NV_NVDLA_SDP_RDMA_EG_ro.v",
+        "line": 1074,
+        "declaration": "reg [1:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/sdp/NV_NVDLA_SDP_WDMA_cmd.v",
+        "line": 994,
+        "declaration": "reg [14:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/nvdla/sdp/NV_NVDLA_SDP_WDMA_cmd.v",
+        "line": 1469,
+        "declaration": "reg [43:0] mem[3:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X11_GL_M2_E2.v",
+        "line": 545,
+        "declaration": "reg [10:0] array[0:127];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X11_GL_M2_E2.v",
+        "line": 692,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X11_GL_M2_E2.v",
+        "line": 693,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X11_GL_M2_E2.v",
+        "line": 716,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X11_GL_M2_E2.v",
+        "line": 717,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X11_GL_M2_E2.v",
+        "line": 780,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X6_GL_M2_E2.v",
+        "line": 545,
+        "declaration": "reg [5:0] array[0:127];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X6_GL_M2_E2.v",
+        "line": 692,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X6_GL_M2_E2.v",
+        "line": 693,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X6_GL_M2_E2.v",
+        "line": 716,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X6_GL_M2_E2.v",
+        "line": 717,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_128X6_GL_M2_E2.v",
+        "line": 780,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X14_GL_M1_E2.v",
+        "line": 395,
+        "declaration": "reg [13:0] array[0:15];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X14_GL_M1_E2.v",
+        "line": 542,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X14_GL_M1_E2.v",
+        "line": 543,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X14_GL_M1_E2.v",
+        "line": 566,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X14_GL_M1_E2.v",
+        "line": 567,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X14_GL_M1_E2.v",
+        "line": 618,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X16_GL_M1_E2.v",
+        "line": 395,
+        "declaration": "reg [15:0] array[0:15];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X16_GL_M1_E2.v",
+        "line": 542,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X16_GL_M1_E2.v",
+        "line": 543,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X16_GL_M1_E2.v",
+        "line": 566,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X16_GL_M1_E2.v",
+        "line": 567,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X16_GL_M1_E2.v",
+        "line": 618,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X256_GL_M1_E2.v",
+        "line": 395,
+        "declaration": "reg [255:0] array[0:15];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X256_GL_M1_E2.v",
+        "line": 542,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X256_GL_M1_E2.v",
+        "line": 543,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X256_GL_M1_E2.v",
+        "line": 566,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X256_GL_M1_E2.v",
+        "line": 567,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X256_GL_M1_E2.v",
+        "line": 618,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X272_GL_M1_E2.v",
+        "line": 400,
+        "declaration": "reg [271:0] array[0:15];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X272_GL_M1_E2.v",
+        "line": 547,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X272_GL_M1_E2.v",
+        "line": 548,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X272_GL_M1_E2.v",
+        "line": 571,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X272_GL_M1_E2.v",
+        "line": 572,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X272_GL_M1_E2.v",
+        "line": 623,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X64_GL_M1_E2.v",
+        "line": 400,
+        "declaration": "reg [63:0] array[0:15];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X64_GL_M1_E2.v",
+        "line": 547,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X64_GL_M1_E2.v",
+        "line": 548,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X64_GL_M1_E2.v",
+        "line": 571,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X64_GL_M1_E2.v",
+        "line": 572,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X64_GL_M1_E2.v",
+        "line": 623,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X66_GL_M1_E2.v",
+        "line": 395,
+        "declaration": "reg [65:0] array[0:15];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X66_GL_M1_E2.v",
+        "line": 542,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X66_GL_M1_E2.v",
+        "line": 543,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X66_GL_M1_E2.v",
+        "line": 566,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X66_GL_M1_E2.v",
+        "line": 567,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_16X66_GL_M1_E2.v",
+        "line": 618,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X16_GL_M1_E2.v",
+        "line": 407,
+        "declaration": "reg [15:0] array[0:19];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X16_GL_M1_E2.v",
+        "line": 554,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X16_GL_M1_E2.v",
+        "line": 555,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X16_GL_M1_E2.v",
+        "line": 578,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X16_GL_M1_E2.v",
+        "line": 579,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X16_GL_M1_E2.v",
+        "line": 630,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X32_GL_M1_E2.v",
+        "line": 407,
+        "declaration": "reg [31:0] array[0:19];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X32_GL_M1_E2.v",
+        "line": 554,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X32_GL_M1_E2.v",
+        "line": 555,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X32_GL_M1_E2.v",
+        "line": 578,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X32_GL_M1_E2.v",
+        "line": 579,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X32_GL_M1_E2.v",
+        "line": 630,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X8_GL_M1_E2.v",
+        "line": 407,
+        "declaration": "reg [7:0] array[0:19];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X8_GL_M1_E2.v",
+        "line": 554,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X8_GL_M1_E2.v",
+        "line": 555,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X8_GL_M1_E2.v",
+        "line": 578,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X8_GL_M1_E2.v",
+        "line": 579,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_20X8_GL_M1_E2.v",
+        "line": 630,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X4_GL_M2_E2.v",
+        "line": 673,
+        "declaration": "reg [3:0] array[0:255];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X4_GL_M2_E2.v",
+        "line": 820,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X4_GL_M2_E2.v",
+        "line": 821,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X4_GL_M2_E2.v",
+        "line": 844,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X4_GL_M2_E2.v",
+        "line": 845,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X4_GL_M2_E2.v",
+        "line": 908,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X8_GL_M2_E2.v",
+        "line": 673,
+        "declaration": "reg [7:0] array[0:255];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X8_GL_M2_E2.v",
+        "line": 820,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X8_GL_M2_E2.v",
+        "line": 821,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X8_GL_M2_E2.v",
+        "line": 844,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X8_GL_M2_E2.v",
+        "line": 845,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_256X8_GL_M2_E2.v",
+        "line": 908,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_60X22_GL_M1_E2.v",
+        "line": 447,
+        "declaration": "reg [21:0] array[0:59];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_60X22_GL_M1_E2.v",
+        "line": 594,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_60X22_GL_M1_E2.v",
+        "line": 595,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_60X22_GL_M1_E2.v",
+        "line": 618,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_60X22_GL_M1_E2.v",
+        "line": 619,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_60X22_GL_M1_E2.v",
+        "line": 670,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X14_GL_M2_E2.v",
+        "line": 476,
+        "declaration": "reg [13:0] array[0:63];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X14_GL_M2_E2.v",
+        "line": 623,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X14_GL_M2_E2.v",
+        "line": 624,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X14_GL_M2_E2.v",
+        "line": 647,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X14_GL_M2_E2.v",
+        "line": 648,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X14_GL_M2_E2.v",
+        "line": 711,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X16_GL_M2_E2.v",
+        "line": 476,
+        "declaration": "reg [15:0] array[0:63];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X16_GL_M2_E2.v",
+        "line": 623,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X16_GL_M2_E2.v",
+        "line": 624,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X16_GL_M2_E2.v",
+        "line": 647,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X16_GL_M2_E2.v",
+        "line": 648,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_64X16_GL_M2_E2.v",
+        "line": 711,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X18_GL_M1_E2.v",
+        "line": 467,
+        "declaration": "reg [17:0] array[0:79];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X18_GL_M1_E2.v",
+        "line": 614,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X18_GL_M1_E2.v",
+        "line": 615,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X18_GL_M1_E2.v",
+        "line": 638,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X18_GL_M1_E2.v",
+        "line": 639,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X18_GL_M1_E2.v",
+        "line": 690,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X9_GL_M2_E2.v",
+        "line": 500,
+        "declaration": "reg [8:0] array[0:79];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X9_GL_M2_E2.v",
+        "line": 647,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X9_GL_M2_E2.v",
+        "line": 648,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X9_GL_M2_E2.v",
+        "line": 671,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X9_GL_M2_E2.v",
+        "line": 672,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_80X9_GL_M2_E2.v",
+        "line": 735,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X130_GL_M1_E2.v",
+        "line": 387,
+        "declaration": "reg [129:0] array[0:7];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X130_GL_M1_E2.v",
+        "line": 534,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X130_GL_M1_E2.v",
+        "line": 535,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X130_GL_M1_E2.v",
+        "line": 558,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X130_GL_M1_E2.v",
+        "line": 559,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X130_GL_M1_E2.v",
+        "line": 610,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X258_GL_M1_E2.v",
+        "line": 387,
+        "declaration": "reg [257:0] array[0:7];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X258_GL_M1_E2.v",
+        "line": 534,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X258_GL_M1_E2.v",
+        "line": 535,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X258_GL_M1_E2.v",
+        "line": 558,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X258_GL_M1_E2.v",
+        "line": 559,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X258_GL_M1_E2.v",
+        "line": 610,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X66_GL_M1_E2.v",
+        "line": 387,
+        "declaration": "reg [65:0] array[0:7];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X66_GL_M1_E2.v",
+        "line": 534,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X66_GL_M1_E2.v",
+        "line": 535,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X66_GL_M1_E2.v",
+        "line": 558,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X66_GL_M1_E2.v",
+        "line": 559,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMDP_8X66_GL_M1_E2.v",
+        "line": 610,
+        "declaration": "reg [bits-1:0] array[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 315,
+        "declaration": "reg [17:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 359,
+        "declaration": "reg [17:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 403,
+        "declaration": "reg [17:0] rd[1 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 419,
+        "declaration": "reg [17:0] wr[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 461,
+        "declaration": "reg [17:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 479,
+        "declaration": "reg [17:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 805,
+        "declaration": "reg [17:0] mem[127:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 1070,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 1076,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 1077,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 1096,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v",
+        "line": 1097,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [257:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [257:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [257:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [257:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [257:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [257:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 759,
+        "declaration": "reg [257:0] mem[127:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 1004,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 1010,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 1011,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 1030,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_128X258_GL_M1_D2.v",
+        "line": 1031,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 309,
+        "declaration": "reg [112:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 353,
+        "declaration": "reg [112:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 397,
+        "declaration": "reg [112:0] rd[1 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 413,
+        "declaration": "reg [112:0] wr[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 455,
+        "declaration": "reg [112:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 473,
+        "declaration": "reg [112:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 927,
+        "declaration": "reg [112:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 1190,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 1196,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 1197,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 1216,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X113_GL_M2_D2.v",
+        "line": 1217,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 309,
+        "declaration": "reg [143:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 353,
+        "declaration": "reg [143:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 397,
+        "declaration": "reg [143:0] rd[1 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 413,
+        "declaration": "reg [143:0] wr[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 455,
+        "declaration": "reg [143:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 473,
+        "declaration": "reg [143:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 927,
+        "declaration": "reg [143:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 1190,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 1196,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 1197,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 1216,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X144_GL_M2_D2.v",
+        "line": 1217,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 317,
+        "declaration": "reg [13:0] rd[3:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 365,
+        "declaration": "reg [13:0] rd[3:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 413,
+        "declaration": "reg [13:0] rd[3 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 433,
+        "declaration": "reg [13:0] wr[3:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 483,
+        "declaration": "reg [13:0] mon_word[3:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 505,
+        "declaration": "reg [13:0] mon_word[3:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 989,
+        "declaration": "reg [13:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 1286,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 1292,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 1293,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 1312,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X14_GL_M4_D2.v",
+        "line": 1313,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 309,
+        "declaration": "reg [15:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 353,
+        "declaration": "reg [15:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 397,
+        "declaration": "reg [15:0] rd[1 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 413,
+        "declaration": "reg [15:0] wr[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 455,
+        "declaration": "reg [15:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 473,
+        "declaration": "reg [15:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 927,
+        "declaration": "reg [15:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 1190,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 1196,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 1197,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 1216,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X16_GL_M2_D2.v",
+        "line": 1217,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 315,
+        "declaration": "reg [63:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 359,
+        "declaration": "reg [63:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 403,
+        "declaration": "reg [63:0] rd[1 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 419,
+        "declaration": "reg [63:0] wr[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 461,
+        "declaration": "reg [63:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 479,
+        "declaration": "reg [63:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 933,
+        "declaration": "reg [63:0] mem[255:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 1196,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 1202,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 1203,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 1222,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v",
+        "line": 1223,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [129:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [129:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [129:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [129:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [129:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [129:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 663,
+        "declaration": "reg [129:0] mem[31:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 910,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 916,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 917,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 936,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_32X130_GL_M1_D2.v",
+        "line": 937,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [167:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [167:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [167:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [167:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [167:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [167:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 691,
+        "declaration": "reg [167:0] mem[59:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 939,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 945,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 946,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 965,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X168_GL_M1_D2.v",
+        "line": 966,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [41:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [41:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [41:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [41:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [41:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [41:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 691,
+        "declaration": "reg [41:0] mem[59:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 939,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 945,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 946,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 965,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X42_GL_M1_D2.v",
+        "line": 966,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [83:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [83:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [83:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [83:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [83:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [83:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 691,
+        "declaration": "reg [83:0] mem[59:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 939,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 945,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 946,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 965,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_60X84_GL_M1_D2.v",
+        "line": 966,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [129:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [129:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [129:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [129:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [129:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [129:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 695,
+        "declaration": "reg [129:0] mem[63:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 942,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 948,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 949,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 968,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_64X130_GL_M1_D2.v",
+        "line": 969,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 309,
+        "declaration": "reg [16:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 353,
+        "declaration": "reg [16:0] rd[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 397,
+        "declaration": "reg [16:0] rd[1 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 413,
+        "declaration": "reg [16:0] wr[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 455,
+        "declaration": "reg [16:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 473,
+        "declaration": "reg [16:0] mon_word[1:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 751,
+        "declaration": "reg [16:0] mem[79:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 1018,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 1024,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 1025,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 1044,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v",
+        "line": 1045,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [35:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [35:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [35:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [35:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [35:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [35:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 711,
+        "declaration": "reg [35:0] mem[79:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 958,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 964,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 965,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 984,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X36_GL_M1_D2.v",
+        "line": 985,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 303,
+        "declaration": "reg [71:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 345,
+        "declaration": "reg [71:0] rd[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 387,
+        "declaration": "reg [71:0] rd[0 : 0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 398,
+        "declaration": "reg [71:0] wr[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 436,
+        "declaration": "reg [71:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 452,
+        "declaration": "reg [71:0] mon_word[0:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 711,
+        "declaration": "reg [71:0] mem[79:0];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 958,
+        "declaration": "reg [bits-1:0] arr[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 964,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_0[0:words-1]; // column always reads as 0"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 965,
+        "declaration": "reg [bits-1:0] bit_fault_stuck_1[0:words-1]; // column always reads as 1"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 984,
+        "declaration": "reg [bits-1:0] bit_written[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/model/RAMPDP_80X72_GL_M1_D2.v",
+        "line": 985,
+        "declaration": "reg [bits-1:0] bit_read[0:words-1];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rws_128x18.v",
+        "line": 279,
+        "declaration": "reg [17:0] shadow_mem [127:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rws_16x256.v",
+        "line": 1207,
+        "declaration": "reg [255:0] shadow_mem [15:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rws_16x272.v",
+        "line": 1271,
+        "declaration": "reg [271:0] shadow_mem [15:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rws_16x64.v",
+        "line": 439,
+        "declaration": "reg [63:0] shadow_mem [15:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rws_256x3.v",
+        "line": 222,
+        "declaration": "reg [2:0] shadow_mem [255:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rws_256x64.v",
+        "line": 469,
+        "declaration": "reg [63:0] shadow_mem [255:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_128x11.v",
+        "line": 247,
+        "declaration": "reg [10:0] shadow_mem [127:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_128x257.v",
+        "line": 1047,
+        "declaration": "reg [256:0] shadow_mem [127:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_128x6.v",
+        "line": 227,
+        "declaration": "reg [5:0] shadow_mem [127:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_16x14.v",
+        "line": 280,
+        "declaration": "reg [13:0] shadow_mem [15:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_16x16.v",
+        "line": 286,
+        "declaration": "reg [15:0] shadow_mem [15:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_16x65.v",
+        "line": 435,
+        "declaration": "reg [64:0] shadow_mem [15:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_256x14.v",
+        "line": 324,
+        "declaration": "reg [13:0] shadow_mem [255:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_256x16.v",
+        "line": 330,
+        "declaration": "reg [15:0] shadow_mem [255:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_256x257.v",
+        "line": 1067,
+        "declaration": "reg [256:0] shadow_mem [255:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_32x129.v",
+        "line": 647,
+        "declaration": "reg [128:0] shadow_mem [31:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_64x129.v",
+        "line": 655,
+        "declaration": "reg [128:0] shadow_mem [63:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_64x14.v",
+        "line": 296,
+        "declaration": "reg [13:0] shadow_mem [63:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_64x16.v",
+        "line": 302,
+        "declaration": "reg [15:0] shadow_mem [63:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_8x129.v",
+        "line": 619,
+        "declaration": "reg [128:0] shadow_mem [7:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_8x257.v",
+        "line": 1003,
+        "declaration": "reg [256:0] shadow_mem [7:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsp_8x65.v",
+        "line": 427,
+        "declaration": "reg [64:0] shadow_mem [7:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwst_256x8.v",
+        "line": 239,
+        "declaration": "reg [7:0] shadow_mem [255:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_20x16.v",
+        "line": 315,
+        "declaration": "reg [15:0] shadow_mem [19:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_20x32.v",
+        "line": 363,
+        "declaration": "reg [31:0] shadow_mem [19:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_20x4.v",
+        "line": 95,
+        "declaration": "reg [3:0] shadow_mem [19:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_20x8.v",
+        "line": 291,
+        "declaration": "reg [7:0] shadow_mem [19:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_60x168.v",
+        "line": 791,
+        "declaration": "reg [167:0] shadow_mem [59:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_60x21.v",
+        "line": 340,
+        "declaration": "reg [20:0] shadow_mem [59:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_60x42.v",
+        "line": 413,
+        "declaration": "reg [41:0] shadow_mem [59:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_60x84.v",
+        "line": 539,
+        "declaration": "reg [83:0] shadow_mem [59:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_80x17.v",
+        "line": 346,
+        "declaration": "reg [16:0] shadow_mem [79:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_80x18.v",
+        "line": 337,
+        "declaration": "reg [17:0] shadow_mem [79:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_80x36.v",
+        "line": 403,
+        "declaration": "reg [35:0] shadow_mem [79:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_80x72.v",
+        "line": 511,
+        "declaration": "reg [71:0] shadow_mem [79:0];"
+      },
+      {
+        "source": "rtl/rams/synth/nv_ram_rwsthp_80x9.v",
+        "line": 310,
+        "declaration": "reg [8:0] shadow_mem [79:0];"
+      }
+    ],
+    "feather": [
+      {
+        "source": "rtl/feather_controller.v",
+        "line": 324,
+        "declaration": "reg     [PE_OUTPUT_WIDTH                    -1: 0]  r_o_birrd_data_prev          [0 : DPE_COL_NUM-1];"
+      },
+      {
+        "source": "rtl/feather_controller.v",
+        "line": 325,
+        "declaration": "reg     [PE_OUTPUT_WIDTH                    -1: 0]  r_o_birrd_data               [0 : DPE_COL_NUM-1];"
+      },
+      {
+        "source": "rtl/feather_controller.v",
+        "line": 326,
+        "declaration": "reg     [PE_OUTPUT_WIDTH                    -1: 0]  r_o_birrd_data_for_mul       [0 : DPE_COL_NUM-1];"
+      },
+      {
+        "source": "rtl/feather_controller.v",
+        "line": 328,
+        "declaration": "reg     [OACTS_DATA_WIDTH                   -1: 0]  r_oacts_post_quant          [0 : DPE_COL_NUM-1];"
+      },
+      {
+        "source": "rtl/feather_pe.v",
+        "line": 106,
+        "declaration": "reg     [WEIGHTS_DATA_WIDTH                             -1: 0]      r_local_weights_buffer_ping[WEIGHTS_DEPTH-1:0];"
+      },
+      {
+        "source": "rtl/feather_pe.v",
+        "line": 107,
+        "declaration": "reg     [WEIGHTS_DATA_WIDTH                             -1: 0]      r_local_weights_buffer_pong[WEIGHTS_DEPTH-1:0];"
+      },
+      {
+        "source": "rtl/sram_bank_sp.v",
+        "line": 66,
+        "declaration": "reg     [SRAM_BANK_DATA_WIDTH   -1: 0]  r_sram_bank [0  :   SRAM_BANK_DEPTH-1];"
+      }
+    ],
+    "cgra": [
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 206,
+        "declaration": "reg [202:0] regs [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 1090,
+        "declaration": "reg [201:0] regs [0:15];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 1368,
+        "declaration": "reg [198:0] regs [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 1567,
+        "declaration": "reg [201:0] regs [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 2489,
+        "declaration": "reg [0:0] credit__decr [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 2573,
+        "declaration": "reg [0:0] buffers__recv__val [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 2656,
+        "declaration": "reg [0:0] credit__decr [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 3785,
+        "declaration": "reg [0:0] buffers__recv__val [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 3787,
+        "declaration": "reg [0:0] buffers__send__rdy [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 3950,
+        "declaration": "reg [2:0] routers__pos [0:4];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 4263,
+        "declaration": "reg [34:0] regs [0:15];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 4448,
+        "declaration": "reg [52:0] regs [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 5294,
+        "declaration": "reg [52:0] regs [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6210,
+        "declaration": "reg [52:0] rd_pkt [0:3];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6211,
+        "declaration": "reg [52:0] wr_pkt [0:3];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6591,
+        "declaration": "reg [34:0] regs [0:5];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6726,
+        "declaration": "reg [173:0] regs [0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6878,
+        "declaration": "reg [122:0] regs [0:5];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6991,
+        "declaration": "reg [2:0] prologue_count_reg_fu [0:5];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6992,
+        "declaration": "reg [2:0] prologue_count_reg_fu_crossbar [0:5][0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 6993,
+        "declaration": "reg [2:0] prologue_count_reg_routing_crossbar [0:5][0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 8383,
+        "declaration": "reg [0:0] first [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 8879,
+        "declaration": "reg [0:0] already_grt_once [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9536,
+        "declaration": "reg [0:0] already_done [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9758,
+        "declaration": "reg [10:0] fu_recv_in_rdy_vector [0:3];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9763,
+        "declaration": "reg [2:0] fu__ctrl_addr_inport [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9768,
+        "declaration": "reg [34:0] fu__recv_const__msg [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9770,
+        "declaration": "reg [0:0] fu__recv_const__val [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9771,
+        "declaration": "reg [173:0] fu__recv_from_ctrl_mem__msg [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9773,
+        "declaration": "reg [0:0] fu__recv_from_ctrl_mem__val [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9774,
+        "declaration": "reg [139:0] fu__recv_in__msg [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9776,
+        "declaration": "reg [3:0] fu__recv_in__val [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9777,
+        "declaration": "reg [122:0] fu__recv_opt__msg [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9779,
+        "declaration": "reg [0:0] fu__recv_opt__val [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9781,
+        "declaration": "reg [1:0] fu__send_out__rdy [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 9784,
+        "declaration": "reg [0:0] fu__send_to_ctrl_mem__rdy [0:10];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 10516,
+        "declaration": "reg [1:0] in_dir [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 10517,
+        "declaration": "reg [0:0] in_dir_local [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 10519,
+        "declaration": "reg [2:0] prologue_counter [0:5][0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 10520,
+        "declaration": "reg [2:0] prologue_counter_next [0:5][0:1];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 11550,
+        "declaration": "reg [0:0] reg_bank__send_data_to_fu__rdy [0:3];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 11785,
+        "declaration": "reg [3:0] in_dir [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 11786,
+        "declaration": "reg [2:0] in_dir_local [0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 11788,
+        "declaration": "reg [2:0] prologue_counter [0:5][0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 11789,
+        "declaration": "reg [2:0] prologue_counter_next [0:5][0:7];"
+      },
+      {
+        "source": "rtl/CgraMesh2x2_homogeneous__sv2v.v",
+        "line": 12075,
+        "declaration": "reg [34:0] regs [0:1];"
+      }
+    ],
+    "zipcpu": [
+      {
+        "source": "rtl/core/zipcore.v",
+        "line": 166,
+        "declaration": "reg\t[31:0]\tregset\t[0:(OPT_USERMODE)? 31:15];"
+      }
+    ]
+  }
+}

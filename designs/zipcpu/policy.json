@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "memory_fixed": true,
+  "file_sha256": {
+    "core/cpuops.v": "54707430127001eb7e716eb14ff3b733ecfeac437a4a1cec6906bb7befa48a7e",
+    "core/div.v": "ca220c1db020a4b3365d8c29fe9cdb24dfbc93a5db82827cb818b888d834abf5",
+    "core/idecode.v": "f8e29e5e5d387a7fefc73dd456448bcbd41d65ed4d80e5d23d8541ae4e507c4e",
+    "core/mpyop.v": "2b831b42a8b14671925c2284ce2e838378f3d738b1293eca74ede4c861aed5a4",
+    "core/slowmpy.v": "449527da756405fab2b30ad7121609a0a0d7555c7fba68a6d0c81eb0f90502d4",
+    "core/zipcore.v": "b0db25e2017c2e6cb6715d8901806c3bdd12ae98879e0723ff5b58b750c7938e",
+    "files.f": "bd3b63ce24ff3f21111da1192c19b22673dc9bf64df3f7b6b1c7bba49c7859f6"
+  },
+  "editable_files": [
+    "core/cpuops.v",
+    "core/div.v",
+    "core/idecode.v",
+    "core/mpyop.v",
+    "core/slowmpy.v",
+    "core/zipcore.v"
+  ],
+  "protected_modules": {
+    "core/cpuops.v": [],
+    "core/div.v": [],
+    "core/idecode.v": [],
+    "core/mpyop.v": [],
+    "core/slowmpy.v": [],
+    "core/zipcore.v": [],
+    "files.f": []
+  },
+  "fixed_storage_modules": {
+    "core/cpuops.v": [],
+    "core/div.v": [],
+    "core/idecode.v": [],
+    "core/mpyop.v": [],
+    "core/slowmpy.v": [],
+    "core/zipcore.v": [],
+    "files.f": []
+  },
+  "protection_reasons": {},
+  "policy_origin": "explicit snapshot generated from qualified module catalog and known storage/clock sources; review this file before changing benchmark scope",
+  "max_changed_files": null,
+  "max_changed_lines": null
+}

@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v8.2.sv:110:13: error: expected statement\n            wire [NBW_WORD-1:0] xor_pair0 = ek_seg0 ^ RconXor;  // step_key[i][127:96]\n            ^~~~\nsyn_flow/rtl/aes.v8.2.sv:110:33: error: use of undeclared identifier 'xor_pair0'\n            wire [NBW_WORD-1:0] xor_pair0 = ek_seg0 ^ RconXor;  // step_key[i][127:96]\n                                ^~~~~~~~~\nsyn_flow/rtl/aes.v8.2.sv:111:13: error: expected statement\n            wire [NBW_WORD-1:0] xor_pair1 = ek_seg1 ^ ek_seg2;\n     ",
-  "target_version": "v8.2",
-  "relative_advantage": null
-}

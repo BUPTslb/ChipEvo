@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/aes.v5.4.sv:167:5: error: expected statement\n    wire xor0_0 = a0b0 ^ a3b1;\n    ^~~~\n  in instance: key_expansion_128aes.steps[0].uu_sbox0\nsyn_flow/rtl/aes.v5.4.sv:167:10: error: use of undeclared identifier 'xor0_0'\n    wire xor0_0 = a0b0 ^ a3b1;\n         ^~~~~~\nsyn_flow/rtl/aes.v5.4.sv:168:5: error: expected statement\n    wire xor0_1 = a2b2 ^ a1b3;\n    ^~~~\n  in instance: key_expansion_128aes.steps[0].uu_sbox0\nsyn_flow/rtl/aes.v5.4.sv:168:10: error: use of undeclared identifier 'x",
-  "target_version": "v5.4",
-  "relative_advantage": null
-}

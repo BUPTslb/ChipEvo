@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/pcie.v0.4.v:13:1: error: unknown module 'scrambler'\nscrambler SCR(.clk(clk),\n^~~~~~~~~\nsyn_flow/rtl/pcie.v0.4.v:21:1: error: unknown module 'encoder'\nencoder ENC(.data_in(s_out),\n^~~~~~~\nsyn_flow/rtl/pcie.v0.4.v:46:1: error: unknown module 'decoder'\ndecoder DEC(.data_in(dec_in),\n^~~~~~~\nsyn_flow/rtl/pcie.v0.4.v:54:1: error: unknown module 'descrambler'\ndescrambler DES(.clk(clk),\n^~~~~~~~~~~",
-  "target_version": "v0.4",
-  "relative_advantage": null
-}

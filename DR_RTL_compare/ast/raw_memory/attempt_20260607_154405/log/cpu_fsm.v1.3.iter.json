@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/cpu_fsm.v1.3.v:60:24: error: identifier 'state' used before its declaration\nwire state_is_fetch = (state == FETCH);\n                       ^~~~~\nsyn_flow/rtl/cpu_fsm.v1.3.v:85:11: note: declared here\nreg [2:0] state, nst ;\n          ^\nsyn_flow/rtl/cpu_fsm.v1.3.v:60:33: error: identifier 'FETCH' used before its declaration\nwire state_is_fetch = (state == FETCH);\n                                ^~~~~\nsyn_flow/rtl/cpu_fsm.v1.3.v:79:12: note: declared here\nlocalparam FETCH  = 0;\n       ",
-  "target_version": "v1.3",
-  "relative_advantage": null
-}

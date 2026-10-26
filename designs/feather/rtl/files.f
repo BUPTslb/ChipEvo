@@ -1,0 +1,9 @@
+rtl/birrd_2x2_simple_cmd_flow_seq.v
+rtl/birrd_2x2_simple_last_cmd_flow_seq.v
+rtl/birrd_simple_cmd_flow_seq.v
+rtl/feather_controller.v
+rtl/feather_pe.v
+rtl/feather_top.v
+rtl/o_bus_autopick_seq.v
+rtl/sram_bank_sp.v
+rtl/sram_sp_2d_array.v

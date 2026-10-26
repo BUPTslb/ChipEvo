@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/cpu_fsm.v0.2.v:49:30: error: identifier 'OP_BEQ' used before its declaration\nwire beq_branch = (opcode == OP_BEQ) && (alu_result == 8'h00);\n                             ^~~~~~\nsyn_flow/rtl/cpu_fsm.v0.2.v:88:18: note: declared here\nlocalparam [3:0] OP_BEQ  = 4'H8;\n                 ^\nsyn_flow/rtl/cpu_fsm.v0.2.v:49:42: error: identifier 'alu_result' used before its declaration\nwire beq_branch = (opcode == OP_BEQ) && (alu_result == 8'h00);\n                                         ^~~~~~",
-  "target_version": "v0.2",
-  "relative_advantage": null
-}

@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/SPI.v1.3.v:131:31: error: identifier 'data_count' used before its declaration\n    wire data_count_is_max = (data_count == 6'd63);\n                              ^~~~~~~~~~\nsyn_flow/rtl/SPI.v1.3.v:153:15: note: declared here\n    reg [5:0] data_count;\n              ^",
-  "target_version": "v1.3",
-  "relative_advantage": null
-}

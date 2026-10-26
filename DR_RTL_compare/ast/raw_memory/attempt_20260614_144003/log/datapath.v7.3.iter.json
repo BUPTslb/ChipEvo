@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/datapath.v7.3.v:1:7: error: expected identifier\nmodule with pattern candidates: `mux_before_adder`, `tree_balancing`, `common_subexpression`.\n      ^\nsyn_flow/rtl/datapath.v7.3.v:1:31: error: expected ';'\nmodule with pattern candidates: `mux_before_adder`, `tree_balancing`, `common_subexpression`.\n                              ^\nsyn_flow/rtl/datapath.v7.3.v:1:33: error: unknown macro or compiler directive '`mux_before_adder'\nmodule with pattern candidates: `mux_before_adder`, `tree_",
-  "target_version": "v7.3",
-  "relative_advantage": null
-}

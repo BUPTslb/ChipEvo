@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/DSP.v3.5.v:76:35: error: cannot select range of [48:25] from 'logic[47:0]' [-Wrange-oob]\n    wire [23:0] add_sum_hi_c0 = X[48:25] + Z[48:25];\n                                  ^~~~~\nsyn_flow/rtl/DSP.v3.5.v:76:46: error: cannot select range of [48:25] from 'logic[47:0]' [-Wrange-oob]\n    wire [23:0] add_sum_hi_c0 = X[48:25] + Z[48:25];\n                                             ^~~~~\nsyn_flow/rtl/DSP.v3.5.v:77:35: error: cannot select range of [48:25] from 'logic[47:0]' [-Wrange-oo",
-  "target_version": "v3.5",
-  "relative_advantage": null
-}

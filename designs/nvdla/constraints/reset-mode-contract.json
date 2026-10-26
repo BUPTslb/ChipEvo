@@ -1,0 +1,17 @@
+{
+  "mode": "normal operation after reset synchronization",
+  "pins": [
+    "u_partition_a/u_partition_a_reset/synced_rstn",
+    "u_partition_c/u_partition_c_reset/synced_rstn",
+    "u_partition_ma/u_partition_m_reset/synced_rstn",
+    "u_partition_mb/u_partition_m_reset/synced_rstn",
+    "u_partition_o/u_sync_core_reset/synced_rstn",
+    "u_partition_o/u_sync_falcon_reset/synced_rstn",
+    "u_partition_p/u_partition_p_reset/synced_rstn"
+  ],
+  "source_modules": [
+    "NV_NVDLA_reset",
+    "NV_NVDLA_core_reset"
+  ],
+  "reset_transition_timing_covered": false
+}

@@ -1,0 +1,149 @@
+{
+  "status": "adopted",
+  "baseline_version": "nvdla-macro-reference-v1",
+  "timestamp_utc": "2026-10-24T12:39:40.485141+00:00",
+  "legacy_equivalence_required": false,
+  "previous_revision": "archive/reference-revisions/nvdla-before-macro-reference-v1-20261024",
+  "qualification_directory": "artifacts/nvdla-macro-reference-v1-20261024-r4",
+  "storage_tests": {
+    "shapes": 36,
+    "checks": 75083,
+    "passed": true
+  },
+  "self_equivalence": {
+    "status": "PASS",
+    "modules": 357
+  },
+  "equivalence_controls": {
+    "equivalent": {
+      "status": "PASS",
+      "modules": 3,
+      "module": null
+    },
+    "different": {
+      "status": "unproven",
+      "modules": null,
+      "module": "control_top"
+    },
+    "passed": true,
+    "scope": "Identity datapath accepted; changed macro write data rejected by child input equality; native fixed-memory proof controls, no LLM calls"
+  },
+  "functional_regression": {
+    "sdp_1x1x1_pass_through_int8": true,
+    "pdp_8x8x64_2x2_int8": true,
+    "cdp_8x8x32_lrn3_int8_0": true,
+    "dc_1x1x8_1x1x8x1_int8_0": true
+  },
+  "measurements": {
+    "area": {
+      "objective": "area",
+      "period_ns": 5.0,
+      "status": "completed",
+      "area": {
+        "standard_cell_area_um2": 1050702.3939999803,
+        "fixed_sram_macro_area_um2": 6774581.057250003,
+        "total_area_um2": 7825283.451249983,
+        "macro_instances": {
+          "sram_1r1w_256x32": 214,
+          "sram_1r1w_80x17": 1
+        },
+        "area_scope": "total mapped standard cells plus fixed macros; no core/die area"
+      },
+      "metrics": {
+        "ordinary_setup_worst_slack_ns": 0.9153,
+        "effective_delay_ns": 4.0847,
+        "hold_worst_slack_ns": -0.15914,
+        "global_setup_worst_slack_ns": 0.915329,
+        "tns_ns": 0.0,
+        "special_worst_slack_ns": 2.316,
+        "ordinary_path_count": 35,
+        "special_path_count": 58,
+        "delay_scope": "period minus raw ordinary same-clock setup slack; includes IO/setup/uncertainty budgets; not unconditional fmax",
+        "standard_cell_area_um2": 1050702.3939999803,
+        "fixed_sram_macro_area_um2": 6774581.057250003,
+        "total_area_um2": 7825283.451249983,
+        "macro_instances": {
+          "sram_1r1w_256x32": 214,
+          "sram_1r1w_80x17": 1
+        },
+        "area_scope": "total mapped standard cells plus fixed macros; no core/die area",
+        "period_ns": 5.0,
+        "electrical_report": "build/electrical.txt",
+        "pre_layout": true
+      }
+    },
+    "timing": {
+      "objective": "timing",
+      "period_ns": 0.1,
+      "status": "completed",
+      "area": {
+        "standard_cell_area_um2": 1050674.1979999805,
+        "fixed_sram_macro_area_um2": 6774581.057250003,
+        "total_area_um2": 7825255.255249984,
+        "macro_instances": {
+          "sram_1r1w_256x32": 214,
+          "sram_1r1w_80x17": 1
+        },
+        "area_scope": "total mapped standard cells plus fixed macros; no core/die area"
+      },
+      "metrics": {
+        "ordinary_setup_worst_slack_ns": -2.5420000000000003,
+        "effective_delay_ns": 2.6420000000000003,
+        "hold_worst_slack_ns": -0.15914,
+        "global_setup_worst_slack_ns": -2.541857,
+        "tns_ns": -82830.25,
+        "special_worst_slack_ns": -1.251,
+        "ordinary_path_count": 30,
+        "special_path_count": 63,
+        "delay_scope": "period minus raw ordinary same-clock setup slack; includes IO/setup/uncertainty budgets; not unconditional fmax",
+        "standard_cell_area_um2": 1050674.1979999805,
+        "fixed_sram_macro_area_um2": 6774581.057250003,
+        "total_area_um2": 7825255.255249984,
+        "macro_instances": {
+          "sram_1r1w_256x32": 214,
+          "sram_1r1w_80x17": 1
+        },
+        "area_scope": "total mapped standard cells plus fixed macros; no core/die area",
+        "period_ns": 0.1,
+        "electrical_report": "build/electrical.txt",
+        "pre_layout": true
+      }
+    }
+  },
+  "active_rtl_files": 289,
+  "fixed_memory_models": "phase-accurate sampled functional contracts validated against OpenRAM at valid observation points; physical timing/area solely characterized Liberty",
+  "llm_calls": 0,
+  "physical_scope": "logic synthesis and pre-layout STA; no P&R or physical signoff",
+  "notes": [
+    "This is a new NVDLA-derived benchmark reference; no equivalence to original NVDLA claimed",
+    "All explicit nv_ram wrappers use fixed OpenRAM macros; shallow inline register FIFOs remain registers",
+    "Macro padding counted in total area; no fictional Liberty generated",
+    "Future candidates must preserve this new reference; read/write wrappers and macro models are protected"
+  ],
+  "identity_scoring": {
+    "area": {
+      "feasible": true,
+      "constraint_reason": "All functional and resource/timing constraints passed",
+      "grade": {
+        "resolved": false,
+        "score": 0.0,
+        "reason": "area: gain=0.00000000%; secondary_factor=1.00000000; area=7825283.451250 um2; delay=4.084700 ns; equivalence passed"
+      }
+    },
+    "timing": {
+      "feasible": true,
+      "constraint_reason": "All functional and resource/timing constraints passed",
+      "grade": {
+        "resolved": false,
+        "score": 0.0,
+        "reason": "timing: gain=0.00000000%; secondary_factor=1.00000000; area=7825255.255250 um2; delay=2.642000 ns; equivalence passed"
+      }
+    }
+  },
+  "policy_self_check": {
+    "changed_files": [],
+    "changed_lines": 0,
+    "fixed_storage": true,
+    "policy_version": 2
+  }
+}

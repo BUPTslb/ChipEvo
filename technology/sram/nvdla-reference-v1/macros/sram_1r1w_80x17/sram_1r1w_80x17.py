@@ -1,0 +1,27 @@
+# Dedicated NVDLA qualification candidate, not admitted for scoring.
+word_size = 17
+num_words = 80
+write_size = 17
+num_rw_ports = 0
+num_r_ports = 1
+num_w_ports = 1
+tech_name = "freepdk45"
+process_corners = ["TT"]
+supply_voltages = [1.1]
+temperatures = [25]
+use_specified_corners = [("TT", 1.1, 25)]
+analytical_delay = False
+spice_name = "ngspice"
+check_lvsdrc = False
+route_supplies = False
+perimeter_pins = False
+output_name = "sram_1r1w_80x17"
+output_path = "/out/sram_1r1w_80x17/generated"
+openram_temp = "/out/sram_1r1w_80x17/tmp/"
+load_scales = [1, 4, 16, 64]
+slew_scales = [1, 4, 16, 64]
+num_sim_threads = 1
+local_array_size = 0
+use_nix = False
+keep_temp = True
+debug_level = 1

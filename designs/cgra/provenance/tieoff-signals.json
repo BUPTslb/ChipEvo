@@ -1,0 +1,35 @@
+{
+  "CgraRTL__ee448ce8f855514e": [
+    "send_to_inter_cgra_noc__val",
+    "send_to_inter_cgra_noc__msg",
+    "recv_from_inter_cgra_noc__rdy",
+    "controller__dma_cmd__rdy",
+    "controller__dma_done__msg",
+    "controller__dma_done__val",
+    "controller__recv_from_dma_spm_rd_req__msg",
+    "controller__recv_from_dma_spm_rd_req__val",
+    "controller__recv_from_dma_spm_wr_req__msg",
+    "controller__recv_from_dma_spm_wr_req__val",
+    "controller__recv_from_sram_load_response__msg",
+    "controller__recv_from_sram_load_response__val",
+    "controller__send_to_dma_spm_rd_resp__rdy",
+    "controller__send_to_sram_load_request_from_dma__rdy",
+    "controller__send_to_sram_store_request_from_dma__rdy",
+    "data_mem__recv_from_controller_spm_rd_req__msg",
+    "data_mem__recv_from_controller_spm_rd_req__val",
+    "data_mem__recv_from_controller_spm_wr_req__msg",
+    "data_mem__recv_from_controller_spm_wr_req__val",
+    "data_mem__send_to_controller_spm_rd_resp__rdy"
+  ],
+  "ControllerRTL__ddd56b6da3a23069": [
+    "recv_from_im2col_pkt__rdy"
+  ],
+  "FlexibleFuRTL__489b9127525b3431": [
+    "recv_pkt_from_controller__rdy"
+  ],
+  "TileRTL__80552dd1320c93e4": [
+    "const_mem__clear",
+    "element__recv_pkt_from_controller__msg",
+    "element__recv_pkt_from_controller__val"
+  ]
+}

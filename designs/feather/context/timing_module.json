@@ -1,0 +1,3150 @@
+{
+  "design": "feather",
+  "strategy": "timing_module",
+  "module_index": [
+    {
+      "module": "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller",
+      "file": "rtl/feather_controller.v",
+      "start_line": 37,
+      "end_line": 987,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 12153.805999999604,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_controller.v:37.1-987.10"
+    },
+    {
+      "module": "$paramod$ba684d258ce196f71bc7e82e8ff42255c688a2e3\\sram_bank_sp",
+      "file": "rtl/sram_bank_sp.v",
+      "start_line": 35,
+      "end_line": 112,
+      "instances": 8,
+      "exclusive_area_all_instances_um2": 10242.06400000003,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_bank_sp.v:35.1-112.10"
+    },
+    {
+      "module": "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp",
+      "file": "rtl/sram_bank_sp.v",
+      "start_line": 35,
+      "end_line": 112,
+      "instances": 16,
+      "exclusive_area_all_instances_um2": 5171.0399999999945,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_bank_sp.v:35.1-112.10"
+    },
+    {
+      "module": "$paramod$3f9ae4fc0bca82c256287503040b2588db28bac5\\sram_bank_sp",
+      "file": "rtl/sram_bank_sp.v",
+      "start_line": 35,
+      "end_line": 112,
+      "instances": 2,
+      "exclusive_area_all_instances_um2": 5111.456000000002,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_bank_sp.v:35.1-112.10"
+    },
+    {
+      "module": "$paramod$6cb8b382863a061c5cb7696403037e6b647099b7\\o_bus_autopick_seq",
+      "file": "rtl/o_bus_autopick_seq.v",
+      "start_line": 50,
+      "end_line": 121,
+      "instances": 8,
+      "exclusive_area_all_instances_um2": 4492.208000000011,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/o_bus_autopick_seq.v:50.1-121.10"
+    },
+    {
+      "module": "$paramod$1f1f19d3cc62751b5d3b7c9c9ced3972fa5d8185\\birrd_2x2_simple_cmd_flow_seq",
+      "file": "rtl/birrd_2x2_simple_cmd_flow_seq.v",
+      "start_line": 71,
+      "end_line": 217,
+      "instances": 4,
+      "exclusive_area_all_instances_um2": 3346.2800000000125,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_2x2_simple_cmd_flow_seq.v:71.1-217.10"
+    },
+    {
+      "module": "$paramod$ea519693e0e54f2e53f155fe7ef906056b0883c0\\birrd_2x2_simple_cmd_flow_seq",
+      "file": "rtl/birrd_2x2_simple_cmd_flow_seq.v",
+      "start_line": 71,
+      "end_line": 217,
+      "instances": 4,
+      "exclusive_area_all_instances_um2": 3298.4000000000115,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_2x2_simple_cmd_flow_seq.v:71.1-217.10"
+    },
+    {
+      "module": "$paramod$0195dbb619f6b8258b9de852d9a907d43898b7d7\\birrd_2x2_simple_cmd_flow_seq",
+      "file": "rtl/birrd_2x2_simple_cmd_flow_seq.v",
+      "start_line": 71,
+      "end_line": 217,
+      "instances": 4,
+      "exclusive_area_all_instances_um2": 3247.328000000011,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_2x2_simple_cmd_flow_seq.v:71.1-217.10"
+    },
+    {
+      "module": "$paramod$bf6f8f5340b50bcfe19706c1ad06593d65bdcc2a\\birrd_2x2_simple_cmd_flow_seq",
+      "file": "rtl/birrd_2x2_simple_cmd_flow_seq.v",
+      "start_line": 71,
+      "end_line": 217,
+      "instances": 4,
+      "exclusive_area_all_instances_um2": 3196.2560000000108,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_2x2_simple_cmd_flow_seq.v:71.1-217.10"
+    },
+    {
+      "module": "$paramod$7a3c08e043298db761a80ac00aae5bb6bf94fab0\\birrd_2x2_simple_cmd_flow_seq",
+      "file": "rtl/birrd_2x2_simple_cmd_flow_seq.v",
+      "start_line": 71,
+      "end_line": 217,
+      "instances": 4,
+      "exclusive_area_all_instances_um2": 3138.80000000001,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_2x2_simple_cmd_flow_seq.v:71.1-217.10"
+    },
+    {
+      "module": "$paramod$1f1b2e7d4b30ed2884f92020d8fe978da9d26430\\birrd_2x2_simple_last_cmd_flow_seq",
+      "file": "rtl/birrd_2x2_simple_last_cmd_flow_seq.v",
+      "start_line": 71,
+      "end_line": 192,
+      "instances": 4,
+      "exclusive_area_all_instances_um2": 3094.1120000000096,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_2x2_simple_last_cmd_flow_seq.v:71.1-192.10"
+    },
+    {
+      "module": "$paramod$ad9b077327db665a6295339fb82239f993824b2c\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2842.7420000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$da418f95388913fd4160b0f3e97e278635f21327\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2841.146000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$9bda30319263a40048b22f887ad0e69ba12d4808\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2841.146000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$d50a4a31e52536553168606dc3f094b37e99f7f1\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2841.146000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$bd07826a95ca8638fa90d3cc6561582822c5561f\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2841.146000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$c912a699ba2dcfb2359999cd8b352932fa15e6df\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2841.146000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$bce4f78e055c06afab0935441a755ec593a8c1c0\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2841.146000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$a574835e8a86d4ba9d4ff8892ffddd89e171f543\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$aa1091f55439c2b1d95b671e27917c7381addade\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$f2498cb7b3b825c553bbf1c9ffe189895f9e6f52\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$bea36dff734efd15fee1f0331c7f655d1cb78891\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$c62d23597502c5bc129ab8284994a01d4af739db\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$e7c78dee5fce087360db2df3a606e3704fc9ed5c\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$b2c318abfe3a7dd217a9d2a68d5bbe972a14457a\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$f7b3f205803969674d27b09d5d46e8438ce2f992\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$a852e2d3af51999a518870c3f01828f91e4e6fa0\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$c0e78936bafe0b4d6e013cbdd6b98947f876d28a\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2840.6140000000228,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$79aa81e9700fc3f8f3a3d99fb25e477edf1d7962\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$559b0c4eb8352ba2d9fe4adcd18656d2aeeb770d\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$8a06f2357c6ebe29e40337b09cade77da69632d2\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$0d7c8fecf188a8a23eceee52bd39d091e8c4110f\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$055c77fc8d707b5b1a689ba9af18dc9360b3f667\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$4950594d491b7fb123b88f0ea767be9ea47236fd\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$85646dfbfca7eb8e088222a402b4599bb35673b8\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$69af2d8911b7022e4957020cb4b8e9116608b9f5\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$157fcd05b331bb63f6b13d0847acfb31ee953d75\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.954000000023,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$8d43a9bd7a2e8d33995067c6fbc322848ce88fc9\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2837.1560000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$3a2dc59e62613bbbf6f3d6dbee08b4c484c2b877\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$2f4d1faaa7509a986a1333cf0aa62e487e2f06c0\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$54b10b741209d8108b3390290ba9528b9b8055f2\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$41b76d976491c8779034a0175ead86d5384e3c69\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$d8587c319af046d0e528bcd5ea716449c4797e79\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$17ff6c9957a495a509a17b1d1b80c1c097dbdc8d\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$34ebc1e20fb40614cf08a6aa89d3fa818cfd2e97\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$75a857c5f754f31243871f7cdb76b9a86344ad94\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$45a2fa3e26710555f57eed645bbc0599ad1090bf\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$5e398f5293dffba75eab5d035631cec1a392f0b0\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$4fc5745de501630168dfaf8b80fe1c81940611f0\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$0a934813a808070fa6a2f6be3547f396cf25a1f6\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$3625b03b07ddd4f4c17b8a417adabb0aabbf7040\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2836.6240000000225,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$1909a2b941b43bff93c58f993de2227c040a0fcb\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$1694ffc7dbdee62375ffa1b73bd3a5b39730561d\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$663de9ec5b4bdd7ea228171ac9b2adbae5ce680b\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$5a2c9f706c67609f1a11b4ae315032b40c764ec4\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$2c5e5a64a5aa5102543948f4149b6161ba5bb598\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$45093668d49872a7ea22f1e2ba1c2a4b7f14ee4c\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$060aba42a421915ac955524ce45544ebad72b0de\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$36c4f404b37c52ee6b46cebccd3e5945aba58ef1\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.5600000000222,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$fca0c82f9d56d88e1421eec219ede922ee7917bb\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2835.2940000000212,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$affc86c8812fdd18772b4cada9b6ff58ee05ca5d\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2831.3040000000215,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$ca3530208baa6fd5e06395b93fe353235ba8f364\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2831.3040000000215,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$a614e8ec4b05ed56e8c5f4d70b3207b88c139b1d\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2831.3040000000215,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$3e01890294b415c296fcd35ffa4f642daee6698f\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2830.7720000000227,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$16b1cb625f5535aade4e684985ac58ecd1219406\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2830.7720000000227,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$3142646d8ad7de6267b050ed088e272e0e53d5b1\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2830.7720000000227,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$4c7e4fbf6a82b177ad029f803ab124f64e505b2b\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2830.7720000000227,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$abb42f51e94dec329881912a134e5a14ee6b6178\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2829.1760000000218,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$eeff4f967ebf2d43e3e58feb409d3987c0c40ba0\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2829.1760000000218,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$aca09951a6ac16d7667bd757f4e4278478019fb8\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2829.1760000000218,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$e13dbb1b5b1c5e1a24f9d0d40b1a946692a0d783\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2829.1760000000218,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$b31a9bd02926568d4ed33c53cca5e537e2795744\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2829.1760000000218,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$9605ba17cf339f147fdfd41f7824ab5ef4654c77\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2827.580000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$dd645f2febfadb5e7cb9bc37ca0133638e7d5ae8\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2827.580000000022,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$e2471b5ec3a717cf321480edb6f1d4e91ec524f6\\feather_pe",
+      "file": "rtl/feather_pe.v",
+      "start_line": 35,
+      "end_line": 303,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 2826.2500000000214,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_pe.v:35.1-303.10"
+    },
+    {
+      "module": "$paramod$f1d2382fa9aaff38466a1540c77b7cddb8ec9a2c\\sram_bank_sp",
+      "file": "rtl/sram_bank_sp.v",
+      "start_line": 35,
+      "end_line": 112,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 1920.519999999994,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_bank_sp.v:35.1-112.10"
+    },
+    {
+      "module": "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array",
+      "file": "rtl/sram_sp_2d_array.v",
+      "start_line": 35,
+      "end_line": 122,
+      "instances": 2,
+      "exclusive_area_all_instances_um2": 59.58400000000003,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_sp_2d_array.v:35.1-122.10"
+    },
+    {
+      "module": "$paramod$a2f87b91311cff0925ad219b623ee8578902e6da\\sram_sp_2d_array",
+      "file": "rtl/sram_sp_2d_array.v",
+      "start_line": 35,
+      "end_line": 122,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 29.792000000000016,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_sp_2d_array.v:35.1-122.10"
+    },
+    {
+      "module": "$paramod$9a110b264833a4f1e7360ccff61679069e5f4a6f\\sram_sp_2d_array",
+      "file": "rtl/sram_sp_2d_array.v",
+      "start_line": 35,
+      "end_line": 122,
+      "instances": 2,
+      "exclusive_area_all_instances_um2": 7.448,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_sp_2d_array.v:35.1-122.10"
+    },
+    {
+      "module": "$paramod$1e91e453813eff5d038b191e93ea31020eef4df4\\sram_sp_2d_array",
+      "file": "rtl/sram_sp_2d_array.v",
+      "start_line": 35,
+      "end_line": 122,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 3.724,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_sp_2d_array.v:35.1-122.10"
+    },
+    {
+      "module": "feather_top",
+      "file": "rtl/feather_top.v",
+      "start_line": 37,
+      "end_line": 635,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 0,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_top.v:37.1-635.10"
+    },
+    {
+      "module": "$paramod$948dbe8b35bf89aaadacc8ab534b3bb00ecf776f\\birrd_simple_cmd_flow_seq",
+      "file": "rtl/birrd_simple_cmd_flow_seq.v",
+      "start_line": 88,
+      "end_line": 254,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 0,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/birrd_simple_cmd_flow_seq.v:88.1-254.10"
+    }
+  ],
+  "storage_fixed": true,
+  "area_ranking_source": "current supplied mapped netlist; exclusive own cells times actual instances",
+  "suggested_targets": [
+    {
+      "module": "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller",
+      "file": "rtl/feather_controller.v",
+      "start_line": 37,
+      "end_line": 987,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 12153.805999999604,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_controller.v:37.1-987.10",
+      "sum_path_cell_delay_ns": 2.9800000000000004,
+      "path_count": 10,
+      "source_anchors": []
+    }
+  ],
+  "timing_evidence_format": "existing OpenSTA JSON",
+  "critical_paths": [
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270527",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270527",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270529",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270529",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197416/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336642",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336642/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336642",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336642/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270531",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197416",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197416/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270531",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197416",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197416/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197417/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336643",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336643/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336643",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336643/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270533",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197417",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197417/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270533",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197417",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197417/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197418/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336644",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336644/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336644",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336644/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270535",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197418",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197418/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270535",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197418",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197418/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197419/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336645",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336645/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336645",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336645/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270537",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197419",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197419/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270537",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197419",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197419/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197420/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336646",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336646/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336646",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336646/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270539",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197420",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197420/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270539",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197420",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197420/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197421/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[0]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358504/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[0][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336647",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336647/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336647",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336647/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270541",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197421",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197421/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270541",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197421",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/$auto$ff.cc:337:slice$197421/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[0].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[1]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[1]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[1][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336640/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270527",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270527",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197414/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    },
+    {
+      "type": "check",
+      "path_group": "clk",
+      "path_type": "max",
+      "startpoint": "i_iacts_write_valid",
+      "endpoint": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415/D",
+      "source_clock": "clk",
+      "source_clock_edge": "rise",
+      "source_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "i_iacts_write_valid",
+          "arrival": 1e-09,
+          "capacitance": 5.061e-15,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/A",
+          "net": "feather_CONTROLLER_INST/i_iacts_write_valid",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/i_iacts_write_valid"
+          ],
+          "arrival": 1e-09,
+          "slew": 1e-10
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$389953/ZN",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "capacitance": 2.847e-15,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/B1",
+          "net": "feather_CONTROLLER_INST/$abc$385495$new_n8031",
+          "arrival": 1.012e-09,
+          "slew": 2.11e-11
+        },
+        {
+          "instance": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580",
+          "cell": "AOI21_X1",
+          "verilog_src": "",
+          "pin": "feather_CONTROLLER_INST/$abc$385495$auto$blifparse.cc:397:parse_blif$390580/ZN",
+          "net": "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]",
+          "hier_pins": [
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[1]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[2]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[3]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[4]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[5]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[6]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[7]",
+            "feather_CONTROLLER_INST/o_iacts_sram_a_wr_en_pong[0]"
+          ],
+          "arrival": 1.298e-09,
+          "capacitance": 5.194e-14,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506/S",
+          "net": "IACTS_PONG_SRAM/i_sram_a_wr_en[1]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/i_sram_a_wr_en[1]"
+          ],
+          "arrival": 1.298e-09,
+          "slew": 2.553e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/$abc$358503$auto$blifparse.cc:397:parse_blif$358506/Z",
+          "net": "IACTS_PONG_SRAM/w_i_addr[1][0]",
+          "arrival": 1.362e-09,
+          "capacitance": 4.326e-15,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/A",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/i_addr[0]",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/i_addr[0]"
+          ],
+          "arrival": 1.362e-09,
+          "slew": 2.297e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592",
+          "cell": "INV_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336592/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "capacitance": 2.458e-15,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n95",
+          "arrival": 1.373e-09,
+          "slew": 7.782e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593",
+          "cell": "NOR2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336593/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "capacitance": 1.517e-14,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/A2",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n96",
+          "arrival": 1.469e-09,
+          "slew": 7.79e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639",
+          "cell": "NAND2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336639/ZN",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "capacitance": 1.444e-14,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641/S",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$new_n142",
+          "arrival": 1.529e-09,
+          "slew": 3.44e-11
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641",
+          "cell": "MUX2_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$blifparse.cc:397:parse_blif$336641/Z",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270529",
+          "arrival": 1.586e-09,
+          "capacitance": 1.053e-15,
+          "slew": 9.311e-12
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415/D",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$abc$336588$auto$rtlil.cc:3575:MuxGate$270529",
+          "arrival": 1.586e-09,
+          "slew": 9.311e-12
+        }
+      ],
+      "target_clock": "clk",
+      "target_clock_edge": "rise",
+      "target_clock_path": [
+        {
+          "instance": "",
+          "cell": "feather_top",
+          "verilog_src": "",
+          "pin": "clk",
+          "arrival": 0.0,
+          "capacitance": 2.339e-11,
+          "slew": 1e-10
+        },
+        {
+          "instance": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415",
+          "cell": "DFFR_X1",
+          "verilog_src": "",
+          "pin": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/$auto$ff.cc:337:slice$197415/CK",
+          "net": "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/clk",
+          "hier_pins": [
+            "IACTS_PONG_SRAM/SP_SRAM_BANKS[1].sram_bank_sp_inst/clk",
+            "IACTS_PONG_SRAM/clk"
+          ],
+          "arrival": 0.0,
+          "slew": 1e-10
+        }
+      ],
+      "data_arrival_time": 1.586e-09,
+      "crpr": 0.0,
+      "margin": 4.082e-11,
+      "required_time": 9.859e-09,
+      "slack": 8.273e-09,
+      "module_delay_ns": {
+        "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller": 0.298,
+        "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array": 0.06399999999999999,
+        "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp": 0.22399999999999984
+      }
+    }
+  ],
+  "timing_targets": [
+    {
+      "module": "$paramod$f4873f29919f31ce02486f212fa9198a0c9e05d9\\feather_controller",
+      "file": "rtl/feather_controller.v",
+      "start_line": 37,
+      "end_line": 987,
+      "instances": 1,
+      "exclusive_area_all_instances_um2": 12153.805999999604,
+      "protected": false,
+      "fixed_storage": false,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/feather_controller.v:37.1-987.10",
+      "sum_path_cell_delay_ns": 2.9800000000000004,
+      "path_count": 10,
+      "source_anchors": []
+    },
+    {
+      "module": "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp",
+      "file": "rtl/sram_bank_sp.v",
+      "start_line": 35,
+      "end_line": 112,
+      "instances": 16,
+      "exclusive_area_all_instances_um2": 5171.0399999999945,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_bank_sp.v:35.1-112.10",
+      "sum_path_cell_delay_ns": 2.239999999999999,
+      "path_count": 10,
+      "source_anchors": [
+        "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_bank_sp.v:76.5-92.8"
+      ]
+    },
+    {
+      "module": "$paramod$a96e87b252e885c61cc0026458d7c63405b22f9b\\sram_sp_2d_array",
+      "file": "rtl/sram_sp_2d_array.v",
+      "start_line": 35,
+      "end_line": 122,
+      "instances": 2,
+      "exclusive_area_all_instances_um2": 59.58400000000003,
+      "protected": true,
+      "fixed_storage": true,
+      "source": "/home/shen/Desktop/project/ChipEvo/chips/runs/qualification-20261024/feather/rtl/sram_sp_2d_array.v:35.1-122.10",
+      "sum_path_cell_delay_ns": 0.6399999999999998,
+      "path_count": 10,
+      "source_anchors": []
+    }
+  ],
+  "evidence": {
+    "kind": "historical",
+    "run": "artifacts/history/runs/qualification-20261024/feather",
+    "warning": "Older recipe; ranking evidence only. Current scoring remeasures baseline and candidate."
+  }
+}

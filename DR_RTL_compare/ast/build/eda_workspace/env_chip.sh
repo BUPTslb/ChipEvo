@@ -1,1 +1,0 @@
-/uac/gds/lbshen24/project/ChipEvo/DR_RTL/syn_flow_eda/env_chip.sh

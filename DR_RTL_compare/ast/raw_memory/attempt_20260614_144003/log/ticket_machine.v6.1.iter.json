@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/ticket_machine.v6.1.v:59:9: error: expected statement\n        wire state_is_rdy_b    = (State_B == RDY);\n        ^~~~\nsyn_flow/rtl/ticket_machine.v6.1.v:59:14: error: use of undeclared identifier 'state_is_rdy_b'; did you mean 'state_is_rdy_a'?\n        wire state_is_rdy_b    = (State_B == RDY);\n             ^~~~~~~~~~~~~~\nsyn_flow/rtl/ticket_machine.v6.1.v:20:10: note: declared here\n    wire state_is_rdy_a    = (State_A == RDY);\n         ^\nsyn_flow/rtl/ticket_machine.v6.1.v:60:9: er",
-  "target_version": "v6.1",
-  "relative_advantage": null
-}

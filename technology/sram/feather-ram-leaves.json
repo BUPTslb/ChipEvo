@@ -1,0 +1,126 @@
+[
+  {
+    "module": "$paramod$464b76d726108f763899bc30901ff7e7717ac090\\sram_bank_sp",
+    "count": 16,
+    "ports": {
+      "clk": [
+        "input",
+        1
+      ],
+      "rst_n": [
+        "input",
+        1
+      ],
+      "i_rd_wr_en": [
+        "input",
+        1
+      ],
+      "i_addr": [
+        "input",
+        2
+      ],
+      "i_wr_data": [
+        "input",
+        8
+      ],
+      "o_rd_data": [
+        "output",
+        8
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/feather/rtl/sram_bank_sp.v:35.1-112.10"
+  },
+  {
+    "module": "$paramod$f1d2382fa9aaff38466a1540c77b7cddb8ec9a2c\\sram_bank_sp",
+    "count": 1,
+    "ports": {
+      "clk": [
+        "input",
+        1
+      ],
+      "rst_n": [
+        "input",
+        1
+      ],
+      "i_rd_wr_en": [
+        "input",
+        1
+      ],
+      "i_addr": [
+        "input",
+        2
+      ],
+      "i_wr_data": [
+        "input",
+        48
+      ],
+      "o_rd_data": [
+        "output",
+        48
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/feather/rtl/sram_bank_sp.v:35.1-112.10"
+  },
+  {
+    "module": "$paramod$ba684d258ce196f71bc7e82e8ff42255c688a2e3\\sram_bank_sp",
+    "count": 8,
+    "ports": {
+      "clk": [
+        "input",
+        1
+      ],
+      "rst_n": [
+        "input",
+        1
+      ],
+      "i_rd_wr_en": [
+        "input",
+        1
+      ],
+      "i_addr": [
+        "input",
+        2
+      ],
+      "i_wr_data": [
+        "input",
+        32
+      ],
+      "o_rd_data": [
+        "output",
+        32
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/feather/rtl/sram_bank_sp.v:35.1-112.10"
+  },
+  {
+    "module": "$paramod$3f9ae4fc0bca82c256287503040b2588db28bac5\\sram_bank_sp",
+    "count": 2,
+    "ports": {
+      "clk": [
+        "input",
+        1
+      ],
+      "rst_n": [
+        "input",
+        1
+      ],
+      "i_rd_wr_en": [
+        "input",
+        1
+      ],
+      "i_addr": [
+        "input",
+        2
+      ],
+      "i_wr_data": [
+        "input",
+        64
+      ],
+      "o_rd_data": [
+        "output",
+        64
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/feather/rtl/sram_bank_sp.v:35.1-112.10"
+  }
+]

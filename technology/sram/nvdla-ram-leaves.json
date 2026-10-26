@@ -1,0 +1,657 @@
+[
+  {
+    "module": "$paramod$8926040b4f8e765eed2c37ccf5352e650903e93e\\vram_RAMDP_16X272_GL_M1_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        4
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        272
+      ],
+      "w0_din": [
+        "input",
+        272
+      ],
+      "r0_addr": [
+        "input",
+        4
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        272
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_16X272_GL_M1_E2.v:519.1-798.10"
+  },
+  {
+    "module": "$paramod$5c889c05450a2cc88526d19b71971c43b33e9d60\\vram_RAMDP_16X256_GL_M1_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        4
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        256
+      ],
+      "w0_din": [
+        "input",
+        256
+      ],
+      "r0_addr": [
+        "input",
+        4
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        256
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_16X256_GL_M1_E2.v:514.1-793.10"
+  },
+  {
+    "module": "$paramod$bfb1ca927c5e512d2e57e6399e3283acd0305f8e\\RAMPDP_256X64_GL_M2_D2_ram",
+    "count": 128,
+    "ports": {
+      "wadr": [
+        "input",
+        7
+      ],
+      "wrclk": [
+        "input",
+        1
+      ],
+      "wrmaskn": [
+        "input",
+        64
+      ],
+      "wrdata": [
+        "input",
+        64
+      ],
+      "radr": [
+        "input",
+        7
+      ],
+      "rout_B": [
+        "output",
+        64
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMPDP_256X64_GL_M2_D2.v:1170.1-1419.10"
+  },
+  {
+    "module": "$paramod$4f03e4f3c8625871ca69b87b262f543748dded48\\vram_RAMDP_128X6_GL_M2_E2",
+    "count": 2,
+    "ports": {
+      "w0_addr": [
+        "input",
+        7
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        6
+      ],
+      "w0_din": [
+        "input",
+        6
+      ],
+      "r0_addr": [
+        "input",
+        7
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        6
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_128X6_GL_M2_E2.v:664.1-955.10"
+  },
+  {
+    "module": "$paramod$8d7b7db8817a6c440cbce8d26394f8244c45eaab\\vram_RAMDP_128X11_GL_M2_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        7
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        11
+      ],
+      "w0_din": [
+        "input",
+        11
+      ],
+      "r0_addr": [
+        "input",
+        7
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        11
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_128X11_GL_M2_E2.v:664.1-955.10"
+  },
+  {
+    "module": "$paramod$43cffbbc5281dfe929da345b3e937c6267759fee\\vram_RAMDP_16X64_GL_M1_E2",
+    "count": 16,
+    "ports": {
+      "w0_addr": [
+        "input",
+        4
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        64
+      ],
+      "w0_din": [
+        "input",
+        64
+      ],
+      "r0_addr": [
+        "input",
+        4
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        64
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_16X64_GL_M1_E2.v:519.1-798.10"
+  },
+  {
+    "module": "$paramod$779fd33dd0197f04d7805b3f884e63435a78e0b6\\vram_RAMDP_8X66_GL_M1_E2",
+    "count": 4,
+    "ports": {
+      "w0_addr": [
+        "input",
+        3
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        66
+      ],
+      "w0_din": [
+        "input",
+        66
+      ],
+      "r0_addr": [
+        "input",
+        3
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        66
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_8X66_GL_M1_E2.v:506.1-785.10"
+  },
+  {
+    "module": "$paramod\\nv_ram_rwsthp_20x4_logic\\FORCE_CONTENTION_ASSERTION_RESET_ACTIVE=1'1",
+    "count": 1,
+    "ports": {
+      "byp_sel": [
+        "input",
+        1
+      ],
+      "clk": [
+        "input",
+        1
+      ],
+      "dbyp": [
+        "input",
+        4
+      ],
+      "di": [
+        "input",
+        4
+      ],
+      "dout": [
+        "output",
+        4
+      ],
+      "ore": [
+        "input",
+        1
+      ],
+      "pwrbus_ram_pd": [
+        "input",
+        32
+      ],
+      "ra": [
+        "input",
+        5
+      ],
+      "re": [
+        "input",
+        1
+      ],
+      "scan_en": [
+        "input",
+        1
+      ],
+      "wa": [
+        "input",
+        5
+      ],
+      "we": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/synth/nv_ram_rwsthp_20x4_logic.v:35.1-320.10"
+  },
+  {
+    "module": "$paramod$51665bce887eb93f308f7035dfcee9b2877b1698\\vram_RAMDP_80X9_GL_M2_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        7
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        9
+      ],
+      "w0_din": [
+        "input",
+        9
+      ],
+      "r0_addr": [
+        "input",
+        7
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        9
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_80X9_GL_M2_E2.v:619.1-910.10"
+  },
+  {
+    "module": "$paramod$556216dce1648e5fd12f8e29fe68688a7593bc70\\RAMPDP_80X17_GL_M2_D2_ram",
+    "count": 2,
+    "ports": {
+      "wadr": [
+        "input",
+        7
+      ],
+      "wrclk": [
+        "input",
+        1
+      ],
+      "wrmaskn": [
+        "input",
+        17
+      ],
+      "wrdata": [
+        "input",
+        17
+      ],
+      "radr": [
+        "input",
+        7
+      ],
+      "rout_B": [
+        "output",
+        17
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMPDP_80X17_GL_M2_D2.v:992.1-1241.10"
+  },
+  {
+    "module": "$paramod$43a21fbf096557d753219b4510989751412e887b\\vram_RAMDP_60X22_GL_M1_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        6
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        22
+      ],
+      "w0_din": [
+        "input",
+        22
+      ],
+      "r0_addr": [
+        "input",
+        6
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        22
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_60X22_GL_M1_E2.v:566.1-845.10"
+  },
+  {
+    "module": "$paramod$784be44fc09e40a04dd30a6ae61fe42422718d53\\vram_RAMDP_256X8_GL_M2_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        8
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        8
+      ],
+      "w0_din": [
+        "input",
+        8
+      ],
+      "r0_addr": [
+        "input",
+        8
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        8
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_256X8_GL_M2_E2.v:792.1-1083.10"
+  },
+  {
+    "module": "$paramod$327022cdacdd5fbfdceb2fa2974dbb12ad9173a8\\vram_RAMDP_256X4_GL_M2_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        8
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        4
+      ],
+      "w0_din": [
+        "input",
+        4
+      ],
+      "r0_addr": [
+        "input",
+        8
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        4
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_256X4_GL_M2_E2.v:792.1-1083.10"
+  },
+  {
+    "module": "$paramod$d6a021c65118442ff069364ba1119c1d96ee8193\\RAMPDP_128X18_GL_M2_D2_ram",
+    "count": 16,
+    "ports": {
+      "wadr": [
+        "input",
+        7
+      ],
+      "wrclk": [
+        "input",
+        1
+      ],
+      "wrmaskn": [
+        "input",
+        18
+      ],
+      "wrdata": [
+        "input",
+        18
+      ],
+      "radr": [
+        "input",
+        7
+      ],
+      "rout_B": [
+        "output",
+        18
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMPDP_128X18_GL_M2_D2.v:1044.1-1293.10"
+  },
+  {
+    "module": "$paramod$eb3a128eb39dc52309039cd65fd5cbf7a27c8728\\vram_RAMDP_16X16_GL_M1_E2",
+    "count": 2,
+    "ports": {
+      "w0_addr": [
+        "input",
+        4
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        16
+      ],
+      "w0_din": [
+        "input",
+        16
+      ],
+      "r0_addr": [
+        "input",
+        4
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        16
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_16X16_GL_M1_E2.v:514.1-793.10"
+  },
+  {
+    "module": "$paramod$40110a0db9dd436726ce1065d173be11c12a25df\\vram_RAMDP_16X66_GL_M1_E2",
+    "count": 2,
+    "ports": {
+      "w0_addr": [
+        "input",
+        4
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        66
+      ],
+      "w0_din": [
+        "input",
+        66
+      ],
+      "r0_addr": [
+        "input",
+        4
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        66
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_16X66_GL_M1_E2.v:514.1-793.10"
+  },
+  {
+    "module": "$paramod$c9a2dad14a9bdf16eb25fefd766a43b5ff88ef5a\\vram_RAMDP_16X14_GL_M1_E2",
+    "count": 1,
+    "ports": {
+      "w0_addr": [
+        "input",
+        4
+      ],
+      "w0_clk": [
+        "input",
+        1
+      ],
+      "w0_bwe": [
+        "input",
+        14
+      ],
+      "w0_din": [
+        "input",
+        14
+      ],
+      "r0_addr": [
+        "input",
+        4
+      ],
+      "r0_clk": [
+        "input",
+        1
+      ],
+      "r0_dout": [
+        "output",
+        14
+      ],
+      "clamp_o": [
+        "input",
+        1
+      ]
+    },
+    "src": "/home/shen/Desktop/project/ChipEvo/chips/nvdla/rtl/rams/model/RAMDP_16X14_GL_M1_E2.v:514.1-793.10"
+  }
+]

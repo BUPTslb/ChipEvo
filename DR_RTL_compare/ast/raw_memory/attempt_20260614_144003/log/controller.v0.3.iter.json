@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/controller.v0.3.v:45:12: error: parameter declaration is missing an initializer\nlocalparam AES_IVR1  4'd09;\n           ^\nsyn_flow/rtl/controller.v0.3.v:45:20: error: expected ';'\nlocalparam AES_IVR1  4'd09;\n                   ^\nwarning: no top-level modules found in design [-Wmissing-top]",
-  "target_version": "v0.3",
-  "relative_advantage": null
-}

@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/FIFO.v3.2.v:1:15: error: expected ';'\nmodule already has some optimizations from previous iterations. Looking at the write_uut/full signal assignment pattern:\n              ^\nsyn_flow/rtl/FIFO.v3.2.v:1:16: error: use of undeclared identifier 'has'\nmodule already has some optimizations from previous iterations. Looking at the write_uut/full signal assignment pattern:\n               ^~~\nsyn_flow/rtl/FIFO.v3.2.v:1:24: error: expected ';'\nmodule already has some optimizations from previ",
-  "target_version": "v3.2",
-  "relative_advantage": null
-}

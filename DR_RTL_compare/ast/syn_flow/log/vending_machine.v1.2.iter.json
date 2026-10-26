@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/vending_machine.v1.2.v:111:46: error: hierarchical index -1 is out of scope's declared range\n                           (gen_carry_select[i-1].carry_ab ? sum1_ab[BLOCK_SIZE] : sum0_ab[BLOCK_SIZE]);\n                                             ^~~\nsyn_flow/rtl/vending_machine.v1.2.v:82:56: note: declared here\n        for (i = 0; i < NUM_BLOCKS; i = i + 1) begin : gen_carry_select\n                                                       ^\nsyn_flow/rtl/vending_machine.v1.2.v:113:46: erro",
-  "target_version": "v1.2",
-  "relative_advantage": null
-}

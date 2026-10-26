@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/controller.v0.5.v:172:34: error: cannot refer to element 4 of 'reg[3:0]' [-Windex-oob]\nwire state_is_round0_c3  = state[4];\n                                 ^\nsyn_flow/rtl/controller.v0.5.v:173:34: error: cannot refer to element 5 of 'reg[3:0]' [-Windex-oob]\nwire state_is_round_key0 = state[5];\n                                 ^\nsyn_flow/rtl/controller.v0.5.v:174:34: error: cannot refer to element 6 of 'reg[3:0]' [-Windex-oob]\nwire state_is_round_c0   = state[6];\n                   ",
-  "target_version": "v0.5",
-  "relative_advantage": null
-}

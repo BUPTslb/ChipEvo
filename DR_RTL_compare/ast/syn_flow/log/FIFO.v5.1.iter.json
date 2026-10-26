@@ -1,5 +1,0 @@
-{
-  "error": "rtl_syntax: syn_flow/rtl/FIFO.v5.1.v:25:1: error: unknown module 'memory'\nmemory #(datasize, addrbits, depth) mem_uut (.dataOut(dataOut), .dataIn(dataIn),\n^~~~~~\nsyn_flow/rtl/FIFO.v5.1.v:31:1: error: unknown module 'RFSM'\nRFSM #(addrbits, depth) read_uut (.empty(empty), .rdaddr(rdaddr),\n^~~~\nsyn_flow/rtl/FIFO.v5.1.v:36:1: error: unknown module 'WFSM'\nWFSM  #(addrbits, depth) write_uut (.full(full), .wraddr(wraddr),\n^~~~",
-  "target_version": "v5.1",
-  "relative_advantage": null
-}

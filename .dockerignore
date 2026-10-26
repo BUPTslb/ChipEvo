@@ -1,0 +1,10 @@
+.git
+.venv
+.cache
+archive
+artifacts
+dist
+reports
+tools/legacy
+**/__pycache__
+**/*.pyc

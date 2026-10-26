@@ -1,0 +1,55 @@
+module RRArbiter_4 (
+	clock,
+	io_in_0_ready,
+	io_in_0_valid,
+	io_in_0_bits_tlb_req_vaddr,
+	io_in_0_bits_tlb_req_passthrough,
+	io_in_0_bits_status_debug,
+	io_in_0_bits_status_mxr,
+	io_in_1_ready,
+	io_in_1_valid,
+	io_in_1_bits_tlb_req_vaddr,
+	io_in_1_bits_status_debug,
+	io_in_1_bits_status_mxr,
+	io_out_valid,
+	io_out_bits_tlb_req_vaddr,
+	io_out_bits_tlb_req_passthrough,
+	io_out_bits_tlb_req_cmd,
+	io_out_bits_status_debug,
+	io_out_bits_status_mxr
+);
+	input clock;
+	output wire io_in_0_ready;
+	input io_in_0_valid;
+	input [39:0] io_in_0_bits_tlb_req_vaddr;
+	input io_in_0_bits_tlb_req_passthrough;
+	input io_in_0_bits_status_debug;
+	input io_in_0_bits_status_mxr;
+	output wire io_in_1_ready;
+	input io_in_1_valid;
+	input [39:0] io_in_1_bits_tlb_req_vaddr;
+	input io_in_1_bits_status_debug;
+	input io_in_1_bits_status_mxr;
+	output wire io_out_valid;
+	output wire [39:0] io_out_bits_tlb_req_vaddr;
+	output wire io_out_bits_tlb_req_passthrough;
+	output wire [4:0] io_out_bits_tlb_req_cmd;
+	output wire io_out_bits_status_debug;
+	output wire io_out_bits_status_mxr;
+	wire io_chosen_choice;
+	wire io_out_valid_0 = (io_chosen_choice ? io_in_1_valid : io_in_0_valid);
+	reg ctrl_validMask_grantMask_lastGrant;
+	wire ctrl_validMask_1 = io_in_1_valid & ~ctrl_validMask_grantMask_lastGrant;
+	assign io_chosen_choice = ctrl_validMask_1 | ~io_in_0_valid;
+	always @(posedge clock)
+		if (io_out_valid_0)
+			ctrl_validMask_grantMask_lastGrant <= io_chosen_choice;
+	assign io_in_0_ready = ~ctrl_validMask_1;
+	assign io_in_1_ready = ~ctrl_validMask_grantMask_lastGrant | ~(ctrl_validMask_1 | io_in_0_valid);
+	assign io_out_valid = io_out_valid_0;
+	assign io_out_bits_tlb_req_vaddr = (io_chosen_choice ? io_in_1_bits_tlb_req_vaddr : io_in_0_bits_tlb_req_vaddr);
+	assign io_out_bits_tlb_req_passthrough = ~io_chosen_choice & io_in_0_bits_tlb_req_passthrough;
+	assign io_out_bits_tlb_req_cmd = {4'h0, ~io_chosen_choice};
+	assign io_out_bits_status_debug = (io_chosen_choice ? io_in_1_bits_status_debug : io_in_0_bits_status_debug);
+	assign io_out_bits_status_mxr = (io_chosen_choice ? io_in_1_bits_status_mxr : io_in_0_bits_status_mxr);
+endmodule

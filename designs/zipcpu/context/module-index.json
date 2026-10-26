@@ -1,0 +1,57 @@
+[
+  {
+    "module": "zipcore",
+    "file": "rtl/core/zipcore.v",
+    "start_line": 39,
+    "end_line": 6122,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 16503.172000001225,
+    "protected": false,
+    "fixed_storage": false,
+    "source": "/home/shen/Desktop/project/ChipEvo/artifacts/runs/localization-smoke-20261024-area-selfcheck/baseline/rtl/core/zipcore.v:39.1-6122.10"
+  },
+  {
+    "module": "$paramod$12b2e3add3df8118904809098174946ded200fb2\\cpuops",
+    "file": "rtl/core/cpuops.v",
+    "start_line": 41,
+    "end_line": 392,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 1868.6500000000067,
+    "protected": false,
+    "fixed_storage": false,
+    "source": "/home/shen/Desktop/project/ChipEvo/artifacts/runs/localization-smoke-20261024-area-selfcheck/baseline/rtl/core/cpuops.v:41.1-392.10"
+  },
+  {
+    "module": "$paramod$796986e36cd738dbc10c24d4c3c5d427aad40a3e\\idecode",
+    "file": "rtl/core/idecode.v",
+    "start_line": 40,
+    "end_line": 2185,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 1756.1319999999942,
+    "protected": false,
+    "fixed_storage": false,
+    "source": "/home/shen/Desktop/project/ChipEvo/artifacts/runs/localization-smoke-20261024-area-selfcheck/baseline/rtl/core/idecode.v:40.1-2185.10"
+  },
+  {
+    "module": "$paramod\\div\\OPT_LOWPOWER=1'0",
+    "file": "rtl/core/div.v",
+    "start_line": 99,
+    "end_line": 587,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 1682.1839999999895,
+    "protected": false,
+    "fixed_storage": false,
+    "source": "/home/shen/Desktop/project/ChipEvo/artifacts/runs/localization-smoke-20261024-area-selfcheck/baseline/rtl/core/div.v:99.1-587.10"
+  },
+  {
+    "module": "$paramod$e173ddfb16ead740d9fe6a98f54e9bc1fcd86477\\mpyop",
+    "file": "rtl/core/mpyop.v",
+    "start_line": 43,
+    "end_line": 432,
+    "instances": 1,
+    "exclusive_area_all_instances_um2": 0,
+    "protected": false,
+    "fixed_storage": false,
+    "source": "/home/shen/Desktop/project/ChipEvo/artifacts/runs/localization-smoke-20261024-area-selfcheck/baseline/rtl/core/mpyop.v:43.1-432.10"
+  }
+]

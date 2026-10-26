@@ -1,0 +1,6 @@
+{
+  "historical": true,
+  "new_eda_run": false,
+  "source": "artifacts/history/runs/qualification-20261024/cgra",
+  "scope": "module index from prior mapped netlist; not cached candidate scoring metrics"
+}
